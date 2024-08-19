@@ -102,7 +102,7 @@ figure figcaption {
 #colorlib-aside {
   padding-top       : 3em;
   padding-bottom    : 40px;
-  float             : left;
+  float             : right;
   width             : 300px;
   position          : fixed;
   overflow-y        : scroll;
@@ -328,7 +328,7 @@ figure figcaption {
 
 #colorlib-main {
   width     : calc(100% - 300px);
-  float     : right;
+  float     : left;
   /* Aligns main content to the right of the aside */
   background: #f9f9f9;
   /* Light background for contrast with the aside */
