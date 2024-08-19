@@ -92,11 +92,16 @@ figure figcaption {
   color     : #fff;
   background: #2c98f0;
 }
-
+/*
 #colorlib-page {
   width   : 100%;
   overflow: hidden;
   position: relative;
+}
+  */
+#colorlib-page {
+  display: flex; /* Use flexbox to align items */
+  width: 100%;
 }
 
 #colorlib-aside {
@@ -320,12 +325,17 @@ figure figcaption {
   outline        : none;
   color          : #2c98f0;
 }
-
+/*
 .container-wrap {
   max-width: 1170px;
   margin   : 0 auto;
 }
-
+*/
+.container-wrap {
+  display: flex; /* Flexbox to manage layout */
+  max-width: 1170px;
+  margin: 0 auto;
+}
 #colorlib-main {
   width     : calc(100% - 300px);
   float     : left;
