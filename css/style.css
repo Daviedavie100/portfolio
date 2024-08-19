@@ -75,7 +75,7 @@ figure {
   #colorlib-aside {
     padding-top: 3em;
     padding-bottom: 40px;
-    float: left;
+    float: right;
     width: 300px;
     position: fixed;
     overflow-y: scroll;
