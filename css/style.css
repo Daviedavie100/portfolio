@@ -71,8 +71,7 @@ figure {
   width: 100%;
   overflow: hidden;
   position: relative; }
-
-  #colorlib-aside {
+#colorlib-aside {
     padding-top: 3em;
     padding-bottom: 40px;
     float: left;
