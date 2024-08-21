@@ -304,25 +304,28 @@ figure figcaption {
 
 /* Basic styling for the navigation bar */
 #top-section {
-  position        : fixed;
-  top             : 0;
-  /*width           : calc(100% - 300px);*/
+  position          : fixed;
+  top               : 0;
+  width             : 90%;
+  height            : 30px;
   /* Make it the same width as the colorlib-main column */
   /*background-color: transparent;*/
   /* Adjust as needed */
-  z-index         : 1000;
+  z-index           : 1000;
   /* Ensures it stays on top of other elements */
-  background-color: #333;
+  background-color  : #333;
   /* Background color of the nav bar */
-  padding         : 10px 0;
+  padding-left      : 300px;
+  /*text-align      : right; /* Align contents to the right */
 }
+
 
 .top-menu nav ul {
   list-style-type: none;
   margin         : 0;
   padding        : 0;
   overflow       : hidden;
-  text-align     : center;
+  text-align     : right;
 }
 
 .top-menu nav ul li {
