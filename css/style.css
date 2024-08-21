@@ -33,9 +33,9 @@ a {
   transition        : 0.5s;
 }
 
+a:hover,
 a:active,
-a:focus,
-a:hover {
+a:focus {
   color          : #2c98f0;
   outline        : none;
   text-decoration: none !important;
@@ -59,14 +59,14 @@ h6 {
 
 figure {
   margin-bottom: 2.5em;
-  float        : right;
+  float        : left;
   width        : 100%;
 }
 
 figure figcaption {
   font-size  : 16px;
   width      : 80%;
-  margin     : 20px auto 0 auto;
+  margin     : 20px auto 0px auto;
   color      : #b3b3b3;
   font-style : italic;
   font-family: "Quicksand", Arial, sans-serif;
@@ -92,38 +92,26 @@ figure figcaption {
   color     : #fff;
   background: #2c98f0;
 }
-/*
+
+
 #colorlib-page {
   width   : 100%;
   overflow: hidden;
   position: relative;
 }
-  */
-#colorlib-page {
-  display: flex; /* Use flexbox to align items */
-  width: 100%;
-}
 
 #colorlib-aside {
   padding-top       : 3em;
   padding-bottom    : 40px;
-  float             : right;
+  float             : left;
   width             : 300px;
   position          : fixed;
   overflow-y        : scroll;
   z-index           : 1001;
-  background        : #1e1e2f;
-  /* Dark background for better contrast */
-  color             : #fff;
-  /* White text for visibility */
-  box-shadow        : -2px 0 5px rgba(0, 0, 0, 0.5);
-  /* Subtle shadow for depth */
-  border-left       : 3px solid #2c98f0;
-  /* Blue border for accent */
+  background        : #f2f3f7;
   -webkit-transition: 0.5s;
   -o-transition     : 0.5s;
-  transition        : 0.5s ease-in-out;
-  /*was not there*/
+  transition        : 0.5s;
 }
 
 @media screen and (max-width: 768px) {
@@ -133,10 +121,8 @@ figure figcaption {
     -webkit-transform: translateX(-300px);
     -ms-transform    : translateX(-300px);
     -o-transform     : translateX(-300px);
-    transform        : translateX(300px);
+    transform        : translateX(-300px);
     padding-top      : 4em;
-    background       : #2c3e50;
-    /* Adjust background for smaller screens */
   }
 }
 
@@ -149,8 +135,6 @@ figure figcaption {
   -moz-border-radius   : 50%;
   -ms-border-radius    : 50%;
   border-radius        : 50%;
-  border               : 1px solid #2c98f0;
-  /* Blue border around the image --was 3px*/
 }
 
 #colorlib-aside .position {
@@ -158,36 +142,22 @@ figure figcaption {
   margin-bottom : 2em;
   font-size     : 12px;
   text-transform: uppercase;
-  color         : #b1b1b1;
-  /* Lighter grey for subtle text */
 }
 
 #colorlib-aside #colorlib-logo {
-  text-align   : center;
+  text-align   : right;
   font-weight  : 700;
-  font-size    : 24px;
-  margin-bottom: 1em;
-  color        : #2c98f0;
-  /* Blue color for branding */
+  font-size    : 22px;
+  margin-bottom: .5em;
+  display      : block;
+  width        : 100%;
 }
-
-/*
-#colorlib-aside #colorlib-logo {
-    text-align: right;
-    font-weight: 700;
-    font-size: 22px;
-    margin-bottom: 0.5em;
-    display: block;
-    width: 100%;
-  }
-*/
 
 #colorlib-aside #colorlib-logo a {
-  display        : block;
-  text-align     : center;
-  color          : #2c98f0;
-  text-decoration: none;
-  padding-right  : 0.3em;
+  display      : block;
+  text-align   : center;
+  color        : #000;
+  padding-right: .3em;
 }
 
 #colorlib-aside #colorlib-main-menu {
@@ -255,7 +225,7 @@ figure figcaption {
 
 #colorlib-aside #colorlib-main-menu ul li a:hover {
   text-decoration: none;
-  color          : #000;
+  color          : black;
 }
 
 #colorlib-aside #colorlib-main-menu ul li a:hover:after {
@@ -313,59 +283,81 @@ figure figcaption {
 }
 
 #colorlib-aside .colorlib-footer ul li a {
-  color  : rgba(0, 0, 0, 0.7);
-  /* Changed from rgba(255, 255, 255, 0.3) for visibility */
+  color  : rgba(255, 255, 255, 0.3);
   padding: 4px;
 }
 
+#colorlib-aside .colorlib-footer ul li a:hover,
 #colorlib-aside .colorlib-footer ul li a:active,
-#colorlib-aside .colorlib-footer ul li a:focus,
-#colorlib-aside .colorlib-footer ul li a:hover {
+#colorlib-aside .colorlib-footer ul li a:focus {
   text-decoration: none;
   outline        : none;
   color          : #2c98f0;
 }
-/*
+
 .container-wrap {
   max-width: 1170px;
   margin   : 0 auto;
 }
-*/
-.container-wrap {
-  display: flex; /* Flexbox to manage layout */
-  max-width: 1170px;
-  margin: 0 auto;
+
+/*DAVID*/
+
+#top-section {
+  position        : fixed;
+  top             : 0;
+  width           : calc(100% - 300px);
+  /* Make it the same width as the colorlib-main column */
+  background-color: transparent;
+  /* Adjust as needed */
+  z-index         : 1000;
+  /* Ensures it stays on top of other elements */
 }
+
+.top-menu {
+  display        : flex;
+  justify-content: flex-end;
+  /* Aligns the menu items to the right */
+  padding        : 10px 0;
+  /* Adjust padding as needed */
+}
+
+.top-menu a {
+  margin: 0 15px;
+}
+
+/* Hide the top section on mobile devices */
+@media (max-width: 768px) {
+  #top-section {
+    display: none;
+  }
+}
+
+/*END DAVE*/
+
 #colorlib-main {
-  width     : calc(100% - 300px);
-  float     : left;
-  /* Aligns main content to the right of the aside */
-  background: #f9f9f9;
-  /* Light background for contrast with the aside */
-  color     : #333;
-  /* Dark text for readability */
-  padding   : 2em;
-  transition: 0.5s ease-in-out;
+  position          : relative;
+  /* Ensure the main column is positioned relative */
+  width             : calc(100% - 300px);
+  float             : right;
+  -webkit-transition: 0.5s;
+  -o-transition     : 0.5s;
+  transition        : 0.5s;
 }
 
 @media screen and (max-width: 768px) {
   #colorlib-main {
-    width     : 100%;
-    padding   : 1em;
-    background: #ecf0f1;
-    /* Lighter background for mobile view */
+    width  : 100%;
+    padding: 0 1em;
   }
 }
 
 #colorlib-hero {
-  min-height     : 500px;
-  background     : url(../images/hero-background.jpg) no-repeat center center;
-  background-size: cover;
-  width          : 100%;
-  float          : left;
-  margin-bottom  : 10em;
-  clear          : both;
-  position       : relative;
+  min-height   : 500px;
+  background   : #fff url(../images/loader.gif) no-repeat center center;
+  width        : 100%;
+  float        : left;
+  margin-bottom: 10em;
+  clear        : both;
 }
 
 #colorlib-hero .flexslider {
@@ -382,7 +374,7 @@ figure figcaption {
 #colorlib-hero .flexslider .slides li {
   background-repeat  : no-repeat;
   background-size    : cover;
-  background-position: center;
+  background-position: bottom center;
   min-height         : 400px;
   position           : relative;
 }
@@ -408,11 +400,12 @@ figure figcaption {
 }
 
 #colorlib-hero .flexslider .flex-control-nav li a {
-  background: rgba(0, 0, 0, 0.5);
-  box-shadow: none;
-  width     : 12px;
-  height    : 12px;
-  cursor    : pointer;
+  background        : rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: none;
+  box-shadow        : none;
+  width             : 12px;
+  height            : 12px;
+  cursor            : pointer;
 }
 
 #colorlib-hero .flexslider .flex-control-nav li a.flex-active {
@@ -450,8 +443,7 @@ figure figcaption {
 #colorlib-hero .flexslider .slider-text>.slider-text-inner h2 {
   margin     : 0;
   padding    : 0;
-  color      : #fff;
-  /* White text for contrast on dark background */
+  color      : black;
   font-family: "Playfair Display", Georgia, serif;
 }
 
@@ -477,8 +469,8 @@ figure figcaption {
 }
 
 #colorlib-hero .flexslider .slider-text>.slider-text-inner h2 a {
-  color        : #2c98f0;
-  border-bottom: 1px solid #2c98f0;
+  color        : rgba(44, 152, 240, 0.8);
+  border-bottom: 1px solid rgba(44, 152, 240, 0.7);
 }
 
 #colorlib-hero .flexslider .slider-text>.slider-text-inner .heading-section {
@@ -491,7 +483,7 @@ figure figcaption {
   }
 }
 
-.colorlib-lead {
+#colorlib-hero .flexslider .slider-text>.slider-text-inner s .colorlib-lead {
   font-size: 20px;
   color    : #fff;
 }
@@ -568,14 +560,14 @@ body.offcanvas .colorlib-nav-toggle {
   padding: 0;
 }
 
-.colorlib-about,
-.colorlib-blog,
-.colorlib-contact,
-.colorlib-education,
 .colorlib-experience,
-.colorlib-services,
 .colorlib-skills,
-.colorlib-work {
+.colorlib-education,
+.colorlib-blog,
+.colorlib-work,
+.colorlib-about,
+.colorlib-services,
+.colorlib-contact {
   padding-top   : 4em;
   padding-bottom: 9em;
   clear         : both;
@@ -585,14 +577,14 @@ body.offcanvas .colorlib-nav-toggle {
 
 @media screen and (max-width: 768px) {
 
-  .colorlib-about,
-  .colorlib-blog,
-  .colorlib-contact,
-  .colorlib-education,
   .colorlib-experience,
-  .colorlib-services,
   .colorlib-skills,
-  .colorlib-work {
+  .colorlib-education,
+  .colorlib-blog,
+  .colorlib-work,
+  .colorlib-about,
+  .colorlib-services,
+  .colorlib-contact {
     padding-top   : 5em;
     padding-bottom: 8em;
   }
@@ -630,7 +622,7 @@ body.offcanvas .colorlib-nav-toggle {
   display       : block;
   font-size     : 10px;
   text-transform: uppercase;
-  color         : #999;
+  color         : #999999;
   font-weight   : 500;
   letter-spacing: 5px;
 }
@@ -716,7 +708,7 @@ body.offcanvas .colorlib-nav-toggle {
 .panel-heading a.collapsed {
   background: #f2f3f7;
   border    : 1px solid #e6e6e6 !important;
-  color     : #333;
+  color     : #333333;
 }
 
 .panel-body {
@@ -730,8 +722,8 @@ body.offcanvas .colorlib-nav-toggle {
   margin-bottom: 30px;
 }
 
-.timeline-centered:after,
-.timeline-centered:before {
+.timeline-centered:before,
+.timeline-centered:after {
   content: " ";
   display: table;
 }
@@ -740,8 +732,8 @@ body.offcanvas .colorlib-nav-toggle {
   clear: both;
 }
 
-.timeline-centered:after,
-.timeline-centered:before {
+.timeline-centered:before,
+.timeline-centered:after {
   content: " ";
   display: table;
 }
@@ -860,17 +852,19 @@ body.offcanvas .colorlib-nav-toggle {
   -webkit-opacity: .4;
   -moz-opacity   : .4;
   opacity        : .4;
+  -ms-filter     : alpha(opacity=40);
+  filter         : alpha(opacity=40);
   font-size      : 16px;
 }
 
 .services {
   margin-bottom     : 30px;
   padding           : 1.5em;
-  -webkit-box-shadow: 0 0 56px -8px rgba(0, 0, 0, 0.17);
-  -moz-box-shadow   : 0 0 56px -8px rgba(0, 0, 0, 0.17);
-  -ms-box-shadow    : 0 0 56px -8px rgba(0, 0, 0, 0.17);
-  -o-box-shadow     : 0 0 56px -8px rgba(0, 0, 0, 0.17);
-  box-shadow        : 0 0 56px -8px rgba(0, 0, 0, 0.17);
+  -webkit-box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
+  -moz-box-shadow   : 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
+  -ms-box-shadow    : 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
+  -o-box-shadow     : 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
+  box-shadow        : 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
   border-bottom     : 2px solid #2c98f0;
 }
 
@@ -946,8 +940,8 @@ body.offcanvas .colorlib-nav-toggle {
   background: #2c98f0;
 }
 
-.services .icon:after,
-.services .icon:before {
+.services .icon:before,
+.services .icon:after {
   position: absolute;
   left    : 0;
   right   : 0;
@@ -1306,7 +1300,7 @@ body.offcanvas .colorlib-nav-toggle {
 }
 
 .blog-entry .desc span small i {
-  color: #999;
+  color: #999999;
 }
 
 .blog-entry .desc .lead {
@@ -1384,7 +1378,7 @@ body.offcanvas .colorlib-nav-toggle {
 }
 
 .project .desc .con .icon span a {
-  color                : #333;
+  color                : #333333;
   padding              : 5px;
   background           : rgba(255, 255, 255, 0.5);
   -webkit-border-radius: 4px;
@@ -1395,7 +1389,7 @@ body.offcanvas .colorlib-nav-toggle {
 
 .project .desc .con .icon i {
   font-size: 16px;
-  color    : #333;
+  color    : #333333;
 }
 
 .project .desc h3 {
@@ -1526,7 +1520,7 @@ body.offcanvas .colorlib-nav-toggle {
 .colorlib-counters .colorlib-counter {
   font-size    : 40px;
   display      : block;
-  color        : #fff;
+  color        : white;
   font-family  : "Quicksand", Arial, sans-serif;
   width        : 100%;
   font-weight  : 700;
@@ -1555,6 +1549,7 @@ body.offcanvas .colorlib-nav-toggle {
   display   : -moz-inline-stack;
   display   : inline-block;
   zoom      : 1;
+  *display  : inline;
 }
 
 .colorlib-social li a {
@@ -1564,6 +1559,7 @@ body.offcanvas .colorlib-nav-toggle {
   display              : -moz-inline-stack;
   display              : inline-block;
   zoom                 : 1;
+  *display             : inline;
   -webkit-border-radius: 7px;
   -moz-border-radius   : 7px;
   -ms-border-radius    : 7px;
@@ -1580,9 +1576,9 @@ body.offcanvas .colorlib-nav-toggle {
   color: #2c98f0;
 }
 
+.colorlib-social li a:hover,
 .colorlib-social li a:active,
-.colorlib-social li a:focus,
-.colorlib-social li a:hover {
+.colorlib-social li a:focus {
   outline        : none;
   text-decoration: none;
   color          : #2c98f0;
@@ -1630,8 +1626,8 @@ body.offcanvas .colorlib-nav-toggle {
   border-radius        : 2px;
 }
 
-.pagination li a:focus,
-.pagination li a:hover {
+.pagination li a:hover,
+.pagination li a:focus {
   background: #2c98f0;
   color     : #fff;
   border    : 1px solid #2c98f0;
@@ -1648,8 +1644,8 @@ body.offcanvas .colorlib-nav-toggle {
   border    : 1px solid #2c98f0 !important;
 }
 
-.pagination li.active a:focus,
-.pagination li.active a:hover {
+.pagination li.active a:hover,
+.pagination li.active a:focus {
   background: #2c98f0;
   color     : #fff;
   border    : 1px solid #2c98f0 !important;
@@ -1685,9 +1681,9 @@ body.offcanvas .colorlib-nav-toggle {
   padding: 18px 36px !important;
 }
 
+.btn:hover,
 .btn:active,
-.btn:focus,
-.btn:hover {
+.btn:focus {
   -webkit-box-shadow: none !important;
   box-shadow        : none !important;
   outline           : none !important;
@@ -1699,9 +1695,9 @@ body.offcanvas .colorlib-nav-toggle {
   border    : 2px solid #2c98f0;
 }
 
-.btn-primary:active,
+.btn-primary:hover,
 .btn-primary:focus,
-.btn-primary:hover {
+.btn-primary:active {
   background  : #44a4f2 !important;
   border-color: #44a4f2 !important;
 }
@@ -1712,9 +1708,9 @@ body.offcanvas .colorlib-nav-toggle {
   border    : 2px solid #2c98f0;
 }
 
-.btn-primary.btn-outline:active,
+.btn-primary.btn-outline:hover,
 .btn-primary.btn-outline:focus,
-.btn-primary.btn-outline:hover {
+.btn-primary.btn-outline:active {
   background: #2c98f0;
   color     : #fff;
 }
@@ -1725,9 +1721,9 @@ body.offcanvas .colorlib-nav-toggle {
   border    : 2px solid #5cb85c;
 }
 
-.btn-success:active,
+.btn-success:hover,
 .btn-success:focus,
-.btn-success:hover {
+.btn-success:active {
   background  : #4cae4c !important;
   border-color: #4cae4c !important;
 }
@@ -1738,9 +1734,9 @@ body.offcanvas .colorlib-nav-toggle {
   border    : 2px solid #5cb85c;
 }
 
-.btn-success.btn-outline:active,
+.btn-success.btn-outline:hover,
 .btn-success.btn-outline:focus,
-.btn-success.btn-outline:hover {
+.btn-success.btn-outline:active {
   background: #5cb85c;
   color     : #fff;
 }
@@ -1751,9 +1747,9 @@ body.offcanvas .colorlib-nav-toggle {
   border    : 2px solid #5bc0de;
 }
 
-.btn-info:active,
+.btn-info:hover,
 .btn-info:focus,
-.btn-info:hover {
+.btn-info:active {
   background  : #46b8da !important;
   border-color: #46b8da !important;
 }
@@ -1764,9 +1760,9 @@ body.offcanvas .colorlib-nav-toggle {
   border    : 2px solid #5bc0de;
 }
 
-.btn-info.btn-outline:active,
+.btn-info.btn-outline:hover,
 .btn-info.btn-outline:focus,
-.btn-info.btn-outline:hover {
+.btn-info.btn-outline:active {
   background: #5bc0de;
   color     : #fff;
 }
@@ -1777,9 +1773,9 @@ body.offcanvas .colorlib-nav-toggle {
   border    : 2px solid #f0ad4e;
 }
 
-.btn-warning:active,
+.btn-warning:hover,
 .btn-warning:focus,
-.btn-warning:hover {
+.btn-warning:active {
   background  : #eea236 !important;
   border-color: #eea236 !important;
 }
@@ -1790,9 +1786,9 @@ body.offcanvas .colorlib-nav-toggle {
   border    : 2px solid #f0ad4e;
 }
 
-.btn-warning.btn-outline:active,
+.btn-warning.btn-outline:hover,
 .btn-warning.btn-outline:focus,
-.btn-warning.btn-outline:hover {
+.btn-warning.btn-outline:active {
   background: #f0ad4e;
   color     : #fff;
 }
@@ -1803,9 +1799,9 @@ body.offcanvas .colorlib-nav-toggle {
   border    : 2px solid #d9534f;
 }
 
-.btn-danger:active,
+.btn-danger:hover,
 .btn-danger:focus,
-.btn-danger:hover {
+.btn-danger:active {
   background  : #d43f3a !important;
   border-color: #d43f3a !important;
 }
@@ -1816,9 +1812,9 @@ body.offcanvas .colorlib-nav-toggle {
   border    : 2px solid #d9534f;
 }
 
-.btn-danger.btn-outline:active,
+.btn-danger.btn-outline:hover,
 .btn-danger.btn-outline:focus,
-.btn-danger.btn-outline:hover {
+.btn-danger.btn-outline:active {
   background: #d9534f;
   color     : #fff;
 }
@@ -1832,9 +1828,9 @@ body.offcanvas .colorlib-nav-toggle {
   transition        : 0.3s;
 }
 
-.btn-outline:active,
+.btn-outline:hover,
 .btn-outline:focus,
-.btn-outline:hover {
+.btn-outline:active {
   -webkit-box-shadow: none;
   box-shadow        : none;
 }
@@ -1878,19 +1874,19 @@ body.offcanvas .colorlib-nav-toggle {
   text-decoration: none;
 }
 
-.colorlib-nav-toggle.active i::after,
-.colorlib-nav-toggle.active i::before {
+.colorlib-nav-toggle.active i::before,
+.colorlib-nav-toggle.active i::after {
   background: #000;
 }
 
-.colorlib-nav-toggle.dark.active i::after,
-.colorlib-nav-toggle.dark.active i::before {
+.colorlib-nav-toggle.dark.active i::before,
+.colorlib-nav-toggle.dark.active i::after {
   background: #000;
 }
 
-.colorlib-nav-toggle:active,
+.colorlib-nav-toggle:hover,
 .colorlib-nav-toggle:focus,
-.colorlib-nav-toggle:hover {
+.colorlib-nav-toggle:active {
   outline      : none;
   border-bottom: none !important;
 }
@@ -1900,6 +1896,7 @@ body.offcanvas .colorlib-nav-toggle {
   display           : -moz-inline-stack;
   display           : inline-block;
   zoom              : 1;
+  *display          : inline;
   width             : 30px;
   height            : 2px;
   color             : #000;
@@ -1912,8 +1909,8 @@ body.offcanvas .colorlib-nav-toggle {
   transition        : all .2s ease-out;
 }
 
-.colorlib-nav-toggle i::after,
-.colorlib-nav-toggle i::before {
+.colorlib-nav-toggle i::before,
+.colorlib-nav-toggle i::after {
   content           : '';
   width             : 30px;
   height            : 2px;
@@ -1934,8 +1931,8 @@ body.offcanvas .colorlib-nav-toggle {
   transition        : all .2s ease-out;
 }
 
-.colorlib-nav-toggle.dark i::after,
-.colorlib-nav-toggle.dark i::before {
+.colorlib-nav-toggle.dark i::before,
+.colorlib-nav-toggle.dark i::after {
   background        : #000;
   -webkit-transition: 0.2s;
   -o-transition     : 0.2s;
@@ -1983,7 +1980,7 @@ body.offcanvas .colorlib-nav-toggle {
 .colorlib-nav-toggle {
   position          : fixed;
   left              : -5px;
-  top               : 0;
+  top               : 0px;
   z-index           : 9999;
   cursor            : pointer;
   opacity           : 1;
