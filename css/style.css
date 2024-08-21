@@ -304,8 +304,9 @@ figure figcaption {
 
 /* Basic styling for the navigation bar */
 #top-section {
+  position        : fixed;
   top             : 0;
-  width           : calc(100% - 300px);
+  /*width           : calc(100% - 300px);*/
   /* Make it the same width as the colorlib-main column */
   /*background-color: transparent;*/
   /* Adjust as needed */
