@@ -300,37 +300,50 @@ figure figcaption {
   margin   : 0 auto;
 }
 
-/*DAVID*/
+/*cccccccccccccccccccccccccccccc*/
 
+/* Basic styling for the navigation bar */
 #top-section {
-  position        : fixed;
   top             : 0;
   width           : calc(100% - 300px);
   /* Make it the same width as the colorlib-main column */
-  background-color: transparent;
+  /*background-color: transparent;*/
   /* Adjust as needed */
   z-index         : 1000;
   /* Ensures it stays on top of other elements */
+  background-color: #333;
+  /* Background color of the nav bar */
+  padding         : 10px 0;
 }
 
-.top-menu {
-  display        : flex;
-  justify-content: flex-end;
-  /* Aligns the menu items to the right */
-  padding        : 10px 0;
-  /* Adjust padding as needed */
+.top-menu nav ul {
+  list-style-type: none;
+  margin         : 0;
+  padding        : 0;
+  overflow       : hidden;
+  text-align     : center;
 }
 
-.top-menu a {
-  margin: 0 15px;
+.top-menu nav ul li {
+  display     : inline;
+  /* Ensures the menu items are horizontal */
+  margin-right: 20px;
 }
 
-/* Hide the top section on mobile devices */
-@media (max-width: 768px) {
-  #top-section {
-    display: none;
-  }
+.top-menu nav ul li a {
+  color          : white;
+  /* Text color */
+  text-decoration: none;
+  padding        : 14px 20px;
+  display        : inline-block;
 }
+
+.top-menu nav ul li a:hover {
+  background-color: #111;
+  /* Hover effect */
+}
+
+
 
 /*END DAVE*/
 
