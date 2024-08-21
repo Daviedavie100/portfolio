@@ -309,11 +309,11 @@ figure figcaption {
   width             : 90%;
   height            : 30px;
   /* Make it the same width as the colorlib-main column */
-  /*background-color: transparent;*/
+  background-color: transparent;
   /* Adjust as needed */
   z-index           : 1000;
   /* Ensures it stays on top of other elements */
-  background-color  : #333;
+  /*background-color  : #333;*/
   /* Background color of the nav bar */
   padding-left      : 300px;
   /*text-align      : right; /* Align contents to the right */
@@ -336,9 +336,7 @@ figure figcaption {
 
 .top-menu nav ul li a {
   color          : white;
-  /* Text color */
   text-decoration: none;
-  padding        : 14px 20px;
   display        : inline-block;
 }
 
@@ -347,7 +345,12 @@ figure figcaption {
   /* Hover effect */
 }
 
-
+/* Hide the top section on mobile devices */
+@media (max-width: 768px) {
+  #top-section {
+    display: none;
+  }
+}
 
 /*END DAVE*/
 
