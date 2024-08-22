@@ -1299,10 +1299,114 @@ figure figcaption {
 }
 
 /*======================================
-  W
+  CONTACT
 ======================================*/
+.colorlib-feature {
+  text-align   : left;
+  width        : 100%;
+  float        : left;
+  margin-bottom: 40px;
+  position     : relative;
+}
 
+.colorlib-feature .colorlib-icon {
+  position             : absolute;
+  top                  : 0;
+  left                 : 0;
+  width                : 100px;
+  height               : 100px;
+  display              : table;
+  text-align           : center;
+  background           : #f2f3f7;
+  -webkit-border-radius: 2px;
+  -moz-border-radius   : 2px;
+  -ms-border-radius    : 2px;
+  border-radius        : 2px;
+}
 
+.colorlib-feature .colorlib-icon i {
+  display       : table-cell;
+  vertical-align: middle;
+  color         : #2c98f0;
+  font-size     : 60px;
+  height        : 100px;
+}
+
+@media screen and (max-width: 1200px) {
+  .colorlib-feature .colorlib-icon i {
+    font-size: 40px;
+  }
+}
+
+.colorlib-feature .colorlib-text {
+  padding-left: 120px;
+  width       : 100%;
+}
+
+.colorlib-feature .colorlib-text h2,
+.colorlib-feature .colorlib-text h3 {
+  margin : 0;
+  padding: 0;
+}
+
+.colorlib-feature .colorlib-text h3 {
+  font-weight   : 500;
+  margin-bottom : 20px;
+  color         : rgba(0, 0, 0, 0.7);
+  font-size     : 14px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.colorlib-feature.colorlib-feature-sm .colorlib-text {
+  margin-top: 30px;
+}
+
+.colorlib-feature.colorlib-feature-sm .colorlib-icon i {
+  color    : #2c98f0;
+  font-size: 40px;
+}
+
+@media screen and (max-width: 1200px) {
+  .colorlib-feature.colorlib-feature-sm .colorlib-icon i {
+    font-size: 28px;
+  }
+}
+
+/*Form*/
+.form-control {
+  -webkit-appearance   : none;
+  -moz-appearance      : none;
+  appearance           : none;
+  -webkit-box-shadow   : none;
+  box-shadow           : none;
+  background           : transparent;
+  border               : transparent;
+  background           : #f2f3f7;
+  height               : 54px;
+  font-size            : 16px;
+  font-weight          : 400;
+  -webkit-transition   : 0.3s;
+  -o-transition        : 0.3s;
+  transition           : 0.3s;
+  -webkit-border-radius: 0;
+  -moz-border-radius   : 0;
+  -ms-border-radius    : 0;
+  border-radius        : 0;
+}
+
+.form-control:active,
+.form-control:focus {
+  outline           : none;
+  -webkit-box-shadow: none;
+  box-shadow        : none;
+  border-color      : transparent;
+  background        : #f0f0f0;
+}
+
+#message {
+  height: 130px;
+}
 
 /*======================================
   WORK
