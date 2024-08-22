@@ -1603,7 +1603,7 @@ figure figcaption {
 #colorlib-aside {
   padding-top                 : 3em;
   padding-bottom              : 40px;
-  right                       : 65%;
+  right                       : 5%;
   /*right                     : 0;*/
   width                       : 300px;
   position                    : fixed;
