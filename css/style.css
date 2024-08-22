@@ -152,19 +152,20 @@ figure figcaption {
 }
 */
 .colorlib-nav-toggle i {
-  position: relative;
-  display: inline-block;
-  zoom: 1; /* For IE6/7 support */
-  width: 30px;
-  height: 2px;
-  color: #000;
-  font: bold 14px/.4 Helvetica;
-  text-transform: uppercase;
-  text-indent: -55px;
-  background: #000;
+  position          : relative;
+  display           : inline-block;
+  zoom              : 1;
+  /* For IE6/7 support */
+  width             : 30px;
+  height            : 2px;
+  color             : #000;
+  font              : bold 14px/.4 Helvetica;
+  text-transform    : uppercase;
+  text-indent       : -55px;
+  background        : #000;
   -webkit-transition: all .2s ease-out;
-  -o-transition: all .2s ease-out;
-  transition: all .2s ease-out;
+  -o-transition     : all .2s ease-out;
+  transition        : all .2s ease-out;
 }
 
 .colorlib-nav-toggle i::before,
@@ -338,14 +339,16 @@ figure figcaption {
 //--//-->   COLORLIB MAIN PAGE
 ======================================*/
 #colorlib-main {
-  margin-top        : 5px;
-  position          : relative;
+  margin-top          : 5px;
+  position            : relative;
   /* Ensure the main column is positioned relative */
-  width             : calc(100% - 300px);
+  width               : calc(100% - 300px);
+  left                : 0;
   float             : left;
-  -webkit-transition: 0.5s;
-  -o-transition     : 0.5s;
-  transition        : 0.5s;
+  -webkit-transition  : 0.5s;
+  -o-transition       : 0.5s;
+  transition          : 0.5s;
+  margin-right: 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -1587,17 +1590,20 @@ figure figcaption {
 //--//-->   SIDEBAR RIGHT COLUMN
 ======================================*/
 #colorlib-aside {
-  padding-top       : 3em;
-  padding-bottom    : 40px;
-  float             : right;
-  width             : 300px;
-  position          : fixed;
-  overflow-y        : scroll;
-  z-index           : 1001;
-  background        : #f2f3f7;
-  -webkit-transition: 0.5s;
-  -o-transition     : 0.5s;
-  transition        : 0.5s;
+  padding-top                                         : 3em;
+  padding-bottom                                      : 40px;
+  padding-left: 0;
+  margin-block-start: 0;
+  right: 0;
+  /* Ensure it's fixed to the right right             : 0;*/
+  width                                               : 300px;
+  position                                            : fixed;
+  overflow-y                                          : scroll;
+  z-index                                             : 1001;
+  background                                          : #f2f3f7;
+  -webkit-transition                                  : 0.5s;
+  -o-transition                                       : 0.5s;
+  transition                                          : 0.5s;
 }
 
 @media screen and (max-width: 768px) {
@@ -1811,12 +1817,14 @@ figure figcaption {
 }
 
 .colorlib-social li {
-  padding: 0;
-  margin: 0;
+  padding   : 0;
+  margin    : 0;
   list-style: none;
-  display: inline-block;
-  zoom: 1; /* For IE6/7 support */
+  display   : inline-block;
+  zoom      : 1;
+  /* For IE6/7 support */
 }
+
 /*
 .colorlib-social li {
   padding   : 0;
@@ -1830,16 +1838,22 @@ figure figcaption {
 */
 
 .colorlib-social li a {
-  font-size: 22px;
-  color: #000;
-  padding: 10px;
-  display: inline-block;
-  zoom: 1; /* For IE6/7 support */
-  border-radius: 7px; /* Modern browsers */
-  -webkit-border-radius: 7px; /* Safari and older Chrome */
-  -moz-border-radius: 7px; /* Firefox */
-  -ms-border-radius: 7px; /* Older IE */
+  font-size            : 22px;
+  color                : #000;
+  padding              : 10px;
+  display              : inline-block;
+  zoom                 : 1;
+  /* For IE6/7 support */
+  border-radius        : 7px;
+  /* Modern browsers */
+  -webkit-border-radius: 7px;
+  /* Safari and older Chrome */
+  -moz-border-radius   : 7px;
+  /* Firefox */
+  -ms-border-radius    : 7px;
+  /* Older IE */
 }
+
 /*
 .colorlib-social li a {
   font-size            : 22px;
@@ -2173,3 +2187,7 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   -webkit-box-shadow: none;
   box-shadow        : none;
 }
+
+/*======================================
+                 END   
+======================================*/
