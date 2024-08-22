@@ -101,11 +101,17 @@ figure figcaption {
   width   : 100%;
   overflow: hidden;
   position: relative;
+  display : flex;
+  /* Use flexbox for layout */
 }
 
 .container-wrap {
   max-width: 1170px;
   margin   : 0 auto;
+  display  : flex;
+  /* Use flexbox to align children */
+  position : relative;
+  /* Ensure relative positioning */
 }
 
 
@@ -343,20 +349,25 @@ figure figcaption {
   position            : relative;
   /* Ensure the main column is positioned relative */
   width               : calc(100% - 300px);
-  left                : 0;
-  float             : left;
+  /*left              : 0;*/
+  float               : left;
   -webkit-transition  : 0.5s;
   -o-transition       : 0.5s;
   transition          : 0.5s;
-  margin-right: 0;
+  margin-left         : 0;
+  /* Ensure no space on the left */
+  order               : 1;
+  /* Ensure main content is first */
 }
 
+/*
 @media screen and (max-width: 768px) {
   #colorlib-main {
     width  : 100%;
     padding: 0 1em;
   }
 }
+  */
 
 /*======================================
 //--//-->   COLORLIB MAIN HERO
@@ -1590,23 +1601,48 @@ figure figcaption {
 //--//-->   SIDEBAR RIGHT COLUMN
 ======================================*/
 #colorlib-aside {
-  padding-top                                         : 3em;
-  padding-bottom                                      : 40px;
-  padding-left: 0;
-  margin-block-start: 0;
-  right: 0;
-  /* Ensure it's fixed to the right right             : 0;*/
-  width                                               : 300px;
-  position                                            : fixed;
-  overflow-y                                          : scroll;
-  z-index                                             : 1001;
-  background                                          : #f2f3f7;
-  -webkit-transition                                  : 0.5s;
-  -o-transition                                       : 0.5s;
-  transition                                          : 0.5s;
+  padding-top                 : 3em;
+  padding-bottom              : 40px;
+  right                       : 65px;
+  /*right                     : 0;*/
+  width                       : 300px;
+  position                    : fixed;
+  overflow-y                  : scroll;
+  z-index                     : 1001;
+  background                  : #f2f3f7;
+  -webkit-transition          : 0.5s;
+  -o-transition               : 0.5s;
+  transition                  : 0.5s;
+  -webkit-overflow-scrolling  : touch;
+  /* Smooth scrolling on touch devices */
+  margin-right                : 0;
+  /* Ensure no space on the right */
+
+  /* Fix to the right side */
+  top       : 0;
+  /* Align to the top */
+  height    : auto;
+  /* Ensure it doesn't stretch to the bottom */
+  max-height: 100vh;
+  /* Ensure it doesn't exceed viewport height */
+  order     : 2;
+  /* Ensure aside is second */
 }
 
-@media screen and (max-width: 768px) {
+/* Hide scrollbar for Webkit browsers */
+#colorlib-aside::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+#colorlib-aside {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width   : none;
+  /* Firefox */
+}
+
+/*@media screen and (max-width: 768px) {
   #colorlib-aside {
     width            : 300px;
     -moz-transform   : translateX(-300px);
@@ -1616,7 +1652,48 @@ figure figcaption {
     transform        : translateX(-300px);
     padding-top      : 4em;
   }
+}*/
+
+/* Media query for small screens */
+@media screen and (max-width: 768px) {
+  #colorlib-page {
+    flex-direction: column;
+    /* Stack elements vertically */
+  }
+
+  #colorlib-main {
+    width   : 100%;
+    position: relative;
+
+    /* Full width */
+    order: 2;
+    /* Move main content below aside */
+    right: 0;
+    Float: right;
+
+    /*padding: 0 1em;*/
+    margin-left: 0;
+  }
+
+  #colorlib-aside {
+    position         : fixed;
+    /* Change to relative positioning */
+    /*width          : 100%; /* Full width */
+    order            : 1;
+    /* Move aside above main content */
+    float            : left;
+    /* Float to the left */
+    left             : 0;
+    width            : 300px;
+    -moz-transform   : translateX(-300px);
+    -webkit-transform: translateX(-300px);
+    -ms-transform    : translateX(-300px);
+    -o-transform     : translateX(-300px);
+    transform        : translateX(-300px);
+    padding-top      : 4em;
+  }
 }
+
 
 #colorlib-aside .author-img {
   width                : 150px;
