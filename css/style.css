@@ -115,7 +115,7 @@ figure figcaption {
 /* Basic styling for the navigation bar */
 #top-colorlib-section {
   position            : fixed;
-  width               : 66.5%;
+  width               : 66.9%;
   height              : 30px;
   /* Make it the same width as the colorlib-main column */
   background-color    : #333;
