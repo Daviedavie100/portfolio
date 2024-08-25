@@ -45,6 +45,8 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
+	<!-- Chart Js-->
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
@@ -382,6 +384,12 @@
 									</div>
 								</div>
 							</div>
+
+							<div class="chart-area">
+								<canvas id="myChart" width="400" height="200"></canvas>
+							</div>
+
+							<script src="chart_js/skill-chart.js"></script>
 						</div>
 					</div>
 				</section> <!-- End: Skills Section -->
@@ -839,111 +847,111 @@
 							</div>
 						</div>
 						<div class="colorlib-feature">
-						<div class="contact-form text-center">
-							<div id="success"></div>
+							<div class="contact-form text-center">
+								<div id="success"></div>
 
-						<!--<div class="row">
+								<!--<div class="row">
 							<div class="right-content">
 								<div class="container">-->
 
 
-									<form id="contact" action="" method="post">
+								<form id="contact" action="" method="post">
 									<!--<form name="sentMessage" id="contactForm" novalidate="novalidate">-->
-										<div class="row">
-											<div class="col-md-6">
-												<fieldset>
-													<input name="name" type="text" class="form-control" id="name"
-														placeholder="Your name..." required="" />
-												</fieldset>
-											</div>
-											<div class="col-md-6">
-												<fieldset>
-													<input name="email" type="text" class="form-control" id="email"
-														placeholder="Your email..." required="" />
-												</fieldset>
-											</div>
-											<div class="col-md-12">
-												<fieldset>
-													<input name="subject" type="text" class="form-control" id="subject"
-														placeholder="Subject..." required="" />
-												</fieldset>
-											</div>
-											<div class="col-md-12">
-												<fieldset>
-													<textarea name="message" rows="6" class="form-control" id="message"
-														placeholder="Your message..." required=""></textarea>
-												</fieldset>
-											</div>
-											<div class="col-md-12">
-												<fieldset>
-													<button type="submit" id="form-submit" class="button">
-														Send Message
-													</button>
-												</fieldset>
-											</div>
+									<div class="row">
+										<div class="col-md-6">
+											<fieldset>
+												<input name="name" type="text" class="form-control" id="name"
+													placeholder="Your name..." required="" />
+											</fieldset>
 										</div>
-									</form>
-								</div>
+										<div class="col-md-6">
+											<fieldset>
+												<input name="email" type="text" class="form-control" id="email"
+													placeholder="Your email..." required="" />
+											</fieldset>
+										</div>
+										<div class="col-md-12">
+											<fieldset>
+												<input name="subject" type="text" class="form-control" id="subject"
+													placeholder="Subject..." required="" />
+											</fieldset>
+										</div>
+										<div class="col-md-12">
+											<fieldset>
+												<textarea name="message" rows="6" class="form-control" id="message"
+													placeholder="Your message..." required=""></textarea>
+											</fieldset>
+										</div>
+										<div class="col-md-12">
+											<fieldset>
+												<button type="submit" id="form-submit" class="button">
+													Send Message
+												</button>
+											</fieldset>
+										</div>
+									</div>
+								</form>
 							</div>
 						</div>
-
-
-
 					</div>
+
+
+
 			</div>
-			</section> <!-- End: Contact Section -->
+		</div>
+		</section> <!-- End: Contact Section -->
 
-		</div><!-- end:colorlib-main -->
+	</div><!-- end:colorlib-main -->
 
-		<!-- Sidebar -->
-		<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
+	<!-- Sidebar -->
+	<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
 
-			<!-- sidebar header -->
-			<div class="colorlib-aside-header">
-				<h1 id="colorlib-logo"><a href="index.html">David Owino
-						| Portfolio</a></h1>
-			</div>
+		<!-- sidebar header -->
+		<div class="colorlib-aside-header">
+			<h1 id="colorlib-logo"><a href="index.html">David Owino
+					| Portfolio</a></h1>
+		</div>
 
-			<div class="text-center">
+		<div class="text-center">
 
-				<!-- Author Image -->
-				<div class="author-img" style="background-image: url(images/about.jpg);"></div>
-				<span class="position"><a href="#">Data Analyst</a></span>
-			</div>
+			<!-- Author Image -->
+			<div class="author-img" style="background-image: url(images/about.jpg);"></div>
+			<span class="position"><a href="#">Data Analyst</a></span>
+		</div>
 
-			<!-- Main Navigation Menu -->
-			<nav id="colorlib-main-menu" role="navigation" class="navbar">
-				<div id="navbar" class="collapse">
-					<ul>
-						<li class="active"><a href="#" data-nav-section="home">Home</a></li>
-						<li><a href="#" data-nav-section="about">About</a></li>
-						<li><a href="#" data-nav-section="services">Services</a></li>
-						<li><a href="#" data-nav-section="skills">Skills</a></li>
-						<li><a href="#" data-nav-section="education">Education</a></li>
-						<li><a href="#" data-nav-section="experience">Experience</a></li>
-						<li><a href="#" data-nav-section="work">Work</a></li>
-						<li><a href="#" data-nav-section="blog">Blog</a></li>
-						<li><a href="#" data-nav-section="contact">Contact</a></li>
-					</ul>
-				</div>
-			</nav>
-
-			<!-- Footer Section -->
-			<div class="colorlib-footer">
+		<!-- Main Navigation Menu -->
+		<nav id="colorlib-main-menu" role="navigation" class="navbar">
+			<div id="navbar" class="collapse">
 				<ul>
-					<li><a href="#"><i class="icon-facebook2"></i></a></li>
-					<li><a href="#"><i class="icon-twitter2"></i></a></li>
-					<li><a href="#"><i class="icon-instagram"></i></a></li>
-					<li><a href="#"><i class="icon-linkedin2"></i></a></li>
+					<li class="active"><a href="#" data-nav-section="home">Home</a></li>
+					<li><a href="#" data-nav-section="about">About</a></li>
+					<li><a href="#" data-nav-section="services">Services</a></li>
+					<li><a href="#" data-nav-section="skills">Skills</a></li>
+					<li><a href="#" data-nav-section="education">Education</a></li>
+					<li><a href="#" data-nav-section="experience">Experience</a></li>
+					<li><a href="#" data-nav-section="work">Work</a></li>
+					<li><a href="#" data-nav-section="blog">Blog</a></li>
+					<li><a href="#" data-nav-section="contact">Contact</a></li>
 				</ul>
-				<p><small>&copy;
-						<script>document.write(new Date().getFullYear());</script> All rights
-						reserved. David Owino
-					</small></p>
-
 			</div>
+		</nav>
 
-		</aside><!-- end:colorlib-aside -->
+		<!-- Footer Section -->
+		<div class="colorlib-footer">
+			<ul>
+				<li><a href="#"><i class="icon-facebook2"></i></a></li>
+				<li><a href="#"><i class="icon-twitter2"></i></a></li>
+				<li><a href="#"><i class="icon-instagram"></i></a></li>
+				<li><a href="#"><i class="icon-linkedin2"></i></a></li>
+			</ul>
+			<p><small>&copy;
+					<script>document.write(new Date().getFullYear());</script> All rights
+					reserved. David Owino
+				</small></p>
+
+		</div>
+
+	</aside><!-- end:colorlib-aside -->
 
 	</div><!-- end:container-wrap -->
 
