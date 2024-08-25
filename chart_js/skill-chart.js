@@ -1,12 +1,17 @@
 document.addEventListener('DOMContentLoaded', function () {
+     // Get the canvas element by ID and set up the context for Chart.js
     var ctx = document.getElementById('myChart').getContext('2d');
+
+     // Create a new bar chart
     var myChart = new Chart(ctx, {
-        type: 'bar',
+        type: 'bar', // Define the chart type as 'bar'
         data: {
-            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+
+              // Define the labels for the x-axis
+            labels: ['Photoshop', 'jQuery', 'HTML5', 'CSS3', 'WordPress', 'SEO'],
             datasets: [{
-                label: '# of Votes',
-                data: [12, 19, 3, 5, 2, 3],
+                label: 'Skill Level (%)', // Label for the dataset
+                data: [75, 60, 85, 90, 70, 80], // Percentages
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.2)',
                     'rgba(54, 162, 235, 0.2)',
@@ -23,15 +28,56 @@ document.addEventListener('DOMContentLoaded', function () {
                     'rgba(153, 102, 255, 1)',
                     'rgba(255, 159, 64, 1)'
                 ],
-                borderWidth: 1
+                borderWidth: 1, // Set the border width of the bars
+                barPercentage: 0.5, // Adjust the width of the bars (0.5 = 50% of default width)
+                categoryPercentage: 0.6 // Reduce spacing between bars
             }]
         },
         options: {
+            plugins: {
+                tooltip: {
+                    enabled: false // Disables the tooltip on hover
+                },
+                datalabels: {
+                    display: true, // Enable data labels on the bars----
+                    anchor: 'end',
+                    align: 'end',
+                    formatter: function(value) {
+                        return value + '%'; // Add '%' symbol to the value
+                    },
+                    color: '#000',// Set the color of the data labels
+                    font: {
+                        weight: 'bold', // Make the data labels bold
+                        size: 14 // Set font size for better visibility
+                    }
+                }
+            },
             scales: {
+                x: {
+                    grid: {
+                        display: false // Remove the grid lines on the x-axis
+                    }
+                },
                 y: {
-                    beginAtZero: true
+                    beginAtZero: true,
+                    display: false // Remove the y-axis itself
+                }
+            },
+            plugins: {
+                legend: {
+                    display: false // Hide the legend
+                },
+                datalabels: {
+                    display: true, // Show data labels
+                    color: 'black',
+                    anchor: 'end',
+                    align: 'top',
+                    font: {
+                        weight: 'bold'
+                    }
                 }
             }
-        }
+        },
+        plugins: [ChartDataLabels] // Add this plugin to enable data labels
     });
 });
