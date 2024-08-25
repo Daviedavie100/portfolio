@@ -547,7 +547,7 @@ figure figcaption {
 //--//-->   COLORLIB MAIN MENU
 ======================================*/
 .colorlib-experience,
-.colorlib-skills,
+
 .colorlib-education,
 .colorlib-blog,
 .colorlib-work,
@@ -564,7 +564,7 @@ figure figcaption {
 @media screen and (max-width: 768px) {
 
   .colorlib-experience,
-  .colorlib-skills,
+
   .colorlib-education,
   .colorlib-blog,
   .colorlib-work,
@@ -925,6 +925,62 @@ figure figcaption {
 /*======================================
   SKILLS
 ======================================*/
+
+.colorlib-skills {
+  padding-top   : 4em;
+  padding-bottom: 9em;
+  clear         : both;
+  width         : 100%;
+  display       : block;
+}
+
+@media screen and (max-width: 768px) {
+  .colorlib-skills {
+    padding-top   : 5em;
+    padding-bottom: 8em;
+  }
+}
+
+.colorlib-skills-narrow-content {
+  padding: 0 2.5em;
+}
+
+@media screen and (max-width: 768px) {
+  .colorlib-skills-narrow-content {
+    padding: 0;
+  }
+}
+
+.skills-heading-meta {
+  margin-bottom : 15px;
+  display       : block;
+  font-size     : 10px;
+  text-transform: uppercase;
+  color         : #999999;
+  font-weight   : 500;
+  letter-spacing: 5px;
+}
+
+.skills-colorlib-heading {
+  font-size     : 18px;
+  margin-bottom : 4em;
+  font-weight   : 700;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  line-height   : 1.8;
+  position      : relative;
+}
+
+.skills-colorlib-heading span {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .skills-colorlib-heading {
+    margin-bottom: 3em;
+  }
+}
+
 .progress-wrap h3 {
   font-size    : 16px;
   font-family  : "Quicksand", Arial, sans-serif;
@@ -1048,11 +1104,11 @@ figure figcaption {
   color: #4054b2;
 }
 
-.chart-area {
-  display: flex;
+.skills-chart-area {
+  display        : flex;
   justify-content: center;
-  align-items: center;
-  height: 100%;
+  align-items    : center;
+  height         : 100%;
 }
 
 canvas {
@@ -1519,39 +1575,39 @@ section.contact-me {
 }
 
 #contact input {
-  background-color: rgba(250,250,250,0.1);
-  border: 1px solid rgb(90, 3, 252);
-  border-radius: 0px;
-  margin-bottom: 30px;
-  color: #fff;
-  font-size: 14px;
-  height: 40px;
-  line-height: 40px;
-  width: 100%;
-  padding-left: 15px;
+  background-color: rgba(250, 250, 250, 0.1);
+  border          : 1px solid rgb(90, 3, 252);
+  border-radius   : 0px;
+  margin-bottom   : 30px;
+  color           : #fff;
+  font-size       : 14px;
+  height          : 40px;
+  line-height     : 40px;
+  width           : 100%;
+  padding-left    : 15px;
 }
 
 #contact input:focus {
-  outline: none;
+  outline   : none;
   box-shadow: none;
 }
 
 #contact textarea {
-  background-color: rgba(250,250,250,0.1);
-  border: 1px solid rgba(90,3,252);
-  border-radius: 0px;
-  margin-bottom: 30px;
-  color: #fff;
-  font-size: 14px;
-  height: 180px;
-  max-height: 220px;
-  line-height: 40px;
-  width: 100%;
-  padding-left: 15px;
+  background-color: rgba(250, 250, 250, 0.1);
+  border          : 1px solid rgba(90, 3, 252);
+  border-radius   : 0px;
+  margin-bottom   : 30px;
+  color           : #fff;
+  font-size       : 14px;
+  height          : 180px;
+  max-height      : 220px;
+  line-height     : 40px;
+  width           : 100%;
+  padding-left    : 15px;
 }
 
 #contact textarea:focus {
-  outline: none;
+  outline   : none;
   box-shadow: none;
 }
 
@@ -1561,14 +1617,14 @@ section.contact-me {
 
 @media screen and (max-width: 1680px) {
   .menu {
-      left: 5%;
+    left: 5%;
   }
 
   .section {
-      color: #fff;
-      width: 65%;
-      right: 5%;
-      left: 30%;
+    color: #fff;
+    width: 65%;
+    right: 5%;
+    left : 30%;
   }
 }
 
