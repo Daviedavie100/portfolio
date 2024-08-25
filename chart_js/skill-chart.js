@@ -1,13 +1,13 @@
 document.addEventListener('DOMContentLoaded', function () {
-     // Get the canvas element by ID and set up the context for Chart.js
+    // Get the canvas element by ID and set up the context for Chart.js
     var ctx = document.getElementById('myChart').getContext('2d');
 
-     // Create a new bar chart
+    // Create a new bar chart
     var myChart = new Chart(ctx, {
         type: 'bar', // Define the chart type as 'bar'
         data: {
 
-              // Define the labels for the x-axis
+            // Define the labels for the x-axis
             labels: ['Photoshop', 'jQuery', 'HTML5', 'CSS3', 'WordPress', 'SEO'],
             datasets: [{
                 label: 'Skill Level (%)', // Label for the dataset
@@ -34,47 +34,47 @@ document.addEventListener('DOMContentLoaded', function () {
             }]
         },
         options: {
-            plugins: {
-                tooltip: {
-                    enabled: false // Disables the tooltip on hover
-                },
-                datalabels: {
-                    display: true, // Enable data labels on the bars----
-                    anchor: 'end',
-                    align: 'end',
-                    formatter: function(value) {
-                        return value + '%'; // Add '%' symbol to the value
-                    },
-                    color: '#000',// Set the color of the data labels
-                    font: {
-                        weight: 'bold', // Make the data labels bold
-                        size: 14 // Set font size for better visibility
-                    }
-                }
-            },
-            scales: {
-                x: {
-                    grid: {
-                        display: false // Remove the grid lines on the x-axis
-                    }
-                },
-                y: {
-                    beginAtZero: true,
-                    display: false // Remove the y-axis itself
+            layout: {
+                padding: {
+                    top: 25, // Increase this value to add space at the top
+                    bottom: 5 // Optionally add space at the bottom
                 }
             },
             plugins: {
                 legend: {
                     display: false // Hide the legend
                 },
+                tooltip: {
+                    enabled: false // Disables the tooltip on hover
+                },
                 datalabels: {
-                    display: true, // Show data labels
-                    color: 'black',
+                    display: true, // Enable data labels on the bars
                     anchor: 'end',
-                    align: 'top',
+                    align: 'end', // Adjust the alignment
+                    formatter: function (value) {
+                        return value + '%'; // Add '%' symbol to the value
+                    },
+                    color: '#000', // Set the color of the data labels
                     font: {
-                        weight: 'bold'
+                        weight: 'bold', // Make the data labels bold
+                        size: 14 // Set font size for better visibility
                     }
+                }
+            },
+            responsive: true,
+            maintainAspectRatio: false, // Ensure responsiveness
+            scales: {
+                x: {
+                    grid: {
+                        display: false // Remove the grid lines on the x-axis
+                    },
+                    ticks: {
+                        padding: 10 // Increase padding between labels and bars
+                    },
+                },
+                y: {
+                    beginAtZero: true,
+                    display: false // Remove the y-axis itself
                 }
             }
         },
