@@ -552,8 +552,7 @@ figure figcaption {
 .colorlib-blog,
 .colorlib-work,
 .colorlib-about,
-.colorlib-services,
-.colorlib-contact {
+.colorlib-services {
   padding-top   : 4em;
   padding-bottom: 9em;
   clear         : both;
@@ -569,8 +568,7 @@ figure figcaption {
   .colorlib-blog,
   .colorlib-work,
   .colorlib-about,
-  .colorlib-services,
-  .colorlib-contact {
+  .colorlib-services{
     padding-top   : 5em;
     padding-bottom: 8em;
   }
@@ -1569,9 +1567,65 @@ canvas {
 /*======================================
   CONTACT
 ======================================*/
+.colorlib-contact {
+  padding-top   : 4em;
+  padding-bottom: 9em;
+  clear         : both;
+  width         : 100%;
+  display       : block;
+  background-color: hsla(263, 66%, 78%, 0.719);
+}
+
+@media screen and (max-width: 768px) {
+ .colorlib-contact {
+    padding-top   : 5em;
+    padding-bottom: 8em;
+  }
+}
+
+.colorlib-contact-narrow-content {
+  padding: 0 2.5em;
+}
+
+@media screen and (max-width: 768px) {
+  .colorlib-contact-narrow-content {
+    padding: 0;
+  }
+}
+
+.contact-heading-meta {
+  margin-bottom : 15px;
+  display       : block;
+  font-size     : 10px;
+  text-transform: uppercase;
+  color         : #999999;
+  font-weight   : 500;
+  letter-spacing: 5px;
+}
+
+.contact-colorlib-heading {
+  font-size     : 18px;
+  margin-bottom : 4em;
+  font-weight   : 700;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  line-height   : 1.8;
+  position      : relative;
+}
+
+.contact-colorlib-heading span {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-colorlib-heading {
+    margin-bottom: 3em;
+  }
+}
+
 /* Contact Me */
 
-#colorlib-feature {
+#contact-colorlib-feature {
   text-align   : left;
   width        : 100%;
   float        : left;
@@ -1588,7 +1642,7 @@ section.contact-me {
   border          : 1px solid rgb(90, 3, 252);
   border-radius   : 0px;
   margin-bottom   : 30px;
-  color           : #fff;
+  color           : #000;
   font-size       : 14px;
   height          : 40px;
   line-height     : 40px;
@@ -1606,7 +1660,7 @@ section.contact-me {
   border          : 1px solid rgba(90, 3, 252);
   border-radius   : 0px;
   margin-bottom   : 30px;
-  color           : #fff;
+  color           :#000;
   font-size       : 14px;
   height          : 180px;
   max-height      : 220px;
@@ -1745,6 +1799,9 @@ section.contact-me {
 #message {
   height: 130px;
 }
+
+
+
 
 /*======================================
 //--//-->   SIDEBAR RIGHT COLUMN
