@@ -927,11 +927,12 @@ figure figcaption {
 ======================================*/
 
 .colorlib-skills {
-  padding-top   : 4em;
-  padding-bottom: 9em;
+  padding-top   : 0;/*4em9em*/
+  padding-bottom: 0;
   clear         : both;
   width         : 100%;
   display       : block;
+  max-height: fit-content;
 }
 
 @media screen and (max-width: 768px) {
@@ -942,7 +943,7 @@ figure figcaption {
 }
 
 .colorlib-skills-narrow-content {
-  padding: 0 2.5em;
+  padding: 0 2.5em;/*0 2.5em*/
 }
 
 @media screen and (max-width: 768px) {
@@ -1103,16 +1104,16 @@ figure figcaption {
 .progress-bar.color-6 span {
   color: #4054b2;
 }
-
+/*
 .skills-chart-area {
   display        : flex;
   justify-content: center;
   align-items    : center;
   height         : 100%;
 }
-
+*/
 canvas {
-  border: 1px solid #000;
+  border: 0;
 }
 
 
