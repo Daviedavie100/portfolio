@@ -1048,6 +1048,18 @@ figure figcaption {
   color: #4054b2;
 }
 
+.chart-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+canvas {
+  border: 1px solid #000;
+}
+
+
 /*======================================
   EDUCATION
 ======================================*/
