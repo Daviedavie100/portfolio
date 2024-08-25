@@ -981,22 +981,26 @@ figure figcaption {
   }
 }
 
-
-
 .hard-skills-chart-area {
- 
-  display: flex;
+  padding        : 5px;
+  display        : flex;
   justify-content: center;
-  align-items: center;
-  height: 100%; /* Ensure the area takes full height */
+  align-items    : center;
+  height         : 100%;
 }
 
 canvas {
-  width: 100% !important; /* Force canvas to take full width */
-  height: 100% !important; /* Force canvas to take full height */
+  width : 100% !important;
+  height: 100% !important;
 }
 
+.soft-skills-area {
+  padding: 5px;
 
+  justify-content: center;
+  align-items    : center;
+  height         : 100%;
+}
 
 .progress-wrap h3 {
   font-size    : 16px;
@@ -1120,8 +1124,6 @@ canvas {
 .progress-bar.color-6 span {
   color: #4054b2;
 }
-
-
 
 /*======================================
   EDUCATION
