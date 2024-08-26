@@ -105,9 +105,10 @@ figure figcaption {
   overflow        : visible;
   position        : relative;
   display         : flex;
-  background-color: #ffff;
-  padding-left    : 5px;
-  padding-right   : 5px;
+  background-color: #fff;
+  /*#d4d4dc-silver #0a1828-dark classic blue*/
+  padding-left    : 15px;
+  padding-right   : 15px;
 }
 
 .container-wrap {
@@ -281,40 +282,120 @@ figure figcaption {
 /********* TOP-COLORLIB MAIN CSS *********/
 /*****************************************/
 
-
-
 #top-colorlib-section {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: calc(100% - 300px);
-  z-index: 2000; /* Ensures it stays on top of other elements */
-  background-color: #6023ef; /* Adjust background color as needed */
-  padding: 10px 0;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: adds a shadow for better visibility */
+  position        : fixed;
+  top             : 0;
+  left            : 5x;
+  width           : calc(100% - 330px - 5px);
+  z-index         : 2000;
+  /* Ensures it stays on top of other elements */
+  background-color: #6023ef;
+  /* padding      : 10px 0;*/
+  box-shadow      : 0 2px 5px rgba(0, 0, 0, 0.2);
+  /* adds shadow for better visibility */
+  height          : 50px;
+
+  display     : flex;
+  align-items : normal;
+  padding-left: 10px;
+  /*padding   : 10px 15px;*/
+  padding-top : 5px;
 }
 
-#top-colorlib-section .top-colorlib-menu nav ul {
-  list-style: none;
-  margin: 0;
+#logo {
+  margin : 0;
   padding: 0;
-  text-align: center;
+  top    : 5px;
 }
 
-#top-colorlib-section .top-colorlib-menu nav ul li {
-  display: inline-block;
-  margin-right: 15px;
+#logo h3 a {
+  font-size: 1.2em;
+  /* Ensure the same font size */
 }
 
-#top-colorlib-section .top-colorlib-menu nav ul li a {
+#logo a {
   text-decoration: none;
-  color: white; /* Adjust text color as needed */
-  font-weight: bold;
+  color          : #333;
 }
 
-#top-colorlib-section .top-colorlib-menu nav ul li a:hover {
-  color: #ffde00; /* Change to a hover color */
+#logo a:hover {
+  text-decoration: underline;
 }
+
+
+
+
+/* Hide the top section on mobile devices */
+@media (max-width: 768px) {
+  #top-colorlib-section {
+    /*display:none;*/
+    display: inline;
+    width  : 100%;
+    left   : 0;
+  }
+}
+
+
+.top-colorlib-menu {
+  width  : 100%;
+  padding: 10px 15px;
+}
+
+.top-colorlib-menu ul {
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+  list-style     : none;
+  margin         : 0;
+  padding        : 0;
+}
+
+.top-colorlib-menu ul li {
+  margin: 0 15px;
+  /* Adjust spacing between items */
+}
+
+.top-colorlib-menu ul li a {
+  text-decoration: none;
+  color          : #333;
+  font-size      : 1.2em;
+  /* Ensure readability on different screens */
+}
+
+.top-colorlib-menu ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .top-colorlib-menu ul {
+    flex-direction: column;
+    /* Stack items vertically on smaller screens */
+    align-items   : flex-start;
+  }
+
+  .top-colorlib-menu ul li {
+    margin: 10px 0;
+    /* Adjust spacing for vertical layout */
+  }
+
+  .top-colorlib-menu ul li a {
+    font-size: 1.1em;
+    /* Slightly reduce font size on small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .top-colorlib-menu {
+    padding: 5px 10px;
+  }
+
+  .top-colorlib-menu ul li a {
+    font-size: 1em;
+    /* Further reduce font size for very small screens */
+  }
+}
+
 
 
 /*******************************/
@@ -1720,11 +1801,11 @@ canvas {
   padding-top               : 3em;
   padding-bottom            : 40px;
   float                     : right;
-  right                     : 5px;
+  right                     : 15px;
   width                     : 300px;
   position                  : fixed;
   overflow-y                : auto;
-  z-index                   : 1001;
+  z-index                   : 2001;
   background                : #2d545e;
   /*#393f4d;*/
   -webkit-transition        : 0.5s;
