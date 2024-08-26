@@ -568,7 +568,7 @@ figure figcaption {
   .colorlib-blog,
   .colorlib-work,
   .colorlib-about,
-  .colorlib-services{
+  .colorlib-services {
     padding-top   : 5em;
     padding-bottom: 8em;
   }
@@ -1568,16 +1568,16 @@ canvas {
   CONTACT
 ======================================*/
 .colorlib-contact {
-  padding-top   : 4em;
-  padding-bottom: 9em;
-  clear         : both;
-  width         : 100%;
-  display       : block;
+  padding-top     : 4em;
+  padding-bottom  : 9em;
+  clear           : both;
+  width           : 100%;
+  display         : block;
   background-color: hsla(263, 66%, 78%, 0.719);
 }
 
 @media screen and (max-width: 768px) {
- .colorlib-contact {
+  .colorlib-contact {
     padding-top   : 5em;
     padding-bottom: 8em;
   }
@@ -1623,7 +1623,93 @@ canvas {
   }
 }
 
-/* Contact Me */
+
+
+/*******************************/
+/********* Contact CSS *********/
+/*******************************/
+.contact-section {
+  position  : relative;
+  width     : 100%;
+  margin    : 45px 0;
+  background: #6023ef;
+}
+
+.contact-section .container-fluid {
+  background     : url(../images/contact.jpg) left center no-repeat;
+  background-size: contain;
+}
+
+.contact-section .contact-form {
+  position  : relative;
+  padding   : 90px 5px 90px 45px;
+  /*90px 0 90px 45px*/
+  background: #EF233C;
+}
+
+.contact-section .contact-form input {
+  color        : #ffffff;
+  padding      : 15px 0;
+  background   : none;
+  border-radius: 0;
+  border       : none;
+  border-bottom: 1px solid rgba(256, 256, 256, .5);
+}
+
+.contact-section .contact-form textarea {
+  color        : #ffffff;
+  height       : 90px;
+  padding      : 15px 0;
+  background   : none;
+  border-radius: 0;
+  border       : none;
+  border-bottom: 1px solid rgba(256, 256, 256, .5);
+}
+
+.contact-section .contact-form .form-control::placeholder {
+  color  : #ffffff;
+  opacity: 1;
+}
+
+.contact-section .contact-form .form-control:-ms-input-placeholder,
+.contact-section .contact-form .form-control::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.contact-section .contact-form .btn {
+  margin-top: 35px;
+  color     : #EF233C;
+  background: #ffffff;
+  box-shadow: inset 0 0 0 50px #ffffff;
+}
+
+.contact-section .contact-form .btn:hover {
+  color       : #ffffff;
+  background  : transparent;
+  box-shadow  : inset 0 0 0 0 #ffffff;
+  border-color: #ffffff;
+}
+
+.contact-section .help-block ul {
+  margin         : 0;
+  padding        : 0;
+  list-style-type: none;
+  font-size      : 14px;
+  font-style     : italic;
+  color          : #ffffff;
+}
+
+@media (max-width: 767.98px) {
+  .contact .container-fluid {
+    background: none;
+  }
+
+  .contact-section .contact-form {
+    padding: 90px 0;
+  }
+}
+
+/* Contact Me 
 
 #contact-colorlib-feature {
   text-align   : left;
@@ -1690,7 +1776,7 @@ section.contact-me {
     left : 30%;
   }
 }
-
+*/
 /*.colorlib-feature {
   text-align   : left;
   width        : 100%;
