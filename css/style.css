@@ -1564,9 +1564,10 @@ canvas {
   width: 100%;
 }
 
-/*======================================
-  CONTACT
-======================================*/
+/*******************************/
+/********* CONTACT CSS *********/
+/*******************************/
+
 .colorlib-contact {
   padding-top     : 4em;
   padding-bottom  : 9em;
@@ -1623,19 +1624,17 @@ canvas {
   }
 }
 
-
-
-/*******************************/
-/********* Contact CSS *********/
-/*******************************/
 .contact-area {
-  position  : relative;
-  /*margin  : 45px 0;*/
-  width     : 100%;
-  background: #6023ef;
+  position    : relative;
+  margin    : 0;
+  width       : 100%;
+  background  : #EF233C;
 }
 
 .contact-area .container-fluid {
+  /*padding-right : 10px;
+  padding-left: 10px;*/
+  margin         : 0;
   background     : url(../images/contact.jpg) left center no-repeat;
   background-size: contain;
 }
@@ -1644,7 +1643,8 @@ canvas {
   position  : relative;
   padding   : 90px 0 90px 45px;
   background: #EF233C;
-
+  width     : 100%;
+  box-sizing: border-box;
 }
 
 .contact-area .contact-form input {
@@ -1710,149 +1710,7 @@ canvas {
   }
 }
 
-/* Contact Me 
-
-#contact-colorlib-feature {
-  text-align   : left;
-  width        : 100%;
-  float        : left;
-  margin-bottom: 40px;
-  position     : relative;
-}
-
-section.contact-me {
-  border-bottom: none;
-}
-
-#contact input {
-  background-color: rgba(250, 250, 250, 0.1);
-  border          : 1px solid rgb(90, 3, 252);
-  border-radius   : 0px;
-  margin-bottom   : 30px;
-  color           : #000;
-  font-size       : 14px;
-  height          : 40px;
-  line-height     : 40px;
-  width           : 100%;
-  padding-left    : 15px;
-}
-
-#contact input:focus {
-  outline   : none;
-  box-shadow: none;
-}
-
-#contact textarea {
-  background-color: rgba(250, 250, 250, 0.1);
-  border          : 1px solid rgba(90, 3, 252);
-  border-radius   : 0px;
-  margin-bottom   : 30px;
-  color           :#000;
-  font-size       : 14px;
-  height          : 180px;
-  max-height      : 220px;
-  line-height     : 40px;
-  width           : 100%;
-  padding-left    : 15px;
-}
-
-#contact textarea:focus {
-  outline   : none;
-  box-shadow: none;
-}
-
-#contact {
-  text-align: center;
-}
-
-@media screen and (max-width: 1680px) {
-  .menu {
-    left: 5%;
-  }
-
-  .section {
-    color: #fff;
-    width: 65%;
-    right: 5%;
-    left : 30%;
-  }
-}
-*/
-/*.colorlib-feature {
-  text-align   : left;
-  width        : 100%;
-  float        : left;
-  margin-bottom: 40px;
-  position     : relative;
-}
-
-.colorlib-feature .colorlib-icon {
-  position             : absolute;
-  top                  : 0;
-  left                 : 0;
-  width                : 100px;
-  height               : 100px;
-  display              : table;
-  text-align           : center;
-  background           : #f2f3f7;
-  -webkit-border-radius: 2px;
-  -moz-border-radius   : 2px;
-  -ms-border-radius    : 2px;
-  border-radius        : 2px;
-}
-
-.colorlib-feature .colorlib-icon i {
-  display       : table-cell;
-  vertical-align: middle;
-  color         : #2c98f0;
-  font-size     : 60px;
-  height        : 100px;
-}
-
-@media screen and (max-width: 1200px) {
-  .colorlib-feature .colorlib-icon i {
-    font-size: 40px;
-  }
-}
-
-.colorlib-feature .colorlib-text {
-  padding-left: 120px;
-  width       : 100%;
-}
-
-.colorlib-feature .colorlib-text h2,
-.colorlib-feature .colorlib-text h3 {
-  margin : 0;
-  padding: 0;
-}
-
-.colorlib-feature .colorlib-text h3 {
-  font-weight   : 500;
-  margin-bottom : 20px;
-  color         : rgba(0, 0, 0, 0.7);
-  font-size     : 14px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-}
-
-.colorlib-feature.colorlib-feature-sm .colorlib-text {
-  margin-top: 30px;
-}
-
-.colorlib-feature.colorlib-feature-sm .colorlib-icon i {
-  color    : #2c98f0;
-  font-size: 40px;
-}
-
-@media screen and (max-width: 1200px) {
-  .colorlib-feature.colorlib-feature-sm .colorlib-icon i {
-    font-size: 28px;
-  }
-}*/
-
-
-
-/*Form*/
+/*Form control*/
 .form-control {
   -webkit-appearance   : none;
   -moz-appearance      : none;
@@ -1872,19 +1730,6 @@ section.contact-me {
   -moz-border-radius   : 0;
   -ms-border-radius    : 0;
   border-radius        : 0;
-}
-
-.form-control:active,
-.form-control:focus {
-  outline           : none;
-  -webkit-box-shadow: none;
-  box-shadow        : none;
-  border-color      : transparent;
-  background        : #f0f0f0;
-}
-
-#message {
-  height: 130px;
 }
 
 
