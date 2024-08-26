@@ -285,21 +285,19 @@ figure figcaption {
 #top-colorlib-section {
   position        : fixed;
   top             : 0;
-  left            : 5x;
-  width           : calc(100% - 330px - 5px);
+  left            : 5px;
+  width           : calc(100% - 330px - 10px);
+  /* Adjusted calculation */
   z-index         : 2000;
-  /* Ensures it stays on top of other elements */
   background-color: #6023ef;
-  /* padding      : 10px 0;*/
-  box-shadow      : 0 2px 5px rgba(0, 0, 0, 0.2);
-  /* adds shadow for better visibility */
   height          : 50px;
-
-  display     : flex;
-  align-items : normal;
-  padding-left: 10px;
-  /*padding   : 10px 15px;*/
-  padding-top : 5px;
+  display         : flex;
+  align-items     : center;
+  /* Center items vertically */
+  padding-left    : 10px;
+  padding-right   : 10px;
+  justify-content : space-between;
+  box-shadow      : 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 #logo {
@@ -308,9 +306,10 @@ figure figcaption {
   top    : 5px;
 }
 
+
+
 #logo h3 a {
   font-size: 1.2em;
-  /* Ensure the same font size */
 }
 
 #logo a {
@@ -322,80 +321,35 @@ figure figcaption {
   text-decoration: underline;
 }
 
-
-
-
-/* Hide the top section on mobile devices */
-@media (max-width: 768px) {
-  #top-colorlib-section {
-    /*display:none;*/
-    display: inline;
-    width  : 100%;
-    left   : 0;
-  }
+#top-colorlib-section .col-md-9 {
+  flex: 1;
 }
 
-
-.top-colorlib-menu {
-  width  : 100%;
-  padding: 10px 15px;
-}
-
-.top-colorlib-menu ul {
+#top-colorlib-section .top-colorlib-menu ul {
   display        : flex;
-  justify-content: center;
-  align-items    : center;
+  justify-content: flex-end;
   list-style     : none;
   margin         : 0;
   padding        : 0;
 }
 
-.top-colorlib-menu ul li {
-  margin: 0 15px;
-  /* Adjust spacing between items */
+#top-colorlib-section .top-colorlib-menu ul li {
+  margin: 0 10px;
 }
 
-.top-colorlib-menu ul li a {
+#top-colorlib-section .top-colorlib-menu ul li a {
   text-decoration: none;
-  color          : #333;
+  color          : #fff;
+  /* Adjust color for better contrast */
   font-size      : 1.2em;
-  /* Ensure readability on different screens */
 }
 
-.top-colorlib-menu ul li a:hover {
-  text-decoration: underline;
-}
-
-/* Responsive adjustments */
 @media (max-width: 768px) {
-  .top-colorlib-menu ul {
-    flex-direction: column;
-    /* Stack items vertically on smaller screens */
-    align-items   : flex-start;
-  }
-
-  .top-colorlib-menu ul li {
-    margin: 10px 0;
-    /* Adjust spacing for vertical layout */
-  }
-
-  .top-colorlib-menu ul li a {
-    font-size: 1.1em;
-    /* Slightly reduce font size on small screens */
+  #top-colorlib-section {
+    width: 100%;
+    left : 0;
   }
 }
-
-@media (max-width: 480px) {
-  .top-colorlib-menu {
-    padding: 5px 10px;
-  }
-
-  .top-colorlib-menu ul li a {
-    font-size: 1em;
-    /* Further reduce font size for very small screens */
-  }
-}
-
 
 
 /*******************************/
