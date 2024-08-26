@@ -96,9 +96,9 @@ figure figcaption {
   background: #2c98f0;
 }
 
-/*======================================
-//--//-->   COLORLIB PAGE AND WRAP
-======================================*/
+/*************************************/
+/********* COLORLIB PAGE CSS *********/
+/*************************************/
 
 #colorlib-page {
   width           : 100%;
@@ -144,25 +144,6 @@ figure figcaption {
   border-bottom: none !important;
 }
 
-/*
-.colorlib-nav-toggle i {
-  position          : relative;
-  display           : -moz-inline-stack;
-  display           : inline-block;
-  zoom              : 1;
-  *display          : inline;
-  width             : 30px;
-  height            : 2px;
-  color             : #000;
-  font              : bold 14px/.4 Helvetica;
-  text-transform    : uppercase;
-  text-indent       : -55px;
-  background        : #000;
-  -webkit-transition: all .2s ease-out;
-  -o-transition     : all .2s ease-out;
-  transition        : all .2s ease-out;
-}
-*/
 .colorlib-nav-toggle i {
   position          : relative;
   display           : inline-block;
@@ -296,56 +277,49 @@ figure figcaption {
   }
 }
 
-/*======================================
-//--//-->   TOP-COLORLIB MAIN
-======================================*/
+/*****************************************/
+/********* TOP-COLORLIB MAIN CSS *********/
+/*****************************************/
 
-/* Basic styling for the navigation bar */
+
+
 #top-colorlib-section {
-  position            : fixed;
-  width               : 66.9%;
-  height              : 30px;
-  /* Make it the same width as the colorlib-main column */
-  background-color    : #333;
-  /* Adjust as needed */
-  z-index             : 1000;
-  /* Ensures it stays on top of other elements */
-  /*background-color  : #333;*/
-  /* Background color of the nav bar */
-  /*text-align        : right; /* Align contents to the right */
-  /*padding           : 50px, 0px, 5px, 0px;*/
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: calc(100% - 300px);
+  z-index: 2000; /* Ensures it stays on top of other elements */
+  background-color: #6023ef; /* Adjust background color as needed */
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: adds a shadow for better visibility */
 }
 
-.top-colorlib-menu nav ul {
-  list-style-type  : none;
-  /*margin         : 0;*/
-  overflow         : hidden;
-  text-align       : center;
+#top-colorlib-section .top-colorlib-menu nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
-.top-colorlib-menu nav ul li {
-  display     : inline;
-  /* Ensures the menu items are horizontal */
-  margin-right: 20px;
+#top-colorlib-section .top-colorlib-menu nav ul li {
+  display: inline-block;
+  margin-right: 15px;
 }
 
-.top-colorlib-menu nav ul li a {
-  color          : white;
+#top-colorlib-section .top-colorlib-menu nav ul li a {
   text-decoration: none;
-  display        : inline-block;
+  color: white; /* Adjust text color as needed */
+  font-weight: bold;
 }
 
-.top-colorlib-menu nav ul li a:hover {
-  background-color: #111;
-  /* Hover effect */
+#top-colorlib-section .top-colorlib-menu nav ul li a:hover {
+  color: #ffde00; /* Change to a hover color */
 }
 
-/* Hide the top section on mobile devices */
-@media (max-width: 768px) {
-  #top-section {
-    display: none;
-  }
-}
+
+/*******************************/
+/********* SKILLS CSS *********/
+/*******************************/
 
 /*======================================
 //--//-->   COLORLIB MAIN PAGE
