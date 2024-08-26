@@ -285,15 +285,13 @@ figure figcaption {
 #top-colorlib-section {
   position        : fixed;
   top             : 0;
-  left            : 5px;
-  width           : calc(100% - 330px - 10px);
-  /* Adjusted calculation */
+  left            : 15px;
+  width           : calc(100% - 330px - 5px);
   z-index         : 2000;
   background-color: #6023ef;
   height          : 50px;
   display         : flex;
   align-items     : center;
-  /* Center items vertically */
   padding-left    : 10px;
   padding-right   : 10px;
   justify-content : space-between;
@@ -303,7 +301,6 @@ figure figcaption {
 #logo {
   margin : 0;
   padding: 0;
-  top    : 5px;
 }
 
 
@@ -324,6 +321,8 @@ figure figcaption {
 #top-colorlib-section .col-md-9 {
   flex: 1;
 }
+
+
 
 #top-colorlib-section .top-colorlib-menu ul {
   display        : flex;
