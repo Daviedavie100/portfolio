@@ -1574,7 +1574,7 @@ canvas {
   clear           : both;
   width           : 100%;
   display         : block;
-  background-color: hsla(263, 66%, 78%, 0.719);
+  background-color: #393f4d;/*#178582;*/
 }
 
 @media screen and (max-width: 768px) {
@@ -1733,11 +1733,10 @@ canvas {
 }
 
 
+/**************************************/
+/********* SIDEBAR COLUMN CSS *********/
+/**************************************/
 
-
-/*======================================
-//--//-->   SIDEBAR RIGHT COLUMN
-======================================*/
 #colorlib-aside {
   padding-top               : 3em;
   padding-bottom            : 40px;
@@ -1747,7 +1746,7 @@ canvas {
   position                  : fixed;
   overflow-y                : auto;
   z-index                   : 1001;
-  background                : #f2f3f7;
+  background                : #2d545e; /*#393f4d;*/
   -webkit-transition        : 0.5s;
   -o-transition             : 0.5s;
   transition                : 0.5s;
