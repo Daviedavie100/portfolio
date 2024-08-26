@@ -920,9 +920,9 @@ figure figcaption {
   display       : block;
 }
 
-/*======================================
-  SKILLS
-======================================*/
+/*******************************/
+/********* SKILLS CSS *********/
+/*******************************/
 
 .colorlib-skills {
   padding-top   : 4em;
@@ -993,8 +993,7 @@ canvas {
 }
 
 .soft-skills-area {
-  padding: 5px;
-
+  padding        : 5px;
   justify-content: center;
   align-items    : center;
   height         : 100%;
@@ -1004,6 +1003,7 @@ canvas {
   font-size    : 16px;
   font-family  : "Quicksand", Arial, sans-serif;
   margin-bottom: 10px;
+  color        : #000;
 }
 
 .progress {
@@ -1123,6 +1123,10 @@ canvas {
   color: #4054b2;
 }
 
+
+/*******************************/
+/*********  CSS *********/
+/*******************************/
 /*======================================
   EDUCATION
 ======================================*/
@@ -1574,7 +1578,8 @@ canvas {
   clear           : both;
   width           : 100%;
   display         : block;
-  background-color: #393f4d;/*#178582;*/
+  background-color: #393f4d;
+  /*#178582;*/
 }
 
 @media screen and (max-width: 768px) {
@@ -1625,10 +1630,10 @@ canvas {
 }
 
 .contact-area {
-  position    : relative;
+  position  : relative;
   margin    : 0;
-  width       : 100%;
-  background  : #EF233C;
+  width     : 100%;
+  background: #EF233C;
 }
 
 .contact-area .container-fluid {
@@ -1746,7 +1751,8 @@ canvas {
   position                  : fixed;
   overflow-y                : auto;
   z-index                   : 1001;
-  background                : #2d545e; /*#393f4d;*/
+  background                : #2d545e;
+  /*#393f4d;*/
   -webkit-transition        : 0.5s;
   -o-transition             : 0.5s;
   transition                : 0.5s;
