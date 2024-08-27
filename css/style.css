@@ -283,29 +283,30 @@ figure figcaption {
 /*****************************************/
 
 #top-colorlib-section {
-  position        : fixed;
-  top             : 0;
-  left            : 15px;
-  width           : calc(100% - 330px - 5px);
-  z-index         : 2000;
-  background-color: #6023ef;
-  height          : 50px;
-  display         : flex;
-  align-items     : center;
-  padding-left    : 10px;
-  padding-right   : 10px;
-  justify-content : space-between;
-  box-shadow      : 0 2px 5px rgba(0, 0, 0, 0.2);
+  position            : fixed;
+  top                 : 0;
+  left                : 15px;
+  width               : calc(100% - 330px - 5px);
+  z-index             : 2000;
+  background-color    : #6023ef;
+  height              : 50px;
+  display             : flex;
+  /*align-items       : center;*/
+  padding-left        : 10px;
+  padding-right       : 0;
+  justify-content     : space-between;
+  box-shadow          : 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 #logo {
-  margin : 0;
-  padding: 0;
+  margin-top: 10px;
+  /*margin  : 0;*/
+  padding   : 0;
 }
 
 
 
-#logo h3 a {
+#logo h4 a {
   font-size: 1.2em;
 }
 
@@ -318,8 +319,10 @@ figure figcaption {
   text-decoration: underline;
 }
 
+
 #top-colorlib-section .col-md-9 {
-  flex: 1;
+  padding-top: 10px;
+  flex       : 1;
 }
 
 
