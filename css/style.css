@@ -288,7 +288,7 @@ figure figcaption {
   left                : 15px;
   width               : calc(100% - 330px - 5px);
   z-index             : 2000;
-  background-color    : #6023ef;
+  background-color    : #393f4d;
   height              : 50px;
   display             : flex;
   /*align-items       : center;*/
@@ -312,7 +312,7 @@ figure figcaption {
 
 #logo a {
   text-decoration: none;
-  color          : #333;
+  color          : #fff;
 }
 
 #logo a:hover {
@@ -324,8 +324,6 @@ figure figcaption {
   padding-top: 10px;
   flex       : 1;
 }
-
-
 
 #top-colorlib-section .top-colorlib-menu ul {
   display        : flex;
