@@ -555,7 +555,7 @@ figure figcaption {
 /*======================================
 //--//-->   COLORLIB MAIN MENU
 ======================================*/
-.colorlib-experience,
+
 .colorlib-blog,
 .colorlib-work,
 .colorlib-about,
@@ -569,7 +569,7 @@ figure figcaption {
 
 @media screen and (max-width: 768px) {
 
-  .colorlib-experience,
+ 
   .colorlib-blog,
   .colorlib-work,
   .colorlib-about,
@@ -929,7 +929,7 @@ figure figcaption {
 /********* EDUCATION *********/
 /*******************************/
 
-.colorlib-education {
+.colorlib-experience {
   padding-top   : 4em;
   padding-bottom: 9em;
   clear         : both;
@@ -939,23 +939,33 @@ figure figcaption {
 
 @media screen and (max-width: 768px) {
 
-  .colorlib-education {
+  .colorlib-experince {
     padding-top   : 5em;
     padding-bottom: 8em;
   }
 }
 
-.colorlib-eduaction-narrow-content {
+.colorlib-experience-narrow-content {
   padding: 0 2.5em;
 }
 
 @media screen and (max-width: 768px) {
-  .colorlib-education-narrow-content {
+  .colorlib-experience-narrow-content {
     padding: 0;
   }
 }
 
-.education-heading-meta {
+.row-bottom-padded-sm {
+  padding-bottom: 1em;
+}
+
+@media screen and (max-width: 768px) {
+  .row-bottom-padded-sm {
+    padding-bottom: 1em;
+  }
+}
+
+.experience-heading-meta {
   margin-bottom : 15px;
   display       : block;
   font-size     : 10px;
@@ -965,7 +975,7 @@ figure figcaption {
   letter-spacing: 5px;
 }
 
-.colorlib-education-heading {
+.experience-colorlib-heading {
   font-size     : 18px;
   margin-bottom : 4em;
   font-weight   : 700;
@@ -975,15 +985,156 @@ figure figcaption {
   position      : relative;
 }
 
-.colorlib-education-heading span {
+.experience-colorlib-heading span {
   display: block;
 }
 
 @media screen and (max-width: 768px) {
-  .colorlib-education-heading {
+  .experience-colorlib-heading {
     margin-bottom: 3em;
   }
 }
+
+.timeline-centered {
+  position     : relative;
+  margin-bottom: 30px;
+}
+
+.timeline-centered:before,
+.timeline-centered:after {
+  content: " ";
+  display: table;
+}
+
+.timeline-centered:after {
+  clear: both;
+}
+
+.timeline-centered:before,
+.timeline-centered:after {
+  content: " ";
+  display: table;
+}
+
+.timeline-centered:after {
+  clear: both;
+}
+
+.timeline-centered:before {
+  content    : "";
+  position   : absolute;
+  display    : block;
+  width      : 2px;
+  background : #f2f3f7;
+  top        : 20px;
+  bottom     : 20px;
+  margin-left: 29px;
+}
+
+.timeline-centered .timeline-entry {
+  position     : relative;
+  margin-top   : 5px;
+  margin-left  : 30px;
+  margin-bottom: 10px;
+  clear        : both;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner {
+  position   : relative;
+  margin-left: -20px;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon {
+  display              : block;
+  width                : 40px;
+  height               : 40px;
+  background           : #2c98f0;
+  -webkit-border-radius: 50%;
+  -moz-border-radius   : 50%;
+  -ms-border-radius    : 50%;
+  border-radius        : 50%;
+  text-align           : center;
+  -moz-box-shadow      : 0 0 0 5px #f2f3f7;
+  -webkit-box-shadow   : 0 0 0 5px #f2f3f7;
+  box-shadow           : 0 0 0 5px #f2f3f7;
+  line-height          : 40px;
+  float                : left;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon i {
+  color: #fff;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-2 {
+  background: #ec5453;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-3 {
+  background: #f9bf3f;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-4 {
+  background: #a84cb8;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-5 {
+  background: #2fa499;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-none {
+  background : #fff;
+  width      : 20px;
+  height     : 20px;
+  margin-left: 10px;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label {
+  position               : relative;
+  background             : #f2f3f7;
+  padding                : 1.5em;
+  margin-left            : 60px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip   : padding;
+  background-clip        : padding-box;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label:after {
+  content     : "";
+  display     : block;
+  position    : absolute;
+  width       : 0;
+  height      : 0;
+  border-style: solid;
+  border-width: 9px 9px 9px 0;
+  border-color: transparent #f2f3f7 transparent transparent;
+  left        : 0;
+  top         : 10px;
+  margin-left : -9px;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label p+p {
+  margin-top: 15px;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 {
+  font-size  : 20px;
+  font-family: "Quicksand", Arial, sans-serif;
+  font-weight: 500;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 a {
+  color: #000;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 span {
+  -webkit-opacity: 0.4;
+  -moz-opacity   : 0.4;
+  opacity        : 0.4;
+  -ms-filter     : alpha(opacity=40);
+  filter         : alpha(opacity=40);
+  font-size      : 16px;
+}
+
 
 
 /*******************************/
@@ -1198,148 +1349,7 @@ canvas {
 
 
 
-/*======================================
-  EXPERIENCE
-======================================*/
-.timeline-centered {
-  position     : relative;
-  margin-bottom: 30px;
-}
 
-.timeline-centered:before,
-.timeline-centered:after {
-  content: " ";
-  display: table;
-}
-
-.timeline-centered:after {
-  clear: both;
-}
-
-.timeline-centered:before,
-.timeline-centered:after {
-  content: " ";
-  display: table;
-}
-
-.timeline-centered:after {
-  clear: both;
-}
-
-.timeline-centered:before {
-  content    : "";
-  position   : absolute;
-  display    : block;
-  width      : 4px;
-  background : #f2f3f7;
-  top        : 20px;
-  bottom     : 20px;
-  margin-left: 29px;
-}
-
-.timeline-centered .timeline-entry {
-  position     : relative;
-  margin-top   : 5px;
-  margin-left  : 30px;
-  margin-bottom: 10px;
-  clear        : both;
-}
-
-.timeline-centered .timeline-entry .timeline-entry-inner {
-  position   : relative;
-  margin-left: -20px;
-}
-
-.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon {
-  display              : block;
-  width                : 40px;
-  height               : 40px;
-  background           : #2c98f0;
-  -webkit-border-radius: 50%;
-  -moz-border-radius   : 50%;
-  -ms-border-radius    : 50%;
-  border-radius        : 50%;
-  text-align           : center;
-  -moz-box-shadow      : 0 0 0 5px #f2f3f7;
-  -webkit-box-shadow   : 0 0 0 5px #f2f3f7;
-  box-shadow           : 0 0 0 5px #f2f3f7;
-  line-height          : 40px;
-  float                : left;
-}
-
-.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon i {
-  color: #fff;
-}
-
-.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-2 {
-  background: #ec5453;
-}
-
-.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-3 {
-  background: #f9bf3f;
-}
-
-.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-4 {
-  background: #a84cb8;
-}
-
-.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-5 {
-  background: #2fa499;
-}
-
-.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-none {
-  background : #fff;
-  width      : 20px;
-  height     : 20px;
-  margin-left: 10px;
-}
-
-.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label {
-  position               : relative;
-  background             : #f2f3f7;
-  padding                : 1.5em;
-  margin-left            : 60px;
-  -webkit-background-clip: padding-box;
-  -moz-background-clip   : padding;
-  background-clip        : padding-box;
-}
-
-.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label:after {
-  content     : "";
-  display     : block;
-  position    : absolute;
-  width       : 0;
-  height      : 0;
-  border-style: solid;
-  border-width: 9px 9px 9px 0;
-  border-color: transparent #f2f3f7 transparent transparent;
-  left        : 0;
-  top         : 10px;
-  margin-left : -9px;
-}
-
-.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label p+p {
-  margin-top: 15px;
-}
-
-.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 {
-  font-size  : 20px;
-  font-family: "Quicksand", Arial, sans-serif;
-  font-weight: 500;
-}
-
-.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 a {
-  color: #000;
-}
-
-.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 span {
-  -webkit-opacity: 0.4;
-  -moz-opacity   : 0.4;
-  opacity        : 0.4;
-  -ms-filter     : alpha(opacity=40);
-  filter         : alpha(opacity=40);
-  font-size      : 16px;
-}
 
 /*======================================
   WORK
