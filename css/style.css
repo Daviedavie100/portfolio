@@ -1100,6 +1100,7 @@ figure figcaption {
   -webkit-background-clip: padding-box;
   -moz-background-clip   : padding;
   background-clip        : padding-box;
+  padding-top: 10px;
 }
 
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label:after {
