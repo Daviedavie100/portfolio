@@ -569,7 +569,7 @@ figure figcaption {
 
 @media screen and (max-width: 768px) {
 
- 
+
   .colorlib-blog,
   .colorlib-work,
   .colorlib-about,
@@ -1020,17 +1020,20 @@ figure figcaption {
   clear: both;
 }
 
+/* line down*/
 .timeline-centered:before {
   content    : "";
   position   : absolute;
   display    : block;
-  width      : 2px;
-  background : #f2f3f7;
+  width      : 1px;
+  background : #fd0202;
+  /*#f2f3f7*/
   top        : 20px;
   bottom     : 20px;
-  margin-left: 29px;
+  margin-left: 20px;
 }
 
+/*controls the items of the line*/
 .timeline-centered .timeline-entry {
   position     : relative;
   margin-top   : 5px;
@@ -1046,8 +1049,8 @@ figure figcaption {
 
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon {
   display              : block;
-  width                : 40px;
-  height               : 40px;
+  width                : 20px;
+  height               : 20px;
   background           : #2c98f0;
   -webkit-border-radius: 50%;
   -moz-border-radius   : 50%;
@@ -1082,17 +1085,18 @@ figure figcaption {
 }
 
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-none {
-  background : #fff;
-  width      : 20px;
-  height     : 20px;
-  margin-left: 10px;
+  background   : #fff;
+  width        : 20px;
+  height       : 20px;
+  /*margin-left: 5px;*/
+  float        : left;
 }
 
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label {
   position               : relative;
   background             : #f2f3f7;
   padding                : 1.5em;
-  margin-left            : 60px;
+  margin-left            : 35px;
   -webkit-background-clip: padding-box;
   -moz-background-clip   : padding;
   background-clip        : padding-box;
