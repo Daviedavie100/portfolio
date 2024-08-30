@@ -1103,6 +1103,11 @@ figure figcaption {
   padding-top: 10px;
 }
 
+.mb-1,
+.mt-1 {
+  margin-bottom: 0.5rem !important;
+}
+
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label:after {
   content     : "";
   display     : block;
