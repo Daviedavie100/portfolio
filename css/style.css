@@ -589,7 +589,7 @@ figure figcaption {
   }
 }
 
-/* About and work experience*/
+/* About and work education*/
 
 .row-bottom-padded-sm {
   padding-bottom: 1em;
@@ -929,7 +929,7 @@ figure figcaption {
 /********* EDUCATION *********/
 /*******************************/
 
-.colorlib-experience {
+.colorlib-education {
   padding-top   : 4em;
   padding-bottom: 9em;
   clear         : both;
@@ -939,18 +939,18 @@ figure figcaption {
 
 @media screen and (max-width: 768px) {
 
-  .colorlib-experince {
+  .colorlib-education {
     padding-top   : 5em;
     padding-bottom: 8em;
   }
 }
 
-.colorlib-experience-narrow-content {
+.colorlib-education-narrow-content {
   padding: 0 2.5em;
 }
 
 @media screen and (max-width: 768px) {
-  .colorlib-experience-narrow-content {
+  .colorlib-education-narrow-content {
     padding: 0;
   }
 }
@@ -965,7 +965,7 @@ figure figcaption {
   }
 }
 
-.experience-heading-meta {
+.education-heading-meta {
   margin-bottom : 15px;
   display       : block;
   font-size     : 10px;
@@ -975,7 +975,7 @@ figure figcaption {
   letter-spacing: 5px;
 }
 
-.experience-colorlib-heading {
+.education-colorlib-heading {
   font-size     : 18px;
   margin-bottom : 4em;
   font-weight   : 700;
@@ -985,12 +985,12 @@ figure figcaption {
   position      : relative;
 }
 
-.experience-colorlib-heading span {
+.education-colorlib-heading span {
   display: block;
 }
 
 @media screen and (max-width: 768px) {
-  .experience-colorlib-heading {
+  .education-colorlib-heading {
     margin-bottom: 3em;
   }
 }
