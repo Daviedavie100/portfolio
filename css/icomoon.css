@@ -1789,3 +1789,28 @@
   content: "\eb1a";
 }
 
+.icon-python:before {
+  content: "\e901";
+  color: #3776ab;
+}
+.icon-microsoftexcel:before {
+  content: "\e900";
+  color: #217346;
+}
+.icon-microsoftaccess:before {
+  content: "\e902";
+  color: #ba141a;
+}
+.icon-microsoftpowerpoint:before {
+  content: "\e903";
+  color: #d24726;
+}
+
+.icon-r:before {
+  content: "\e904";
+  color: #276dc3;
+}
+.icon-tableau:before {
+  content: "\e905";
+  color: #e97627;
+}
