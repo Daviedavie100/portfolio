@@ -739,9 +739,9 @@ figure figcaption {
 }
 
 .icon-image {
-  width: 40px; /* Adjust width as needed */
-  height: 40px; /* Adjust height as needed */
-  margin-bottom: 10px; /* Spacing around the image */
+  width: 32px; /* Adjust width as needed */
+  height: 32px; /* Adjust height as needed */
+  margin-bottom: 5px; /* Spacing around the image */
   display: inline-block; /* Align the image properly */
 }
 
