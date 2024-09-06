@@ -738,12 +738,41 @@ figure figcaption {
   }
 }
 
+
+
+
+/*HIRE ABOUT*/
+.btn-hire {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff; /* Button color */
+  color: white; /* Text color */
+  text-decoration:none; /* Remove underline */
+  border-radius: 15px; /* Rounded corners */
+  font-weight: bold; /* Bold text */
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.btn-hire:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+
+
+
+
+
+
 .icon-image {
   width: 32px; /* Adjust width as needed */
   height: 32px; /* Adjust height as needed */
   margin-bottom: 5px; /* Spacing around the image */
   display: inline-block; /* Align the image properly */
 }
+
+
+
+
 
 
 
