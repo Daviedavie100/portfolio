@@ -25,7 +25,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-google-looker .path1:before {
+.icon-google-looker:before {
   content: "\e900";
   color: rgb(24, 170, 101);
   opacity: 0.589;
@@ -48,7 +48,7 @@
   color: rgb(32, 150, 243);
   opacity: 0.893;
 }
-.icon-power-bi-2021 .path1:before {
+.icon-power-bi-2021:before {
   content: "\e904";
   color: rgb(237, 165, 3);
 }
