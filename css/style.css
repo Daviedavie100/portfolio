@@ -738,24 +738,13 @@ figure figcaption {
   }
 }
 
-.icon-power-bi-2021 {
-  display: inline-block; /* Display the icon container as inline-block */
-  position: relative; /* Allow absolute positioning of child elements */
-  width: 40px; /* Adjust width for the icon size */
-  height: 40px; /* Adjust height for the icon size */
-  margin-bottom: 10px; /* Spacing below the icon */
+.icon-image {
+  width: 40px; /* Adjust width as needed */
+  height: 40px; /* Adjust height as needed */
+  margin-bottom: 10px; /* Spacing around the image */
+  display: inline-block; /* Align the image properly */
 }
 
-.icon-power-bi-2021 .path1 {
-  display: block; /* Make path1 a block-level element */
-  width: 100%; /* Full width of the container */
-  height: 100%; /* Full height of the container */
-  background-color: rgb(237, 165, 3); /* Example color for the icon */
-  border-radius: 50%; /* Optional: shape the icon as a circle */
-  position: absolute; /* Position absolute to fill the container */
-  top: 0;
-  left: 0;
-}
 
 
 .services .icon {
