@@ -766,14 +766,6 @@ figure figcaption {
   /* Align the image properly */
 }
 
-
-
-
-
-
-
-
-
 .tools.color-1 {
   border-bottom: 2px solid #ec5453;
 }
@@ -781,10 +773,6 @@ figure figcaption {
 .tools.color-1 .icon2 i {
   color: #ec5453;
 }
-
-
-
-
 
 .tools.color-2 {
   border-bottom: 2px solid #f9bf3f;
@@ -794,8 +782,13 @@ figure figcaption {
   color: #f9bf3f;
 }
 
+.tools.color-3 {
+  border-bottom: 2px solid #1cf708;
+}
 
-
+.tools.color-3 .icon2 i {
+  color: #1cf708;
+}
 
 .tools.color-4 {
   border-bottom: 2px solid #a84cb8;
@@ -805,14 +798,35 @@ figure figcaption {
   color: #a84cb8;
 }
 
+/*HIRE ABOUT*/
+.btn-hire {
+  display         : inline-block;
+  padding         : 10px 20px;
+  background-color: #007bff;
+  /* Button color */
+  color           : white;
+  /* Text color */
+  text-decoration : none;
+  /* Remove underline */
+  border-radius   : 15px;
+  /* Rounded corners */
+  font-weight     : bold;
+  /* Bold text */
+  transition      : background-color 0.3s ease;
+  /* Smooth hover transition */
+}
 
+.btn-hire:hover {
+  background-color: #0056b3;
+  /* Darker shade on hover */
+}
 
 
 
 /*======================================
    ABOUT
 ======================================*/
-.hire {
+/*.hire {
   padding   : 2em;
   background: #f9bf3f;
 }
@@ -829,7 +843,7 @@ figure figcaption {
   padding       : 2px 10px;
 }
 
-
+*/
 
 
 
@@ -919,28 +933,7 @@ figure figcaption {
 
 
 
-/*HIRE ABOUT*/
-.btn-hire {
-  display         : inline-block;
-  padding         : 10px 20px;
-  background-color: #007bff;
-  /* Button color */
-  color           : white;
-  /* Text color */
-  text-decoration : none;
-  /* Remove underline */
-  border-radius   : 15px;
-  /* Rounded corners */
-  font-weight     : bold;
-  /* Bold text */
-  transition      : background-color 0.3s ease;
-  /* Smooth hover transition */
-}
 
-.btn-hire:hover {
-  background-color: #0056b3;
-  /* Darker shade on hover */
-}
 
 
 
