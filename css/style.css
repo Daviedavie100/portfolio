@@ -751,6 +751,14 @@ figure figcaption {
   }
 }
 
+.tools-image {
+  width: 32px; /* Adjust width as needed */
+  height: 32px; /* Adjust height as needed */
+  margin-bottom: 5px; /* Spacing around the image */
+  display: inline-block; /* Align the image properly */
+}
+
+
 
 
 
@@ -760,6 +768,18 @@ figure figcaption {
 
 .tools.color-1 .icon2 i {
   color: #ec5453;
+}
+
+
+
+
+
+.tools.color-2 {
+  border-bottom: 2px solid #f9bf3f;
+}
+
+.tools.color-2 .icon2 i {
+  color: #f9bf3f;
 }
 
 
@@ -823,11 +843,15 @@ figure figcaption {
   color    : #2c98f0;
 }
 
+
+
 .services h3 {
   font-family: "Quicksand", Arial, sans-serif;
   font-size  : 16px;
   font-weight: 500;
 }
+
+
 
 .services.color-2 {
   border-bottom: 2px solid #ec5453;
@@ -837,6 +861,9 @@ figure figcaption {
   color: #ec5453;
 }
 
+
+
+
 .services.color-3 {
   border-bottom: 2px solid #f9bf3f;
 }
@@ -844,6 +871,8 @@ figure figcaption {
 .services.color-3 .icon2 i {
   color: #f9bf3f;
 }
+
+
 
 .services.color-4 {
   border-bottom: 2px solid #a84cb8;
@@ -853,9 +882,12 @@ figure figcaption {
   color: #a84cb8;
 }
 
+
+
 .services.color-5 {
   border-bottom: 2px solid #2fa499;
 }
+
 
 .services.color-6 {
   border-bottom: 2px solid #4054b2;
@@ -887,13 +919,6 @@ figure figcaption {
 
 
 
-
-.icon-image {
-  width: 32px; /* Adjust width as needed */
-  height: 32px; /* Adjust height as needed */
-  margin-bottom: 5px; /* Spacing around the image */
-  display: inline-block; /* Align the image properly */
-}
 
 
 
