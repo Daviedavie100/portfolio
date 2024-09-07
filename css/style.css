@@ -883,7 +883,7 @@ figure figcaption {
 }
 
 .row-pt-md {
-  padding-top: 3em;
+  padding-top: 2em;/*3em*/
 }
 
 /*ICON*/
@@ -927,6 +927,7 @@ figure figcaption {
 }
 
 .services .icon i {
+  font-family  : "Quicksand", Arial, sans-serif;/*added*/
   font-size     : 30px;
   color         : #fff;
   z-index       : 1;
@@ -939,6 +940,7 @@ figure figcaption {
 }
 
 .services .desc h3 {
+  font-family  : "Quicksand", Arial, sans-serif;/*added*/
   font-size     : 16px;
   font-weight   : 700;
   text-transform: uppercase;
@@ -947,15 +949,15 @@ figure figcaption {
 
 
 .services.color-1 .icon {
-  background: #a84cb8;
+  background: #04f538;
 }
 
 .services.color-1 .icon:before {
-  border-color: transparent transparent #a84cb8 transparent;
+  border-color: transparent transparent #04f538 transparent;
 }
 
 .services.color-1 .icon:after {
-  border-color: #a84cb8 transparent transparent transparent;
+  border-color: #04f538 transparent transparent transparent;
 }
 
 
