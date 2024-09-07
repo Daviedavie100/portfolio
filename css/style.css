@@ -693,7 +693,7 @@ figure figcaption {
 
 .colorlib-about-heading {
   font-size     : 18px;
-  margin-bottom : 1em; /*4em*/
+  margin-bottom : 1em; /*4em-header to paragraph*/
   font-weight   : 700;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -713,13 +713,8 @@ figure figcaption {
 
 /*TOOLS*/
 
-.row-pt-md {
-  padding-top: 3em;
-}
-
 .tools {
   /*margin-bottom     : 30px;*/
-  /*padding-left           : 1.5em;*/
   padding: 1.5em;
 
   -webkit-box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
@@ -731,7 +726,7 @@ figure figcaption {
   margin-bottom: 80px;
   position     : relative;
   z-index      : 0;
-  /*height: 150px;*/
+  height: 150px;
 }
 
 .tools .icon2 {
@@ -904,7 +899,9 @@ figure figcaption {
 
 
 
-
+.row-pt-md {
+  padding-top: 3em;
+}
 
 .services .icon {
   position  : absolute;
