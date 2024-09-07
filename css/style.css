@@ -799,6 +799,17 @@ figure figcaption {
 }
 
 /*HIRE ABOUT*/
+
+.hire {
+  padding   : 2em;
+  background: #039e2a;
+}
+
+.hire h2 {
+  font-family  : "Quicksand", Arial, sans-serif;
+  line-height: 1.5;
+}
+
 .btn-hire {
   display         : inline-block;
   padding         : 10px 20px;
@@ -826,14 +837,10 @@ figure figcaption {
 /*======================================
    ABOUT
 ======================================*/
-/*.hire {
-  padding   : 2em;
-  background: #f9bf3f;
-}
+/*
 
-.hire h2 {
-  line-height: 1.5;
-}
+
+
 
 .hire .btn-hire {
   color         : #000;
