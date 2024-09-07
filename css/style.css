@@ -641,7 +641,7 @@ figure figcaption {
 .colorlib-about {
   padding-top     : 2em;
   /*4em*/
-  padding-bottom  : 9em;
+  padding-bottom  : 5em;
   /*9em*/
   clear           : both;
   width           : 100%;
@@ -800,17 +800,8 @@ figure figcaption {
 
 /*HIRE ABOUT*/
 
-.hire {
-  padding   : 2em;
-  background: #039e2a;
-}
-
-.hire h2 {
-  font-family  : "Quicksand", Arial, sans-serif;
-  line-height: 1.5;
-}
-
 .btn-hire {
+  font-family  : "Quicksand", Arial, sans-serif;
   display         : inline-block;
   padding         : 10px 20px;
   background-color: #007bff;
@@ -825,6 +816,10 @@ figure figcaption {
   /* Bold text */
   transition      : background-color 0.3s ease;
   /* Smooth hover transition */
+
+  display: flex;            /* Use Flexbox */
+  justify-content: center;   /* Center horizontally */
+  /*align-items: center;       /* Center vertically */
 }
 
 .btn-hire:hover {
