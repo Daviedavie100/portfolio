@@ -828,8 +828,8 @@ figure figcaption {
 /*******************************/
 
 .colorlib-services {
-  padding-top   : 4em;
-  padding-bottom: 9em;
+  padding-top   : 2em;
+  padding-bottom: 2em;
   clear         : both;
   width         : 100%;
   display       : block;
@@ -842,17 +842,17 @@ figure figcaption {
   }
 }
 
-.colorlib-narrow-content {
+.colorlib-services-narrow-content {
   padding: 0 2.5em;
 }
 
 @media screen and (max-width: 768px) {
-  .colorlib-narrow-content {
+  .colorlib-services-narrow-content {
     padding: 0;
   }
 }
 
-.heading-meta {
+.services-heading-meta {
   margin-bottom : 15px;
   display       : block;
   font-size     : 10px;
@@ -862,7 +862,7 @@ figure figcaption {
   letter-spacing: 5px;
 }
 
-.colorlib-heading {
+.colorlib-services-heading {
   font-size     : 18px;
   margin-bottom : 4em;
   font-weight   : 700;
@@ -872,101 +872,21 @@ figure figcaption {
   position      : relative;
 }
 
-.colorlib-heading span {
+.colorlib-services-heading span {
   display: block;
 }
 
 @media screen and (max-width: 768px) {
-  .colorlib-heading {
+  .colorlib-services-heading {
     margin-bottom: 3em;
   }
 }
 
-
-
-
-
-
-.services .icon2 {
-  display      : block;
-  margin-bottom: 20px;
-}
-
-.services .icon2 i {
-  font-size: 30px;
-  color    : #2c98f0;
-}
-
-
-
-.services h3 {
-  font-family: "Quicksand", Arial, sans-serif;
-  font-size  : 16px;
-  font-weight: 500;
-}
-
-
-
-.services.color-2 {
-  border-bottom: 2px solid #ec5453;
-}
-
-.services.color-2 .icon2 i {
-  color: #ec5453;
-}
-
-
-
-
-.services.color-3 {
-  border-bottom: 2px solid #f9bf3f;
-}
-
-.services.color-3 .icon2 i {
-  color: #f9bf3f;
-}
-
-
-
-.services.color-4 {
-  border-bottom: 2px solid #a84cb8;
-}
-
-.services.color-4 .icon2 i {
-  color: #a84cb8;
-}
-
-
-
-.services.color-5 {
-  border-bottom: 2px solid #2fa499;
-}
-
-
-.services.color-6 {
-  border-bottom: 2px solid #4054b2;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .row-pt-md {
   padding-top: 3em;
 }
+
+/*ICON*/
 
 .services .icon {
   position  : absolute;
@@ -1083,6 +1003,90 @@ figure figcaption {
 .services.color-6 .icon:after {
   border-color: #4054b2 transparent transparent transparent;
 }
+
+
+
+
+/*
+.services .icon2 {
+  display      : block;
+  margin-bottom: 20px;
+}
+
+.services .icon2 i {
+  font-size: 30px;
+  color    : #2c98f0;
+}
+
+
+
+.services h3 {
+  font-family: "Quicksand", Arial, sans-serif;
+  font-size  : 16px;
+  font-weight: 500;
+}
+
+
+
+.services.color-2 {
+  border-bottom: 2px solid #ec5453;
+}
+
+.services.color-2 .icon2 i {
+  color: #ec5453;
+}
+
+
+
+
+.services.color-3 {
+  border-bottom: 2px solid #f9bf3f;
+}
+
+.services.color-3 .icon2 i {
+  color: #f9bf3f;
+}
+
+
+
+.services.color-4 {
+  border-bottom: 2px solid #a84cb8;
+}
+
+.services.color-4 .icon2 i {
+  color: #a84cb8;
+}
+
+
+
+.services.color-5 {
+  border-bottom: 2px solid #2fa499;
+}
+
+
+.services.color-6 {
+  border-bottom: 2px solid #4054b2;
+}
+
+
+
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*******************************/
