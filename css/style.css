@@ -557,9 +557,7 @@ figure figcaption {
 ======================================*/
 
 .colorlib-blog,
-.colorlib-work,
-
-.colorlib-services {
+.colorlib-work {
   padding-top   : 4em;
   padding-bottom: 9em;
   clear         : both;
@@ -571,9 +569,7 @@ figure figcaption {
 
 
   .colorlib-blog,
-  .colorlib-work,
-
-  .colorlib-services {
+  .colorlib-work{
     padding-top   : 5em;
     padding-bottom: 8em;
   }
@@ -641,7 +637,7 @@ figure figcaption {
 .colorlib-about {
   padding-top     : 2em;
   /*4em*/
-  padding-bottom  : 5em;
+  padding-bottom  : 2em;
   /*9em*/
   clear           : both;
   width           : 100%;
@@ -827,43 +823,64 @@ figure figcaption {
   /* Darker shade on hover */
 }
 
+/*******************************/
+/********* SERVICES *********/
+/*******************************/
 
+.colorlib-services {
+  padding-top   : 4em;
+  padding-bottom: 9em;
+  clear         : both;
+  width         : 100%;
+  display       : block;
+}
 
-/*======================================
-   ABOUT
-======================================*/
-/*
+@media screen and (max-width: 768px) {
+  .colorlib-services {
+    padding-top   : 5em;
+    padding-bottom: 8em;
+  }
+}
 
+.colorlib-narrow-content {
+  padding: 0 2.5em;
+}
 
+@media screen and (max-width: 768px) {
+  .colorlib-narrow-content {
+    padding: 0;
+  }
+}
 
-
-.hire .btn-hire {
-  color         : #000;
+.heading-meta {
+  margin-bottom : 15px;
+  display       : block;
+  font-size     : 10px;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  border        : 1px solid #000;
-  padding       : 2px 10px;
+  color         : #999999;
+  font-weight   : 500;
+  letter-spacing: 5px;
 }
 
-*/
-
-
-
-
-
-/*
-
-.tools.color-2 {
-  border-bottom: 2px solid #ec5453;
+.colorlib-heading {
+  font-size     : 18px;
+  margin-bottom : 4em;
+  font-weight   : 700;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  line-height   : 1.8;
+  position      : relative;
 }
 
-.tools.color-2 .icon2 i {
-  color: #ec5453;
+.colorlib-heading span {
+  display: block;
 }
 
-*/
-
-
+@media screen and (max-width: 768px) {
+  .colorlib-heading {
+    margin-bottom: 3em;
+  }
+}
 
 
 
@@ -1067,76 +1084,6 @@ figure figcaption {
   border-color: #4054b2 transparent transparent transparent;
 }
 
-/*======================================
-  COUNTER
-======================================*/
-#colorlib-counter {
-  position     : relative;
-  clear        : both;
-  margin-bottom: 5em;
-}
-
-.colorlib-counters {
-  padding              : 3em 0;
-  background-size      : cover;
-  background-attachment: fixed;
-  background-position  : center center;
-}
-
-.colorlib-counters .overlay {
-  z-index   : 0;
-  position  : absolute;
-  bottom    : 0;
-  top       : 0;
-  left      : 0;
-  right     : 0;
-  background: rgba(0, 0, 0, 0.4);
-}
-
-.colorlib-counters .icon {
-  width        : 100px;
-  height       : 100px;
-  display      : table;
-  margin       : 0 auto;
-  margin-bottom: 20px;
-}
-
-.colorlib-counters .icon i {
-  display              : table-cell;
-  vertical-align       : middle;
-  width                : 100px;
-  height               : 100px;
-  font-size            : 50px;
-  color                : #2c98f0;
-  background           : #fff;
-  -webkit-border-radius: 50%;
-  -moz-border-radius   : 50%;
-  -ms-border-radius    : 50%;
-  border-radius        : 50%;
-}
-
-.colorlib-counters .counter-wrap {
-  border: 1px solid red !important;
-}
-
-.colorlib-counters .colorlib-counter {
-  font-size    : 40px;
-  display      : block;
-  color        : white;
-  font-family  : "Quicksand", Arial, sans-serif;
-  width        : 100%;
-  font-weight  : 700;
-  margin-bottom: 0.3em;
-}
-
-.colorlib-counters .colorlib-counter-label {
-  color         : rgba(255, 255, 255, 0.7);
-  text-transform: uppercase;
-  font-size     : 14px;
-  letter-spacing: 5px;
-  margin-bottom : 2em;
-  display       : block;
-}
 
 /*******************************/
 /********* EDUCATION *********/
