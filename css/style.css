@@ -639,11 +639,12 @@ figure figcaption {
 /*******************************/
 
 .colorlib-about {
-  padding-top   : 4em;
-  padding-bottom: 9em;
+  padding-top   : 2em; /*4em*/
+  padding-bottom: 9em; /*9em*/
   clear         : both;
   width         : 100%;
   display       : block;
+  background-color: #f2f3fb;
 }
 
 @media screen and (max-width: 768px) {
@@ -692,7 +693,7 @@ figure figcaption {
 
 .colorlib-about-heading {
   font-size     : 18px;
-  margin-bottom : 4em;
+  margin-bottom : 1em; /*4em*/
   font-weight   : 700;
   text-transform: uppercase;
   letter-spacing: 5px;
