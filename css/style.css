@@ -569,7 +569,7 @@ figure figcaption {
 
 
   .colorlib-blog,
-  .colorlib-work{
+  .colorlib-work {
     padding-top   : 5em;
     padding-bottom: 8em;
   }
@@ -747,7 +747,8 @@ figure figcaption {
 
 @media screen and (max-width: 768px) {
   .tools {
-    margin-bottom: 2em; /*4em-bottom margin*/
+    margin-bottom: 2em;
+    /*4em-bottom margin*/
   }
 }
 
@@ -797,7 +798,7 @@ figure figcaption {
 /*HIRE ABOUT*/
 
 .btn-hire {
-  font-family  : "Quicksand", Arial, sans-serif;
+  font-family     : "Quicksand", Arial, sans-serif;
   display         : inline-block;
   padding         : 10px 20px;
   background-color: #007bff;
@@ -813,9 +814,11 @@ figure figcaption {
   transition      : background-color 0.3s ease;
   /* Smooth hover transition */
 
-  display: flex;            /* Use Flexbox */
-  justify-content: center;   /* Center horizontally */
-  /*align-items: center;       /* Center vertically */
+  display        : flex;
+  /* Use Flexbox */
+  justify-content: center;
+  /* Center horizontally */
+  /*align-items  : center;       /* Center vertically */
 }
 
 .btn-hire:hover {
@@ -883,10 +886,30 @@ figure figcaption {
 }
 
 .row-pt-md {
-  padding-top: 2em;/*3em*/
+  padding-top: 2em;
+  /*3em*/
 }
 
 /*ICON*/
+.services {
+  margin-bottom     : 30px;
+  padding           : 1.5em;
+  -webkit-box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
+  -moz-box-shadow   : 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
+  -ms-box-shadow    : 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
+  -o-box-shadow     : 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
+  box-shadow        : 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
+  border-bottom     : 2px solid #2c98f0;
+  margin-bottom     : 80px;
+  position          : relative;
+  z-index           : 0;
+}
+
+@media screen and (max-width: 768px) {
+  .services {
+    margin-bottom: 4em;
+  }
+}
 
 .services .icon {
   position  : absolute;
@@ -927,7 +950,8 @@ figure figcaption {
 }
 
 .services .icon i {
-  font-family  : "Quicksand", Arial, sans-serif;/*added*/
+  font-family   : "Quicksand", Arial, sans-serif;
+  /*added*/
   font-size     : 30px;
   color         : #fff;
   z-index       : 1;
@@ -940,7 +964,8 @@ figure figcaption {
 }
 
 .services .desc h3 {
-  font-family  : "Quicksand", Arial, sans-serif;/*added*/
+  font-family   : "Quicksand", Arial, sans-serif;
+  /*added*/
   font-size     : 16px;
   font-weight   : 700;
   text-transform: uppercase;
@@ -962,6 +987,9 @@ figure figcaption {
 
 
 
+.services.color-2 {
+  border-bottom: 2px solid #ec5453;
+}
 
 .services.color-2 .icon {
   background: #ec5453;
@@ -976,6 +1004,9 @@ figure figcaption {
 }
 
 
+.services.color-3 {
+  border-bottom: 2px solid #f9bf3f;
+}
 
 .services.color-3 .icon {
   background: #f9bf3f;
@@ -990,6 +1021,9 @@ figure figcaption {
 }
 
 
+.services.color-4 {
+  border-bottom: 2px solid #a84cb8;
+}
 
 .services.color-4 .icon {
   background: #a84cb8;
@@ -1004,6 +1038,9 @@ figure figcaption {
 }
 
 
+.services.color-5 {
+  border-bottom: 2px solid #2fa499;
+}
 
 .services.color-5 .icon {
   background: #2fa499;
@@ -1018,6 +1055,9 @@ figure figcaption {
 }
 
 
+.services.color-6 {
+  border-bottom: 2px solid #4054b2;
+}
 
 .services.color-6 .icon {
   background: #4054b2;
