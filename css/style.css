@@ -1,10 +1,7 @@
 @font-face {
   font-family: "icomoon";
   src        : url("../fonts/icomoon/icomoon.eot?srf3rx");
-  src        : url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"),
-    url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"),
-    url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"),
-    url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
+  src        : url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
   font-weight: normal;
   font-style : normal;
 }
@@ -128,19 +125,19 @@ figure figcaption {
   text-decoration: none;
 }
 
-.colorlib-nav-toggle.active i::before,
-.colorlib-nav-toggle.active i::after {
+.colorlib-nav-toggle.active i::after,
+.colorlib-nav-toggle.active i::before {
   background: #000;
 }
 
-.colorlib-nav-toggle.dark.active i::before,
-.colorlib-nav-toggle.dark.active i::after {
+.colorlib-nav-toggle.dark.active i::after,
+.colorlib-nav-toggle.dark.active i::before {
   background: #000;
 }
 
-.colorlib-nav-toggle:hover,
+.colorlib-nav-toggle:active,
 .colorlib-nav-toggle:focus,
-.colorlib-nav-toggle:active {
+.colorlib-nav-toggle:hover {
   outline      : none;
   border-bottom: none !important;
 }
@@ -162,8 +159,8 @@ figure figcaption {
   transition        : all 0.2s ease-out;
 }
 
-.colorlib-nav-toggle i::before,
-.colorlib-nav-toggle i::after {
+.colorlib-nav-toggle i::after,
+.colorlib-nav-toggle i::before {
   content           : "";
   width             : 30px;
   height            : 2px;
@@ -184,8 +181,8 @@ figure figcaption {
   transition        : all 0.2s ease-out;
 }
 
-.colorlib-nav-toggle.dark i::before,
-.colorlib-nav-toggle.dark i::after {
+.colorlib-nav-toggle.dark i::after,
+.colorlib-nav-toggle.dark i::before {
   background        : #000;
   -webkit-transition: 0.2s;
   -o-transition     : 0.2s;
@@ -233,7 +230,7 @@ figure figcaption {
 .colorlib-nav-toggle {
   position          : fixed;
   left              : -5px;
-  top               : 0px;
+  top               : 0;
   z-index           : 9999;
   cursor            : pointer;
   opacity           : 1;
@@ -304,8 +301,6 @@ figure figcaption {
   padding   : 0;
 }
 
-
-
 #logo h4 a {
   font-size: 1.2em;
 }
@@ -318,7 +313,6 @@ figure figcaption {
 #logo a:hover {
   text-decoration: underline;
 }
-
 
 #top-colorlib-section .col-md-9 {
   padding-top: 10px;
@@ -351,14 +345,10 @@ figure figcaption {
   }
 }
 
-
 /*******************************/
-/********* SKILLS CSS *********/
+/******** COLORLIB MAIN ********/
 /*******************************/
 
-/*======================================
-//--//-->   COLORLIB MAIN PAGE
-======================================*/
 #colorlib-main {
   position          : relative;
   width             : calc(100% - 305px);
@@ -380,16 +370,15 @@ figure figcaption {
 }
   */
 
-/*======================================
-//--//-->   COLORLIB MAIN HERO
-======================================*/
+/* HERO*/
 
 #colorlib-hero {
   min-height   : 500px;
   background   : #fff url(../images/loader.gif) no-repeat center center;
   width        : 100%;
   float        : left;
-  margin-bottom: 10em;
+  margin-bottom: 1.5em;
+  /*10em-separation to about section*/
   clear        : both;
 }
 
@@ -476,7 +465,7 @@ figure figcaption {
 #colorlib-hero .flexslider .slider-text>.slider-text-inner h2 {
   margin     : 0;
   padding    : 0;
-  color      : black;
+  color      : #000;
   font-family: "Playfair Display", Georgia, serif;
 }
 
@@ -567,7 +556,6 @@ figure figcaption {
 
 @media screen and (max-width: 768px) {
 
-
   .colorlib-blog,
   .colorlib-work {
     padding-top   : 5em;
@@ -597,14 +585,13 @@ figure figcaption {
   }
 }
 
-
 /* All sections*/
 .heading-meta {
   margin-bottom : 15px;
   display       : block;
   font-size     : 10px;
   text-transform: uppercase;
-  color         : #999999;
+  color         : #999;
   font-weight   : 500;
   letter-spacing: 5px;
 }
@@ -629,33 +616,31 @@ figure figcaption {
   }
 }
 
-
 /*******************************/
 /********* ABOUT *********/
 /*******************************/
 
 .colorlib-about {
-  padding-top       : 2em;
+  padding-top        : 2em;
   /*4em*/
-  padding-bottom    : 2em;
+  padding-bottom     : 2em;
   /*9em*/
-  clear             : both;
-  width             : 100%;
-  display           : block;
-  /*background-color: #f2f3fb;*/
-
+  clear              : both;
+  width              : 100%;
+  display            : block;
+  /*background-color : #f2f3fb;*/
   background-size    : cover;
   background-position: center center;
-  opacity:1;
+  opacity            : 1;
 }
 
 .colorlib-about .overlay {
-  z-index   : 0;
-  position  : absolute;
-  bottom    : 0;
-  top       : 0;
-  left      : 0;
-  right     : 0;
+  z-index     : 0;
+  position    : absolute;
+  bottom      : 0;
+  top         : 0;
+  left        : 0;
+  right       : 0;
   /*background: rgba(0, 0, 0, 0.4);*/
 }
 
@@ -665,7 +650,6 @@ figure figcaption {
     padding-bottom: 8em;
   }
 }
-
 
 .colorlib-about-narrow-content {
   padding: 0 2.5em;
@@ -728,13 +712,12 @@ figure figcaption {
 /*TOOLS*/
 
 .tools {
-  /*margin-bottom     : 30px;*/
   padding             : 1.5em;
-  -webkit-box-shadow  : 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
-  -moz-box-shadow     : 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
-  -ms-box-shadow      : 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
-  -o-box-shadow       : 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
-  box-shadow          : 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
+  -webkit-box-shadow  : 0 0 56px -8px rgba(0, 0, 0, 0.17);
+  -moz-box-shadow     : 0 0 56px -8px rgba(0, 0, 0, 0.17);
+  -ms-box-shadow      : 0 0 56px -8px rgba(0, 0, 0, 0.17);
+  -o-box-shadow       : 0 0 56px -8px rgba(0, 0, 0, 0.17);
+  box-shadow          : 0 0 56px -8px rgba(0, 0, 0, 0.17);
   /*border-bottom     : 2px solid #2c98f0;*/
   margin-bottom       : 40px;
   /*separation of the tools column*/
@@ -818,7 +801,7 @@ figure figcaption {
   padding         : 10px 20px;
   background-color: #007bff;
   /* Button color */
-  color           : white;
+  color           : #fff;
   /* Text color */
   text-decoration : none;
   /* Remove underline */
@@ -828,12 +811,10 @@ figure figcaption {
   /* Bold text */
   transition      : background-color 0.3s ease;
   /* Smooth hover transition */
-
-  display        : flex;
+  display         : flex;
   /* Use Flexbox */
-  justify-content: center;
+  justify-content : center;
   /* Center horizontally */
-  /*align-items  : center;       /* Center vertically */
 }
 
 .btn-hire:hover {
@@ -846,27 +827,25 @@ figure figcaption {
 /*******************************/
 
 .colorlib-services {
-  padding-top   : 2em;
-  padding-bottom: 2em;
-  clear         : both;
-  width         : 100%;
-  display       : block;
-
-background-attachment: fixed;
-background-size    : cover;
-background-position: center center;
-opacity:1;
+  padding-top          : 2em;
+  padding-bottom       : 2em;
+  clear                : both;
+  width                : 100%;
+  display              : block;
+  /*background-attachment: fixed;*/
+  background-size      : cover;
+  background-position  : center center;
+  opacity              : 1;
 }
 
 .colorlib-services .overlay {
-z-index   : 0;
-position  : absolute;
-bottom    : 0;
-top       : 0;
-left      : 0;
-right     : 0;
+  z-index : 0;
+  position: absolute;
+  bottom  : 0;
+  top     : 0;
+  left    : 0;
+  right   : 0;
 }
-
 
 @media screen and (max-width: 768px) {
   .colorlib-services {
@@ -924,11 +903,11 @@ right     : 0;
 .services {
   margin-bottom     : 30px;
   padding           : 1.5em;
-  -webkit-box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
-  -moz-box-shadow   : 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
-  -ms-box-shadow    : 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
-  -o-box-shadow     : 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
-  box-shadow        : 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
+  -webkit-box-shadow: 0 0 56px -8px rgba(0, 0, 0, 0.17);
+  -moz-box-shadow   : 0 0 56px -8px rgba(0, 0, 0, 0.17);
+  -ms-box-shadow    : 0 0 56px -8px rgba(0, 0, 0, 0.17);
+  -o-box-shadow     : 0 0 56px -8px rgba(0, 0, 0, 0.17);
+  box-shadow        : 0 0 56px -8px rgba(0, 0, 0, 0.17);
   border-bottom     : 2px solid #2c98f0;
   margin-bottom     : 80px;
   position          : relative;
@@ -953,8 +932,8 @@ right     : 0;
   background: #2c98f0;
 }
 
-.services .icon:before,
-.services .icon:after {
+.services .icon:after,
+.services .icon:before {
   position: absolute;
   left    : 0;
   right   : 0;
@@ -1001,8 +980,6 @@ right     : 0;
   text-transform: uppercase;
 }
 
-
-
 .services.color-1 .icon {
   background: #04f538;
 }
@@ -1014,8 +991,6 @@ right     : 0;
 .services.color-1 .icon:after {
   border-color: #04f538 transparent transparent transparent;
 }
-
-
 
 .services.color-2 {
   border-bottom: 2px solid #ec5453;
@@ -1033,7 +1008,6 @@ right     : 0;
   border-color: #ec5453 transparent transparent transparent;
 }
 
-
 .services.color-3 {
   border-bottom: 2px solid #f9bf3f;
 }
@@ -1049,7 +1023,6 @@ right     : 0;
 .services.color-3 .icon:after {
   border-color: #f9bf3f transparent transparent transparent;
 }
-
 
 .services.color-4 {
   border-bottom: 2px solid #a84cb8;
@@ -1067,7 +1040,6 @@ right     : 0;
   border-color: #a84cb8 transparent transparent transparent;
 }
 
-
 .services.color-5 {
   border-bottom: 2px solid #2fa499;
 }
@@ -1083,7 +1055,6 @@ right     : 0;
 .services.color-5 .icon:after {
   border-color: #2fa499 transparent transparent transparent;
 }
-
 
 .services.color-6 {
   border-bottom: 2px solid #4054b2;
@@ -1101,7 +1072,6 @@ right     : 0;
   border-color: #4054b2 transparent transparent transparent;
 }
 
-
 /*******************************/
 /********* EDUCATION *********/
 /*******************************/
@@ -1115,7 +1085,6 @@ right     : 0;
 }
 
 @media screen and (max-width: 768px) {
-
   .colorlib-education {
     padding-top   : 5em;
     padding-bottom: 8em;
@@ -1177,8 +1146,8 @@ right     : 0;
   margin-bottom: 30px;
 }
 
-.timeline-centered:before,
-.timeline-centered:after {
+.timeline-centered:after,
+.timeline-centered:before {
   content: " ";
   display: table;
 }
@@ -1187,8 +1156,8 @@ right     : 0;
   clear: both;
 }
 
-.timeline-centered:before,
-.timeline-centered:after {
+.timeline-centered:after,
+.timeline-centered:before {
   content: " ";
   display: table;
 }
@@ -1317,12 +1286,8 @@ right     : 0;
   -webkit-opacity: 0.4;
   -moz-opacity   : 0.4;
   opacity        : 0.4;
-  -ms-filter     : alpha(opacity=40);
-  filter         : alpha(opacity=40);
   font-size      : 16px;
 }
-
-
 
 /*******************************/
 /********* SKILLS CSS *********/
@@ -1390,7 +1355,7 @@ right     : 0;
   top       : 23px;
   right     : 30px;
   left      : 15px;
-  background: #EF233C;
+  background: #ef233c;
   z-index   : 1;
 }
 
@@ -1401,7 +1366,7 @@ right     : 0;
   top       : 22px;
   right     : 25px;
   left      : 15px;
-  background: #EF233C;
+  background: #ef233c;
   z-index   : 1;
 }
 
@@ -1549,16 +1514,9 @@ canvas {
   color: #4054b2;
 }
 
-
 /*******************************/
 /*********  CSS *********/
 /*******************************/
-
-
-
-
-
-
 
 /*======================================
   WORK
@@ -1623,7 +1581,7 @@ canvas {
 }
 
 .project .desc .con .icon span a {
-  color                : #333333;
+  color                : #333;
   padding              : 5px;
   background           : rgba(255, 255, 255, 0.5);
   -webkit-border-radius: 4px;
@@ -1634,7 +1592,7 @@ canvas {
 
 .project .desc .con .icon i {
   font-size: 16px;
-  color    : #333333;
+  color    : #333;
 }
 
 .project .desc h3 {
@@ -1773,7 +1731,7 @@ canvas {
 }
 
 .blog-entry .desc span small i {
-  color: #999999;
+  color: #999;
 }
 
 .blog-entry .desc .lead {
@@ -1860,12 +1818,12 @@ canvas {
   position  : relative;
   margin    : 0;
   width     : 100%;
-  background: #EF233C;
+  background: #ef233c;
 }
 
 .contact-area .container-fluid {
-  padding-right : 10px;
-  padding-left: 10px;
+  /* padding-right : 10px;
+  padding-left: 10px;*/
   margin         : 0;
   background     : url(../images/contact.jpg) left center no-repeat;
   background-size: contain;
@@ -1874,15 +1832,14 @@ canvas {
 .contact-area .contact-form {
   position  : relative;
   padding   : 90px 0 90px 45px;
-  background: #EF233C;
+  background: #ef233c;
   width     : 100%;
   box-sizing: border-box;
 }
 
 .contact-area .contact-form input {
-  color  : #ffffff;
-  padding: 15px 0;
-
+  color        : #fff;
+  padding      : 15px 0;
   background   : none;
   border-radius: 0;
   border       : none;
@@ -1890,7 +1847,7 @@ canvas {
 }
 
 .contact-area .contact-form textarea {
-  color        : #ffffff;
+  color        : #fff;
   height       : 90px;
   padding      : 15px 0;
   background   : none;
@@ -1900,27 +1857,27 @@ canvas {
 }
 
 .contact-area .contact-form .form-control::placeholder {
-  color  : #ffffff;
+  color  : #fff;
   opacity: 1;
 }
 
 .contact-area .contact-form .form-control:-ms-input-placeholder,
 .contact-s-area .contact-form .form-control::-ms-input-placeholder {
-  color: #ffffff;
+  color: #fff;
 }
 
 .contact-area .contact-form .btn {
   margin-top: 35px;
-  color     : #EF233C;
-  background: #ffffff;
-  box-shadow: inset 0 0 0 50px #ffffff;
+  color     : #ef233c;
+  background: #fff;
+  box-shadow: inset 0 0 0 50px #fff;
 }
 
 .contact-area .contact-form .btn:hover {
-  color       : #ffffff;
+  color       : #fff;
   background  : transparent;
-  box-shadow  : inset 0 0 0 0 #ffffff;
-  border-color: #ffffff;
+  box-shadow  : inset 0 0 0 0 #fff;
+  border-color: #fff;
 }
 
 .contact-area .help-block ul {
@@ -1929,7 +1886,7 @@ canvas {
   list-style-type: none;
   font-size      : 14px;
   font-style     : italic;
-  color          : #ffffff;
+  color          : #fff;
 }
 
 @media (max-width: 767.98px) {
@@ -1963,7 +1920,6 @@ canvas {
   -ms-border-radius    : 0;
   border-radius        : 0;
 }
-
 
 /**************************************/
 /********* SIDEBAR COLUMN CSS *********/
@@ -2004,7 +1960,6 @@ canvas {
   /* Firefox */
 }
 
-
 /* Media query for small screens */
 @media screen and (max-width: 768px) {
   #colorlib-page {
@@ -2013,16 +1968,14 @@ canvas {
   }
 
   #colorlib-main {
-    width   : 100%;
-    position: relative;
-
+    width      : 100%;
+    position   : relative;
     /* Full width */
-    order: 2;
+    order      : 2;
     /* Move main content below aside */
-    right: 0;
-    float: right;
-
-    /*padding: 0 1em;*/
+    right      : 0;
+    float      : right;
+    /*padding  : 0 1em;*/
     margin-left: 0;
   }
 
@@ -2151,7 +2104,7 @@ canvas {
 
 #colorlib-aside #colorlib-main-menu ul li a:hover {
   text-decoration: none;
-  color          : black;
+  color          : #000;
 }
 
 #colorlib-aside #colorlib-main-menu ul li a:hover:after {
@@ -2214,9 +2167,9 @@ canvas {
   padding: 4px;
 }
 
-#colorlib-aside .colorlib-footer ul li a:hover,
 #colorlib-aside .colorlib-footer ul li a:active,
-#colorlib-aside .colorlib-footer ul li a:focus {
+#colorlib-aside .colorlib-footer ul li a:focus,
+#colorlib-aside .colorlib-footer ul li a:hover {
   text-decoration: none;
   outline        : none;
   color          : #2c98f0;
@@ -2268,9 +2221,9 @@ canvas {
   color: #2c98f0;
 }
 
-.colorlib-social li a:hover,
 .colorlib-social li a:active,
-.colorlib-social li a:focus {
+.colorlib-social li a:focus,
+.colorlib-social li a:hover {
   outline        : none;
   text-decoration: none;
   color          : #2c98f0;
@@ -2364,8 +2317,8 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   border-radius        : 2px;
 }
 
-.pagination li a:hover,
-.pagination li a:focus {
+.pagination li a:focus,
+.pagination li a:hover {
   background: #2c98f0;
   color     : #fff;
   border    : 1px solid #2c98f0;
@@ -2382,8 +2335,8 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   border    : 1px solid #2c98f0 !important;
 }
 
-.pagination li.active a:hover,
-.pagination li.active a:focus {
+.pagination li.active a:focus,
+.pagination li.active a:hover {
   background: #2c98f0;
   color     : #fff;
   border    : 1px solid #2c98f0 !important;
@@ -2423,9 +2376,9 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   padding: 18px 36px !important;
 }
 
-.btn:hover,
 .btn:active,
-.btn:focus {
+.btn:focus,
+.btn:hover {
   -webkit-box-shadow: none !important;
   box-shadow        : none !important;
   outline           : none !important;
@@ -2437,9 +2390,9 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   border    : 2px solid #2c98f0;
 }
 
-.btn-primary:hover,
+.btn-primary:active,
 .btn-primary:focus,
-.btn-primary:active {
+.btn-primary:hover {
   background  : #44a4f2 !important;
   border-color: #44a4f2 !important;
 }
@@ -2450,9 +2403,9 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   border    : 2px solid #2c98f0;
 }
 
-.btn-primary.btn-outline:hover,
+.btn-primary.btn-outline:active,
 .btn-primary.btn-outline:focus,
-.btn-primary.btn-outline:active {
+.btn-primary.btn-outline:hover {
   background: #2c98f0;
   color     : #fff;
 }
@@ -2463,9 +2416,9 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   border    : 2px solid #5cb85c;
 }
 
-.btn-success:hover,
+.btn-success:active,
 .btn-success:focus,
-.btn-success:active {
+.btn-success:hover {
   background  : #4cae4c !important;
   border-color: #4cae4c !important;
 }
@@ -2476,9 +2429,9 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   border    : 2px solid #5cb85c;
 }
 
-.btn-success.btn-outline:hover,
+.btn-success.btn-outline:active,
 .btn-success.btn-outline:focus,
-.btn-success.btn-outline:active {
+.btn-success.btn-outline:hover {
   background: #5cb85c;
   color     : #fff;
 }
@@ -2489,9 +2442,9 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   border    : 2px solid #5bc0de;
 }
 
-.btn-info:hover,
+.btn-info:active,
 .btn-info:focus,
-.btn-info:active {
+.btn-info:hover {
   background  : #46b8da !important;
   border-color: #46b8da !important;
 }
@@ -2502,9 +2455,9 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   border    : 2px solid #5bc0de;
 }
 
-.btn-info.btn-outline:hover,
+.btn-info.btn-outline:active,
 .btn-info.btn-outline:focus,
-.btn-info.btn-outline:active {
+.btn-info.btn-outline:hover {
   background: #5bc0de;
   color     : #fff;
 }
@@ -2515,9 +2468,9 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   border    : 2px solid #f0ad4e;
 }
 
-.btn-warning:hover,
+.btn-warning:active,
 .btn-warning:focus,
-.btn-warning:active {
+.btn-warning:hover {
   background  : #eea236 !important;
   border-color: #eea236 !important;
 }
@@ -2528,9 +2481,9 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   border    : 2px solid #f0ad4e;
 }
 
-.btn-warning.btn-outline:hover,
+.btn-warning.btn-outline:active,
 .btn-warning.btn-outline:focus,
-.btn-warning.btn-outline:active {
+.btn-warning.btn-outline:hover {
   background: #f0ad4e;
   color     : #fff;
 }
@@ -2541,9 +2494,9 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   border    : 2px solid #d9534f;
 }
 
-.btn-danger:hover,
+.btn-danger:active,
 .btn-danger:focus,
-.btn-danger:active {
+.btn-danger:hover {
   background  : #d43f3a !important;
   border-color: #d43f3a !important;
 }
@@ -2554,9 +2507,9 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   border    : 2px solid #d9534f;
 }
 
-.btn-danger.btn-outline:hover,
+.btn-danger.btn-outline:active,
 .btn-danger.btn-outline:focus,
-.btn-danger.btn-outline:active {
+.btn-danger.btn-outline:hover {
   background: #d9534f;
   color     : #fff;
 }
@@ -2570,9 +2523,9 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   transition        : 0.3s;
 }
 
-.btn-outline:hover,
+.btn-outline:active,
 .btn-outline:focus,
-.btn-outline:active {
+.btn-outline:hover {
   -webkit-box-shadow: none;
   box-shadow        : none;
 }
