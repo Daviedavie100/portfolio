@@ -112,14 +112,14 @@ figure figcaption {
 }
 
 .container-wrap {
-  width           : 100%;
-  max-width       : 1170px;
-  margin          : 0 auto;
-  display         : flex;
-  flex-direction  : row;
-  position        : relative;
+  width             : 100%;
+  max-width         : 1170px;
+  margin            : 0 auto;
+  display           : flex;
+  flex-direction    : row;
+  position          : relative;
   /*background-color: #4cae4c;*/
-  box-sizing      : border-box;
+  box-sizing        : border-box;
 }
 
 /*navigation bar*/
@@ -635,14 +635,18 @@ figure figcaption {
 /*******************************/
 
 .colorlib-about {
-  padding-top     : 2em;
+  padding-top       : 2em;
   /*4em*/
-  padding-bottom  : 2em;
+  padding-bottom    : 2em;
   /*9em*/
-  clear           : both;
-  width           : 100%;
-  display         : block;
+  clear             : both;
+  width             : 100%;
+  display           : block;
   /*background-color: #f2f3fb;*/
+
+  background-size    : cover;
+  background-position: center center;
+  opacity:1;
 }
 
 .colorlib-about .overlay {
@@ -652,7 +656,7 @@ figure figcaption {
   top       : 0;
   left      : 0;
   right     : 0;
-  background: rgba(0, 0, 0, 0.4);
+  /*background: rgba(0, 0, 0, 0.4);*/
 }
 
 @media screen and (max-width: 768px) {
@@ -695,7 +699,7 @@ figure figcaption {
   display       : block;
   font-size     : 10px;
   text-transform: uppercase;
-  color         : #999999;
+  color         : #edfd04;
   font-weight   : 500;
   letter-spacing: 5px;
 }
@@ -847,7 +851,22 @@ figure figcaption {
   clear         : both;
   width         : 100%;
   display       : block;
+
+background-attachment: fixed;
+background-size    : cover;
+background-position: center center;
+opacity:1;
 }
+
+.colorlib-services .overlay {
+z-index   : 0;
+position  : absolute;
+bottom    : 0;
+top       : 0;
+left      : 0;
+right     : 0;
+}
+
 
 @media screen and (max-width: 768px) {
   .colorlib-services {
@@ -871,7 +890,7 @@ figure figcaption {
   display       : block;
   font-size     : 10px;
   text-transform: uppercase;
-  color         : #999999;
+  color         : #edfd04;
   font-weight   : 500;
   letter-spacing: 5px;
 }
@@ -1128,7 +1147,7 @@ figure figcaption {
   display       : block;
   font-size     : 10px;
   text-transform: uppercase;
-  color         : #999999;
+  color         : #edfd04;
   font-weight   : 500;
   letter-spacing: 5px;
 }
@@ -1339,7 +1358,7 @@ figure figcaption {
   display       : block;
   font-size     : 10px;
   text-transform: uppercase;
-  color         : #999999;
+  color         : #edfd04;
   font-weight   : 500;
   letter-spacing: 5px;
 }
@@ -1812,7 +1831,7 @@ canvas {
   display       : block;
   font-size     : 10px;
   text-transform: uppercase;
-  color         : #999999;
+  color         : #edfd04;
   font-weight   : 500;
   letter-spacing: 5px;
 }
@@ -1845,8 +1864,8 @@ canvas {
 }
 
 .contact-area .container-fluid {
-  /*padding-right : 10px;
-  padding-left: 10px;*/
+  padding-right : 10px;
+  padding-left: 10px;
   margin         : 0;
   background     : url(../images/contact.jpg) left center no-repeat;
   background-size: contain;
