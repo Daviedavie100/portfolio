@@ -118,7 +118,7 @@ figure figcaption {
   display         : flex;
   flex-direction  : row;
   position        : relative;
-  background-color: #4cae4c;
+  /*background-color: #4cae4c;*/
   box-sizing      : border-box;
 }
 
@@ -642,7 +642,17 @@ figure figcaption {
   clear           : both;
   width           : 100%;
   display         : block;
-  background-color: #f2f3fb;
+  /*background-color: #f2f3fb;*/
+}
+
+.colorlib-about .overlay {
+  z-index   : 0;
+  position  : absolute;
+  bottom    : 0;
+  top       : 0;
+  left      : 0;
+  right     : 0;
+  background: rgba(0, 0, 0, 0.4);
 }
 
 @media screen and (max-width: 768px) {
@@ -651,6 +661,7 @@ figure figcaption {
     padding-bottom: 8em;
   }
 }
+
 
 .colorlib-about-narrow-content {
   padding: 0 2.5em;
