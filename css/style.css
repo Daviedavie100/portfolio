@@ -628,7 +628,6 @@ figure figcaption {
   clear              : both;
   width              : 100%;
   display            : block;
-  /*background-color : #f2f3fb;*/
   background-size    : cover;
   background-position: center center;
   opacity            : 1;
@@ -1077,8 +1076,8 @@ figure figcaption {
 /*******************************/
 
 .colorlib-education {
-  padding-top   : 4em;
-  padding-bottom: 9em;
+  padding-top   : 2em;
+  padding-bottom: 2em;
   clear         : both;
   width         : 100%;
   display       : block;
@@ -1294,12 +1293,30 @@ figure figcaption {
 /*******************************/
 
 .colorlib-skills {
-  padding-top   : 4em;
-  padding-bottom: 9em;
+  padding-top   : 2em;/*4em*/
+  padding-bottom: 3em;/*9em*/
   clear         : both;
   width         : 100%;
   display       : block;
+
+
+
+  /*background-attachment: fixed;*/
+  background-size      : cover;
+  background-position  : center center;
+  opacity              : 1;
 }
+
+.colorlib-skills .overlay {
+  z-index : 0;
+  position: absolute;
+  bottom  : 0;
+  top     : 0;
+  left    : 0;
+  right   : 0;
+  /*background: rgba(0, 0, 0, 0.4);*/
+}
+
 
 @media screen and (max-width: 768px) {
   .colorlib-skills {
@@ -1330,7 +1347,7 @@ figure figcaption {
 
 .skills-colorlib-heading {
   font-size     : 18px;
-  margin-bottom : 4em;
+  margin-bottom : 1.5em;/*4em-header to paragraph*/
   font-weight   : 700;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -1515,12 +1532,9 @@ canvas {
 }
 
 /*******************************/
-/*********  CSS *********/
+/*********  WORK *********/
 /*******************************/
 
-/*======================================
-  WORK
-======================================*/
 .work-menu span {
   margin-left: 10px;
 }
