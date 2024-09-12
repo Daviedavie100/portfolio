@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?8xjwmz');
-  src:  url('fonts/icomoon.eot?8xjwmz#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?8xjwmz') format('truetype'),
-    url('fonts/icomoon.woff?8xjwmz') format('woff'),
-    url('fonts/icomoon.svg?8xjwmz#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?twvk87');
+  src:  url('fonts/icomoon.eot?twvk87#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?twvk87') format('truetype'),
+    url('fonts/icomoon.woff?twvk87') format('woff'),
+    url('fonts/icomoon.svg?twvk87#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,74 +25,98 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-google-looker:before {
-  content: "\e900";
-  color: rgb(24, 170, 101);
-  opacity: 0.589;
-}
-.icon-google-looker .path2:before {
-  content: "\e901";
-  margin-left: -1em;
-  color: rgb(255, 200, 40);
-  opacity: 0.681;
-}
-.icon-google-looker .path3:before {
+.icon-tools:before {
   content: "\e902";
-  margin-left: -1em;
-  color: rgb(244, 65, 54);
-  opacity: 0.889;
 }
-.icon-google-looker .path4:before {
+.icon-options:before {
+  content: "\e902";
+}
+.icon-repair:before {
+  content: "\e902";
+}
+.icon-tools-2:before {
   content: "\e903";
-  margin-left: -1em;
-  color: rgb(32, 150, 243);
-  opacity: 0.893;
 }
-.icon-power-bi-2021:before {
+.icon-wrench:before {
+  content: "\e903";
+}
+.icon-screwdriver:before {
+  content: "\e903";
+}
+.icon-tools2:before {
   content: "\e904";
-  color: rgb(237, 165, 3);
 }
-.icon-power-bi-2021 .path2:before {
+.icon-measure:before {
+  content: "\e904";
+}
+.icon-design:before {
+  content: "\e904";
+}
+.icon-ruler:before {
+  content: "\e904";
+}
+.icon-pencil:before {
+  content: "\e904";
+}
+.icon-linegraph:before {
+  content: "\e928";
+}
+.icon-tools1:before {
   content: "\e905";
-  margin-left: -1em;
-  color: rgb(255, 202, 40);
 }
-.icon-power-bi-2021 .path3:before {
+.icon-line-chart:before {
+  content: "\e92c";
+}
+.icon-bar-chart:before {
+  content: "\e92d";
+}
+.icon-pie-chart:before {
+  content: "\e92e";
+}
+.icon-database:before {
   content: "\e906";
-  margin-left: -1em;
-  color: rgb(255, 224, 130);
 }
-.icon-google-looker-seeklogo .path1:before {
+.icon-server:before {
   content: "\e907";
-  color: rgb(52, 168, 83);
 }
-.icon-google-looker-seeklogo .path2:before {
+.icon-cogs:before {
   content: "\e908";
-  margin-left: -3.7373046875em;
-  color: rgb(251, 188, 4);
 }
-.icon-google-looker-seeklogo .path3:before {
+.icon-filter:before {
   content: "\e909";
-  margin-left: -3.7373046875em;
-  color: rgb(234, 67, 53);
 }
-.icon-google-looker-seeklogo .path4:before {
+.icon-filter1:before {
   content: "\e90a";
-  margin-left: -3.7373046875em;
-  color: rgb(66, 133, 244);
 }
-.icon-google-looker-seeklogo .path5:before {
+.icon-stats-dots:before {
+  content: "\e92b";
+}
+.icon-equalizer:before {
   content: "\e90b";
-  margin-left: -3.7373046875em;
-  color: rgb(95, 99, 104);
+}
+.icon-equalizer1:before {
+  content: "\e90d";
+}
+.icon-cogs1:before {
+  content: "\e929";
+}
+.icon-binoculars:before {
+  content: "\e92a";
+}
+.icon-git1:before {
+  content: "\e927";
+}
+.icon-postgresql:before {
+  content: "\e900";
+  color: #336791;
+}
+.icon-mysql:before {
+  content: "\e901";
+  color: #4479a1;
 }
 .icon-skype:before {
   content: "\e90c";
   color: #00aff0;
-}
-.icon-abbrobotstudio:before {
-  content: "\e90d";
-  color: #ff9e0f;
 }
 .icon-adobexd:before {
   content: "\e90e";
@@ -177,6 +201,9 @@
 .icon-heart3:before {
   content: "\e07c";
 }
+.icon-align-justify:before {
+  content: "\e07e";
+}
 .icon-layers2:before {
   content: "\e083";
 }
@@ -191,6 +218,9 @@
 }
 .icon-share3:before {
   content: "\e0b5";
+}
+.icon-cross2:before {
+  content: "\e117";
 }
 .icon-heart4:before {
   content: "\e921";
@@ -212,6 +242,12 @@
 }
 .icon-heart:before {
   content: "\e950";
+}
+.icon-chart-pie:before {
+  content: "\e961";
+}
+.icon-chart-bar:before {
+  content: "\e963";
 }
 .icon-eye:before {
   content: "\e969";
@@ -260,10 +296,4 @@
 }
 .icon-linkedin22:before {
   content: "\eafa";
-}
-.icon-git1:before {
-  content: "\e927";
-}
-.icon-linegraph:before {
-  content: "\e928";
 }
