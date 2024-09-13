@@ -528,6 +528,7 @@ figure figcaption {
   color     : #000;
   border    : 1px solid #000;
   background: transparent !important;
+  display: inline;
 }
 
 #colorlib-hero .flexslider .slider-text>.slider-text-inner .btn.btn-learn:hover {
