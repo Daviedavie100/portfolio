@@ -103,10 +103,10 @@ figure figcaption {
   position: relative;
   display : flex;
 
-  background-attachment: fixed;
-  background-size      : cover;
+  background-attachment:fixed;
+  background-size      :calc(100% - 300px);
 
-  background-image  : url("../images/Untitled\ \(6\).jpeg");
+  background-image  : url("../images/back1.jpg");
   /*background-color: #fff;*/
   /*#d4d4dc-silver #0a1828-dark classic blue*/
   padding-left      : 15px;
