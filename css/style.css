@@ -93,16 +93,19 @@ figure figcaption {
   background: #2c98f0;
 }
 
-/*************************************/
-/********* COLORLIB PAGE CSS *********/
-/*************************************/
+/*********************************/
+/********* COLORLIB PAGE *********/
+/*********************************/
 
 #colorlib-page {
   width           : 100%;
   overflow        : visible;
   position        : relative;
   display         : flex;
-  background-color: #fff;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url("/Users/Davie/Documents/GitHub/portfolio/images/Untitled.jpeg");
+  /*background-color: #fff;*/
   /*#d4d4dc-silver #0a1828-dark classic blue*/
   padding-left    : 15px;
   padding-right   : 15px;
@@ -629,9 +632,9 @@ figure figcaption {
   clear              : both;
   width              : 100%;
   display            : block;
-  background-size    : cover;
+  /*background-size    : cover;
   background-position: center center;
-  opacity            : 1;
+  opacity            : 1;*/
 }
 
 .colorlib-about .overlay {
@@ -832,9 +835,9 @@ figure figcaption {
   clear                : both;
   width                : 100%;
   display              : block;
-  /*background-attachment: fixed;*/
+  /*background-attachment: fixed;
   background-size      : cover;
-  background-position  : center center;
+  background-position  : center center;*/
   opacity              : 1;
 }
 
@@ -1303,9 +1306,9 @@ figure figcaption {
 
 
 
-  /*background-attachment: fixed;*/
+  /*background-attachment: fixed;
   background-size      : cover;
-  background-position  : center center;
+  background-position  : center center;*/
   opacity              : 1;
 }
 
