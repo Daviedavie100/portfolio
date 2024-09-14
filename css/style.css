@@ -102,13 +102,13 @@ figure figcaption {
   overflow: visible;
   position: relative;
   display : flex;
-
   background-attachment:fixed;
   background-size      :calc(100% - 300px);
-
-  background-image  : url("../images/back1.jpg");
+  background-image  : url("../images/back5.jpg");
   /*background-color: #fff;*/
   /*#d4d4dc-silver #0a1828-dark classic blue*/
+
+
   padding-left      : 15px;
   padding-right     : 15px;
 }
@@ -280,9 +280,9 @@ figure figcaption {
   }
 }
 
-/*****************************************/
-/********* TOP-COLORLIB MAIN CSS *********/
-/*****************************************/
+/*************************************/
+/********* TOP-COLORLIB MAIN *********/
+/*************************************/
 
 #top-colorlib-section {
   position            : fixed;
@@ -634,6 +634,10 @@ figure figcaption {
   clear                : both;
   width                : 100%;
   display              : block;
+  font-family     : "Quicksand", Arial, sans-serif, Verdana,Tahoma;
+  /*font-size: 14px;*/
+
+  color           :#ffffff;
   /*background-size    : cover;
   background-position  : center center;
   opacity              : 1;*/
