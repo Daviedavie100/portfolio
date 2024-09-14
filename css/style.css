@@ -98,17 +98,19 @@ figure figcaption {
 /*********************************/
 
 #colorlib-page {
-  width           : 100%;
-  overflow        : visible;
-  position        : relative;
-  display         : flex;
+  width   : 100%;
+  overflow: visible;
+  position: relative;
+  display : flex;
+
   background-attachment: fixed;
-  background-size: cover;
-  background-image: url("/Users/Davie/Documents/GitHub/portfolio/images/Untitled.jpeg");
+  background-size      : cover;
+
+  background-image  : url("../images/Untitled\ \(6\).jpeg");
   /*background-color: #fff;*/
   /*#d4d4dc-silver #0a1828-dark classic blue*/
-  padding-left    : 15px;
-  padding-right   : 15px;
+  padding-left      : 15px;
+  padding-right     : 15px;
 }
 
 .container-wrap {
@@ -531,7 +533,7 @@ figure figcaption {
   color     : #000;
   border    : 1px solid #000;
   background: transparent !important;
-  display: inline;
+  display   : inline;
 }
 
 #colorlib-hero .flexslider .slider-text>.slider-text-inner .btn.btn-learn:hover {
@@ -625,16 +627,16 @@ figure figcaption {
 /*******************************/
 
 .colorlib-about {
-  padding-top        : 2em;
+  padding-top          : 2em;
   /*4em*/
-  padding-bottom     : 2em;
+  padding-bottom       : 2em;
   /*9em*/
-  clear              : both;
-  width              : 100%;
-  display            : block;
+  clear                : both;
+  width                : 100%;
+  display              : block;
   /*background-size    : cover;
-  background-position: center center;
-  opacity            : 1;*/
+  background-position  : center center;
+  opacity              : 1;*/
 }
 
 .colorlib-about .overlay {
@@ -830,15 +832,15 @@ figure figcaption {
 /*******************************/
 
 .colorlib-services {
-  padding-top          : 2em;
-  padding-bottom       : 2em;
-  clear                : both;
-  width                : 100%;
-  display              : block;
+  padding-top            : 2em;
+  padding-bottom         : 2em;
+  clear                  : both;
+  width                  : 100%;
+  display                : block;
   /*background-attachment: fixed;
-  background-size      : cover;
-  background-position  : center center;*/
-  opacity              : 1;
+  background-size        : cover;
+  background-position    : center center;
+  opacity                : 1;*/
 }
 
 .colorlib-services .overlay {
@@ -879,7 +881,8 @@ figure figcaption {
 
 .colorlib-services-heading {
   font-size     : 18px;
-  margin-bottom : 2em; /*4em*/
+  margin-bottom : 2em;
+  /*4em*/
   font-weight   : 700;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -915,7 +918,7 @@ figure figcaption {
   margin-bottom     : 80px;
   position          : relative;
   z-index           : 0;
-  height: 25em;
+  height            : 25em;
 }
 
 @media screen and (max-width: 768px) {
@@ -1298,8 +1301,10 @@ figure figcaption {
 /*******************************/
 
 .colorlib-skills {
-  padding-top   : 2em;/*4em*/
-  padding-bottom: 3em;/*9em*/
+  padding-top   : 2em;
+  /*4em*/
+  padding-bottom: 3em;
+  /*9em*/
   clear         : both;
   width         : 100%;
   display       : block;
@@ -1308,17 +1313,17 @@ figure figcaption {
 
   /*background-attachment: fixed;
   background-size      : cover;
-  background-position  : center center;*/
-  opacity              : 1;
+  background-position  : center center;
+  opacity              : 1;*/
 }
 
 .colorlib-skills .overlay {
-  z-index : 0;
-  position: absolute;
-  bottom  : 0;
-  top     : 0;
-  left    : 0;
-  right   : 0;
+  z-index     : 0;
+  position    : absolute;
+  bottom      : 0;
+  top         : 0;
+  left        : 0;
+  right       : 0;
   /*background: rgba(0, 0, 0, 0.4);*/
 }
 
@@ -1352,7 +1357,8 @@ figure figcaption {
 
 .skills-colorlib-heading {
   font-size     : 18px;
-  margin-bottom : 1.5em;/*4em-header to paragraph*/
+  margin-bottom : 1.5em;
+  /*4em-header to paragraph*/
   font-weight   : 700;
   text-transform: uppercase;
   letter-spacing: 5px;
