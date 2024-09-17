@@ -141,9 +141,9 @@ figure figcaption {
 .work-img {
   display:block;
   overflow: hidden;
-  height:min-content;
+  height:40%;
   width: calc(100% - 25px);
-  align-content: center center;
+  align-content:space-around;
 }
 
 .work-img img {
