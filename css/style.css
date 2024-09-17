@@ -121,6 +121,13 @@ figure figcaption {
   margin: 0 auto;
 }
 
+.lin-mf {
+  width: 100%;
+  height: 1px;
+  background-color: #ff4800;
+  margin: 0 auto;
+}
+
 .work .contianer {
   width: 100%;
 }
@@ -141,7 +148,7 @@ figure figcaption {
 .work-img {
   display:block;
   overflow: hidden;
-  height:40%;
+  height:min-content;
   width: calc(100% - 25px);
   align-content:space-around;
 }
