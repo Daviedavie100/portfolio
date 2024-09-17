@@ -122,10 +122,13 @@ figure figcaption {
 }
 
 .lin-mf {
-  width: 100%;
-  height: 1px;
+  top: 0;
+  float: left;
+  width: 100px;
+  height: 2px;
   background-color: #ff4800;
   margin: 0 auto;
+  padding: 5px;
 }
 
 .work .contianer {
