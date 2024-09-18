@@ -99,15 +99,15 @@ figure figcaption {
 /*--/ Title A /--*/
 
 .title-box {
-  padding-top: 5rem;
+  padding-top  : 5rem;
   margin-bottom: 4rem;
 }
 
 .title-a {
-  font-size: 3rem;
-  font-weight: bold;
+  font-size     : 3rem;
+  font-weight   : bold;
   text-transform: uppercase;
-  color: #04f538;
+  color         : #04f538;
 }
 
 .subtitle-a {
@@ -115,20 +115,22 @@ figure figcaption {
 }
 
 .line-mf {
-  width: 40px;
-  height: 5px;
+  width           : 40px;
+  height          : 5px;
   background-color: #0078ff;
-  margin: 0 auto;
+  margin          : 0 auto;
 }
 
 .lin-mf {
-  top: 0;
-  float: left;
-  width: 100px;
-  height: 1px;
+  top             : 0;
+  float           : left;
+  width           : 100px;
+  height          : 1px;
   background-color: #ff4800;
-  margin: 0 auto;
-  padding: 5px;
+  margin          : 0 auto;
+  padding         : 5px;
+
+  margin-right: 10px;
 }
 
 .work .contianer {
@@ -137,25 +139,25 @@ figure figcaption {
 
 /*tick*/
 .work-box {
- padding: 15px;
-  margin-bottom: 3rem;
+  padding                    : 15px;
+  margin-bottom              : 3rem;
   -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  background-color: #fff;
+  backface-visibility        : hidden;
+  background-color           : #fff;
 }
 
 /*tick*/
 .work-box:hover img {
   -webkit-transform: scale(1.2);
-  transform: scale(1.2);
+  transform        : scale(1.2);
 }
 
 /*tick*/
 .work-img {
-  display:block;
+  display : block;
   overflow: hidden;
-  height:min-content;
-  width: calc(100% - 25px);
+  height  : min-content;
+  width   : calc(100% - 25px);
 }
 
 .work-img img {
@@ -164,13 +166,14 @@ figure figcaption {
 
 /*tick*/
 .work-content {
-  width: 100%;
+  width  : 100%;
   padding: 2rem 3% 1rem 2%;
-  margin: 0;
+  margin : 0;
+  color: #333333;
 }
 
 .work-content .w-more {
-  color: #4e4e4e;
+  color    : #4e4e4e;
   font-size: .8rem;
 }
 
@@ -180,8 +183,8 @@ figure figcaption {
 
 .work-content .w-like {
   font-size: 2.5rem;
-  color: #0078ff;
-  float: right;
+  color    : #0078ff;
+  float    : right;
 }
 
 .work-content .w-like a {
@@ -194,28 +197,21 @@ figure figcaption {
 
 /*tick*/
 .w-title {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1.4rem;
-  color: #0c0c0c;
+  font-family:sans-serif, Verdana, Geneva, Tahoma ;
+  font-size  : 1.4rem;
+  color      : #000;
 }
 
 
 
-
+/* Ensures the line and heading are vertically aligned 
 .title-container {
   display: flex;
-  align-items: center; /* Ensures the line and heading are vertically aligned */
+  align-items: center; 
 }
+/
 
-.lin-mf {
-  margin-right: 10px; /* Adds space between the line and the heading */
-}
 
-.w-title {
-  font-size: 24px;
-  color: #000;
-  text-decoration: none;
-}
 
 
 /*********************************/
@@ -223,19 +219,19 @@ figure figcaption {
 /*********************************/
 
 #colorlib-page {
-  width   : 100%;
-  overflow: visible;
-  position: relative;
-  display : flex;
-  background-attachment:fixed;
-  background-size      :calc(100% - 300px);
-  background-image  : url("../images/back5.jpg");
-  /*background-color: #fff;*/
+  width                : 100%;
+  overflow             : visible;
+  position             : relative;
+  display              : flex;
+  background-attachment: fixed;
+  background-size      : calc(100% - 300px);
+  background-image     : url("../images/back5.jpg");
+  /*background-color   : #fff;*/
   /*#d4d4dc-silver #0a1828-dark classic blue*/
 
 
-  padding-left      : 15px;
-  padding-right     : 15px;
+  padding-left : 15px;
+  padding-right: 15px;
 }
 
 .container-wrap {
@@ -752,17 +748,17 @@ figure figcaption {
 /*******************************/
 
 .colorlib-about {
-  padding-top          : 2em;
+  padding-top   : 2em;
   /*4em*/
-  padding-bottom       : 2em;
+  padding-bottom: 2em;
   /*9em*/
-  clear                : both;
-  width                : 100%;
-  display              : block;
-  font-family     : "Quicksand", Arial, sans-serif, Verdana,Tahoma;
-  /*font-size: 14px;*/
+  clear         : both;
+  width         : 100%;
+  display       : block;
+  font-family   : "Quicksand", Arial, sans-serif, Verdana, Tahoma;
+  /*font-size   : 14px;*/
 
-  color           :#ffffff;
+  color                : #ffffff;
   /*background-size    : cover;
   background-position  : center center;
   opacity              : 1;*/
