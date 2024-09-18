@@ -201,6 +201,23 @@ figure figcaption {
 
 
 
+
+.title-container {
+  display: flex;
+  align-items: center; /* Ensures the line and heading are vertically aligned */
+}
+
+.lin-mf {
+  margin-right: 10px; /* Adds space between the line and the heading */
+}
+
+.w-title {
+  font-size: 24px;
+  color: #000;
+  text-decoration: none;
+}
+
+
 /*********************************/
 /********* COLORLIB PAGE *********/
 /*********************************/
