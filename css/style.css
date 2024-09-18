@@ -125,7 +125,7 @@ figure figcaption {
   top: 0;
   float: left;
   width: 100px;
-  height: 2px;
+  height: 1px;
   background-color: #ff4800;
   margin: 0 auto;
   padding: 5px;
@@ -135,34 +135,38 @@ figure figcaption {
   width: 100%;
 }
 
+/*tick*/
 .work-box {
- 
+ padding: 15px;
   margin-bottom: 3rem;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   background-color: #fff;
 }
 
+/*tick*/
 .work-box:hover img {
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
 }
 
+/*tick*/
 .work-img {
   display:block;
   overflow: hidden;
   height:min-content;
   width: calc(100% - 25px);
-  align-content:space-around;
 }
 
 .work-img img {
   transition: all 1s;
 }
 
+/*tick*/
 .work-content {
   width: 100%;
-  padding: 2rem 3% 1rem 4%;
+  padding: 2rem 3% 1rem 2%;
+  margin: 0;
 }
 
 .work-content .w-more {
@@ -188,9 +192,11 @@ figure figcaption {
   font-size: .7rem;
 }
 
+/*tick*/
 .w-title {
-  
-  font-size: 1.2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.4rem;
+  color: #0c0c0c;
 }
 
 
