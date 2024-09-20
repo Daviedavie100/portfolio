@@ -2642,7 +2642,7 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
 /********* INSIGHTS *********/
 /****************************/
 
-.colorlib-about {
+.colorlib-insights {
   padding-top   : 2em;
   /*4em*/
   padding-bottom: 2em;
@@ -2652,13 +2652,12 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   display       : block;
   font-family   : "Quicksand", Arial, sans-serif, Verdana, Tahoma;
   /*font-size   : 14px;*/
-
   color                : #ffffff;
   /*background-size    : cover;
   background-position  : center center;
   opacity              : 1;*/
 }
-
+/*
 .colorlib-about .overlay {
   z-index     : 0;
   position    : absolute;
@@ -2666,22 +2665,25 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   top         : 0;
   left        : 0;
   right       : 0;
-  /*background: rgba(0, 0, 0, 0.4);*/
-}
+
+
+  background: rgba(0, 0, 0, 0.4); commented
+}*/
+
 
 @media screen and (max-width: 768px) {
-  .colorlib-about {
+  .colorlib-insights {
     padding-top   : 5em;
     padding-bottom: 8em;
   }
 }
 
-.colorlib-about-narrow-content {
+.colorlib-insights-narrow-content {
   padding: 0 2.5em;
 }
 
 @media screen and (max-width: 768px) {
-  .colorlib-about-narrow-content {
+  .colorlib-insights-narrow-content {
     padding: 0;
   }
 }
@@ -2696,14 +2698,14 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   }
 }
 
-.about-desc h3 {
+.insights-desc h3 {
   font-size     : 18px;
   text-transform: uppercase;
   letter-spacing: 5px;
   font-weight   : 500;
 }
 
-.about-heading-meta {
+.insights-heading-meta {
   margin-bottom : 15px;
   display       : block;
   font-size     : 10px;
@@ -2713,28 +2715,13 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   letter-spacing: 5px;
 }
 
-.colorlib-about-heading {
-  font-size     : 18px;
-  margin-bottom : 1em;
-  /*4em-header to paragraph*/
-  font-weight   : 700;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  line-height   : 1.8;
-  position      : relative;
-}
-
-.colorlib-about-heading span {
-  display: block;
-}
-
+/*
 @media screen and (max-width: 768px) {
-  .colorlib-about-heading {
+  .colorlib-insights-heading {
     margin-bottom: 3em;
   }
 }
-
-
+*/
 
 /*************************/
 /*********  2ND  *********/
