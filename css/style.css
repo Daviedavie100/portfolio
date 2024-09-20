@@ -833,7 +833,7 @@ figure figcaption {
 }
 
 /*******************************/
-/********* SERVICES *********/
+/********* SERVICES ************/
 /*******************************/
 
 .colorlib-services {
@@ -2684,6 +2684,326 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   align-items: center; 
 }
 /
+/*******************************/
+/********* INSIGHTS *********/
+/*******************************/
+
+.colorlib-about {
+  padding-top   : 2em;
+  /*4em*/
+  padding-bottom: 2em;
+  /*9em*/
+  clear         : both;
+  width         : 100%;
+  display       : block;
+  font-family   : "Quicksand", Arial, sans-serif, Verdana, Tahoma;
+  /*font-size   : 14px;*/
+
+  color                : #ffffff;
+  /*background-size    : cover;
+  background-position  : center center;
+  opacity              : 1;*/
+}
+
+.colorlib-about .overlay {
+  z-index     : 0;
+  position    : absolute;
+  bottom      : 0;
+  top         : 0;
+  left        : 0;
+  right       : 0;
+  /*background: rgba(0, 0, 0, 0.4);*/
+}
+
+@media screen and (max-width: 768px) {
+  .colorlib-about {
+    padding-top   : 5em;
+    padding-bottom: 8em;
+  }
+}
+
+.colorlib-about-narrow-content {
+  padding: 0 2.5em;
+}
+
+@media screen and (max-width: 768px) {
+  .colorlib-about-narrow-content {
+    padding: 0;
+  }
+}
+
+.row-bottom-padded-sm {
+  padding-bottom: 1em;
+}
+
+@media screen and (max-width: 768px) {
+  .row-bottom-padded-sm {
+    padding-bottom: 1em;
+  }
+}
+
+.about-desc h3 {
+  font-size     : 18px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight   : 500;
+}
+
+.about-heading-meta {
+  margin-bottom : 15px;
+  display       : block;
+  font-size     : 10px;
+  text-transform: uppercase;
+  color         : #edfd04;
+  font-weight   : 500;
+  letter-spacing: 5px;
+}
+
+.colorlib-about-heading {
+  font-size     : 18px;
+  margin-bottom : 1em;
+  /*4em-header to paragraph*/
+  font-weight   : 700;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  line-height   : 1.8;
+  position      : relative;
+}
+
+.colorlib-about-heading span {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .colorlib-about-heading {
+    margin-bottom: 3em;
+  }
+}
+
+
+
+/*************************/
+/*********  2ND  *********/
+/*************************/
+
+.colorlib-blog,
+.colorlib-work {
+  padding-top   : 4em;
+  padding-bottom: 9em;
+  clear         : both;
+  width         : 100%;
+  display       : block;
+}
+
+@media screen and (max-width: 768px) {
+
+  .colorlib-blog,
+  .colorlib-work {
+    padding-top   : 5em;
+    padding-bottom: 8em;
+  }
+}
+
+.colorlib-narrow-content {
+  padding: 0 2.5em;
+}
+
+@media screen and (max-width: 768px) {
+  .colorlib-narrow-content {
+    padding: 0;
+  }
+}
+
+/* About and work education*/
+
+.row-bottom-padded-sm {
+  padding-bottom: 1em;
+}
+
+@media screen and (max-width: 768px) {
+  .row-bottom-padded-sm {
+    padding-bottom: 1em;
+  }
+}
+
+/* All sections*/
+.heading-meta {
+  margin-bottom : 15px;
+  display       : block;
+  font-size     : 10px;
+  text-transform: uppercase;
+  color         : #999;
+  font-weight   : 500;
+  letter-spacing: 5px;
+}
+
+.colorlib-heading {
+  font-size     : 18px;
+  margin-bottom : 4em;
+  font-weight   : 700;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  line-height   : 1.8;
+  position      : relative;
+}
+
+.colorlib-heading span {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .colorlib-heading {
+    margin-bottom: 3em;
+  }
+}
+
+
+
+.work-menu span {
+  margin-left: 10px;
+}
+
+.work-menu span:first-child {
+  margin-left: 0;
+}
+
+.work-menu span a {
+  color: #000;
+}
+
+.work-menu span a.active {
+  color: #2c98f0;
+}
+
+.project {
+  background-size    : cover;
+  background-position: center center;
+  background-repeat  : no-repeat;
+  position           : relative;
+  height             : 300px;
+  width              : 100%;
+  display            : block;
+  margin-bottom      : 30px;
+}
+
+.project .desc {
+  position          : absolute;
+  top               : 0;
+  bottom            : 0;
+  left              : 0;
+  right             : 0;
+  background        : #2c98f0;
+  opacity           : 0;
+  -webkit-transition: 0.3s;
+  -o-transition     : 0.3s;
+  transition        : 0.3s;
+}
+
+.project .desc .con {
+  padding : 20px;
+  display : block;
+  position: relative;
+  height  : 300px;
+}
+
+.project .desc .con .icon {
+  position: absolute;
+  bottom  : 20px;
+  left    : 20px;
+  right   : 20px;
+}
+
+.project .desc .con .icon span {
+  display      : inline;
+  padding-right: 5px;
+}
+
+.project .desc .con .icon span a {
+  color                : #333;
+  padding              : 5px;
+  background           : rgba(255, 255, 255, 0.5);
+  -webkit-border-radius: 4px;
+  -moz-border-radius   : 4px;
+  -ms-border-radius    : 4px;
+  border-radius        : 4px;
+}
+
+.project .desc .con .icon i {
+  font-size: 16px;
+  color    : #333;
+}
+
+.project .desc h3 {
+  font-family       : "Quicksand", Arial, sans-serif;
+  font-size         : 16px;
+  font-weight       : 500;
+  text-transform    : uppercase;
+  letter-spacing    : 1px;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition        : opacity 0.3s, -webkit-transform 0.3s;
+  -o-transition     : transform 0.3s, opacity 0.3s;
+  transition        : transform 0.3s, opacity 0.3s;
+  transition        : transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+  -webkit-transform : translate3d(0, -15px, 0);
+  transform         : translate3d(0, -15px, 0);
+  margin-bottom     : 15px;
+}
+
+.project .desc h3 a {
+  color: #fff;
+}
+
+.project .desc span {
+  display           : block;
+  color             : rgba(255, 255, 255, 0.7);
+  font-size         : 13px;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition        : opacity 0.3s, -webkit-transform 0.3s;
+  -o-transition     : transform 0.3s, opacity 0.3s;
+  transition        : transform 0.3s, opacity 0.3s;
+  transition        : transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+  -webkit-transform : translate3d(0, 15px, 0);
+  transform         : translate3d(0, 15px, 0);
+}
+
+.project .desc span a {
+  color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  .project .desc {
+    opacity   : 1;
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  .project .desc h3 {
+    font-style       : 28px;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform        : translate3d(0, 0, 0);
+    color            : #000;
+  }
+
+  .project .desc span {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform        : translate3d(0, 0, 0);
+  }
+}
+
+.project:hover .desc {
+  opacity: 1;
+}
+
+.project:hover .desc h3 {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform        : translate3d(0, 0, 0);
+}
+
+.project:hover .desc span {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform        : translate3d(0, 0, 0);
+}
 
 
 
