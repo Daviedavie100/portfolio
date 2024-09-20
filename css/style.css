@@ -2581,11 +2581,7 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   text-transform: uppercase;
   color         : #04f538;
 }
- /*
-.subtitle-a {
-  color: #4e4e4e;
-}
-*/
+
 .title-line-mf {
   width           : 40px;
   height          : 5px;
@@ -2605,12 +2601,6 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   margin-right: 10px;
 }
 
-/*
-.work .contianer {
-  width: 100%;
-}
-*/
-/*tick*/
 .work-box {
   padding                    : 15px;
   margin-bottom              : 3rem;
@@ -2619,13 +2609,11 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   background-color           : #fff;
 }
 
-/*tick*/
 .work-box:hover img {
   -webkit-transform: scale(1.2);
   transform        : scale(1.2);
 }
 
-/*tick*/
 .work-img {
   display : block;
   overflow: hidden;
@@ -2637,7 +2625,6 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   transition: all 1s;
 }
 
-/*tick*/
 .work-content {
   width  : 100%;
   padding: 2rem 3% 1rem 2%;
@@ -2645,48 +2632,15 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   color: #333333;
 }
 
-/*
-.work-content .w-more {
-  color    : #4e4e4e;
-  font-size: .8rem;
-}
-
-.work-content .w-more .w-ctegory {
-  color: #0078ff;
-}
-
-.work-content .w-like {
-  font-size: 2.5rem;
-  color    : #0078ff;
-  float    : right;
-}
-
-.work-content .w-like a {
-  color: #0078ff;
-}
-
-.work-content .w-like .num-like {
-  font-size: .7rem;
-}
-*/
-/*tick*/
 .w-title {
   font-family:sans-serif, Verdana, Geneva, Tahoma ;
   font-size  : 1.4rem;
   color      : #000;
 }
 
-
-
-/* Ensures the line and heading are vertically aligned 
-.title-container {
-  display: flex;
-  align-items: center; 
-}
-/
-/*******************************/
+/****************************/
 /********* INSIGHTS *********/
-/*******************************/
+/****************************/
 
 .colorlib-about {
   padding-top   : 2em;
