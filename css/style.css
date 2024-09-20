@@ -2727,7 +2727,7 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
 /********* Project 2 *****/
 /*************************/
 
-.colorlib-work {
+.colorlib-project {
   padding-top   : 4em;
   padding-bottom: 9em;
   clear         : both;
@@ -2737,23 +2737,23 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
 
 @media screen and (max-width: 768px) {
 
-  .colorlib-work {
+  .colorlib-project {
     padding-top   : 5em;
     padding-bottom: 8em;
   }
 }
 
-.colorlib-narrow-content {
+.colorlib-project-narrow-content {
   padding: 0 2.5em;
 }
 
 @media screen and (max-width: 768px) {
-  .colorlib-narrow-content {
+  .colorlib-project-narrow-content {
     padding: 0;
   }
 }
 
-/* All sections*/
+/* All sections
 .heading-meta {
   margin-bottom : 15px;
   display       : block;
@@ -2763,8 +2763,8 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   font-weight   : 500;
   letter-spacing: 5px;
 }
-
-.colorlib-heading {
+*/
+.colorlib-project-heading {
   font-size     : 18px;
   margin-bottom : 4em;
   font-weight   : 700;
@@ -2772,19 +2772,21 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   letter-spacing: 5px;
   line-height   : 1.8;
   position      : relative;
+  color: #04f538;
 }
-
+/*
 .colorlib-heading span {
   display: block;
 }
-
+*/
 @media screen and (max-width: 768px) {
-  .colorlib-heading {
+  .colorlib-project-heading {
     margin-bottom: 3em;
   }
 }
 
 
+/*
 
 .work-menu span {
   margin-left: 10px;
@@ -2802,8 +2804,48 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   color: #2c98f0;
 }
 
+*/
+
+.project {
+  position: relative;
+  overflow: hidden;
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.project .desc {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project .desc .con {
+  text-align: center;
+}
+
+.project:hover .desc {
+  opacity: 1; /* Show the description on hover */
+}
+
+.project:hover img {
+  transform: scale(1.1); /* Slight zoom on image for effect */
+}
 
 
+/*
 .project {
   background-size    : cover;
   background-position: center center;
@@ -2933,7 +2975,7 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   -webkit-transform: translate3d(0, 0, 0);
   transform        : translate3d(0, 0, 0);
 }
-
+*/
 
 
 /*======================================
