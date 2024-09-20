@@ -2688,23 +2688,23 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   }
 }
 
-.row-bottom-padded-sm {
+.insights-row-bottom-padded-sm {
   padding-bottom: 1em;
 }
 
 @media screen and (max-width: 768px) {
-  .row-bottom-padded-sm {
+  .insights-row-bottom-padded-sm {
     padding-bottom: 1em;
   }
 }
-
-.insights-desc h3 {
+/*
+.insights-desc h2 {
   font-size     : 18px;
   text-transform: uppercase;
   letter-spacing: 5px;
   font-weight   : 500;
 }
-
+*/
 .insights-heading-meta {
   margin-bottom : 15px;
   display       : block;
@@ -2724,10 +2724,9 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
 */
 
 /*************************/
-/*********  2ND  *********/
+/********* Project 2 *****/
 /*************************/
 
-.colorlib-blog,
 .colorlib-work {
   padding-top   : 4em;
   padding-bottom: 9em;
@@ -2738,7 +2737,6 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
 
 @media screen and (max-width: 768px) {
 
-  .colorlib-blog,
   .colorlib-work {
     padding-top   : 5em;
     padding-bottom: 8em;
@@ -2752,18 +2750,6 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
 @media screen and (max-width: 768px) {
   .colorlib-narrow-content {
     padding: 0;
-  }
-}
-
-/* About and work education*/
-
-.row-bottom-padded-sm {
-  padding-bottom: 1em;
-}
-
-@media screen and (max-width: 768px) {
-  .row-bottom-padded-sm {
-    padding-bottom: 1em;
   }
 }
 
@@ -2815,6 +2801,8 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
 .work-menu span a.active {
   color: #2c98f0;
 }
+
+
 
 .project {
   background-size    : cover;
