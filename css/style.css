@@ -2894,14 +2894,7 @@ height: 300px;
     opacity   : 1;
     background: rgba(0, 0, 0, 0.4);
   }
-/*
-  .project .desc h3 {
-    font-style       : 28px;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform        : translate3d(0, 0, 0);
-    color            : #000;
-  }
-*/
+
   .project .pdesc span {
     -webkit-transform: translate3d(0, 0, 0);
     transform        : translate3d(0, 0, 0);
