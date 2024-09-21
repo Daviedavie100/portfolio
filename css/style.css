@@ -2809,22 +2809,22 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
 
 */
 
-.project {
+.pgproject {
   position     : relative;
   overflow     : hidden;
-  height       : 360px;
+  height       : 300px;
   width        : 100%;
   display      : block;
   margin-bottom: 30px;
 }
 
-.project img {
+.pgproject img {
   width     : 100%;
   height    : auto;
   transition: transform 0.3s ease;
 }
 
-.project .pdesc {
+.pgproject .pdesc {
 height: 300px;
   position          : absolute;
   top               : 0;
@@ -2844,7 +2844,7 @@ height: 300px;
 
 }
 
-.project .pdesc span {
+.pgproject .pdesc span {
   font-family       : "Quicksand", Arial, sans-serif;
   font-size         : 16px;
   font-weight       : 300px;
@@ -2861,25 +2861,25 @@ height: 300px;
   transform         : translate3d(0, 15px, 0);
 }
 
-.project .pcon {
+.pgproject .pcon {
   padding : 20px;
   display : block;
   position: relative;
 }
 
-.project .pcon .icon {
+.pgproject .pcon .icon {
   position: absolute;
   bottom  : 20px;
   left    : 20px;
   right   : 20px;
 }
 
-.project .pcon .icon span {
+.pgproject .pcon .icon span {
   display      : inline;
   padding-right: 5px;
 }
 
-.project .pcon .icon span a {
+.pgproject .pcon .icon span a {
   color                : #333;
   padding              : 5px;
   background           : rgba(255, 255, 255, 0.5);
@@ -2890,28 +2890,28 @@ height: 300px;
 }
 
 @media screen and (max-width: 768px) {
-  .project .pdesc {
+  .pgproject .pdesc {
     opacity   : 1;
     background: rgba(0, 0, 0, 0.4);
   }
 
-  .project .pdesc span {
+  .pgproject .pdesc span {
     -webkit-transform: translate3d(0, 0, 0);
     transform        : translate3d(0, 0, 0);
   }
 }
 
-.project:hover .pdesc {
+.pgproject:hover .pdesc {
   opacity: 1;
   /* Show the description on hover */
 }
 
-.project:hover img {
+.pgproject:hover img {
   transform: scale(1.1);
   /* Slight zoom on image for effect */
 }
 
-.project:hover .pdesc span {
+.pgproject:hover .pdesc span {
   -webkit-transform: translate3d(0, 0, 0);
   transform        : translate3d(0, 0, 0);
 }
