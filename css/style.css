@@ -2629,11 +2629,11 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   width  : 100%;
   padding: 2rem 3% 1rem 2%;
   margin : 0;
-  color: #333333;
+  color  : #333333;
 }
 
 .w-title {
-  font-family:sans-serif, Verdana, Geneva, Tahoma ;
+  font-family: sans-serif, Verdana, Geneva, Tahoma;
   font-size  : 1.4rem;
   color      : #000;
 }
@@ -2643,20 +2643,21 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
 /****************************/
 
 .colorlib-insights {
-  padding-top   : 2em;
+  padding-top          : 2em;
   /*4em*/
-  padding-bottom: 2em;
+  padding-bottom       : 2em;
   /*9em*/
-  clear         : both;
-  width         : 100%;
-  display       : block;
-  font-family   : "Quicksand", Arial, sans-serif, Verdana, Tahoma;
-  /*font-size   : 14px;*/
+  clear                : both;
+  width                : 100%;
+  display              : block;
+  font-family          : "Quicksand", Arial, sans-serif, Verdana, Tahoma;
+  /*font-size          : 14px;*/
   color                : #ffffff;
   /*background-size    : cover;
   background-position  : center center;
   opacity              : 1;*/
 }
+
 /*
 .colorlib-about .overlay {
   z-index     : 0;
@@ -2697,6 +2698,7 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
     padding-bottom: 1em;
   }
 }
+
 /*
 .insights-desc h2 {
   font-size     : 18px;
@@ -2772,8 +2774,9 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   letter-spacing: 5px;
   line-height   : 1.8;
   position      : relative;
-  color: #04f538;
+  color         : #04f538;
 }
+
 /*
 .colorlib-heading span {
   display: block;
@@ -2807,81 +2810,47 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
 */
 
 .project {
-  position: relative;
-  overflow: hidden;
-
- 
-  
-  height             : 300px;
-  width              : 100%;
-  display            : block;
-  margin-bottom      : 30px;
+  position     : relative;
+  overflow     : hidden;
+  height       : 360px;
+  width        : 100%;
+  display      : block;
+  margin-bottom: 30px;
 }
 
 .project img {
-  width: 100%;
-  height: auto;
+  width     : 100%;
+  height    : auto;
   transition: transform 0.3s ease;
 }
 
 .project .pdesc {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-  color: #fff;
-  display: flex;
- /* justify-content: center;*/
-  align-items: center;
-  opacity: 0;
+height: 300px;
+  position          : absolute;
+  top               : 0;
+  left              : 10px;
+  right             : 10px;
+  bottom            : 2em;
+  background        : rgba(0, 0, 0, 0.5);
+  /* Semi-transparent background */
+  /*color           : #1404f8;*/
+  display           : flex;
+  justify-content   : center;
+  align-items       : center;
+  opacity           : 0;
   -webkit-transition: 0.3s;
   -o-transition     : 0.3s;
-  transition: opacity 0.3s ease;
+  transition        : opacity 0.3s ease;
+
 }
-
-
-.project .pdesc .pcon {
-  /*text-align: center;*/
-  padding : 20px;
-  display : block;
-  position: relative;
-  height  : 300px;
-}
-
-.project .pdesc .pcon .icon {
-  position: absolute;
-  bottom  : 20px;
-  left    : 20px;
-  right   : 20px;
-}
-
-.project .pdesc .pcon .icon span {
-  display      : inline;
-  padding-right: 5px;
-}
-
-.project .pdesc .pcon .icon span a {
-  color                : #333;
-  padding              : 5px;
-  background           : rgba(255, 255, 255, 0.5);
-  -webkit-border-radius: 4px;
-  -moz-border-radius   : 4px;
-  -ms-border-radius    : 4px;
-  border-radius        : 4px;
-}
-
-.project .pdesc .pcon .icon i {
-  font-size: 16px;
-  color    : #333;
-}
-
 
 .project .pdesc span {
+  font-family       : "Quicksand", Arial, sans-serif;
+  font-size         : 16px;
+  font-weight       : 300px;
   display           : block;
-  color             : rgba(255, 255, 255, 0.7);
-  font-size         : 13px;
+  color: #000;
+  /*color             : rgba(255, 255, 255, 0.7);*/
   -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
   -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
   transition        : opacity 0.3s, -webkit-transform 0.3s;
@@ -2892,79 +2861,47 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   transform         : translate3d(0, 15px, 0);
 }
 
-.project .pdesc span a {
-  color: #000;
-}
-/*
-.project .project-desc h3 {
-  font-family       : "Quicksand", Arial, sans-serif;
-  font-size         : 16px;
-  font-weight       : 500;
-  text-transform    : uppercase;
-  letter-spacing    : 1px;
-  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
-  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
-  transition        : opacity 0.3s, -webkit-transform 0.3s;
-  -o-transition     : transform 0.3s, opacity 0.3s;
-  transition        : transform 0.3s, opacity 0.3s;
-  transition        : transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
-  -webkit-transform : translate3d(0, -15px, 0);
-  transform         : translate3d(0, -15px, 0);
-  margin-bottom     : 15px;
+.project .pcon {
+  padding : 20px;
+  display : block;
+  position: relative;
 }
 
-.project .project-desc h3 a {
-  color: #fff;
+.project .pcon .icon {
+  position: absolute;
+  bottom  : 20px;
+  left    : 20px;
+  right   : 20px;
 }
 
-
-
-
-
-
-*/
-/*
-
-
-
-
-
-
-*/
-
-
-
-
-
-.project:hover .pdesc {
-  opacity: 1; /* Show the description on hover */
+.project .pcon .icon span {
+  display      : inline;
+  padding-right: 5px;
 }
 
-.project:hover img {
-  transform: scale(1.1); /* Slight zoom on image for effect */
+.project .pcon .icon span a {
+  color                : #333;
+  padding              : 5px;
+  background           : rgba(255, 255, 255, 0.5);
+  -webkit-border-radius: 4px;
+  -moz-border-radius   : 4px;
+  -ms-border-radius    : 4px;
+  border-radius        : 4px;
 }
-
-
-/*
-
-
-
-
-
 
 @media screen and (max-width: 768px) {
   .project .pdesc {
     opacity   : 1;
     background: rgba(0, 0, 0, 0.4);
   }
-
+/*
   .project .desc h3 {
     font-style       : 28px;
     -webkit-transform: translate3d(0, 0, 0);
     transform        : translate3d(0, 0, 0);
     color            : #000;
   }
-
+*/
   .project .pdesc span {
     -webkit-transform: translate3d(0, 0, 0);
     transform        : translate3d(0, 0, 0);
@@ -2973,18 +2910,19 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
 
 .project:hover .pdesc {
   opacity: 1;
+  /* Show the description on hover */
 }
 
-.project:hover .desc h3 {
-  -webkit-transform: translate3d(0, 0, 0);
-  transform        : translate3d(0, 0, 0);
+.project:hover img {
+  transform: scale(1.1);
+  /* Slight zoom on image for effect */
 }
 
 .project:hover .pdesc span {
   -webkit-transform: translate3d(0, 0, 0);
   transform        : translate3d(0, 0, 0);
 }
-*/
+
 
 
 /*======================================
