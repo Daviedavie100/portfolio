@@ -2809,6 +2809,13 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
 .project {
   position: relative;
   overflow: hidden;
+
+ 
+  
+  height             : 300px;
+  width              : 100%;
+  display            : block;
+  margin-bottom      : 30px;
 }
 
 .project img {
@@ -2829,11 +2836,22 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   justify-content: center;
   align-items: center;
   opacity: 0;
+ 
+
+ 
+
+  -webkit-transition: 0.3s;
+  -o-transition     : 0.3s;
   transition: opacity 0.3s ease;
 }
 
 .project .desc .con {
   text-align: center;
+
+  padding : 20px;
+  display : block;
+  position: relative;
+  height  : 300px;
 }
 
 .project:hover .desc {
@@ -2847,34 +2865,15 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
 
 /*
 .project {
-  background-size    : cover;
-  background-position: center center;
-  background-repeat  : no-repeat;
-  position           : relative;
-  height             : 300px;
-  width              : 100%;
-  display            : block;
-  margin-bottom      : 30px;
+
 }
 
 .project .desc {
-  position          : absolute;
-  top               : 0;
-  bottom            : 0;
-  left              : 0;
-  right             : 0;
-  background        : #2c98f0;
-  opacity           : 0;
-  -webkit-transition: 0.3s;
-  -o-transition     : 0.3s;
-  transition        : 0.3s;
+
 }
 
 .project .desc .con {
-  padding : 20px;
-  display : block;
-  position: relative;
-  height  : 300px;
+
 }
 
 .project .desc .con .icon {
