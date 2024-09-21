@@ -1788,8 +1788,8 @@ canvas {
 /*******************************/
 
 .colorlib-contact {
-  padding-top     : 4em;
-  padding-bottom  : 9em;
+  padding-top     : 2em;
+  padding-bottom  : 4em;
   clear           : both;
   width           : 100%;
   display         : block;
@@ -1826,7 +1826,7 @@ canvas {
 
 .contact-colorlib-heading {
   font-size     : 18px;
-  margin-bottom : 4em;
+  margin-bottom : 2em;
   font-weight   : 700;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -2634,7 +2634,7 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   background-color: #ff4800;
   margin          : 0 auto;
   padding         : 5px;
-  margin-right: 10px;
+  margin-right    : 10px;
 }
 
 .work-box {
@@ -2694,6 +2694,24 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   opacity              : 1;*/
 }
 
+.insights-heading-meta {
+  margin-bottom : 15px;
+  display       : block;
+  font-size     : 10px;
+  text-transform: uppercase;
+  color         : #edfd04;
+  font-weight   : 500;
+  letter-spacing: 5px;
+}
+
+.insignts-desc:hover {
+  font-family: 'Arial', sans-serif;
+  font-size  : 1.1em;
+  padding    : 2em 2em 0 2em;
+  background : rgba(243, 242, 242, 0.5);
+  opacity    : 1;
+  color      : #000;
+}
 
 @media screen and (max-width: 768px) {
   .colorlib-insights {
@@ -2722,15 +2740,6 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   }
 }
 
-.insights-heading-meta {
-  margin-bottom : 15px;
-  display       : block;
-  font-size     : 10px;
-  text-transform: uppercase;
-  color         : #edfd04;
-  font-weight   : 500;
-  letter-spacing: 5px;
-}
 
 /*
 @media screen and (max-width: 768px) {
@@ -2787,6 +2796,15 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   }
 }
 
+.pinsignts-desc:hover {
+  font-family: 'Arial', sans-serif;
+  font-size  : 1.1em;
+  padding    : 2em 2em 0 2em;
+  background : rgba(243, 242, 242, 0.5);
+  opacity    : 1;
+  color      : #000;
+}
+
 .pgproject {
   position     : relative;
   overflow     : hidden;
@@ -2803,7 +2821,7 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
 }
 
 .pgproject .pdesc {
-height: 300px;
+  height            : 300px;
   position          : absolute;
   top               : 0;
   left              : 10px;
@@ -2823,20 +2841,20 @@ height: 300px;
 }
 
 .pgproject .pdesc span {
-  font-family       : "Quicksand", Arial, sans-serif;
-  font-size         : 16px;
-  font-weight       : 300px;
-  display           : block;
-  color: #000;
+  font-family         : "Quicksand", Arial, sans-serif;
+  font-size           : 16px;
+  font-weight         : 300px;
+  display             : block;
+  color               : #000;
   /*color             : rgba(255, 255, 255, 0.7);*/
-  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
-  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
-  transition        : opacity 0.3s, -webkit-transform 0.3s;
-  -o-transition     : transform 0.3s, opacity 0.3s;
-  transition        : transform 0.3s, opacity 0.3s;
-  transition        : transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
-  -webkit-transform : translate3d(0, 15px, 0);
-  transform         : translate3d(0, 15px, 0);
+  -webkit-transition  : -webkit-transform 0.3s, opacity 0.3s;
+  -webkit-transition  : opacity 0.3s, -webkit-transform 0.3s;
+  transition          : opacity 0.3s, -webkit-transform 0.3s;
+  -o-transition       : transform 0.3s, opacity 0.3s;
+  transition          : transform 0.3s, opacity 0.3s;
+  transition          : transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+  -webkit-transform   : translate3d(0, 15px, 0);
+  transform           : translate3d(0, 15px, 0);
 }
 
 .pgproject .pcon {
