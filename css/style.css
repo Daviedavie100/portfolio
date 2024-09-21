@@ -2824,7 +2824,7 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   transition: transform 0.3s ease;
 }
 
-.project .desc {
+.project .project-desc {
   position: absolute;
   top: 0;
   left: 0;
@@ -2845,7 +2845,7 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   transition: opacity 0.3s ease;
 }
 
-.project .desc .con {
+.project .project-desc .project-con {
   text-align: center;
 
   padding : 20px;
@@ -2854,7 +2854,7 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   height  : 300px;
 }
 
-.project:hover .desc {
+.project:hover .project-desc {
   opacity: 1; /* Show the description on hover */
 }
 
@@ -2864,17 +2864,6 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
 
 
 /*
-.project {
-
-}
-
-.project .desc {
-
-}
-
-.project .desc .con {
-
-}
 
 .project .desc .con .icon {
   position: absolute;
