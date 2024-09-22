@@ -99,16 +99,16 @@ figure figcaption {
 /***********************************/
 
 #daviefolio-page {
-  width                : 100%;
-  overflow             : visible;
-  position             : relative;
-  display              : flex;
-  background-attachment: fixed;
-  /* background-size   : 100%;*/
-  background-size      : calc(100% - 300px);
-  background-image     : url("../images/back5.jpg");
-  padding-left         : 30px;
-  padding-right        : 30px;
+  width                  : 100%;
+  overflow               : visible;
+  position               : relative;
+  display                : flex;
+  background-attachment  : fixed;
+  background-size        : 100%;
+  /*background-size      : calc(100% - 300px);*/
+  background-image       : url("../images/back5.jpg");
+  padding-left           : 30px;
+  padding-right          : 30px;
 }
 
 .daviefolio-container-wrap {
@@ -145,7 +145,7 @@ figure figcaption {
   }
 }
 
-/******** DAVIEFOLIO MAIN ********/
+/******** DAVIEFOLIO ASIDE ********/
 
 #daviefolio-aside {
   padding-top               : 3em;
@@ -711,8 +711,6 @@ figure figcaption {
 .daviefolio-work,
 .daviefolio-blog,
 .daviefolio-contact {
-  /*padding-top   : 1em;*/
-  padding: 1em;
   clear  : both;
   width  : 100%;
   display: block;
@@ -788,22 +786,32 @@ figure figcaption {
 /*************************/
 /********* ABOUT *********/
 /*************************/
-/*
+
 .about-desc {
-  padding:2em;
+  margin: 0 1em 0 0.8em;
+  /*padding:0 1em 0 1em;*/
   font-size     : 18px;
   clear         : both;
 }
 
 .about-desc:hover {
   font-family: 'ariel' sans-serif;
-  font-size     : 18px;
   padding   : 0 2em 0 2em;
   background: rgba(243, 242, 242, 0.5);
   opacity   : 1;
   color     : #000;
 }
-*/
+
+.about-tools {
+  padding: 1em 2em 2em 0;
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  text-align: center; /* Center text inside each flex item */
+}
+
+.cv {
+  padding: 0.8em;
+}
 /*
 .daviefolio-about {
   padding-top   : 2em;
@@ -828,7 +836,7 @@ figure figcaption {
 }
 */
 
-
+/*
 .row-bottom-padded-sm {
   padding-bottom: 1em;
 }
@@ -846,7 +854,7 @@ figure figcaption {
   font-weight   : 500;
 }
 
-
+*/
 
 
 
@@ -882,6 +890,7 @@ figure figcaption {
   font-family: "Quicksand", Arial, sans-serif;
   font-size  : 16px;
   font-weight: 500;
+  color:#2fa499;
 }
 
 @media screen and (max-width: 768px) {
@@ -966,7 +975,7 @@ figure figcaption {
 /*******************************/
 /********* SERVICES ************/
 /*******************************/
-
+/*
 .daviefolio-services {
   padding-top            : 2em;
   padding-bottom         : 2em;
@@ -976,9 +985,9 @@ figure figcaption {
   /*background-attachment: fixed;
   background-size        : cover;
   background-position    : center center;
-  opacity                : 1;*/
+  opacity                : 1;
 }
-
+*/
 .daviefolio-services .overlay {
   z-index : 0;
   position: absolute;
