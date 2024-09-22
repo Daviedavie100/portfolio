@@ -98,7 +98,7 @@ figure figcaption {
 /********* COLORLIB PAGE *********/
 /*********************************/
 
-#colorlib-page {
+#daviefolio-page {
   width                : 100%;
   overflow             : visible;
   position             : relative;
@@ -114,7 +114,7 @@ figure figcaption {
   padding-right: 15px;
 }
 
-.container-wrap {
+.daviefolio-container-wrap {
   width             : 100%;
   max-width         : 1170px;
   margin            : 0 auto;
@@ -351,11 +351,11 @@ figure figcaption {
   }
 }
 
-/*******************************/
-/******** COLORLIB MAIN ********/
-/*******************************/
+/*********************************/
+/******** DAVIEFOLIO MAIN ********/
+/*********************************/
 
-#colorlib-main {
+#daviefolio-main {
   position          : relative;
   width             : calc(100% - 305px);
   left              : 0;
@@ -633,9 +633,9 @@ figure figcaption {
 .daviefolio-education,
 .daviefolio-work,
 .daviefolio-blog,
-.daviefolio-contacts {
-  padding-top   : 2em;
-  padding-bottom: 2em;
+.daviefolio-contact {
+  /*padding-top   : 1em;*/
+  padding: 2em;
   clear         : both;
   width         : 100%;
   display       : block;
@@ -684,34 +684,49 @@ figure figcaption {
   display: block;
 }
 
+.daviefolio-narrow-content {
+  padding: 0 2.5em;
+}
+
 @media screen and (max-width: 768px) {
-  .colorlib-work {
+  .daviefolio-work { /*add more*/
     padding-top   : 5em;
     padding-bottom: 8em;
   }
 }
 
-.colorlib-work-narrow-content {
-  padding: 0 2.5em;
-}
-
 @media screen and (max-width: 768px) {
-  .colorlib-work-narrow-content {
+  .daviefolio-narrow-content {
     padding: 0;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .colorlib-work-heading {
+  .daviefolio-heading {
     margin-bottom: 3em;
   }
 }
-
 
 /*************************/
 /********* ABOUT *********/
 /*************************/
 
+.about-desc {
+  padding:2em;
+  font-size     : 18px;
+  clear         : both;
+}
+
+.about-desc:hover {
+  font-family: 'ariel' sans-serif;
+  font-size     : 18px;
+  padding   : 0 2em 0 2em;
+  background: rgba(243, 242, 242, 0.5);
+  opacity   : 1;
+  color     : #000;
+}
+
+/*
 .colorlib-about {
   padding-top   : 2em;
   padding-bottom: 2em;
@@ -719,7 +734,7 @@ figure figcaption {
   width         : 100%;
   display       : block;
   font-family   : "Quicksand", Arial, sans-serif, Verdana, Tahoma;
-  /*font-size   : 14px;*/
+  /*font-size   : 14px;
   color         : #ffffff;
   opacity       : 1;
 }
@@ -731,25 +746,10 @@ figure figcaption {
   top         : 0;
   left        : 0;
   right       : 0;
-  /*background: rgba(0, 0, 0, 0.4);*/
+  /*background: rgba(0, 0, 0, 0.4);
 }
+*/
 
-@media screen and (max-width: 768px) {
-  .colorlib-about {
-    padding-top   : 5em;
-    padding-bottom: 8em;
-  }
-}
-
-.colorlib-about-narrow-content {
-  padding: 0 2.5em;
-}
-
-@media screen and (max-width: 768px) {
-  .colorlib-about-narrow-content {
-    padding: 0;
-  }
-}
 
 .row-bottom-padded-sm {
   padding-bottom: 1em;
@@ -768,36 +768,9 @@ figure figcaption {
   font-weight   : 500;
 }
 
-.about-heading-meta {
-  margin-bottom : 15px;
-  display       : block;
-  font-size     : 10px;
-  text-transform: uppercase;
-  color         : #edfd04;
-  font-weight   : 500;
-  letter-spacing: 5px;
-}
 
-.colorlib-about-heading {
-  font-size     : 18px;
-  margin-bottom : 1em;
-  /*4em-header to paragraph*/
-  font-weight   : 700;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  line-height   : 1.8;
-  position      : relative;
-}
 
-.colorlib-about-heading span {
-  display: block;
-}
 
-@media screen and (max-width: 768px) {
-  .colorlib-about-heading {
-    margin-bottom: 3em;
-  }
-}
 
 /*TOOLS*/
 
