@@ -996,7 +996,7 @@ figure figcaption {
   left    : 0;
   right   : 0;
 }
-
+/*
 @media screen and (max-width: 768px) {
   .daviefolio-services {
     padding-top   : 5em;
@@ -1027,7 +1027,7 @@ figure figcaption {
 .daviefolio-services-heading {
   font-size     : 18px;
   margin-bottom : 2em;
-  /*4em*/
+ 
   font-weight   : 700;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -1044,9 +1044,9 @@ figure figcaption {
     margin-bottom: 3em;
   }
 }
-
+*/
 .row-pt-md {
-  padding-top: 2em;
+  padding-top: 3em;
   /*3em*/
 }
 
