@@ -810,7 +810,7 @@ figure figcaption {
 }
 
 .cv {
-  padding: 0.8em;
+  padding: 0.8em 0.8em 3em 0.8em;
 }
 /*
 .daviefolio-about {
@@ -1046,9 +1046,11 @@ figure figcaption {
   }
 }
 */
+
 .row-pt-md {
-  padding-top: 10em;
-  /*3em*/
+  padding-top: 4em;
+  /*margin: 0 1em 0 0.8em;
+  clear: both;*/
 }
 
 /*ICON*/
@@ -1113,7 +1115,6 @@ figure figcaption {
 
 .services .icon i {
   font-family   : "Quicksand", Arial, sans-serif;
-  /*added*/
   font-size     : 30px;
   color         : #fff;
   z-index       : 1;
@@ -1127,7 +1128,7 @@ figure figcaption {
 
 .services .desc h3 {
   font-family   : "Quicksand", Arial, sans-serif;
-  /*added*/
+ color: #2fa499;
   font-size     : 16px;
   font-weight   : 700;
   text-transform: uppercase;
