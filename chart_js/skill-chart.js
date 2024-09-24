@@ -54,9 +54,9 @@ document.addEventListener('DOMContentLoaded', function () {
                     formatter: function (value) {
                         return value + '%'; // Add '%' symbol to the value
                     },
-                    color: '#000', // Set the color of the data labels
+                    color: '#e0e3f0', // Set the color of the data labels
                     font: {
-                        weight: 'bold', // Make the data labels bold
+                        weight: 'regular', // Make the data labels bold
                         size: 14 // Set font size for better visibility
                     }
                 }
@@ -69,7 +69,13 @@ document.addEventListener('DOMContentLoaded', function () {
                         display: false // Remove the grid lines on the x-axis
                     },
                     ticks: {
-                        padding: 10 // Increase padding between labels and bars
+                        padding: 10, // Increase padding between labels and bars
+                        color: '#e0e3f0', // Set the color of the x-axis labels here
+                        font: {
+                            size: 14, // Set the font size of the x-axis labels
+                            weight: 'regular', // Make the x-axis labels bold
+                            family: 'Quicksand' //Arial, 'sans-serif'
+                        }
                     },
                 },
                 y: {
