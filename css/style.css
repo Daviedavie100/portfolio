@@ -379,6 +379,8 @@ figure figcaption {
   }
 }
 
+
+
 /*************************************/
 /********* TOP-COLORLIB MAIN *********/
 /*************************************/
@@ -760,12 +762,17 @@ figure figcaption {
 }
 
 .daviefolio-narrow-content {
-  padding: 0;
+  padding: 0 2.5em;
 }
 
 @media screen and (max-width: 768px) {
-  .daviefolio-work {
-    /*add more*/
+  .daviefolio-about,
+  .daviefolio-services,
+  .daviefolio-skills,
+  .daviefolio-education,
+  .daviefolio-work,
+  .daviefolio-blog,
+  .daviefolio-contact {
     padding-top   : 5em;
     padding-bottom: 8em;
   }
@@ -788,30 +795,34 @@ figure figcaption {
 /*************************/
 
 .about-desc {
-  margin: 0 1em 0 0.8em;
+  margin   : 0 1em 0 0.8em;
   /*padding:0 1em 0 1em;*/
-  font-size     : 18px;
-  clear         : both;
+  font-size: 18px;
+  clear    : both;
 }
 
 .about-desc:hover {
-  font-family: 'ariel' sans-serif;
-  padding   : 0 2em 0 2em;
-  background: rgba(243, 242, 242, 0.5);
-  opacity   : 1;
-  color     : #000;
+  font-family: 'ariel'sans-serif;
+  padding    : 0 2em 0 2em;
+  background : rgba(243, 242, 242, 0.5);
+  opacity    : 1;
+  color      : #000;
 }
 
 .about-tools {
-  padding: 1em 2em 2em 0;
-  align-items: center; /* Center items vertically */
-  justify-content: center; /* Center items horizontally */
-  text-align: center; /* Center text inside each flex item */
+  padding        : 1em 2em 2em 0;
+  align-items    : center;
+  /* Center items vertically */
+  justify-content: center;
+  /* Center items horizontally */
+  text-align     : center;
+  /* Center text inside each flex item */
 }
 
 .cv {
   padding: 0.8em 0.8em 3em 0.8em;
 }
+
 /*
 .daviefolio-about {
   padding-top   : 2em;
@@ -890,7 +901,7 @@ figure figcaption {
   font-family: "Quicksand", Arial, sans-serif;
   font-size  : 16px;
   font-weight: 500;
-  color:#2fa499;
+  color      : #2fa499;
 }
 
 @media screen and (max-width: 768px) {
@@ -1047,34 +1058,42 @@ figure figcaption {
 }
 */
 
+/*ICON*/
 .row-pt-md {
-  padding-top: 2.5em;
-  margin: 0 1em 1em 0;
-  clear: both;
+  padding: 2em 1em 0 0.8em;
 }
 
-/*ICON*/
+
+/*
 .services {
-  margin-bottom     : 6em;
-  padding           : 1em;
-  -webkit-box-shadow: 0 0 56px -8px rgba(0, 0, 0, 0.17);
-  -moz-box-shadow   : 0 0 56px -8px rgba(0, 0, 0, 0.17);
-  -ms-box-shadow    : 0 0 56px -8px rgba(0, 0, 0, 0.17);
-  -o-box-shadow     : 0 0 56px -8px rgba(0, 0, 0, 0.17);
-  box-shadow        : 0 0 56px -8px rgba(0, 0, 0, 0.17);
-  border-bottom     : 2px solid #2c98f0;
-  position          : relative;
-  z-index           : 0;
-  height            : 20em;
+
+  margin-bottom     : 30px;
+  padding           : 1.5em;
+  -webkit-box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
+  -moz-box-shadow   : 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
+  -ms-box-shadow    : 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
+  -o-box-shadow     : 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
+  box-shadow        : 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
+  border-bottom     : 2px solid #2c98f0;  
+}
+*/
+.iservices {
+  padding-top  : 1em;
+  margin-right : 1em;
+  margin-left  : 0.8em;
+  margin-bottom: 60px;
+  position     : relative;
+  z-index      : 0;
+  height       : 20em;
 }
 
 @media screen and (max-width: 768px) {
-  .services {
+  .iservices {
     margin-bottom: 4em;
   }
 }
 
-.services .icon {
+.iservices .icon {
   position  : absolute;
   top       : -20px;
   left      : 0;
@@ -1086,15 +1105,15 @@ figure figcaption {
   background: #2c98f0;
 }
 
-.services .icon:after,
-.services .icon:before {
+.iservices .icon:after,
+.iservices .icon:before {
   position: absolute;
   left    : 0;
   right   : 0;
   content : "";
 }
 
-.services .icon:before {
+.iservices .icon:before {
   top         : -30px;
   width       : 0;
   height      : 0;
@@ -1103,7 +1122,7 @@ figure figcaption {
   border-color: transparent transparent #2c98f0 transparent;
 }
 
-.services .icon:after {
+.iservices .icon:after {
   bottom      : -30px;
   width       : 0;
   height      : 0;
@@ -1112,7 +1131,7 @@ figure figcaption {
   border-color: #2c98f0 transparent transparent transparent;
 }
 
-.services .icon i {
+.iservices .icon i {
   font-family   : "Quicksand", Arial, sans-serif;
   font-size     : 30px;
   color         : #fff;
@@ -1121,187 +1140,125 @@ figure figcaption {
   vertical-align: middle;
 }
 
-.services .desc {
-  margin-top: 60px;
+.iservices .desc {
+  margin-top: 50px;
 }
 
-.services .desc h3 {
+.iservices .desc h3 {
   font-family   : "Quicksand", Arial, sans-serif;
- color: #2fa499;
+  color         : #2fa499;
   font-size     : 16px;
   font-weight   : 700;
   text-transform: uppercase;
 }
 
-.services.color-1 .icon {
+/*
+.iservices .desc p {
+  font-family   : "Arial", sans-serif;
+  font-size: 16px;
+  color: #f2f3f7;
+}
+*/
+
+.iservices.color-1 {
+  border-bottom: 2px solid #04f538;
+}
+
+.iservices.color-1 .icon {
   background: #04f538;
 }
 
-.services.color-1 .icon:before {
+.iservices.color-1 .icon:before {
   border-color: transparent transparent #04f538 transparent;
 }
 
-.services.color-1 .icon:after {
+.iservices.color-1 .icon:after {
   border-color: #04f538 transparent transparent transparent;
 }
 
-.services.color-2 {
+.iservices.color-2 {
   border-bottom: 2px solid #ec5453;
 }
 
-.services.color-2 .icon {
+.iservices.color-2 .icon {
   background: #ec5453;
 }
 
-.services.color-2 .icon:before {
+.iservices.color-2 .icon:before {
   border-color: transparent transparent #ec5453 transparent;
 }
 
-.services.color-2 .icon:after {
+.iservices.color-2 .icon:after {
   border-color: #ec5453 transparent transparent transparent;
 }
 
-.services.color-3 {
+.iservices.color-3 {
   border-bottom: 2px solid #f9bf3f;
 }
 
-.services.color-3 .icon {
+.iservices.color-3 .icon {
   background: #f9bf3f;
 }
 
-.services.color-3 .icon:before {
+.iservices.color-3 .icon:before {
   border-color: transparent transparent #f9bf3f transparent;
 }
 
-.services.color-3 .icon:after {
+.iservices.color-3 .icon:after {
   border-color: #f9bf3f transparent transparent transparent;
 }
 
-.services.color-4 {
+.iservices.color-4 {
   border-bottom: 2px solid #a84cb8;
 }
 
-.services.color-4 .icon {
+.iservices.color-4 .icon {
   background: #a84cb8;
 }
 
-.services.color-4 .icon:before {
+.iservices.color-4 .icon:before {
   border-color: transparent transparent #a84cb8 transparent;
 }
 
-.services.color-4 .icon:after {
+.iservices.color-4 .icon:after {
   border-color: #a84cb8 transparent transparent transparent;
 }
 
-.services.color-5 {
+.iservices.color-5 {
   border-bottom: 2px solid #2fa499;
 }
 
-.services.color-5 .icon {
+.iservices.color-5 .icon {
   background: #2fa499;
 }
 
-.services.color-5 .icon:before {
+.iservices.color-5 .icon:before {
   border-color: transparent transparent #2fa499 transparent;
 }
 
-.services.color-5 .icon:after {
+.iservices.color-5 .icon:after {
   border-color: #2fa499 transparent transparent transparent;
 }
 
-.services.color-6 {
+.iservices.color-6 {
   border-bottom: 2px solid #4054b2;
 }
 
-.services.color-6 .icon {
+.iservices.color-6 .icon {
   background: #4054b2;
 }
 
-.services.color-6 .icon:before {
+.iservices.color-6 .icon:before {
   border-color: transparent transparent #4054b2 transparent;
 }
 
-.services.color-6 .icon:after {
+.iservices.color-6 .icon:after {
   border-color: #4054b2 transparent transparent transparent;
 }
 
 /*******************************/
 /********* SKILLS CSS *********/
 /*******************************/
-/*
-.daviefolio-skills {
-  padding-top   : 2em;
-  padding-bottom: 3em;
-  clear         : both;
-  width         : 100%;
-  display       : block;
-
-
-
-  background-attachment: fixed;
-  background-size      : cover;
-  background-position  : center center;
-  opacity              : 1;
-}
-*/
-.daviefolio-skills .overlay {
-  z-index     : 0;
-  position    : absolute;
-  bottom      : 0;
-  top         : 0;
-  left        : 0;
-  right       : 0;
-  /*background: rgba(0, 0, 0, 0.4);*/
-}
-
-
-@media screen and (max-width: 768px) {
-  .daviefolio-skills {
-    padding-top   : 5em;
-    padding-bottom: 8em;
-  }
-}
-
-.daviefolio-skills-narrow-content {
-  padding: 0 2.5em;
-}
-
-@media screen and (max-width: 768px) {
-  .daviefolio-skills-narrow-content {
-    padding: 0;
-  }
-}
-
-.skills-heading-meta {
-  margin-bottom : 15px;
-  display       : block;
-  font-size     : 10px;
-  text-transform: uppercase;
-  color         : #edfd04;
-  font-weight   : 500;
-  letter-spacing: 5px;
-}
-
-.skills-daviefolio-heading {
-  font-size     : 18px;
-  margin-bottom : 1.5em;
-  /*4em-header to paragraph*/
-  font-weight   : 700;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  line-height   : 1.8;
-  position      : relative;
-}
-
-.skills-daviefolio-heading span {
-  display: block;
-}
-
-@media screen and (max-width: 768px) {
-  .skills-daviefolio-heading {
-    margin-bottom: 3em;
-  }
-}
 
 .section-header-hard p::before {
   position  : absolute;
@@ -3490,3 +3447,10 @@ body.offcanvas .daviefolio-nav-toggle {
 /*======================================
                  END   
 ======================================*/
+.js .animate-box {
+  opacity: 0;
+}
+
+.col-padding {
+  padding: 10px !important;
+}
