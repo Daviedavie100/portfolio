@@ -762,7 +762,7 @@ figure figcaption {
 }
 
 .daviefolio-narrow-content {
-  padding: 0 2.5em;
+  padding: 0 2em;
 }
 
 @media screen and (max-width: 768px) {
@@ -986,97 +986,12 @@ figure figcaption {
 /*******************************/
 /********* SERVICES ************/
 /*******************************/
-/*
-.daviefolio-services {
-  padding-top            : 2em;
-  padding-bottom         : 2em;
-  clear                  : both;
-  width                  : 100%;
-  display                : block;
-  /*background-attachment: fixed;
-  background-size        : cover;
-  background-position    : center center;
-  opacity                : 1;
-}
-*/
-/*.daviefolio-services .overlay {
-  z-index : 0;
-  position: absolute;
-  bottom  : 0;
-  top     : 0;
-  left    : 0;
-  right   : 0;
-}
-  */
-/*
-@media screen and (max-width: 768px) {
-  .daviefolio-services {
-    padding-top   : 5em;
-    padding-bottom: 8em;
-  }
-}
-
-.daviefolio-services-narrow-content {
-  padding: 0 2.5em;
-}
-
-@media screen and (max-width: 768px) {
-  .daviefolio-services-narrow-content {
-    padding: 0;
-  }
-}
-
-.services-heading-meta {
-  margin-bottom : 15px;
-  display       : block;
-  font-size     : 10px;
-  text-transform: uppercase;
-  color         : #edfd04;
-  font-weight   : 500;
-  letter-spacing: 5px;
-}
-
-.daviefolio-services-heading {
-  font-size     : 18px;
-  margin-bottom : 2em;
- 
-  font-weight   : 700;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  line-height   : 1.8;
-  position      : relative;
-}
-
-.daviefolio-services-heading span {
-  display: block;
-}
-
-@media screen and (max-width: 768px) {
-  .daviefolio-services-heading {
-    margin-bottom: 3em;
-  }
-}
-*/
 
 /*ICON*/
 .row-pt-md {
   padding: 2em 1em 0 0.8em;
 }
 
-
-/*
-.services {
-
-  margin-bottom     : 30px;
-  padding           : 1.5em;
-  -webkit-box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
-  -moz-box-shadow   : 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
-  -ms-box-shadow    : 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
-  -o-box-shadow     : 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
-  box-shadow        : 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
-  border-bottom     : 2px solid #2c98f0;  
-}
-*/
 .iservices {
   padding-top  : 1em;
   margin-right : 1em;
@@ -1151,14 +1066,6 @@ figure figcaption {
   font-weight   : 700;
   text-transform: uppercase;
 }
-
-/*
-.iservices .desc p {
-  font-family   : "Arial", sans-serif;
-  font-size: 16px;
-  color: #f2f3f7;
-}
-*/
 
 .iservices.color-1 {
   border-bottom: 2px solid #04f538;
@@ -1290,6 +1197,10 @@ figure figcaption {
   height         : 100%;
 }
 
+.section-header-hard p {
+color: #2fa499;
+}
+
 canvas {
   width : 100% !important;
   height: 100% !important;
@@ -1302,11 +1213,15 @@ canvas {
   height         : 100%;
 }
 
+.section-header-soft p {
+  color: #2fa499;
+}
+
 .progress-wrap h3 {
   font-size    : 16px;
   font-family  : "Quicksand", Arial, sans-serif;
   margin-bottom: 10px;
-  color        : #000;
+  color        :#e0e3f0;
 }
 
 .progress {
