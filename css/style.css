@@ -766,6 +766,7 @@ figure figcaption {
 }
 
 @media screen and (max-width: 768px) {
+
   .daviefolio-about,
   .daviefolio-services,
   .daviefolio-skills,
@@ -1198,7 +1199,9 @@ figure figcaption {
 }
 
 .section-header-hard p {
-color: #2fa499;
+  color      : #2fa499;
+  font-size  : 16px;
+  font-family: "Quicksand", Arial, sans-serif;
 }
 
 canvas {
@@ -1214,14 +1217,16 @@ canvas {
 }
 
 .section-header-soft p {
-  color: #2fa499;
+  color      : #2fa499;
+  font-size  : 16px;
+  font-family: "Quicksand", Arial, sans-serif;
 }
 
 .progress-wrap h3 {
-  font-size    : 16px;
+  font-size    : 15px;
   font-family  : "Quicksand", Arial, sans-serif;
   margin-bottom: 10px;
-  color        :#e0e3f0;
+  color        : #e0e3f0;
 }
 
 .progress {
