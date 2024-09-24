@@ -988,7 +988,6 @@ figure figcaption {
 /********* SERVICES ************/
 /*******************************/
 
-/*ICON*/
 .row-pt-md {
   padding: 2em 1em 0 0.8em;
 }
@@ -1164,9 +1163,9 @@ figure figcaption {
   border-color: #4054b2 transparent transparent transparent;
 }
 
-/*******************************/
+/******************************/
 /********* SKILLS CSS *********/
-/*******************************/
+/******************************/
 
 .section-header-hard p::before {
   position  : absolute;
@@ -1346,22 +1345,9 @@ canvas {
   color: #4054b2;
 }
 
-/*******************************/
+/*****************************/
 /********* EDUCATION *********/
-/*******************************/
-
-/*
-.row-bottom-padded-sm {
-  padding-bottom: 1em;
-}
-
-@media screen and (max-width: 768px) {
-  .row-bottom-padded-sm {
-    padding-bottom: 1em;
-  }
-}
-*/
-
+/*****************************/
 
 .timeline-centered {
   position     : relative;
@@ -1453,7 +1439,7 @@ canvas {
 }
 
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-none {
-  background   : #fff;
+  background   :#4054b2;
   width        : 20px;
   height       : 20px;
   /*margin-left: 5px;*/
@@ -1522,9 +1508,9 @@ canvas {
   font-size      : 16px;
 }
 
-/*******************************/
+/*************************/
 /*********  WORK *********/
-/*******************************/
+/*************************/
 
 .daviefolio-work {
   padding-top   : 2em;
