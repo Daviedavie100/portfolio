@@ -1574,7 +1574,7 @@ canvas {
 
 
 /********* TITLE *********/
-
+/*
 .folio-title-box {
   padding-top  : 2rem;
   margin-bottom: 2rem;
@@ -1591,14 +1591,14 @@ canvas {
   margin-right    : 10px;
 }
 
+*/
 
 
-/*
 .portfolio {
   position:relative;
  padding: 45px 0 15px 0;
 }
-*/
+
 .portfolio #portfolio-filter {
   padding: 0;
   margin: -15px 0 25px 0;
