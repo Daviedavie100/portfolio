@@ -1593,18 +1593,19 @@ canvas {
 
 
 
-
+/*
 .portfolio {
-  position: relative;
-  padding: 45px 0 15px 0;
+  position:relative;
+ padding: 45px 0 15px 0;
 }
-
+*/
 .portfolio #portfolio-filter {
   padding: 0;
   margin: -15px 0 25px 0;
   list-style: none;
   font-size: 0;
   text-align: center;
+  float: left;
 }
 
 .portfolio #portfolio-filter li {
