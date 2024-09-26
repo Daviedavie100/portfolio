@@ -1593,15 +1593,16 @@ canvas {
 
 */
 
-
+/*
 .portfolio {
   position:relative;
- padding: 45px 0 15px 0;
+ padding: 2em 0 4em 0;
 }
+*/
 
 .portfolio #portfolio-filter {
-  padding: 0;
-  margin: -15px 0 25px 0;
+  /*padding: 0;*/
+  margin: 15px 0 25px 0;
   list-style: none;
   font-size: 0;
   text-align: center;
@@ -1612,7 +1613,7 @@ canvas {
   cursor: pointer;
   display: inline-block;
   margin: 5px;
-  padding: 6px 12px;
+  padding: 6px 12px 1px 4px;
   font-size: 14px;
   font-weight: 600;
   color: #ffffff;
