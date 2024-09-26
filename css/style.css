@@ -2846,7 +2846,7 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
 }
 
 
-.insignts-desc:hover {
+.insights-desc:hover {
   padding   : 0 1em 0 1em;
   background: rgba(243, 242, 242, 0.5);
   opacity   : 1;
