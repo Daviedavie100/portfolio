@@ -1595,10 +1595,10 @@ canvas {
 
 
 #workfolio {
-  position: relative;
-  padding : 2em 0 2em 0;
+  position   : relative;
+  padding    : 2em 0 2em 0;
   margin-left: 0;
-  float     : left;
+  float      : left;
 }
 
 
@@ -1635,147 +1635,12 @@ canvas {
   border-color: #EF233C;
 }
 
-/*
-.portfolio .portfolio-item {
-  position: relative;
-}
 
-.portfolio .portfolio-wrap {
-  position: relative;
-  width   : 100%;
-}
-
-.portfolio .portfolio-img {
-  position: relative;
-  overflow: hidden;
-}
-
-
-
-
-.portfolio .portfolio-img img {
-  position  : relative;
-  width     : 100%;
-  height    : 100%;
-  object-fit: cover;
-  transform : scale(1.1);
-  transition: .5s;
-}
-
-.portfolio .portfolio-item:hover img {
-  margin-left: 15px;
-}
-
-
-
-.portfolio .portfolio-text {
-  position   : relative;
-  height     : 60px;
-  width      : calc(100% - 30px);
-  margin     : -30px 15px 30px 15px;
-  display    : flex;
-  align-items: center;
-  background : #ffffff;
-  box-shadow : 0 0 15px rgba(0, 0, 0, .12);
-}
-
-.portfolio .portfolio-text h3 {
-  width      : calc(100% - 70px);
-  font-size  : 18px;
-  font-weight: 600;
-  margin     : 0 0 0 15px;
-  white-space: nowrap;
-  overflow   : hidden;
-}
-
-.portfolio .portfolio-text a.btn {
-  width          : 50px;
-  height         : 50px;
-  padding        : 0 0 2px 1px;
-  display        : flex;
-  align-items    : center;
-  justify-content: center;
-  font-size      : 45px;
-  font-weight    : 100;
-}
-
-.portfolio .portfolio-item:hover a.btn {
-  color       : #EF233C;
-  background  : transparent;
-  box-shadow  : inset 0 0 0 0 #EF233C;
-  border-color: #EF233C;
-}
-*/
-
-
-
-
-
-
-
-/*
-.title-a {
-  font-size     : 3rem;
-  font-weight   : bold;
-  text-transform: uppercase;
-  color         : #04f538;
-}
-
-.content-line-mf {
-  top             : 0;
-  float           : left;
-  width           : 100px;
-  height          : 1px;
-  background-color: #ff4800;
-  margin          : 0 auto;
-  padding         : 5px;
-  margin-right    : 10px;
-}
-*/
-/*
-.work-box {
-  padding                    : 15px;
-  margin-bottom              : 3rem;
-  -webkit-backface-visibility: hidden;
-  backface-visibility        : hidden;
-  background-color           : #fff;
-}
-
-.work-box:hover img {
-  -webkit-transform: scale(1.2);
-  transform        : scale(1.2);
-}
-
-.work-img {
-  display : block;
-  overflow: hidden;
-  height  : min-content;
-  width   : calc(100% - 25px);
-}
-
-.work-img img {
-  transition: all 1s;
-}
-
-.work-content {
-  width  : 100%;
-  padding: 2rem 3% 1rem 2%;
-  margin : 0;
-  color  : #333333;
-}
-
-.w-title {
-  font-family: sans-serif, Verdana, Geneva, Tahoma;
-  font-size  : 1.4rem;
-  color      : #000;
-}
-
-*/
 
 
 /* General Styles for .work-box */
 .work-box {
-  padding                    : 15px;
+ /* padding                    : 15px;*/
   margin-bottom              : 3rem;
   -webkit-backface-visibility: hidden;
   backface-visibility        : hidden;
@@ -1784,9 +1649,14 @@ canvas {
 }
 
 
+
+
+
 .folioinsights-desc {
-  padding: 1rem; /* Default padding */
-  margin: 0; /* Default margin */
+  padding: 1rem;
+  /* Default padding */
+  margin : 0;
+  /* Default margin */
 }
 
 .folioinsights-desc:hover {
@@ -1806,57 +1676,73 @@ canvas {
   letter-spacing: 5px;
 }
 
-
-
-
-
 /* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
   .folioinsights-desc {
-    display: block; /* Make sure it displays as a block for smaller screens */
-    width: 100%; /* Make it take full width */
-    padding: 0.5rem; /* Reduce padding */
-    margin-top: 1rem; /* Add margin to separate from other content */
+    display   : block;
+    /* Make sure it displays as a block for smaller screens */
+    width     : 100%;
+    /* Make it take full width */
+    padding   : 0.5rem;
+    /* Reduce padding */
+    margin-top: 1rem;
+    /* Add margin to separate from other content */
   }
 }
 
-/* Restore styles for larger screens 
-@media (min-width: 769px) {
-  .folioinsights-desc {
 
-    margin-top: 0;
-    padding: 1rem; 
-  }
-}
-*/
 
 
 
 /* Image hover effect */
 .work-box:hover img {
+  /*margin-left      : 15px;*/
   -webkit-transform: scale(1.2);
   transform        : scale(1.2);
   transition       : transform 0.5s ease;
 }
 
+
+
+
+
+.workfolio-item {
+  position: relative;
+}
+
+
 /* Work Image Styling */
 .work-img {
   display : block;
   overflow: hidden;
-  height  : min-content;
-  width   :100%; /* calc(100% - 25px)*/
+  height  : 100%;
+  width   : 100%;
+  /* calc(100% - 25px)*/
+
+  position: relative;
+  overflow: hidden;
 }
 
 .work-img img {
-  width     : 100%; /* Ensures the image adapts to container size */
-  height    : auto; /* Keeps aspect ratio intact */
+  object-fit: cover;
+  width     : 100%;
+  /* Ensures the image adapts to container size */
+  height    : auto;
+  /* Keeps aspect ratio intact */
   transition: all 1s;
+
+  position  : relative;
+  width     : 100%;
+  height    : 100%;
+  object-fit: cover;
+  transform : scale(1.1);
+  transition: .5s;
 }
 
 /* Work Content Styling */
 .work-content {
   width  : 100%;
-  padding: 2rem 3% 1rem 2%;
+  /*padding: 2rem 3% 1rem 2%;*/
   margin : 0;
   color  : #333333;
 }
@@ -1870,12 +1756,13 @@ canvas {
 /* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
   .work-box {
-    padding: 10px;
+    padding      : 10px;
     margin-bottom: 2rem;
   }
 
   .work-img {
-    width: 100%; /* Make sure the width of the image adjusts */
+    width: 100%;
+    /* Make sure the width of the image adjusts */
   }
 
   .work-content {
@@ -1883,13 +1770,14 @@ canvas {
   }
 
   .w-title {
-    font-size: 1.2rem; /* Slightly reduce font size on smaller screens */
+    font-size: 1.2rem;
+    /* Slightly reduce font size on smaller screens */
   }
 }
 
 @media (max-width: 480px) {
   .work-box {
-    padding: 8px;
+    padding      : 8px;
     margin-bottom: 1.5rem;
   }
 
@@ -1902,159 +1790,12 @@ canvas {
   }
 
   .w-title {
-    font-size: 1rem; /* Further reduce the title font size for very small screens */
+    font-size: 1rem;
+    /* Further reduce the title font size for very small screens */
   }
 }
 
 
-
-/*
-.work-menu span {
-  margin-left: 10px;
-}
-
-.work-menu span:first-child {
-  margin-left: 0;
-}
-
-.work-menu span a {
-  color: #000;
-}
-
-.work-menu span a.active {
-  color: #2c98f0;
-}
-
-.project {
-  background-size    : cover;
-  background-position: center center;
-  background-repeat  : no-repeat;
-  position           : relative;
-  height             : 300px;
-  width              : 100%;
-  display            : block;
-  margin-bottom      : 30px;
-}
-
-.project .desc {
-  position          : absolute;
-  top               : 0;
-  bottom            : 0;
-  left              : 0;
-  right             : 0;
-  background        : #2c98f0;
-  opacity           : 0;
-  -webkit-transition: 0.3s;
-  -o-transition     : 0.3s;
-  transition        : 0.3s;
-}
-
-.project .desc .con {
-  padding : 20px;
-  display : block;
-  position: relative;
-  height  : 300px;
-}
-
-.project .desc .con .icon {
-  position: absolute;
-  bottom  : 20px;
-  left    : 20px;
-  right   : 20px;
-}
-
-.project .desc .con .icon span {
-  display      : inline;
-  padding-right: 5px;
-}
-
-.project .desc .con .icon span a {
-  color                : #333;
-  padding              : 5px;
-  background           : rgba(255, 255, 255, 0.5);
-  -webkit-border-radius: 4px;
-  -moz-border-radius   : 4px;
-  -ms-border-radius    : 4px;
-  border-radius        : 4px;
-}
-
-.project .desc .con .icon i {
-  font-size: 16px;
-  color    : #333;
-}
-
-.project .desc h3 {
-  font-family       : "Quicksand", Arial, sans-serif;
-  font-size         : 16px;
-  font-weight       : 500;
-  text-transform    : uppercase;
-  letter-spacing    : 1px;
-  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
-  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
-  transition        : opacity 0.3s, -webkit-transform 0.3s;
-  -o-transition     : transform 0.3s, opacity 0.3s;
-  transition        : transform 0.3s, opacity 0.3s;
-  transition        : transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
-  -webkit-transform : translate3d(0, -15px, 0);
-  transform         : translate3d(0, -15px, 0);
-  margin-bottom     : 15px;
-}
-
-.project .desc h3 a {
-  color: #fff;
-}
-
-.project .desc span {
-  display           : block;
-  color             : rgba(255, 255, 255, 0.7);
-  font-size         : 13px;
-  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
-  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
-  transition        : opacity 0.3s, -webkit-transform 0.3s;
-  -o-transition     : transform 0.3s, opacity 0.3s;
-  transition        : transform 0.3s, opacity 0.3s;
-  transition        : transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
-  -webkit-transform : translate3d(0, 15px, 0);
-  transform         : translate3d(0, 15px, 0);
-}
-
-.project .desc span a {
-  color: #000;
-}
-
-@media screen and (max-width: 768px) {
-  .project .desc {
-    opacity   : 1;
-    background: rgba(0, 0, 0, 0.4);
-  }
-
-  .project .desc h3 {
-    font-style       : 28px;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform        : translate3d(0, 0, 0);
-    color            : #000;
-  }
-
-  .project .desc span {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform        : translate3d(0, 0, 0);
-  }
-}
-
-.project:hover .desc {
-  opacity: 1;
-}
-
-.project:hover .desc h3 {
-  -webkit-transform: translate3d(0, 0, 0);
-  transform        : translate3d(0, 0, 0);
-}
-
-.project:hover .desc span {
-  -webkit-transform: translate3d(0, 0, 0);
-  transform        : translate3d(0, 0, 0);
-}
-*/
 
 
 
