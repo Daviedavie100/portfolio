@@ -1596,8 +1596,9 @@ canvas {
 
 #workfolio {
   position: relative;
-  padding : 1em 0 4em 0;
+  padding : 2em 0 2em 0;
   margin-left: 0;
+  float     : left;
 }
 
 
@@ -1607,7 +1608,6 @@ canvas {
   list-style: none;
   font-size : 0;
   text-align: center;
-  float     : left;
 }
 
 #workfolio-filter li {
@@ -1628,7 +1628,7 @@ canvas {
 }
 
 #workfolio-filter li:hover,
-#workfolio-filter li .filter-active {
+#workfolio-filter li.filter-active {
   color       : #EF233C;
   background  : transparent;
   box-shadow  : inset 0 0 0 0 #EF233C;
@@ -1662,6 +1662,8 @@ canvas {
 .portfolio .portfolio-item:hover img {
   margin-left: 15px;
 }
+
+
 
 .portfolio .portfolio-text {
   position   : relative;
