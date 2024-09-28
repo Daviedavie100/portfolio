@@ -1512,88 +1512,6 @@ canvas {
 /*********  WORK *********/
 /*************************/
 
-/*
-.row-bottom-padded-sm {
-  padding-bottom: 1em;
-}
-
-@media screen and (max-width: 768px) {
-  .row-bottom-padded-sm {
-    padding-bottom: 1em;
-  }
-}
-*/
-/*
-.work-heading-meta {
-  margin-bottom : 15px;
-  display       : block;
-  font-size     : 10px;
-  text-transform: uppercase;
-  color         : yellow;
-  font-weight   : 500;
-  letter-spacing: 5px;
-  height        : 4px;
-  line-height   : 4px;
-}
-
-.daviefolio-work-heading {
-  font-size     : 18px;
-  margin-bottom : 2em;
-  font-weight   : 700;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  line-height   : 1.8;
-  position      : relative;
-  color         : #2c98f0;
-}
-
-.daviefolio-work-heading span {
-  display: block;
-}
-
-@media screen and (max-width: 768px) {
-  .daviefolio-work-heading {
-    margin-bottom: 3em;
-  }
-}
-*/
-
-
-/*
-
-.project-work-container {
-  padding: 0 2.5em;
-}
-
-@media screen and (max-width: 768px) {
-  .project-folio-container {
-    padding: 0;
-  }
-}
-*/
-
-
-/********* TITLE *********/
-/*
-.folio-title-box {
-  padding-top  : 2rem;
-  margin-bottom: 2rem;
-}
-
-.folio-title-line-mf {
-  top             : 0;
-  float           : left;
-  width           : 100px;
-  height          : 4px;
-  background-color: #ff4800;
-  margin          : 0 auto;
-  padding         : 0;
-  margin-right    : 10px;
-}
-
-*/
-
-
 #workfolio {
   position   : relative;
   padding    : 2em 0 2em 0;
@@ -1637,13 +1555,12 @@ canvas {
 
 .workfolio-item {
   background-color: #04f538;
+  margin-top: 0;
   padding-left    : 0.5em;
   padding-right   : 0.5em;
   padding-bottom  : 2em;
 }
 
-
-/* General Styles for .work-box */
 .work-box {
   -webkit-backface-visibility: hidden;
   backface-visibility        : hidden;
@@ -1663,7 +1580,7 @@ canvas {
   padding           : 1em;
   justify-content   : center;
   align-items       : center;
-  /*height          : 100%;*/
+  height          : 100%;
   overflow          : hidden;
 }
 
@@ -1698,7 +1615,7 @@ canvas {
 /* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
   .work-box {
-    padding      : 2px;
+    /*padding      : 2px;*/
     margin-bottom: 2rem;
   }
 
@@ -1718,7 +1635,7 @@ canvas {
 
 @media (max-width: 480px) {
   .work-box {
-    padding      : 4px;
+    /*padding      : 4px;*/
     margin-bottom: 1.5rem;
   }
 
@@ -1735,12 +1652,6 @@ canvas {
     /* Further reduce the title font size for very small screens */
   }
 }
-
-
-
-
-
-
 
 .foliocontent-line-mf {
   top             : 0;
@@ -1773,22 +1684,18 @@ canvas {
   letter-spacing: 5px;
 }
 
-/* Responsive adjustments for smaller screens */
+/* Responsive adjustments for smaller screens 
 @media (max-width: 768px) {
   .folioinsights-desc {
     display   : block;
-    /* Make sure it displays as a block for smaller screens */
     width     : 100%;
-    /* Make it take full width */
     padding   : 0.5rem;
-    /* Reduce padding */
     margin-top: 1rem;
-    /* Add margin to separate from other content */
   }
 }
 
 
-
+*/
 
 
 
