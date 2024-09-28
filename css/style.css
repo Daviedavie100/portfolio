@@ -1512,13 +1512,13 @@ canvas {
 /*********  WORK *********/
 /*************************/
 
+/*********  MENU *********/
 #workfolio {
   position   : relative;
   padding    : 2em 0 2em 0;
   margin-left: 0;
   float      : left;
 }
-
 
 #workfolio-filter {
   padding   : 0;
@@ -1553,6 +1553,23 @@ canvas {
   border-color: #EF233C;
 }
 
+/********* PROJECTS *********/
+.projectfolio-item {
+  display         : block;
+  background-color: #4054b2;
+  margin: 0;
+  padding         : 1em;
+}
+
+/*
+.workfolio-container {
+  background-color: #4c04f5;
+  margin-top: 0;
+  padding-left    : 0.5em;
+  padding-right   : 0.5em;
+  padding-bottom  : 2em;
+}
+
 .workfolio-item {
   background-color: #04f538;
   margin-top: 0;
@@ -1560,13 +1577,13 @@ canvas {
   padding-right   : 0.5em;
   padding-bottom  : 2em;
 }
-
+*/
 .work-box {
   -webkit-backface-visibility: hidden;
   backface-visibility        : hidden;
   background-color           : #fff;
   transition                 : all 0.3s ease-in-out;
-  padding-bottom             : 1rem;
+  /*padding-bottom             : 1rem;*/
 }
 
 .work-image {
@@ -1575,13 +1592,13 @@ canvas {
 }
 
 .work-img {
-  display           : flex;
-  position          : relative;
-  padding           : 1em;
-  justify-content   : center;
-  align-items       : center;
-  height          : 100%;
-  overflow          : hidden;
+  display        : flex;
+  position       : relative;
+  padding        : 1em;
+  justify-content: center;
+  align-items    : center;
+  height         : 100%;
+  overflow       : hidden;
 }
 
 .work-img img {
@@ -1653,6 +1670,7 @@ canvas {
   }
 }
 
+/***** PROJECTS DESC *****/
 .foliocontent-line-mf {
   top             : 0;
   float           : left;
@@ -1664,6 +1682,7 @@ canvas {
   margin-right    : 10px;
 }
 
+/***** PROJECTS INSIGHTS *****/
 .folioinsights-desc {
   padding-left  : 0.5em;
   padding-right : 0.5em;
