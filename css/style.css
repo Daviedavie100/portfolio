@@ -1554,43 +1554,55 @@ canvas {
 }
 
 /********* PROJECTS *********/
-.projectfolio-item {
+.row.projectfolio-item {
   display         : block;
   background-color: #4054b2;
   margin: 0;
-  padding         : 1em;
+  padding-right         : 0;
 }
 
-/*
 .workfolio-container {
-  background-color: #4c04f5;
-  margin-top: 0;
-  padding-left    : 0.5em;
-  padding-right   : 0.5em;
-  padding-bottom  : 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .workfolio-item {
-  background-color: #04f538;
-  margin-top: 0;
-  padding-left    : 0.5em;
-  padding-right   : 0.5em;
-  padding-bottom  : 2em;
+  margin-bottom: 1.5rem;
 }
-*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .work-box {
   -webkit-backface-visibility: hidden;
   backface-visibility        : hidden;
   background-color           : #fff;
   transition                 : all 0.3s ease-in-out;
-  /*padding-bottom             : 1rem;*/
+  padding-bottom             : 1rem;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 15px;
 }
 
+/*
 .work-image {
   padding: 1px;
   margin : 0;
 }
-
+*/
 .work-img {
   display        : flex;
   position       : relative;
@@ -1599,6 +1611,13 @@ canvas {
   align-items    : center;
   height         : 100%;
   overflow       : hidden;
+
+
+
+  overflow: hidden;
+  height: auto;
+  width: 100%;
+  margin-bottom: 15px;
 }
 
 .work-img img {
@@ -1608,6 +1627,15 @@ canvas {
   height    : 100%;
   transition: all 1s;
   transform : scale(1.1);
+
+
+  transition: transform 1s ease-in-out;
+  width: 100%;
+  height: auto;
+}
+
+.work-box:hover .work-img img {
+  transform: scale(1.1);
 }
 
 .work-box:hover img {
@@ -1617,60 +1645,29 @@ canvas {
   transition       : all 0.5s ease-in-out;
 }
 
+
+
+
+
+
+
+
+/* Work content styles */
 .work-content {
   width  : 100%;
   padding: 2rem 3% 1rem 2%;
   color  : #333333;
+
+  padding: 1.5rem;
 }
 
-.w-title {
-  font-family: sans-serif, Verdana, Geneva, Tahoma;
-  font-size  : 1.4rem;
-  color      : #000;
+
+
+.title-container {
+  position: relative;
+  margin-bottom: 1rem;
 }
 
-/* Responsive adjustments for smaller screens */
-@media (max-width: 768px) {
-  .work-box {
-    /*padding      : 2px;*/
-    margin-bottom: 2rem;
-  }
-
-  .work-img {
-    width: 100%;
-  }
-
-  .work-content {
-    padding: 1.5rem 2% 1rem 1.5%;
-  }
-
-  .w-title {
-    font-size: 1.2rem;
-    /* Slightly reduce font size on smaller screens */
-  }
-}
-
-@media (max-width: 480px) {
-  .work-box {
-    /*padding      : 4px;*/
-    margin-bottom: 1.5rem;
-  }
-
-  .work-img {
-    width: 100%;
-  }
-
-  .work-content {
-    padding: 1rem 1.5% 0.5rem 1%;
-  }
-
-  .w-title {
-    font-size: 1rem;
-    /* Further reduce the title font size for very small screens */
-  }
-}
-
-/***** PROJECTS DESC *****/
 .foliocontent-line-mf {
   top             : 0;
   float           : left;
@@ -1680,19 +1677,64 @@ canvas {
   margin          : 0 auto;
   padding         : 5px;
   margin-right    : 10px;
+
+
+
+  width: 50px;
+  height: 3px;
+  background-color: #EF233C;
+  margin-bottom: 10px;
 }
 
-/***** PROJECTS INSIGHTS *****/
-.folioinsights-desc {
-  padding-left  : 0.5em;
-  padding-right : 0.5em;
-  padding-bottom: 0.8rem;
+
+.w-title {
+  font-family: sans-serif, Verdana, Geneva, Tahoma;
+  font-size  : 1.4rem;
+  color      : #000;
+
+
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.w-title a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Project description */
+.work-content p {
+  margin-bottom: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Sub-description (small details) */
+.w-title small {
+  color: #999;
+  font-weight: normal;
+}
+
+
+/***** PROJECTS DESC *****/
+/* Insights section */
+.insights-desc {
   background    : rgba(243, 242, 242, 0.5);
   opacity       : 1;
   color         : #000;
+
+
+  padding: 15px;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
 }
 
-.folioinsights-heading-meta {
+.insights-heading-meta {
   padding-top   : 5px;
   margin-bottom : 15px;
   display       : block;
@@ -1701,20 +1743,93 @@ canvas {
   color         : #edfd04;
   font-weight   : 500;
   letter-spacing: 5px;
+
+
+
+  font-weight: bold;
+  color: #EF233C;
+  margin-bottom: 1rem;
 }
 
-/* Responsive adjustments for smaller screens 
+.insights-desc p {
+  margin-bottom: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+
+
+
+/***** PROJECTS INSIGHTS *****/
+
+/* Icon container for sharing, views, likes */
+.pcon {
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.pcon .icon {
+  display: inline-block;
+}
+
+.pcon .icon span {
+  margin-right: 15px;
+}
+
+.pcon .icon a {
+  text-decoration: none;
+  color: #333;
+}
+
+.pcon .icon a:hover {
+  color: #EF233C;
+}
+
+.pcon .icon i {
+  font-size: 1.2rem;
+}
+
+/* Responsive adjustments */
 @media (max-width: 768px) {
-  .folioinsights-desc {
-    display   : block;
-    width     : 100%;
-    padding   : 0.5rem;
-    margin-top: 1rem;
+  .work-box {
+    padding: 10px;
+  }
+
+  .w-title {
+    font-size: 1.2rem;
+  }
+
+  .work-content {
+    padding: 1rem;
+  }
+
+  .insights-desc {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .work-img img {
+    transform: none;
+  }
+
+  .work-box:hover .work-img img {
+    transform: none;
+  }
+
+  .pcon {
+    justify-content: center;
+  }
+
+  .insights-desc p {
+    font-size: 0.9rem;
   }
 }
 
 
-*/
+
+
 
 
 
