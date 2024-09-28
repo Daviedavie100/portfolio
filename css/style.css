@@ -1571,6 +1571,17 @@ canvas {
   margin-bottom: 1.5rem;
 }
 
+
+.workfolio-flex-container {
+  display: flex; /* Enables Flexbox */
+  align-items: stretch; /* Stretches the items to the same height */
+}
+
+.work-box, .insights-desc {
+  flex: 1; /* Makes both the work-box and insights-desc take up equal width and height */
+}
+
+
 /***** WORK IMAGE *****/
 .work-box {
   -webkit-backface-visibility: hidden;
@@ -1579,7 +1590,7 @@ canvas {
   transition                 : all 0.3s ease-in-out;
   /*box-shadow               : 0 4px 12px rgba(0, 0, 0, 0.1);
  padding                     : 15px;*/
-  padding-bottom             : 1rem;
+  padding-bottom             : 1.5rem;
 }
 
 /*
