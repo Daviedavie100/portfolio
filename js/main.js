@@ -299,4 +299,26 @@
 	});
 
 
+	// Ensure the DOM is fully loaded before executing the script
+	window.onload = function () {
+		// Get the work-box and insights-desc elements
+		const workBox = document.querySelector('.work-box');
+		const insightsDesc = document.querySelector('.insights-desc');
+
+		// Ensure both elements are found
+		if (workBox && insightsDesc) {
+			// Get their heights
+			const workBoxHeight = workBox.offsetHeight;
+			const insightsDescHeight = insightsDesc.offsetHeight;
+
+			// Find the larger height
+			const maxHeight = Math.max(workBoxHeight, insightsDescHeight);
+
+			// Apply the max height to both elements
+			workBox.style.height = maxHeight + 'px';
+			insightsDesc.style.height = maxHeight + 'px';
+		}
+	};
+
+
 }());
