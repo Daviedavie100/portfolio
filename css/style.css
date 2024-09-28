@@ -1648,39 +1648,35 @@ canvas {
 }
 
 .work-image {
-  padding: 2px;
-  background-color: #04f538;
+  padding: 1px;
+  margin: 0;
 }
 
 .work-img {
   display: flex;
-  justify-content: center; /* Horizontally center the image */
-  align-items: center;     /* Vertically center the image */
-  padding: 0;
-  background-color: #f54804;
-  height: auto; /* Adjust height if necessary */
+  position        : relative;
+  padding: 1em;
+  justify-content : center;
+  align-items     : center;
+  height          : 100%;
+  overflow        : hidden;
 }
 
 .work-img img {
-  max-width: 100%; /* Ensure the image resizes within the container */
-  height: auto;
+  position  : relative;
+  padding: 0.5em 1em;
+  max-width: 100%; 
+  height      : 100%;
+  transition: all 1s;
+  transform   : scale(1.1);
 }
 
-
-
-/*
-img.img-fluid {
-  display: flex;
-position: relative;
-clear: both;
-padding: 1em 0 1em 1em;
-align-items: center;
+.work-box:hover img {
+  padding: 0.5em 2em;
+  -webkit-transform: scale(1.2);
+  transform        : scale(1.2);
+  transition                 : all 0.5s ease;
 }
-*/
-
-
-
-
 
 .fcontent-line-mf {
   top             : 0;
