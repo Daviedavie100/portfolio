@@ -1635,62 +1635,54 @@ canvas {
   border-color: #EF233C;
 }
 
-
+.workfolio-item {
+  background-color: #04f538;
+  padding-left    : 0.5em;
+  padding-right   : 0.5em;
+  padding-bottom  : 2em;
+}
 
 
 /* General Styles for .work-box */
 .work-box {
-  margin-bottom              : 3rem;
   -webkit-backface-visibility: hidden;
   backface-visibility        : hidden;
   background-color           : #fff;
   transition                 : all 0.3s ease-in-out;
+  padding-bottom             : 1rem;
 }
 
 .work-image {
   padding: 1px;
-  margin: 0;
+  margin : 0;
 }
 
 .work-img {
-  display: flex;
-  position        : relative;
-  padding: 1em;
-  justify-content : center;
-  align-items     : center;
-  height          : 100%;
-  overflow        : hidden;
+  display           : flex;
+  position          : relative;
+  padding           : 1em;
+  justify-content   : center;
+  align-items       : center;
+  /*height          : 100%;*/
+  overflow          : hidden;
 }
 
 .work-img img {
   position  : relative;
-  padding: 0.5em 1em;
-  max-width: 100%; 
-  height      : 100%;
+  padding   : 0.5em 1em;
+  max-width : 100%;
+  height    : 100%;
   transition: all 1s;
-  transform   : scale(1.1);
+  transform : scale(1.1);
 }
 
 .work-box:hover img {
-  padding: 0.5em 2em;
+  padding          : 0.5em 2em;
   -webkit-transform: scale(1.2);
   transform        : scale(1.2);
-  transition                 : all 0.5s ease;
+  transition       : all 0.5s ease-in-out;
 }
 
-.fcontent-line-mf {
-  top             : 0;
-  float           : left;
-  width           : 100px;
-  height          : 1px;
-  background-color: #ff4800;
-  margin          : 0 auto;
-  padding         : 5px;
-  margin-right    : 10px;
-}
-
-
-/* Work Content Styling */
 .work-content {
   width  : 100%;
   padding: 2rem 3% 1rem 2%;
@@ -1706,13 +1698,12 @@ canvas {
 /* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
   .work-box {
-    padding      : 10px;
+    padding      : 2px;
     margin-bottom: 2rem;
   }
 
   .work-img {
     width: 100%;
-    /* Make sure the width of the image adjusts */
   }
 
   .work-content {
@@ -1727,7 +1718,7 @@ canvas {
 
 @media (max-width: 480px) {
   .work-box {
-    padding      : 8px;
+    padding      : 4px;
     margin-bottom: 1.5rem;
   }
 
@@ -1751,22 +1742,28 @@ canvas {
 
 
 
-
-.folioinsights-desc {
-  padding: 1rem;
-  /* Default padding */
-  margin : 0;
-  /* Default margin */
+.foliocontent-line-mf {
+  top             : 0;
+  float           : left;
+  width           : 100px;
+  height          : 1px;
+  background-color: #ff4800;
+  margin          : 0 auto;
+  padding         : 5px;
+  margin-right    : 10px;
 }
 
-.folioinsights-desc:hover {
-  padding   : 0 1em 0 1em;
-  background: rgba(243, 242, 242, 0.5);
-  opacity   : 1;
-  color     : #000;
+.folioinsights-desc {
+  padding-left  : 0.5em;
+  padding-right : 0.5em;
+  padding-bottom: 0.8rem;
+  background    : rgba(243, 242, 242, 0.5);
+  opacity       : 1;
+  color         : #000;
 }
 
 .folioinsights-heading-meta {
+  padding-top   : 5px;
   margin-bottom : 15px;
   display       : block;
   font-size     : 10px;
