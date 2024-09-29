@@ -1567,6 +1567,10 @@ canvas {
   padding: 1.5rem;
 }
 
+.workfolio-item.hidden {
+  display: none;
+}
+
 .title-container {
   position     : relative;
   margin-bottom: 1rem;
@@ -1777,11 +1781,17 @@ canvas {
 }
 
 /***** BTN LOAD MORE *****/
+
+.btn-load-more {
+  margin-top: 20px;
+  display: inline-block;
+}
+
 /* Style for the Load More button */
 #load-more-btn {
   background-color: #007bff;
   /* Primary blue background */
-  color           : white;
+  color           : rgb(248, 191, 5);
   /* Text color */
   border          : none;
   /* Removes the border */
