@@ -1500,7 +1500,7 @@ canvas {
   display         : block;
   flex-wrap       : wrap;
   margin-bottom   : 2rem;
-  background-color: #4054b2;
+  background-color: #ced2e4;
 }
 
 .workfolio-container {
@@ -1583,37 +1583,62 @@ canvas {
   margin-right    : 10px;  
 }
 
-
-.w-title {
- /* font-family: sans-serif, Verdana, Geneva, Tahoma;
-  font-size  : 1.4rem;
-  color      : #000;*/
-
-
-  font-family   : 'Helvetica Neue', sans-serif;
-  font-size     : 1.4rem;
-  font-weight   : bold;
-  color         : #333;
-  text-transform: uppercase;
-  margin-bottom : 1rem;
-}
-
-.w-title a {
-  text-decoration: none;
-  color          : inherit;
-}
-
-/* Project description */
+/* Project description 
 .work-content p {
   margin-bottom: 1rem;
   color        : #666;
   line-height  : 1.6;
 }
 
-/* Sub-description (small details) */
+*/
+
+.w-title {
+    color      : #000;
+  font-family   : 'Helvetica Neue', sans-serif;
+  font-size     : 1.4rem;
+  font-weight   : bold;
+  text-transform: uppercase;
+  margin-bottom : 1rem;
+}
+/*
+.w-title a {
+  text-decoration: none;
+  color          : inherit;
+}
+
+
+
+
 .w-title small {
   color      : #999;
   font-weight: normal;
+}
+
+*/
+
+/***** BTN *****/
+.butn {
+  display: inline-block;
+  padding: 5px 15px;
+  color: #fff;
+  background-color: #007bff; /* Adjust the color as per your design */
+  text-decoration: none;
+  border-radius: 5px; /* Border radius for rounded corners */
+  margin-right: 15px; /* Space between buttons */
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.hire-btn {
+  background-color: #28a745; /* Green background for Hire Me */
+}
+
+.learn-btn {
+  background-color: #007bff; /* Blue background for Learn More */
+}
+
+.butn:hover {
+  background-color: #0c1c2c; /* Darker blue for hover effect */
 }
 
 
