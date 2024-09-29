@@ -797,77 +797,26 @@ figure figcaption {
 
 .about-desc {
   margin   : 0 1em 0 0.8em;
-  /*padding:0 1em 0 1em;*/
-  font-size: 16px;
-  clear    : both;
-}
-
-.about-desc:hover {
+  /*padding:0 1em 0 1em; 0 2em 0 2em*/
   font-family: 'ariel'sans-serif;
-  padding    : 0 2em 0 2em;
+  font-size: 16px;
+  padding    : 1em;
   background : rgba(243, 242, 242, 0.5);
   opacity    : 1;
   color      : #000;
+  border-radius   : 8px;
 }
 
 .about-tools {
   padding        : 1em 2em 2em 0;
   align-items    : center;
-  /* Center items vertically */
   justify-content: center;
-  /* Center items horizontally */
   text-align     : center;
-  /* Center text inside each flex item */
 }
 
 .cv {
   padding: 0.8em 0.8em 3em 0.8em;
 }
-
-/*
-.daviefolio-about {
-  padding-top   : 2em;
-  padding-bottom: 2em;
-  clear         : both;
-  width         : 100%;
-  display       : block;
-  font-family   : "Quicksand", Arial, sans-serif, Verdana, Tahoma;
-  /*font-size   : 14px;
-  color         : #ffffff;
-  opacity       : 1;
-}
-
-.daviefolio-about .overlay {
-  z-index     : 0;
-  position    : absolute;
-  bottom      : 0;
-  top         : 0;
-  left        : 0;
-  right       : 0;
-  /*background: rgba(0, 0, 0, 0.4);
-}
-*/
-
-/*
-.row-bottom-padded-sm {
-  padding-bottom: 1em;
-}
-
-@media screen and (max-width: 768px) {
-  .row-bottom-padded-sm {
-    padding-bottom: 1em;
-  }
-}
-
-.about-desc h3 {
-  font-size     : 18px;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  font-weight   : 500;
-}
-
-*/
-
 
 
 /*TOOLS*/
@@ -962,21 +911,13 @@ figure figcaption {
   display         : inline-block;
   padding         : 10px 20px;
   background-color: #007bff;
-  /* Button color */
   color           : #fff;
-  /* Text color */
   text-decoration : none;
-  /* Remove underline */
   border-radius   : 15px;
-  /* Rounded corners */
   font-weight     : bold;
-  /* Bold text */
   transition      : background-color 0.3s ease;
-  /* Smooth hover transition */
   display         : flex;
-  /* Use Flexbox */
   justify-content : center;
-  /* Center horizontally */
 }
 
 .btn-hire:hover {
@@ -1562,7 +1503,7 @@ canvas {
 }
 
 .workfolio-container {
-  display        : flex;
+  display        : block;
   flex-direction : column;
   justify-content: space-between;
 }
@@ -1571,15 +1512,6 @@ canvas {
   margin-bottom: 1.5rem;
 }
 
-
-.workfolio-flex-container {
-  display: flex; /* Enables Flexbox */
-  align-items: stretch; /* Stretches the items to the same height */
-}
-
-.work-box, .insights-desc {
-  flex: 1; /* Makes both the work-box and insights-desc take up equal width and height */
-}
 
 
 /***** WORK IMAGE *****/
@@ -1593,23 +1525,8 @@ canvas {
   padding-bottom             : 1.5rem;
 }
 
-/*
-.work-image {
-  padding: 1px;
-  margin : 0;
-}
-*/
 .work-img {
-  /*
-  
-    margin-bottom: 15px;
-  justify-content: center;
-  align-items    : center;
-  height         : 100%;
-  overflow       : hidden;*/
-
   display : flex;
-
   padding : 1em;
   overflow: hidden;
   height  : auto;
@@ -1619,11 +1536,8 @@ canvas {
 .work-img img {
   position  : relative;
   padding   : 0.5em 1em;
-
-  transition: all 1s;
-  transform : scale(1.1);
-
-
+  /*transition: all 1s;
+  transform : scale(1.1);*/
   transition: transform 1s ease-in-out;
   width     : 100%;
   height    : auto;
@@ -1665,13 +1579,7 @@ canvas {
   background-color: #ff4800;
   margin-bottom   : 10px;
   padding         : 5px;
-  margin-right    : 10px;
-
-
-/*
-  width           : 50px;
- margin          : 0 auto;*/
-  
+  margin-right    : 10px;  
 }
 
 
@@ -1713,35 +1621,24 @@ canvas {
 .insights-desc {
   background: rgba(243, 242, 242, 0.5);
   opacity   : 1;
-  color     : #000;
-
-
   padding         : 15px;
-
   border-radius   : 8px;
   margin-bottom   : 1.5rem;
 }
 
 .insights-heading-meta {
   padding-top   : 5px;
-  margin-bottom : 15px;
   display       : block;
-  font-size     : 10px;
   text-transform: uppercase;
   color         : #edfd04;
-  font-weight   : 500;
   letter-spacing: 5px;
-
-
-
   font-weight  : bold;
-  color        : #EF233C;
   margin-bottom: 1rem;
 }
 
 .insights-desc p {
   margin-bottom: 1rem;
-  color        : #333;
+  color     : #000;
   line-height  : 1.6;
 }
 
