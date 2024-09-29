@@ -796,15 +796,15 @@ figure figcaption {
 /*************************/
 
 .about-desc {
-  margin   : 0 1em 0 0.8em;
-  /*padding:0 1em 0 1em; 0 2em 0 2em*/
-  font-family: 'ariel'sans-serif;
-  font-size: 16px;
-  padding    : 1em;
-  background : rgba(243, 242, 242, 0.5);
-  opacity    : 1;
-  color      : #000;
-  border-radius   : 8px;
+  margin       : 0 1em 0 0.8em;
+  /*padding    :0 1em 0 1em; 0 2em 0 2em*/
+  font-family  : 'ariel'sans-serif;
+  font-size    : 16px;
+  padding      : 1em;
+  background   : rgba(243, 242, 242, 0.5);
+  opacity      : 1;
+  color        : #000;
+  border-radius: 8px;
 }
 
 .about-tools {
@@ -1459,7 +1459,7 @@ canvas {
   padding    : 2em 0 2em 0;
   margin-left: 0;
   float      : left;
-  clear: both;
+  clear      : both;
 }
 
 #workfolio-filter {
@@ -1535,13 +1535,13 @@ canvas {
 }
 
 .work-img img {
-  position  : relative;
-  padding   : 0.5em 1em;
+  position    : relative;
+  padding     : 0.5em 1em;
   /*transition: all 1s;
-  transform : scale(1.1);*/
-  transition: transform 1s ease-in-out;
-  width     : 100%;
-  height    : auto;
+  transform   : scale(1.1);*/
+  transition  : transform 1s ease-in-out;
+  width       : 100%;
+  height      : auto;
 }
 
 .work-box:hover .work-img img {
@@ -1550,6 +1550,7 @@ canvas {
   transform        : scale(1.2);
   transition       : all 0.5s ease-in-out;
 }
+
 /*
 .work-box:hover img {
   padding          : 0.5em 2em;
@@ -1580,7 +1581,7 @@ canvas {
   background-color: #ff4800;
   margin-bottom   : 10px;
   padding         : 5px;
-  margin-right    : 10px;  
+  margin-right    : 10px;
 }
 
 /* Project description 
@@ -1593,13 +1594,14 @@ canvas {
 */
 
 .w-title {
-    color      : #000;
+  color         : #000;
   font-family   : 'Helvetica Neue', sans-serif;
   font-size     : 1.4rem;
   font-weight   : bold;
   text-transform: uppercase;
   margin-bottom : 1rem;
 }
+
 /*
 .w-title a {
   text-decoration: none;
@@ -1618,38 +1620,37 @@ canvas {
 
 /***** BTN *****/
 .butn {
-  display: inline-block;
-  padding: 5px 15px;
-  color: #fff;
-  background-color: #007bff; /* Adjust the color as per your design */
-  text-decoration: none;
-  border-radius: 5px; /* Border radius for rounded corners */
-  margin-right: 15px; /* Space between buttons */
-  font-weight: bold;
-  transition: background-color 0.3s ease;
+  display         : inline-block;
+  padding         : 5px 15px;
+  color           : #fff;
+  background-color: #007bff;
+  text-decoration : none;
+  border-radius   : 5px;
+  margin-right    : 15px;
+  font-weight     : bold;
+  transition      : background-color 0.3s ease;
 }
 
 .hire-btn {
-  background-color: #28a745; /* Green background for Hire Me */
+  background-color: #28a745;
 }
 
 .learn-btn {
-  background-color: #007bff; /* Blue background for Learn More */
+  background-color: #007bff;
 }
 
 .butn:hover {
-  background-color: #0c1c2c; /* Darker blue for hover effect */
+  background-color: #0c1c2c;
 }
 
 
-/***** PROJECTS DESC *****/
-/* Insights section */
+/***** INSIGHT *****/
 .insights-desc {
-  background: rgba(243, 242, 242, 0.5);
-  opacity   : 1;
-  padding         : 15px;
-  border-radius   : 8px;
-  margin-bottom   : 1.5rem;
+  background   : rgba(243, 242, 242, 0.5);
+  opacity      : 1;
+  padding      : 15px;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
 }
 
 .insights-heading-meta {
@@ -1658,20 +1659,170 @@ canvas {
   text-transform: uppercase;
   color         : #edfd04;
   letter-spacing: 5px;
-  font-weight  : bold;
-  margin-bottom: 1rem;
+  font-weight   : bold;
+  margin-bottom : 1rem;
 }
 
 .insights-desc p {
   margin-bottom: 1rem;
-  color     : #000;
+  color        : #000;
   line-height  : 1.6;
+}
+
+/***** PROJECTS OTHER *****/
+.folioproject {
+  position     : relative;
+  overflow     : hidden;
+  height       : 360px;
+  width        : 100%;
+  display      : block;
+  margin-bottom: 30px;
+}
+
+.folioproject img {
+  width     : 100%;
+  height    : auto;
+  transition: transform 0.3s ease;
+}
+
+.folioproject .fdesc {
+  height            : 300px;
+  position          : absolute;
+  top               : 0;
+  left              : 10px;
+  right             : 10px;
+  bottom            : 2em;
+  background        : rgba(0, 0, 0, 0.5);
+  /* Semi-transparent background */
+  /*color           : #1404f8;*/
+  display           : flex;
+  justify-content   : center;
+  align-items       : center;
+  opacity           : 0;
+  -webkit-transition: 0.3s;
+  -o-transition     : 0.3s;
+  transition        : opacity 0.3s ease;
+
+}
+
+.folioproject .fdesc span {
+  font-family         : "Quicksand", Arial, sans-serif;
+  font-size           : 16px;
+  font-weight         : 300px;
+  display             : block;
+  color               : #000;
+  /*color             : rgba(255, 255, 255, 0.7);*/
+  -webkit-transition  : -webkit-transform 0.3s, opacity 0.3s;
+  -webkit-transition  : opacity 0.3s, -webkit-transform 0.3s;
+  transition          : opacity 0.3s, -webkit-transform 0.3s;
+  -o-transition       : transform 0.3s, opacity 0.3s;
+  transition          : transform 0.3s, opacity 0.3s;
+  transition          : transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+  -webkit-transform   : translate3d(0, 15px, 0);
+  transform           : translate3d(0, 15px, 0);
+}
+
+.folioproject .fcon {
+  padding : 20px;
+  display : block;
+  position: relative;
+}
+
+.folioproject .fcon .icon {
+  position: absolute;
+  bottom  : 20px;
+  left    : 20px;
+  right   : 20px;
+}
+
+.folioproject .fcon .icon span {
+  display      : inline;
+  padding-right: 5px;
+}
+
+.folioproject .fcon .icon span a {
+  color                : #333;
+  padding              : 5px;
+  background           : rgba(255, 255, 255, 0.5);
+  -webkit-border-radius: 4px;
+  -moz-border-radius   : 4px;
+  -ms-border-radius    : 4px;
+  border-radius        : 4px;
+}
+
+@media screen and (max-width: 768px) {
+  .folioproject .fdesc {
+    opacity   : 1;
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  .folioproject .fdesc span {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform        : translate3d(0, 0, 0);
+  }
+}
+
+.folioproject:hover .fdesc {
+  opacity: 1;
+  /* Show the description on hover */
+}
+
+.folioproject:hover img {
+  transform: scale(1.1);
+  /* Slight zoom on image for effect */
+}
+
+.folioproject:hover .fdesc span {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform        : translate3d(0, 0, 0);
+}
+
+/***** BTN LOAD MORE *****/
+/* Style for the Load More button */
+#load-more-btn {
+  background-color: #007bff;
+  /* Primary blue background */
+  color           : white;
+  /* Text color */
+  border          : none;
+  /* Removes the border */
+  border-radius   : 5px;
+  /* Rounded corners */
+  padding         : 10px 20px;
+  /* Adjust padding (height and width) */
+  font-size       : 16px;
+  /* Text size */
+  display         : inline-block;
+  /* Ensures the button behaves like an inline element */
+  text-align      : center;
+  /* Center the text */
+  transition      : background-color 0.3s ease;
+  /* Smooth hover transition */
+}
+
+/* Hover effect for the Load More button */
+#load-more-btn:hover {
+  background-color: #0056b3;
+  /* Darker blue on hover */
+  text-decoration : none;
+  /* Remove underline on hover */
+}
+
+/* Style the icon inside the button */
+#load-more-btn i {
+  margin-left: 5px;
+  /* Space between text and icon */
+}
+
+/* For the <p> tag, remove margin if needed */
+p {
+  margin-bottom: 0;
+  /* Remove extra space below the paragraph */
 }
 
 
 
 
-/***** PROJECTS INSIGHTS *****/
 
 /* Icon container for sharing, views, likes */
 .pcon {
