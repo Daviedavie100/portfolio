@@ -1496,21 +1496,17 @@ canvas {
 }
 
 /***** PROJECTS *****/
-.row.projectfolio-item {
-  display         : block;
-  flex-wrap       : wrap;
-  margin-bottom   : 2rem;
-}
 
 .workfolio-container {
   display        : block;
-  flex-direction : column;
-  justify-content: space-between;
+  margin-bottom: 2rem;
 }
 
 .workfolio-item {
   margin-bottom: 1.5rem;
+  box-sizing: border-box;
 }
+
 
 
 
@@ -1567,9 +1563,6 @@ canvas {
   padding: 1.5rem;
 }
 
-.workfolio-item.hidden {
-  display: none;
-}
 
 .title-container {
   position     : relative;
@@ -1690,7 +1683,7 @@ canvas {
 
 .folioproject .fdesc {
   height            : 300px;
-  position          : absolute;
+  position          : relative;
   top               : 0;
   left              : 10px;
   right             : 10px;
@@ -1698,7 +1691,7 @@ canvas {
   background        : rgba(0, 0, 0, 0.5);
   /* Semi-transparent background */
   /*color           : #1404f8;*/
-  display           : flex;
+  display           : block;
   justify-content   : center;
   align-items       : center;
   opacity           : 0;
@@ -1782,51 +1775,52 @@ canvas {
 
 /***** BTN LOAD MORE *****/
 
+/* Basic button styling */
 .btn-load-more {
-  margin-top: 20px;
-  display: inline-block;
-}
-
-/* Style for the Load More button */
-#load-more-btn {
-  background-color: #007bff;
-  /* Primary blue background */
-  color           : rgb(248, 191, 5);
-  /* Text color */
-  border          : none;
-  /* Removes the border */
-  border-radius   : 5px;
-  /* Rounded corners */
-  padding         : 10px 20px;
-  /* Adjust padding (height and width) */
-  font-size       : 16px;
-  /* Text size */
+  top             : 6em;
   display         : inline-block;
-  /* Ensures the button behaves like an inline element */
-  text-align      : center;
-  /* Center the text */
-  transition      : background-color 0.3s ease;
-  /* Smooth hover transition */
-}
-
-/* Hover effect for the Load More button */
-#load-more-btn:hover {
-  background-color: #0056b3;
-  /* Darker blue on hover */
+  padding         : 10px 20px;
+  /* Adjusts the size of the button */
+  background-color: #007bff;
+  /* Button background color (blue) */
+  color           : #fff;
+  /* Text color */
   text-decoration : none;
-  /* Remove underline on hover */
+  /* Removes underline from link */
+  border-radius   : 5px;
+  /* Adds rounded corners */
+  font-size       : 16px;
+  /* Adjusts font size */
+  font-weight     : bold;
+  /* Makes the text bold */
+  transition      : background-color 0.3s ease, color 0.3s ease;
+  /* Smooth transition on hover */
+  cursor          : pointer;
+  /* Changes cursor to pointer on hover */
 }
 
-/* Style the icon inside the button */
-#load-more-btn i {
-  margin-left: 5px;
-  /* Space between text and icon */
+/* Hover effect */
+.btn-load-more:hover {
+  background-color: #0056b3;
+  /* Darker blue background on hover */
+  color           : #e2e2e2;
+  /* Slightly lighter text color on hover */
 }
 
-/* For the <p> tag, remove margin if needed */
-p {
+/* Icon alignment */
+.btn-load-more i {
+  margin-left   : 5px;
+  /* Adds space between the text and the icon */
+  font-size     : 16px;
+  /* Adjust icon size if needed */
+  vertical-align: middle;
+  /* Ensures the icon aligns with the text */
+}
+
+/* Optional: Style the paragraph element to remove margin */
+.col-md-12 p {
   margin-bottom: 0;
-  /* Remove extra space below the paragraph */
+  /* Removes extra space below the button */
 }
 
 
