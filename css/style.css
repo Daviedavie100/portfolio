@@ -1500,7 +1500,6 @@ canvas {
   display         : block;
   flex-wrap       : wrap;
   margin-bottom   : 2rem;
-  background-color: #ced2e4;
 }
 
 .workfolio-container {
@@ -1584,14 +1583,14 @@ canvas {
   margin-right    : 10px;
 }
 
-/* Project description 
+
 .work-content p {
   margin-bottom: 1rem;
   color        : #666;
   line-height  : 1.6;
 }
 
-*/
+
 
 .w-title {
   color         : #000;
@@ -1657,7 +1656,7 @@ canvas {
   padding-top   : 5px;
   display       : block;
   text-transform: uppercase;
-  color         : #edfd04;
+  color         : #c45439;
   letter-spacing: 5px;
   font-weight   : bold;
   margin-bottom : 1rem;
