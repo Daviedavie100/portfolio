@@ -1455,11 +1455,8 @@ canvas {
 
 /*********  MENU *********/
 #workfolio {
-  position   : relative;
-  padding    : 2em 0 2em 0;
-  margin-left: 0;
-  float      : left;
-  clear      : both;
+  position     : relative;
+  padding    : 5px 0 40px 0;
 }
 
 #workfolio-filter {
@@ -1471,41 +1468,64 @@ canvas {
 }
 
 #workfolio-filter li {
-  cursor            : pointer;
-  display           : inline-block;
-  margin            : 5px;
-  padding           : 6px 12px 1px 4px;
-  font-size         : 14px;
-  font-weight       : 600;
-  color             : #ffffff;
-  background        : #EF233C;
-  border            : 2px solid transparent;
-  border-radius     : 0;
-  box-shadow        : inset 0 0 0 50px #EF233C;
-  transition        : ease-out 0.3s;
-  -webkit-transition: ease-out 0.3s;
-  -moz-transition   : ease-out 0.3s;
+  cursor              : pointer;
+  display             : inline-block;
+  margin              : 0 5px;
+  /*5px;*/
+  padding             : 8px 15px;
+  /*6px 12px 1px 4px;*/
+  font-size           : 14px;
+  font-weight         : 600;
+  color               : #ffffff;
+  background          : #EF233C;
+  /*background-color  : #f8f8f8;*/
+  /*border            : 2px solid transparent;*/
+  border              : 1px solid #ddd;
+  border-radius       : 5px;
+  box-shadow          : inset 0 0 0 50px #EF233C;
+  transition          : ease-out 0.3s;
+  -webkit-transition  : ease-out 0.3s;
+  -moz-transition     : ease-out 0.3s;
 }
 
-#workfolio-filter li:hover,
-#workfolio-filter li.filter-active {
+#workfolio-filter li:hover {
   color       : #EF233C;
   background  : transparent;
   box-shadow  : inset 0 0 0 0 #EF233C;
   border-color: #EF233C;
 }
 
+#workfolio-filter li.active {
+  background-color: #007bff;
+  color           : #fff;
+}
+
 /***** PROJECTS *****/
 
 .workfolio-container {
-  display        : block;
+  position: relative;
+  /* Set position to relative to contain absolute elements */
+
+  display      : block;
   margin-bottom: 2rem;
 }
 
 .workfolio-item {
   margin-bottom: 1.5rem;
-  box-sizing: border-box;
+  box-sizing   : border-box;
+
+  display      : none;
+  margin-bottom: 30px;
+  padding      : 0 15px;
 }
+
+.workfolio-item.visible {
+  opacity  : 1;
+  /* Fully visible when shown */
+  transform: translateY(0);
+  /* Reset position */
+}
+
 
 
 
@@ -1516,10 +1536,17 @@ canvas {
   backface-visibility        : hidden;
   background-color           : #fff;
   transition                 : all 0.3s ease-in-out;
-  /*box-shadow               : 0 4px 12px rgba(0, 0, 0, 0.1);
- padding                     : 15px;*/
-  padding-bottom             : 1.5rem;
+  /*box-shadow               : 0 4px 12px rgba(0, 0, 0, 0.1);*/
+ padding                     : 15px;
 }
+
+.work-image {
+  position: relative;
+  /* Ensure work-image has relative positioning */
+  z-index : 1;
+  /* Set a higher z-index to keep it on top */
+}
+
 
 .work-img {
   display : flex;
@@ -1527,6 +1554,8 @@ canvas {
   overflow: hidden;
   height  : auto;
   width   : 100%;
+
+  border-radius: 5px;
 }
 
 .work-img img {
@@ -1546,27 +1575,32 @@ canvas {
   transition       : all 0.5s ease-in-out;
 }
 
-/*
-.work-box:hover img {
-  padding          : 0.5em 2em;
-  -webkit-transform: scale(1.2);
-  transform        : scale(1.2);
-  transition       : all 0.5s ease-in-out;
-}
-*/
 
-/***** CONTENT *****/
+/* Hidden items won't take up space */
+.hidden {
+  display: none;
+}
+
+/* Show workfolio items based on filter */
+.filter-1,
+.filter-2,
+.filter-3,
+.filter-4 {
+  display: block;
+  /* Visible when filter matches */
+}
+
+
+***** CONTENT *****/ 
+
 .work-content {
-  /*width  : 100%;
-  padding: 2rem 3% 1rem 2%;*/
-  color  : #333333;
-  padding: 1.5rem;
+  color: #333333;
 }
-
 
 .title-container {
-  position     : relative;
-  margin-bottom: 1rem;
+  position: relative;
+  padding : 1em 2em;
+
 }
 
 .foliocontent-line-mf {
@@ -1580,15 +1614,6 @@ canvas {
   margin-right    : 10px;
 }
 
-
-.work-content p {
-  margin-bottom: 1rem;
-  color        : #666;
-  line-height  : 1.6;
-}
-
-
-
 .w-title {
   color         : #000;
   font-family   : 'Helvetica Neue', sans-serif;
@@ -1598,40 +1623,38 @@ canvas {
   margin-bottom : 1rem;
 }
 
-/*
-.w-title a {
-  text-decoration: none;
-  color          : inherit;
+.work-content p {
+  padding      : 0 2em;
+  color        : #666;
+  line-height  : 1.6;
+  margin-bottom: 1em;
 }
-
-
-
-
-.w-title small {
-  color      : #999;
-  font-weight: normal;
-}
-
-*/
 
 /***** BTN *****/
 .butn {
-  display         : inline-block;
-  padding         : 5px 15px;
+  display                               : inline-block;
+  margin-bottom                                : 1em;
+  /*5px;*/
+  padding                               : 8px 15px;
+  /*6px 12px 1px 4px;   padding         : 5px 15px;*/
+  font-size                             : 14px;
+  font-weight                           : bold;
   color           : #fff;
   background-color: #007bff;
   text-decoration : none;
   border-radius   : 5px;
-  margin-right    : 15px;
-  font-weight     : bold;
-  transition      : background-color 0.3s ease;
+
+  transition: background-color 0.3s ease;
+
+  /* Add margin-left to push buttons 2em from the left */
+  margin-left: 2em;
 }
 
-.hire-btn {
+.repo-btn {
   background-color: #28a745;
 }
 
-.learn-btn {
+.blog-btn {
   background-color: #007bff;
 }
 
@@ -1641,7 +1664,7 @@ canvas {
 
 
 /***** INSIGHT *****/
-.insights-desc {
+.finsights-desc {
   background   : rgba(243, 242, 242, 0.5);
   opacity      : 1;
   padding      : 15px;
@@ -1649,7 +1672,7 @@ canvas {
   margin-bottom: 1.5rem;
 }
 
-.insights-heading-meta {
+.finsights-heading-meta {
   padding-top   : 5px;
   display       : block;
   text-transform: uppercase;
@@ -1659,243 +1682,43 @@ canvas {
   margin-bottom : 1rem;
 }
 
-.insights-desc p {
+.finsights-desc p {
   margin-bottom: 1rem;
   color        : #000;
   line-height  : 1.6;
 }
 
-/***** PROJECTS OTHER *****/
-.folioproject {
-  position     : relative;
-  overflow     : hidden;
-  height       : 360px;
-  width        : 100%;
-  display      : block;
-  margin-bottom: 30px;
+
+
+/* Hidden items (Initially hidden, revealed by Load More button)
+.hidden {
+  display: none;
 }
-
-.folioproject img {
-  width     : 100%;
-  height    : auto;
-  transition: transform 0.3s ease;
-}
-
-.folioproject .fdesc {
-  height            : 300px;
-  position          : relative;
-  top               : 0;
-  left              : 10px;
-  right             : 10px;
-  bottom            : 2em;
-  background        : rgba(0, 0, 0, 0.5);
-  /* Semi-transparent background */
-  /*color           : #1404f8;*/
-  display           : block;
-  justify-content   : center;
-  align-items       : center;
-  opacity           : 0;
-  -webkit-transition: 0.3s;
-  -o-transition     : 0.3s;
-  transition        : opacity 0.3s ease;
-
-}
-
-.folioproject .fdesc span {
-  font-family         : "Quicksand", Arial, sans-serif;
-  font-size           : 16px;
-  font-weight         : 300px;
-  display             : block;
-  color               : #000;
-  /*color             : rgba(255, 255, 255, 0.7);*/
-  -webkit-transition  : -webkit-transform 0.3s, opacity 0.3s;
-  -webkit-transition  : opacity 0.3s, -webkit-transform 0.3s;
-  transition          : opacity 0.3s, -webkit-transform 0.3s;
-  -o-transition       : transform 0.3s, opacity 0.3s;
-  transition          : transform 0.3s, opacity 0.3s;
-  transition          : transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
-  -webkit-transform   : translate3d(0, 15px, 0);
-  transform           : translate3d(0, 15px, 0);
-}
-
-.folioproject .fcon {
-  padding : 20px;
-  display : block;
-  position: relative;
-}
-
-.folioproject .fcon .icon {
-  position: absolute;
-  bottom  : 20px;
-  left    : 20px;
-  right   : 20px;
-}
-
-.folioproject .fcon .icon span {
-  display      : inline;
-  padding-right: 5px;
-}
-
-.folioproject .fcon .icon span a {
-  color                : #333;
-  padding              : 5px;
-  background           : rgba(255, 255, 255, 0.5);
-  -webkit-border-radius: 4px;
-  -moz-border-radius   : 4px;
-  -ms-border-radius    : 4px;
-  border-radius        : 4px;
-}
-
-@media screen and (max-width: 768px) {
-  .folioproject .fdesc {
-    opacity   : 1;
-    background: rgba(0, 0, 0, 0.4);
-  }
-
-  .folioproject .fdesc span {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform        : translate3d(0, 0, 0);
-  }
-}
-
-.folioproject:hover .fdesc {
-  opacity: 1;
-  /* Show the description on hover */
-}
-
-.folioproject:hover img {
-  transform: scale(1.1);
-  /* Slight zoom on image for effect */
-}
-
-.folioproject:hover .fdesc span {
-  -webkit-transform: translate3d(0, 0, 0);
-  transform        : translate3d(0, 0, 0);
-}
-
-/***** BTN LOAD MORE *****/
-
-/* Basic button styling */
+*/
+/* Load More Button Styling */
 .btn-load-more {
-  top             : 6em;
   display         : inline-block;
-  padding         : 10px 20px;
-  /* Adjusts the size of the button */
   background-color: #007bff;
-  /* Button background color (blue) */
   color           : #fff;
-  /* Text color */
-  text-decoration : none;
-  /* Removes underline from link */
-  border-radius   : 5px;
-  /* Adds rounded corners */
-  font-size       : 16px;
-  /* Adjusts font size */
-  font-weight     : bold;
-  /* Makes the text bold */
-  transition      : background-color 0.3s ease, color 0.3s ease;
-  /* Smooth transition on hover */
+  padding         : 10px 20px;
+  border-radius   : 25px;
+  text-align      : center;
   cursor          : pointer;
-  /* Changes cursor to pointer on hover */
+  border          : none;
 }
 
-/* Hover effect */
 .btn-load-more:hover {
   background-color: #0056b3;
-  /* Darker blue background on hover */
-  color           : #e2e2e2;
-  /* Slightly lighter text color on hover */
 }
 
-/* Icon alignment */
-.btn-load-more i {
-  margin-left   : 5px;
-  /* Adds space between the text and the icon */
-  font-size     : 16px;
-  /* Adjust icon size if needed */
-  vertical-align: middle;
-  /* Ensures the icon aligns with the text */
-}
+/* Responsive Design */
+@media screen and (max-width: 768px) {
 
-/* Optional: Style the paragraph element to remove margin */
-.col-md-12 p {
-  margin-bottom: 0;
-  /* Removes extra space below the button */
-}
-
-
-
-
-
-/* Icon container for sharing, views, likes */
-.pcon {
-  padding        : 10px;
-  display        : flex;
-  justify-content: flex-start;
-}
-
-.pcon .icon {
-  display: inline-block;
-}
-
-.pcon .icon span {
-  margin-right: 15px;
-}
-
-.pcon .icon a {
-  text-decoration: none;
-  color          : #333;
-}
-
-.pcon .icon a:hover {
-  color: #EF233C;
-}
-
-.pcon .icon i {
-  font-size: 1.2rem;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .work-box {
-    padding: 10px;
-  }
-
-  .w-title {
-    font-size: 1.2rem;
-  }
-
-  .work-content {
-    padding: 1rem;
-  }
-
-  .insights-desc {
-    padding: 10px;
+  .col-md-8,
+  .col-md-4 {
+    width: 100%;
   }
 }
-
-@media (max-width: 576px) {
-  .work-img img {
-    transform: none;
-  }
-
-  .work-box:hover .work-img img {
-    transform: none;
-  }
-
-  .pcon {
-    justify-content: center;
-  }
-
-  .insights-desc p {
-    font-size: 0.9rem;
-  }
-}
-
-
-
-
-
 
 
 
