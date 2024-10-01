@@ -1692,7 +1692,7 @@ canvas {
 
 /* Icon container for sharing, views, likes */
 .fcon {
-  padding        : 10px;
+  padding        : 19px;
   display        : flex;
   justify-content: flex-start;
 }
@@ -1702,7 +1702,7 @@ canvas {
 }
 
 .fcon .icon span {
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 .fcon .icon a {
