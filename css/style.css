@@ -1872,6 +1872,51 @@ canvas {
 
 
 
+
+
+
+/* General styles for the workfolio items */
+.workfolio-item {
+  position: relative; /* Allow positioning of child elements */
+  margin-bottom: 20px; /* Spacing between items */
+}
+
+/* Styles for the hidden images in the daviefolio-narrow-content */
+.daviefolio-narrow-content .workfolio-item {
+  display: none; /* Initially hide all items in this section */
+}
+
+/* Style for the work image section */
+.work-image {
+  position: relative; /* Allows absolute positioning for child elements */
+}
+
+/* Style for the image itself */
+.work-image img {
+  width: 100%; /* Responsive images */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove bottom margin/space */
+}
+
+
+
+
+/* Load more button styling */
+.btn-load-more {
+  display: inline-block; /* Display as inline-block */
+  padding: 10px 20px; /* Add padding for size */
+  background-color: #007bff; /* Background color */
+  color: white; /* Text color */
+  border: none; /* No border */
+  cursor: pointer; /* Change cursor to pointer */
+  transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+.btn-load-more:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+
 /*======================================
   BLOG
 ======================================*/
