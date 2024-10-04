@@ -1456,7 +1456,7 @@ canvas {
 /*********  MENU *********/
 #workfolio {
   position: relative;
-  padding : 5px 0 40px 0;
+  padding : 5px 0 20px 0;
 }
 
 #workfolio-filter {
@@ -1631,17 +1631,17 @@ canvas {
 
 .title-container {
   position: relative;
-  padding-bottom : 1.5em;
+  padding-bottom : 0.5em;
 }
 
 .foliocontent-line-mf {
   top             : 0;
   float           : left;
   width           : 50px;
-  height          : 3px;
+  height          : 6px;
   background-color: #ff4800;
   margin-right    : 10px;
-  margin-bottom   : 10px;
+  /*margin-bottom   : 10px;*/
   /*padding-top         : 5px;*/
   
 }
@@ -1652,22 +1652,22 @@ canvas {
   font-size     : 1.4rem;
   font-weight   : bold;
   text-transform: uppercase;
-  margin-bottom : 1rem;
+  margin-bottom : 1em;
 }
 
 .work-content p {
-  padding      : 0 1.5em;
+  /*padding      : 0.5em 0;*/
   color        : #666;
   line-height  : 1.6;
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
 }
 
 /***** BTN *****/
 .butn {
   display                               : inline-block;
-  margin-bottom                         : 1em;
+  
   /*5px;*/
-  padding                               : 8px 15px;
+  
   /*6px 12px 1px 4px;   padding         : 5px 15px;*/
   font-size                             : 14px;
   font-weight                           : bold;
@@ -1679,7 +1679,10 @@ canvas {
   transition: background-color 0.3s ease;
 
   /* Add margin-left to push buttons 2em from the left */
-  margin-left: 2em;
+  padding                               : 10px 30px;
+  margin: 0 5px 1em 0;
+
+
 }
 
 .repo-btn {
