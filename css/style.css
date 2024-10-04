@@ -1514,8 +1514,10 @@ canvas {
   margin-bottom: 1.5rem;
   box-sizing   : border-box;
 
+
+  position: relative; /* Allow positioning of child elements */
   display      : none;
-  margin-bottom: 30px;
+  margin-bottom: 20px;/* Spacing between items */
   padding      : 0 15px;
 }
 
@@ -1525,6 +1527,7 @@ canvas {
   transform: translateY(0);
   /* Reset position */
 }
+/* General styles for the workfolio items */
 
 
 
@@ -1540,17 +1543,40 @@ canvas {
   padding                    : 15px;
 }
 
+
+
+
+
+
+/* Style for the work image section */
 .work-image {
-  position: relative;
-  /* Ensure work-image has relative positioning */
+  position: relative;/* Allows absolute positioning for child elements */
   z-index : 1;
   /* Set a higher z-index to keep it on top */
 }
 
 
+
+/* Style for the image itself */
+.work-image img {
+  width: 100%; /* Responsive images */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove bottom margin/space */
+
+
+
+  position    : relative;
+  padding     : 1em;
+  transition: all 1s;
+  transform   : scale(1.1);
+  transition  : transform 1s ease-in-out;
+
+
+}
+
 .work-img {
   display : flex;
-  padding : 1em;
+  padding : 0.5em 2em;
   overflow: hidden;
   height  : auto;
   width   : 100%;
@@ -1558,29 +1584,34 @@ canvas {
   border-radius: 5px;
 }
 
+/*
 .work-img img {
   position    : relative;
   padding     : 0.5em 1em;
   /*transition: all 1s;
-  transform   : scale(1.1);*/
+  transform   : scale(1.1);
   transition  : transform 1s ease-in-out;
   width       : 100%;
   height      : auto;
 }
-
+*/
 .work-box:hover .work-img img {
-  padding          : 0.5em 2em;
+  /*padding          : 0.5em 2em;*/
   -webkit-transform: scale(1.2);
   transform        : scale(1.2);
   transition       : all 0.5s ease-in-out;
 }
 
+/* Styles for the hidden images in the daviefolio-narrow-content */
+.daviefolio-narrow-content .workfolio-item {
+  display: none; /* Initially hide all items in this section */
+}
 
-/* Hidden items won't take up space */
+/* Hidden items won't take up space 
 .hidden {
   display: none;
 }
-
+*/
 /* Show workfolio items based on filter */
 .filter-1,
 .filter-2,
@@ -1591,14 +1622,16 @@ canvas {
 }
 
 
-***** CONTENT *****/ .work-content {
+/***** CONTENT *****/ 
+
+.work-content {
   color: #333333;
+  padding : 1.5em;
 }
 
 .title-container {
   position: relative;
-  padding : 1em 2em;
-
+  padding-bottom : 1.5em;
 }
 
 .foliocontent-line-mf {
@@ -1607,9 +1640,10 @@ canvas {
   width           : 50px;
   height          : 3px;
   background-color: #ff4800;
-  margin-bottom   : 10px;
-  padding         : 5px;
   margin-right    : 10px;
+  margin-bottom   : 10px;
+  /*padding-top         : 5px;*/
+  
 }
 
 .w-title {
@@ -1622,7 +1656,7 @@ canvas {
 }
 
 .work-content p {
-  padding      : 0 2em;
+  padding      : 0 1.5em;
   color        : #666;
   line-height  : 1.6;
   margin-bottom: 1em;
@@ -1875,28 +1909,8 @@ canvas {
 
 
 
-/* General styles for the workfolio items */
-.workfolio-item {
-  position: relative; /* Allow positioning of child elements */
-  margin-bottom: 20px; /* Spacing between items */
-}
 
-/* Styles for the hidden images in the daviefolio-narrow-content */
-.daviefolio-narrow-content .workfolio-item {
-  display: none; /* Initially hide all items in this section */
-}
 
-/* Style for the work image section */
-.work-image {
-  position: relative; /* Allows absolute positioning for child elements */
-}
-
-/* Style for the image itself */
-.work-image img {
-  width: 100%; /* Responsive images */
-  height: auto; /* Maintain aspect ratio */
-  display: block; /* Remove bottom margin/space */
-}
 
 
 
