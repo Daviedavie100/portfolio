@@ -1515,9 +1515,11 @@ canvas {
   box-sizing   : border-box;
 
 
-  position: relative; /* Allow positioning of child elements */
+  position     : relative;
+  /* Allow positioning of child elements */
   display      : none;
-  margin-bottom: 20px;/* Spacing between items */
+  margin-bottom: 20px;
+  /* Spacing between items */
   padding      : 0 15px;
 }
 
@@ -1527,6 +1529,7 @@ canvas {
   transform: translateY(0);
   /* Reset position */
 }
+
 /* General styles for the workfolio items */
 
 
@@ -1550,7 +1553,8 @@ canvas {
 
 /* Style for the work image section */
 .work-image {
-  position: relative;/* Allows absolute positioning for child elements */
+  position: relative;
+  /* Allows absolute positioning for child elements */
   z-index : 1;
   /* Set a higher z-index to keep it on top */
 }
@@ -1559,17 +1563,20 @@ canvas {
 
 /* Style for the image itself */
 .work-image img {
-  width: 100%; /* Responsive images */
-  height: auto; /* Maintain aspect ratio */
-  display: block; /* Remove bottom margin/space */
+  width  : 100%;
+  /* Responsive images */
+  height : auto;
+  /* Maintain aspect ratio */
+  display: block;
+  /* Remove bottom margin/space */
 
 
 
-  position    : relative;
-  padding     : 1em;
+  position  : relative;
+  padding   : 1em;
   transition: all 1s;
-  transform   : scale(1.1);
-  transition  : transform 1s ease-in-out;
+  transform : scale(1.1);
+  transition: transform 1s ease-in-out;
 
 
 }
@@ -1604,7 +1611,8 @@ canvas {
 
 /* Styles for the hidden images in the daviefolio-narrow-content */
 .daviefolio-narrow-content .workfolio-item {
-  display: none; /* Initially hide all items in this section */
+  display: none;
+  /* Initially hide all items in this section */
 }
 
 /* Hidden items won't take up space 
@@ -1622,28 +1630,28 @@ canvas {
 }
 
 
-/***** CONTENT *****/ 
+/***** CONTENT *****/
 
 .work-content {
-  color: #333333;
-  padding : 1.5em;
+  color  : #333333;
+  padding: 1.5em;
 }
 
 .title-container {
-  position: relative;
-  padding-bottom : 0.5em;
+  position      : relative;
+  padding-bottom: 0.5em;
 }
 
 .foliocontent-line-mf {
-  top             : 0;
-  float           : left;
-  width           : 50px;
-  height          : 6px;
-  background-color: #ff4800;
-  margin-right    : 10px;
-  /*margin-bottom   : 10px;*/
+  top                   : 0;
+  float                 : left;
+  width                 : 50px;
+  height                : 6px;
+  background-color      : #ff4800;
+  margin-right          : 10px;
+  /*margin-bottom       : 10px;*/
   /*padding-top         : 5px;*/
-  
+
 }
 
 .w-title {
@@ -1664,23 +1672,23 @@ canvas {
 
 /***** BTN *****/
 .butn {
-  display                               : inline-block;
-  
+  display: inline-block;
+
   /*5px;*/
-  
+
   /*6px 12px 1px 4px;   padding         : 5px 15px;*/
-  font-size                             : 14px;
-  font-weight                           : bold;
-  color                                 : #fff;
-  background-color                      : #007bff;
-  text-decoration                       : none;
-  border-radius                         : 5px;
+  font-size       : 14px;
+  font-weight     : bold;
+  color           : #fff;
+  background-color: #007bff;
+  text-decoration : none;
+  border-radius   : 5px;
 
   transition: background-color 0.3s ease;
 
   /* Add margin-left to push buttons 2em from the left */
-  padding                               : 10px 30px;
-  margin: 0 5px 1em 0;
+  padding: 10px 30px;
+  margin : 0 5px 1em 0;
 
 
 }
@@ -1852,8 +1860,7 @@ canvas {
 }
 
 .pcon .icon span a {
-  font-size: 16px;
-
+  font-size            : 16px;
   color                : #333;
   padding              : 5px;
   background           : rgba(255, 255, 255, 0.5);
@@ -1883,15 +1890,16 @@ canvas {
 */
 /* Load More Button Styling */
 .btn-load-more {
+  padding         : 10px 20px;
+  border-radius   : 15px;
+  text-align      : center;
   display         : inline-block;
   background-color: #007bff;
-  color           : #fff;
-  padding         : 10px 20px;
-  border-radius   : 25px;
-  text-align      : center;
+  color           : white;
   cursor          : pointer;
-  border          : none;
+  transition      : background-color 0.3s;
 }
+
 
 .btn-load-more:hover {
   background-color: #0056b3;
@@ -1918,20 +1926,7 @@ canvas {
 
 
 
-/* Load more button styling */
-.btn-load-more {
-  display: inline-block; /* Display as inline-block */
-  padding: 10px 20px; /* Add padding for size */
-  background-color: #007bff; /* Background color */
-  color: white; /* Text color */
-  border: none; /* No border */
-  cursor: pointer; /* Change cursor to pointer */
-  transition: background-color 0.3s; /* Smooth transition for hover */
-}
 
-.btn-load-more:hover {
-  background-color: #0056b3; /* Darker shade on hover */
-}
 
 
 /*======================================
