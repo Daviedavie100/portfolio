@@ -1609,7 +1609,7 @@ canvas {
   transition       : all 0.5s ease-in-out;
 }
 
-/* Styles for the hidden images in the daviefolio-narrow-content */
+/* Styles for the hidden images in the foliodave-narrow-content */
 .daviefolio-narrow-content .workfolio-item {
   display: none;
   /* Initially hide all items in this section */
@@ -1767,27 +1767,24 @@ canvas {
 
 
 
+
 /***** PROJECTS OTHER *****/
 
 /* Container styles */
 .project-folio {
   position: relative;
   overflow: hidden;
-
-  height       : 300px;
-  width        : 100%;
+  /*width        : 100%;
   display      : block;
-  /*margin-bottom: 30px;*/
-
+  margin-bottom: 30px;*/
 }
 
 .project-folio img {
   width  : 100%;
   display: block;
-
-
   transition: transform 0.3s ease;
-  height    : auto;
+  height    : auto; 
+  border-radius: 5px;
 }
 
 
