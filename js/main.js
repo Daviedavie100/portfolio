@@ -299,26 +299,141 @@
 	});
 
 
-	// Ensure the DOM is fully loaded before executing the script
-	window.onload = function () {
-		// Get the work-box and insights-desc elements
-		const workBox = document.querySelector('.work-box');
-		const finsightsDesc = document.querySelector('.finsights-desc');
+	/* UPDATED*/
 
-		// Ensure both elements are found
-		if (workBox && finsightsDesc) {
-			// Get their heights
-			const workBoxHeight = workBox.offsetHeight;
-			const finsightsDescHeight = finsightsDesc.offsetHeight;
+	// Ensure the DOM is fully loaded
+	window.addEventListener('DOMContentLoaded', function () {
+		// Get all filter buttons and the "Load More" button
+		const filterButtons = document.querySelectorAll("#workfolio-filter li");
 
-			// Find the larger height
-			const maxHeight = Math.max(workBoxHeight, finsightsDescHeight);
+		// Function to adjust height between work-box and finsights-desc for the current filter
+		function adjustHeights() {
+			// Get the active filter
+			const activeFilter = document.querySelector("#workfolio-filter li.active").getAttribute('data-filter');
 
-			// Apply the max height to both elements
-			workBox.style.height = maxHeight + 'px';
-			finsightsDesc.style.height = maxHeight + 'px';
+			// Get the filtered elements that are visible
+			const workBox = document.querySelector(`.workfolio-item${activeFilter} .work-box`);
+			const finsightsDesc = document.querySelector(`.workfolio-item${activeFilter} .finsights-desc`);
+
+			// Ensure both elements are found for the active filter
+			if (workBox && finsightsDesc) {
+				// Reset heights before recalculating
+				workBox.style.height = 'auto';
+				finsightsDesc.style.height = 'auto';
+
+				// Get their heights
+				const workBoxHeight = workBox.offsetHeight;
+				const finsightsDescHeight = finsightsDesc.offsetHeight;
+
+				// Find the larger height
+				const maxHeight = Math.max(workBoxHeight, finsightsDescHeight);
+
+				// Apply the max height to both elements
+				workBox.style.height = maxHeight + 'px';
+				finsightsDesc.style.height = maxHeight + 'px';
+			}
 		}
-	};
 
+		// Event listener for filter buttons
+		filterButtons.forEach(button => {
+			button.addEventListener("click", function () {
+				// Remove active class from all buttons
+				filterButtons.forEach(btn => btn.classList.remove("active"));
+				// Add active class to the clicked button
+				this.classList.add("active");
+
+				// Adjust the heights based on the active filter
+				adjustHeights();
+			});
+		});
+
+		// Adjust heights when the page initially loads
+		adjustHeights();
+	});
+
+	/*CAN REPLACE UP*/
+	/*
+	document.addEventListener("DOMContentLoaded", function () {
+    // Function to synchronize heights for the current visible items
+    function synchronizeHeights() {
+        const workBoxes = document.querySelectorAll('.work-box:not(.hidden)');
+        const finsightsDescs = document.querySelectorAll('.finsights-desc:not(.hidden)');
+
+        // Reset heights first
+        workBoxes.forEach(box => box.style.height = 'auto');
+        finsightsDescs.forEach(desc => desc.style.height = 'auto');
+
+        workBoxes.forEach((box, index) => {
+            if (finsightsDescs[index]) {
+                const workBoxHeight = box.offsetHeight;
+                const finsightsDescHeight = finsightsDescs[index].offsetHeight;
+                const maxHeight = Math.max(workBoxHeight, finsightsDescHeight);
+
+                // Apply the max height to both elements
+                box.style.height = maxHeight + 'px';
+                finsightsDescs[index].style.height = maxHeight + 'px';
+            }
+        });
+    }
+
+    // Call the function initially after filtering
+    synchronizeHeights();
+
+    // Add event listener to filter menu
+    const filterButtons = document.querySelectorAll("#workfolio-filter li");
+    filterButtons.forEach(button => {
+        button.addEventListener("click", function () {
+            setTimeout(synchronizeHeights, 500); // Adjust timing if necessary
+        });
+    });
+});
+*/
+
+
+	/*
+		// Ensure the DOM is fully loaded and all resources like images are loaded
+		window.addEventListener('load', function () {
+			// Get the work-box and insights-desc elements
+			const workBox = document.querySelector('.work-box');
+			const finsightsDesc = document.querySelector('.finsights-desc');
+	
+			// Ensure both elements are found
+			if (workBox && finsightsDesc) {
+				// Get their heights
+				const workBoxHeight = workBox.offsetHeight;
+				const finsightsDescHeight = finsightsDesc.offsetHeight;
+	
+				// Find the larger height
+				const maxHeight = Math.max(workBoxHeight, finsightsDescHeight);
+	
+				// Apply the max height to both elements
+				workBox.style.height = maxHeight + 'px';
+				finsightsDesc.style.height = maxHeight + 'px';
+			}
+		});
+	
+	*/
+	/*
+		// Ensure the DOM is fully loaded before executing the script
+		window.onload = function () {
+			// Get the work-box and insights-desc elements
+			const workBox = document.querySelector('.work-box');
+			const finsightsDesc = document.querySelector('.finsights-desc');
+	
+			// Ensure both elements are found
+			if (workBox && finsightsDesc) {
+				// Get their heights
+				const workBoxHeight = workBox.offsetHeight;
+				const finsightsDescHeight = finsightsDesc.offsetHeight;
+	
+				// Find the larger height
+				const maxHeight = Math.max(workBoxHeight, finsightsDescHeight);
+	
+				// Apply the max height to both elements
+				workBox.style.height = maxHeight + 'px';
+				finsightsDesc.style.height = maxHeight + 'px';
+			}
+		};
+	*/
 
 }());
