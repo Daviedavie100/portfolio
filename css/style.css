@@ -1514,7 +1514,7 @@ canvas {
   position: relative;
   /* Set position to relative to contain absolute elements */
 
-  display      : block;
+  display      : block !important;
   margin-bottom: 2rem;
 }
 
@@ -1618,6 +1618,8 @@ canvas {
 .finsights-desc {
   transition: height 0.3s ease; /* Smooth height transition */
 }
+
+
 
 
 /* Hidden items won't take up space 
