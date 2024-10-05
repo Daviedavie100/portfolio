@@ -1591,17 +1591,7 @@ canvas {
   border-radius: 5px;
 }
 
-/*
-.work-img img {
-  position    : relative;
-  padding     : 0.5em 1em;
-  /*transition: all 1s;
-  transform   : scale(1.1);
-  transition  : transform 1s ease-in-out;
-  width       : 100%;
-  height      : auto;
-}
-*/
+
 .work-box:hover .work-img img {
   /*padding          : 0.5em 2em;*/
   -webkit-transform: scale(1.2);
@@ -1614,6 +1604,13 @@ canvas {
   display: none;
   /* Initially hide all items in this section */
 }
+
+/* Optional: Add some CSS to ensure the layout behaves correctly */
+.work-box, 
+.finsights-desc {
+  transition: height 0.3s ease; /* Smooth height transition */
+}
+
 
 /* Hidden items won't take up space 
 .hidden {
