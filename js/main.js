@@ -303,20 +303,20 @@
 	window.onload = function () {
 		// Get the work-box and insights-desc elements
 		const workBox = document.querySelector('.work-box');
-		const insightsDesc = document.querySelector('.insights-desc');
+		const finsightsDesc = document.querySelector('.finsights-desc');
 
 		// Ensure both elements are found
-		if (workBox && insightsDesc) {
+		if (workBox && finsightsDesc) {
 			// Get their heights
 			const workBoxHeight = workBox.offsetHeight;
-			const insightsDescHeight = insightsDesc.offsetHeight;
+			const finsightsDescHeight = finsightsDesc.offsetHeight;
 
 			// Find the larger height
-			const maxHeight = Math.max(workBoxHeight, insightsDescHeight);
+			const maxHeight = Math.max(workBoxHeight, finsightsDescHeight);
 
 			// Apply the max height to both elements
 			workBox.style.height = maxHeight + 'px';
-			insightsDesc.style.height = maxHeight + 'px';
+			finsightsDesc.style.height = maxHeight + 'px';
 		}
 	};
 
