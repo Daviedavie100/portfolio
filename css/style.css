@@ -2319,54 +2319,7 @@ canvas {
   padding: 1em 0;
 }
 
-/*social media
-.daviefolio-social {
-  padding   : 0;
-  margin    : 0;
-  text-align: center;
-}
 
-.daviefolio-social li {
-  padding   : 0;
-  margin    : 0;
-  list-style: none;
-  display   : -moz-inline-stack;
-  display   : inline-block;
-  zoom      : 1;
-  display   : -moz-inline-stack;
-}
-
-.daviefolio-social li a {
-  font-size            : 22px;
-  color                : #000;
-  padding              : 10px;
-  display              : -moz-inline-stack;
-  display              : inline-block;
-  zoom                 : 1;
-  border-radius        : 7px;
-  -webkit-border-radius: 7px;
-  -moz-border-radius   : 7px;
-  -ms-border-radius    : 7px;
-}
-
-@media screen and (max-width: 768px) {
-  .daviefolio-social li a {
-    padding: 10px 8px;
-  }
-}
-
-.daviefolio-social li a:hover {
-  color: #2c98f0;
-}
-
-.daviefolio-social li a:active,
-.daviefolio-social li a:focus,
-.daviefolio-social li a:hover {
-  outline        : none;
-  text-decoration: none;
-  color          : #2c98f0;
-}
-*/
 /*======================================
   OFF CANVAS
 ======================================*/
