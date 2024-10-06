@@ -627,81 +627,6 @@ figure figcaption {
   }
 }
 
-/*======================================
-//--//-->   COLORLIB MAIN MENU
-======================================*/
-
-.daviefolio-blog,
-.daviefolio-work {
-  padding-top   : 4em;
-  padding-bottom: 9em;
-  clear         : both;
-  width         : 100%;
-  display       : block;
-}
-
-@media screen and (max-width: 768px) {
-
-  .daviefolio-blog,
-  .daviefolio-work {
-    padding-top   : 5em;
-    padding-bottom: 8em;
-  }
-}
-
-.daviefolio-narrow-content {
-  padding: 0 2.5em;
-}
-
-@media screen and (max-width: 768px) {
-  .daviefolio-narrow-content {
-    padding: 0;
-  }
-}
-
-/* About and work education*/
-
-.row-bottom-padded-sm {
-  padding-bottom: 1em;
-}
-
-@media screen and (max-width: 768px) {
-  .row-bottom-padded-sm {
-    padding-bottom: 1em;
-  }
-}
-
-/* All sections*/
-.heading-meta {
-  margin-bottom : 15px;
-  display       : block;
-  font-size     : 10px;
-  text-transform: uppercase;
-  color         : #999;
-  font-weight   : 500;
-  letter-spacing: 5px;
-}
-
-.daviefolio-heading {
-  font-size     : 18px;
-  margin-bottom : 4em;
-  font-weight   : 700;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  line-height   : 1.8;
-  position      : relative;
-}
-
-.daviefolio-heading span {
-  display: block;
-}
-
-@media screen and (max-width: 768px) {
-  .daviefolio-heading {
-    margin-bottom: 3em;
-  }
-}
-
 /***************************/
 /******** SECTIONS *********/
 /***************************/
@@ -791,6 +716,18 @@ figure figcaption {
   }
 }
 
+/* About and work education 
+
+.row-bottom-padded-sm {
+  padding-bottom: 1em;
+}
+
+@media screen and (max-width: 768px) {
+  .row-bottom-padded-sm {
+    padding-bottom: 1em;
+  }
+}
+*/
 /*************************/
 /********* ABOUT *********/
 /*************************/
@@ -863,13 +800,9 @@ figure figcaption {
 
 .tools-image {
   width        : 64px;
-  /* Adjust width as needed */
   height       : 64px;
-  /* Adjust height as needed */
   margin-bottom: 5px;
-  /* Spacing around the image */
   display      : inline-block;
-  /* Align the image properly */
 }
 
 .tools.color-1 {
@@ -1562,8 +1495,8 @@ canvas {
 /* Style for the work image section */
 .work-image {
   position: relative;
-  /* Allows absolute positioning for child elements */
-  z-index : 1;
+  /* Allows absolute positioning for child elements 
+  z-index : 1;*/
   /* Set a higher z-index to keep it on top */
 }
 
@@ -1971,7 +1904,7 @@ canvas {
   transition        : 0.3s;
 }
 
-.blog-entry .desc h3 {
+.blog-entry .blog-desc h3 {
   font-size     : 16px;
   margin-bottom : 25px;
   line-height   : auto;
@@ -1981,12 +1914,12 @@ canvas {
   font-family   : "Quicksand", Arial, sans-serif;
 }
 
-.blog-entry .desc h3 a {
+.blog-entry .blog-desc h3 a {
   color          : #000;
   text-decoration: none;
 }
 
-.blog-entry .desc span {
+.blog-entry .blog-desc span {
   display       : block;
   margin-bottom : 20px;
   font-size     : 12px;
@@ -1996,11 +1929,11 @@ canvas {
   font-weight   : 400;
 }
 
-.blog-entry .desc span small i {
+.blog-entry .blog-desc span small i {
   color: #999;
 }
 
-.blog-entry .desc .lead {
+.blog-entry .blog-desc .lead {
   font-size     : 12px;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -2015,9 +1948,8 @@ canvas {
   transform        : scale(1.1);
 }
 
-.btn-load-more {
-  width: 100%;
-}
+
+
 
 /*******************************/
 /********* CONTACT CSS *********/
