@@ -106,7 +106,7 @@ figure figcaption {
   background-attachment  : fixed;
   background-size        : 100%;
   /*background-size      : calc(100% - 300px);*/
-  background-image       : url("../images/back5.jpg");
+  background-image       : url("../img/about/back5.jpg");
   padding-left           : 30px;
   padding-right          : 30px;
 }
@@ -459,7 +459,7 @@ figure figcaption {
 
 #daviefolio-hero {
   min-height   : 500px;
-  background   : #fff url(../images/loader.gif) no-repeat center center;
+  background   : #fff url(../img/about/loader.gif) no-repeat center center;
   width        : 100%;
   float        : left;
   margin-bottom: 1.5em;
