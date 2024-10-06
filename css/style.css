@@ -2034,7 +2034,7 @@ canvas {
   /* padding-right : 10px;
   padding-left: 10px;*/
   margin         : 0;
-  background     : url(../images/contact.jpg) left center no-repeat;
+  background     : url(../img/about/contact.jpg) left center no-repeat;
   background-size: contain;
 }
 
@@ -2283,8 +2283,10 @@ canvas {
 }
 
 /*footer*/
-#daviefolio-aside .daviefolio-footer span {
+
+#daviefolio-aside .daviefolio-footer {
   display: block;
+  padding: 1em 2em;
 }
 
 #daviefolio-aside .daviefolio-footer ul {
@@ -2312,7 +2314,12 @@ canvas {
   color          : #2c98f0;
 }
 
-/*social media*/
+#daviefolio-aside .daviefolio-footer p {
+  display: block;
+  padding: 1em 0;
+}
+
+/*social media
 .daviefolio-social {
   padding   : 0;
   margin    : 0;
@@ -2327,7 +2334,6 @@ canvas {
   display   : inline-block;
   zoom      : 1;
   display   : -moz-inline-stack;
-  /* For IE6/7 support */
 }
 
 .daviefolio-social li a {
@@ -2337,15 +2343,10 @@ canvas {
   display              : -moz-inline-stack;
   display              : inline-block;
   zoom                 : 1;
-  /* For IE6/7 support */
   border-radius        : 7px;
-  /* Modern browsers */
   -webkit-border-radius: 7px;
-  /* Safari and older Chrome */
   -moz-border-radius   : 7px;
-  /* Firefox */
   -ms-border-radius    : 7px;
-  /* Older IE */
 }
 
 @media screen and (max-width: 768px) {
@@ -2365,7 +2366,7 @@ canvas {
   text-decoration: none;
   color          : #2c98f0;
 }
-
+*/
 /*======================================
   OFF CANVAS
 ======================================*/
