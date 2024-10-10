@@ -458,16 +458,14 @@ figure figcaption {
 /* HERO*/
 
 #daviefolio-hero {
-  /*min-height   : 500px;*/
-  /*background   : #fff url(../img/about/loader.gif) no-repeat center center;*/
+  min-height   : 500px;
+  background   : #fff url(../img/about/loader.gif) no-repeat center center;
   width        : 100%;
   float        : left;
-  margin-bottom: 1.5em;
+  margin-bottom: 10em;
   /*10em-separation to about section*/
   clear        : both;
-  background-color: #04f538;
 }
-
 
 
 
@@ -492,8 +490,8 @@ figure figcaption {
 
 #daviefolio-hero .flexslider .slides li {
   background-repeat  : no-repeat;
-  background-size    : cover;
-  background-position: bottom center;
+  background-size    :cover;
+  background-position:bottom center;
   min-height         : 400px;
   position           : relative;
 }
