@@ -223,6 +223,7 @@ figure figcaption {
 /***********************************/
 /********* DAVIEFOLIO PAGE *********/
 /***********************************/
+
 /*navigation bar*/
 .daviefolio-nav-toggle {
   cursor         : pointer;
@@ -413,7 +414,7 @@ figure figcaption {
 
 
 #top-daviefolio-section .col-md-9 {
-  padding-top: 10px;
+ /* padding-top: 10px;*/
   flex       : 1;
 }
 
@@ -432,9 +433,8 @@ figure figcaption {
 
 #top-daviefolio-section .top-daviefolio-menu ul li a {
   text-decoration: none;
-  color          : #fff;
-  /* Adjust color for better contrast */
-  font-size      : 1.2em;
+  color          : #ADD8E6;
+  font-size      : 16px;
 }
 
 @media (max-width: 768px) {
