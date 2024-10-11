@@ -393,7 +393,7 @@ figure figcaption {
   width               : calc(100% - 305px - 60px);
   z-index             : 2000;
   background-color    : #393f4d;
-  height              : 55px;
+  height              : 52px;
   display             : flex;
   align-items       : center;
   padding-left        : 10px;
@@ -403,8 +403,8 @@ figure figcaption {
 }
 
 #logo img {
-  width: 90px; 
-  height: 50px;
+  width: 100px; 
+  height: 60px;
   max-width: 100%;
   margin-top: 0;
   padding   : 0;
