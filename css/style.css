@@ -225,8 +225,20 @@ figure figcaption {
 /***********************************/
 
 /*navigation bar*/
+
 .daviefolio-nav-toggle {
-  cursor         : pointer;
+  position          : fixed;
+  left              : -5px;
+  top               : 0;
+  z-index           : 9999;
+  cursor            : pointer;
+  opacity           : 1;
+  visibility        : hidden;
+  padding           : 20px;
+  -webkit-transition: 0.5s;
+  -o-transition     : 0.5s;
+  transition        : 0.5s;
+
   text-decoration: none;
 }
 
@@ -246,6 +258,7 @@ figure figcaption {
   outline      : none;
   border-bottom: none !important;
 }
+  
 
 .daviefolio-nav-toggle i {
   position          : relative;
@@ -332,20 +345,8 @@ figure figcaption {
   transform        : rotateZ(-45deg);
 }
 
-.daviefolio-nav-toggle {
-  position          : fixed;
-  left              : -5px;
-  top               : 0;
-  z-index           : 9999;
-  cursor            : pointer;
-  opacity           : 1;
-  visibility        : hidden;
-  padding           : 20px;
-  -webkit-transition: 0.5s;
-  -o-transition     : 0.5s;
-  transition        : 0.5s;
-}
 
+/*
 @media screen and (max-width: 768px) {
   .daviefolio-nav-toggle {
     opacity   : 1;
@@ -380,7 +381,7 @@ figure figcaption {
   }
 }
 
-
+*/
 
 /*************************************/
 /********* TOP-COLORLIB MAIN *********/
