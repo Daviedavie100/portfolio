@@ -224,6 +224,85 @@ figure figcaption {
 /********* DAVIEFOLIO PAGE *********/
 /***********************************/
 
+
+
+/* Overall Section Styling */
+#top-daviefolio-section {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  z-index: 1000;
+}
+
+/* Navigation Toggle (three lines) */
+.daviefolio-nav-toggle {
+  position: relative;
+  cursor: pointer;
+  z-index: 10; /* Higher z-index for visibility */
+  padding: 20px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.daviefolio-nav-toggle i {
+  width: 30px;
+  height: 3px;
+  background: #000;
+  display: block;
+  position: relative;
+}
+
+.daviefolio-nav-toggle i::before,
+.daviefolio-nav-toggle i::after {
+  content: "";
+  width: 30px;
+  height: 3px;
+  background: #000;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+}
+
+.daviefolio-nav-toggle i::before {
+  top: -8px;
+}
+
+.daviefolio-nav-toggle i::after {
+  bottom: -8px;
+}
+
+/* Logo Positioned to the Right of the Toggle */
+#logo {
+  margin-left: 10px; /* Space between the three lines and logo */
+}
+
+#logo img {
+  width: 150px;
+  height: auto;
+}
+
+/* When Toggle is Active (cross) */
+.daviefolio-nav-toggle.active i {
+  background: transparent;
+}
+
+.daviefolio-nav-toggle.active i::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.daviefolio-nav-toggle.active i::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+
+
+
+
+
+
 /*navigation bar*/
 
 .daviefolio-nav-toggle {
@@ -265,12 +344,12 @@ figure figcaption {
   display           : inline-block;
   zoom              : 1;
   /* For IE6/7 support */
-  width             : 30px;
+  width             : 20px;/*30*/
   height            : 2px;
   color             : #000;
   font              : bold 14px/0.4 Helvetica;
   text-transform    : uppercase;
-  text-indent       : -55px;
+  text-indent       : -55px;/*-55*/
   background        : #000;
   -webkit-transition: all 0.2s ease-out;
   -o-transition     : all 0.2s ease-out;
@@ -280,7 +359,7 @@ figure figcaption {
 .daviefolio-nav-toggle i::after,
 .daviefolio-nav-toggle i::before {
   content           : "";
-  width             : 30px;
+  width             : 20px;/*30*/
   height            : 2px;
   background        : #000;
   position          : absolute;
@@ -308,7 +387,7 @@ figure figcaption {
 }
 
 .daviefolio-nav-toggle i::before {
-  top: -7px;
+  top: -7px;/*-7*/
 }
 
 .daviefolio-nav-toggle i::after {
@@ -316,11 +395,11 @@ figure figcaption {
 }
 
 .daviefolio-nav-toggle:hover i::before {
-  top: -10px;
+  top: -10px;/*-10*/
 }
 
 .daviefolio-nav-toggle:hover i::after {
-  bottom: -10px;
+  bottom: -10px;/*-10*/
 }
 
 .daviefolio-nav-toggle.active i {
@@ -328,7 +407,7 @@ figure figcaption {
 }
 
 .daviefolio-nav-toggle.active i::before {
-  top              : 0;
+  top              : 0;/*0*/
   -webkit-transform: rotateZ(45deg);
   -moz-transform   : rotateZ(45deg);
   -ms-transform    : rotateZ(45deg);
@@ -346,7 +425,7 @@ figure figcaption {
 }
 
 
-/*
+
 @media screen and (max-width: 768px) {
   .daviefolio-nav-toggle {
     opacity   : 1;
@@ -381,7 +460,7 @@ figure figcaption {
   }
 }
 
-*/
+
 
 /*************************************/
 /********* TOP-COLORLIB MAIN *********/
@@ -411,6 +490,12 @@ figure figcaption {
   padding   : 0;
 }
 
+@media (max-width: 768px) {
+  #logo img {
+    width: 100%;
+    padding-left : 50px;
+  }
+}
 
 
 
@@ -444,6 +529,7 @@ figure figcaption {
     left : 0;
   }
 }
+
 
 
 /*
