@@ -665,56 +665,178 @@ figure figcaption {
 
 
 
+
+
+
+
+
+
+
 #daviefolio-hero .flexslider .slider-text {
   display   : table;
   opacity   : 0;
   min-height: 500px;
-  z-index   : 9;
+  z-index   : 11;
+}
+
+.overlay {
+  position  : absolute;
+  top       : 0;
+  left      : 0;
+  width     : 100%;
+  height    : 100%;
+  background: rgba(255, 255, 255, 0.1);
+  /* background: rgba(0, 0, 0, 0.2); Dark overlay for better text visibility */
+  z-index: 9;
+
+  /*background: rgba(255, 255, 255, 0.2); /* Light white overlay */
+  /* Or use other colors, e.g., rgba(255, 0, 0, 0.2) for red */
 }
 
 #daviefolio-hero .flexslider .slider-text>.slider-text-inner {
   display       : table-cell;
   vertical-align: middle;
   min-height    : 700px;
-  padding       : 2.5em 2em;
+  padding       : 3em 2em;
   position      : relative;
+
+
+  -webkit-transition: all 0.5s ease;
+  transition        : all 0.5s ease;
 }
+
+
+
+
+
+#daviefolio-hero .flexslider .slider-text >.slider-text-inner h1 {
+  margin     : 0;
+  padding    : 0;
+margin-bottom: 20px;
+  color      :  #1a3d6d;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size    : 60px;
+  line-height  : 1.5;
+  font-weight  : 700;
+
+  font-weight: bold;
+}
+
+
+
+
+
+
+#daviefolio-hero .flexslider .slider-text >.slider-text-inner h2 {
+  margin-bottom: 0;
+  font-size    : 18px;
+  line-height  : 1.5;
+margin-bottom: 20px;
+  font-weight  : 500;
+  font-family  : "Quicksand", Arial, sans-serif;
+  color      :  #000;
+  font-weight: bold;
+}
+
+
+
+#daviefolio-hero .flexslider .slider-text>.slider-text-inner h3 {
+  font-size    : 18px;
+  line-height  : 1.5;
+margin-bottom: 30px;
+  font-weight  : 500;
+ 
+
+  margin     : 0;
+  padding    : 0;
+  color      :#0052eb;
+  font-family: "Playfair Display", Georgia, serif;
+}
+
+
+#daviefolio-hero .flexslider .slider-text > .slider-text-inner p {
+  margin-top        : 20px;
+}
+
+#daviefolio-hero .flexslider .slider-text > .slider-text-inner .btn-folio {
+  background-color  : #007bff;
+  color             : #fff;
+  padding           : 10px 20px !important;
+  font-size         : 1em;
+  border-radius     : 30px;
+  text-transform    : uppercase;
+  letter-spacing    : 1px;
+  -webkit-transition: background-color 0.3s ease;
+  transition        : background-color 0.3s ease;
+}
+
+#daviefolio-hero .flexslider .slider-text > .slider-text-inner .btn-folio:hover {
+  color: #4169E1;
+  background: transparent !important;
+  border    : 1px solid #000 !important;
+}
+
+
+
+
+
+
 
 @media screen and (max-width: 768px) {
   #daviefolio-hero .flexslider .slider-text>.slider-text-inner {
     text-align: center;
   }
 }
+/*
 
-#daviefolio-hero .flexslider .slider-text>.slider-text-inner h1 {
-  margin     : 0;
-  padding-bottom    : 1em;
-  margin-bottom: 5px;
-  color      :  #1a3d6d;
-  font-family: "Playfair Display", Georgia, serif;
-  font-size    : 60px;
-  line-height  : 1.5;
-  font-weight  : 700;
-}
 
-#daviefolio-hero .flexslider .slider-text>.slider-text-inner h2 {
-  font-size    : 18px;
-  line-height  : 1.5;
+
+
+
+
+
+
+
+#daviefolio-hero .flexslider .slider-text>.slider-text-inner .btn {
+  font-size     : 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  
+  padding       : 10px 15px !important;
+  border        : none;
+  font-weight   : 400;
+
+
+
   margin-bottom: 30px;
-  font-weight  : 300;
   font-family  : "Quicksand", Arial, sans-serif;
-
-  color      :  #3c6Ebd;
+  color: #4169E1; /*#F0F8FF;
+  background-color: #04f538;
 }
 
 
 
-#daviefolio-hero .flexslider .slider-text>.slider-text-inner h3 {
-  margin     : 0;
-  padding    : 0;
-  color      : #A0C4FF;
-  font-family: "Playfair Display", Georgia, serif;
+
+#daviefolio-hero .flexslider .slider-text>.slider-text-inner .btn.btn-folio {
+  color     : #000;
+  border    : 1px solid #000;
+  background: transparent !important;
+  display   : inline;
 }
+
+#daviefolio-hero .flexslider .slider-text>.slider-text-inner .btn.btn-folio:hover {
+
+}
+
+*/
+
+
+@media screen and (max-width: 768px) {
+  #daviefolio-hero .flexslider .slider-text>.slider-text-inner .btn {
+    width: 100%;
+  }
+}
+
 
 
 
@@ -727,7 +849,7 @@ figure figcaption {
 }
 
 
-
+/*
 #daviefolio-hero .flexslider .slider-text>.slider-text-inner h2 a {
   color        : rgba(44, 152, 240, 0.8);
   border-bottom: 1px solid rgba(44, 152, 240, 0.7);
@@ -748,38 +870,8 @@ figure figcaption {
   color    : #fff;
 }
 
-#daviefolio-hero .flexslider .slider-text>.slider-text-inner p {
-  margin-bottom: 0;
-  color: #4169E1 ;/*#F0F8FF;*/
-}
+*/
 
-#daviefolio-hero .flexslider .slider-text>.slider-text-inner .btn {
-  font-size     : 12px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color         : #000;
-  padding       : 10px 15px !important;
-  border        : none;
-  font-weight   : 400;
-}
-
-#daviefolio-hero .flexslider .slider-text>.slider-text-inner .btn.btn-learn {
-  color     : #000;
-  border    : 1px solid #000;
-  background: transparent !important;
-  display   : inline;
-}
-
-#daviefolio-hero .flexslider .slider-text>.slider-text-inner .btn.btn-learn:hover {
-  background: transparent !important;
-  border    : 1px solid #000 !important;
-}
-
-@media screen and (max-width: 768px) {
-  #daviefolio-hero .flexslider .slider-text>.slider-text-inner .btn {
-    width: 100%;
-  }
-}
 
 
 /*======================================
