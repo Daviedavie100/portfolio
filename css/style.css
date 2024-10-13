@@ -419,11 +419,8 @@ figure figcaption {
 
 */
 
-/*************************************/
-/********* TOP-COLORLIB MAIN *********/
-/*************************************/
 
-
+/********* LOGO *********/
 
 #logo img {
   width     : 100px;
@@ -437,6 +434,8 @@ figure figcaption {
   #logo img {
     width       : 100%;
     padding-left: 40px;
+    margin-right: 0;
+    padding-right: 0;
   }
 }
 
@@ -477,6 +476,7 @@ figure figcaption {
     position: fixed;
     width: 100%;
     left : 0;
+    font-size: 80%;
   }
 }
 
@@ -771,7 +771,7 @@ body.offcanvas #daviefolio-aside {
   -o-transform     : translateX(0);
   transform        : translateX(0);
   width            : 300px;
-  background       : #f2f3f7;
+  /*background       : #f2f3f7;*/
   z-index          : 999;
   position         : fixed;
 }
