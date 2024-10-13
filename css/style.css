@@ -23,6 +23,7 @@ body {
     font-size: 16px;
   }
 }
+
 /* has been added
 @media screen and (max-width: 768px) {
   body {
@@ -103,35 +104,36 @@ figure figcaption {
 /***********************************/
 
 #daviefolio-page {
-  width                  : 100%;
-  overflow               : hidden;/*was visible*/
-  position               : relative;
-  display                : flex;
-  background-attachment  : fixed;
-  background-size        : 100%;
-  background-image       : url("../img/about/back5.jpg");
-  padding-left           : 30px;
-  padding-right          : 30px;
+  width                : 100%;
+  overflow             : hidden;
+  /*was visible*/
+  position             : relative;
+  display              : flex;
+  background-attachment: fixed;
+  background-size      : 100%;
+  background-image     : url("../img/about/back5.jpg");
+  padding-left         : 30px;
+  padding-right        : 30px;
 }
 
 @media screen and (max-width: 768px) {
   #daviefolio-page {
-    width: 100%;
-    padding: 0 1px !important;
-    display: flex;
+    width          : 100%;
+    padding        : 0 1px !important;
+    display        : flex;
     justify-content: center;
-    align-items: center;
+    align-items    : center;
   }
 }
 
 .daviefolio-container-wrap {
-  width           : 100%;
-  max-width       : 1170px;
-  margin          : 0 auto;
-  display         : flex;
-  flex-direction  : row;
-  position        : relative;
-  box-sizing: border-box;
+  width         : 100%;
+  max-width     : 1170px;
+  margin        : 0 auto;
+  display       : flex;
+  flex-direction: row;
+  position      : relative;
+  box-sizing    : border-box;
 }
 
 
@@ -152,21 +154,29 @@ figure figcaption {
 /* For tablets and smaller screens (768px or less) */
 @media screen and (max-width: 768px) {
   #daviefolio-main {
-    width: 100%; /* Make it take the full width of the screen */
-    float: none; /* Remove float for better control */
-    margin-left: 0; /* Reset margin if necessary */
-    order: 1; /* Retain the order in case of flexbox usage */
+    width      : 100%;
+    /* Make it take the full width of the screen */
+    float      : none;
+    /* Remove float for better control */
+    margin-left: 0;
+    /* Reset margin if necessary */
+    order      : 1;
+    /* Retain the order in case of flexbox usage */
   }
 }
 
 /* For smaller mobile devices (480px or less) */
 @media screen and (max-width: 480px) {
   #daviefolio-main {
-    width: 100%; /* Keep the full width */
-    padding: 10px; /* Optional: Add padding for better spacing */
-    transition: 0.3s; /* Adjust transition speed if needed for smaller devices */
+    width      : 100%;
+    /* Keep the full width */
+    padding    : 10px;
+    /* Optional: Add padding for better spacing */
+    transition : 0.3s;
+    /* Adjust transition speed if needed for smaller devices */
   }
 }
+
 /*
 
 @media screen and (max-width: 768px) {
@@ -184,24 +194,25 @@ figure figcaption {
 /******** DAVIEFOLIO ASIDE ********/
 
 #daviefolio-aside {
-  padding-top               : 3em;
-  padding-bottom            : 40px;
-  float                     : right;
-  right                     : 35px;
-  width                     : 300px;
-  position                  : fixed;
-  overflow-y                : scroll; /*auto*/
-  z-index                   : 2001;
-  background                : #2d545e;
-  -webkit-transition        : 0.5s;
-  -o-transition             : 0.5s;
-  transition                : 0.5s;
-  -webkit-overflow-scrolling: touch;
-  margin-right              : 0;
-  top                       : 0;
-  height                    : auto;
+  padding-top                 : 3em;
+  padding-bottom              : 40px;
+  float                       : right;
+  right                       : 35px;
+  width                       : 300px;
+  position                    : fixed;
+  overflow-y                  : scroll;
+  /*auto*/
+  z-index                     : 2001;
+  background                  : #2d545e;
+  -webkit-transition          : 0.5s;
+  -o-transition               : 0.5s;
+  transition                  : 0.5s;
+  -webkit-overflow-scrolling  : touch;
+  margin-right                : 0;
+  top                         : 0;
+  height                      : auto;
   /*max-height                : 100vh;*/
-  order                     : 2;
+  order                       : 2;
 }
 
 /* Hide scrollbar for Webkit browsers */
@@ -231,7 +242,7 @@ figure figcaption {
     /* Move main content below aside */
     right      : 0;
     float      : right;
-    padding  : 0 0.1em;
+    padding    : 0 0.1em;
     margin-left: 0;
   }
 
@@ -458,11 +469,11 @@ figure figcaption {
 
 #logo img {
 
-  width: auto;
-  max-width: 100%;
-  height: auto;
+  width     : auto;
+  max-width : 100%;
+  height    : auto;
   margin-top: 0;
-  padding: 0;
+  padding   : 0;
 
   /*
   width     : 100px;
@@ -476,11 +487,13 @@ figure figcaption {
 /* Media query for screens 480px or less (small mobile devices) */
 @media screen and (max-width: 480px) {
   #logo img {
-    width: 60px; /* Adjust the width for small mobile screens */
-    height: auto; /* Maintain aspect ratio */
+    width : 60px;
+    /* Adjust the width for small mobile screens */
+    height: auto;
+    /* Maintain aspect ratio */
 
-    padding-left: 20px;
-    margin-right: 0;
+    padding-left : 20px;
+    margin-right : 0;
     padding-right: 0;
   }
 }
@@ -489,11 +502,12 @@ figure figcaption {
 /* Media query for screens 768px or smaller (mobile devices) */
 @media screen and (max-width: 768px) {
   #logo img {
-    width: 80px; 
-    height: auto; /* Maintain aspect ratio */
+    width : 80px;
+    height: auto;
+    /* Maintain aspect ratio */
 
-    padding-left: 25px;
-    margin-right: 0;
+    padding-left : 25px;
+    margin-right : 0;
     padding-right: 0;
   }
 }
@@ -501,11 +515,11 @@ figure figcaption {
 /* For tablets (e.g., between 769px and 1024px) */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   #logo img {
-    width: 120px;
+    width : 120px;
     height: auto;
 
-    padding-left: 40px;
-    margin-right: 0;
+    padding-left : 40px;
+    margin-right : 0;
     padding-right: 0;
   }
 }
@@ -547,9 +561,9 @@ figure figcaption {
 
 @media (max-width: 768px) {
   #top-daviefolio-section {
-    position: fixed !important;
-    width: 100%;
-    left : 0;
+    position : fixed !important;
+    width    : 100%;
+    left     : 0;
     font-size: 0.8em;
   }
 }
@@ -732,16 +746,17 @@ figure figcaption {
   background   : rgba(255, 255, 255, 0.1);
   /* background: rgba(0, 0, 0, 0.2); Dark overlay for better text visibility */
   z-index      : 9;
-  /*background: rgba(255, 255, 255, 0.2); /* Light white overlay */
+  /*background : rgba(255, 255, 255, 0.2); /* Light white overlay */
   /* Or use other colors, e.g., rgba(255, 0, 0, 0.2) for red */
 }
 
 #daviefolio-hero .flexslider .slider-text>.slider-text-inner {
-  display       : table-cell;
-  vertical-align: middle;
-  min-height    : 700px;
-  padding       : 3em 2em;
-  position      : relative;
+  display           : table-cell;
+  vertical-align    : middle;
+  min-height        : 700px;
+  padding           : 2.5em;
+  /*3em 2em;*/
+  position          : relative;
   -webkit-transition: all 0.5s ease;
   transition        : all 0.5s ease;
 }
@@ -755,7 +770,7 @@ figure figcaption {
   font-size    : 60px;
   line-height  : 1.5;
   font-weight  : 700;
-  font-weight: bold;
+  font-weight  : bold;
 }
 
 #daviefolio-hero .flexslider .slider-text>.slider-text-inner h2 {
@@ -805,9 +820,9 @@ figure figcaption {
 
 @media screen and (max-width: 768px) {
   #daviefolio-hero .flexslider .slider-text>.slider-text-inner {
-    text-align: center;
+    text-align   : center;
     /*padding-top: 6em !important;*/
-    line-height: 1.1 !important;
+    line-height  : 1.1 !important;
   }
 }
 
@@ -828,9 +843,20 @@ figure figcaption {
 
 @media screen and (max-width: 768px) {
   #daviefolio-hero .flexslider .slider-text>.slider-text-inner h1 {
-    font-size: 28px;
+    line-height: 1.3;
+    font-weight: 700;
+    font-size  : 28px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  #daviefolio-hero .flexslider .slider-text>.slider-text-inner h2 {
+    font-size  : 18px;
+    line-height: 1.5;
+    font-weight: 300;
+  }
+}
+
 
 /*======================================
   OFF CANVAS
@@ -841,15 +867,15 @@ body.offcanvas {
 }
 
 body.offcanvas #daviefolio-aside {
-  -moz-transform   : translateX(0);
-  -webkit-transform: translateX(0);
-  -ms-transform    : translateX(0);
-  -o-transform     : translateX(0);
-  transform        : translateX(0);
-  width            : 300px;
+  -moz-transform     : translateX(0);
+  -webkit-transform  : translateX(0);
+  -ms-transform      : translateX(0);
+  -o-transform       : translateX(0);
+  transform          : translateX(0);
+  width              : 300px;
   /*background       : #f2f3f7;*/
-  z-index          : 999;
-  position         : fixed;
+  z-index            : 999;
+  position           : fixed;
 }
 
 body.offcanvas #daviefolio-main,
@@ -945,8 +971,10 @@ padding: 0;: This removes all internal spacing within the element.*/
   .daviefolio-work,
   .daviefolio-blog,
   .daviefolio-contact {
-    padding-top   : 3em;/*5em*/
-    padding-bottom: 4em; /*8em*/
+    padding-top   : 3em;
+    /*5em*/
+    padding-bottom: 4em;
+    /*8em*/
   }
 }
 
