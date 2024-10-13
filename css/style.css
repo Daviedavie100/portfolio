@@ -149,6 +149,26 @@ figure figcaption {
   order             : 1;
 }
 
+/* For tablets and smaller screens (768px or less) */
+@media screen and (max-width: 768px) {
+  #daviefolio-main {
+    width: 100%; /* Make it take the full width of the screen */
+    float: none; /* Remove float for better control */
+    margin-left: 0; /* Reset margin if necessary */
+    order: 1; /* Retain the order in case of flexbox usage */
+  }
+}
+
+/* For smaller mobile devices (480px or less) */
+@media screen and (max-width: 480px) {
+  #daviefolio-main {
+    width: 100%; /* Keep the full width */
+    padding: 10px; /* Optional: Add padding for better spacing */
+    transition: 0.3s; /* Adjust transition speed if needed for smaller devices */
+  }
+}
+/*
+
 @media screen and (max-width: 768px) {
   #daviefolio-main {
     width  : 100%;
@@ -160,7 +180,7 @@ figure figcaption {
     justify-items: center;
   }
 }
-
+*/
 /******** DAVIEFOLIO ASIDE ********/
 
 #daviefolio-aside {
@@ -170,7 +190,7 @@ figure figcaption {
   right                     : 35px;
   width                     : 300px;
   position                  : fixed;
-  overflow-y                : auto;
+  overflow-y                : scroll; /*auto*/
   z-index                   : 2001;
   background                : #2d545e;
   -webkit-transition        : 0.5s;
@@ -180,7 +200,7 @@ figure figcaption {
   margin-right              : 0;
   top                       : 0;
   height                    : auto;
-  max-height                : 100vh;
+  /*max-height                : 100vh;*/
   order                     : 2;
 }
 
@@ -231,6 +251,7 @@ figure figcaption {
     padding-top      : 4em;
   }
 }
+
 
 /********* TOP SECTION *********/
 
@@ -383,6 +404,13 @@ figure figcaption {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .col-xxs-12 {
+    float: none;
+    width: 100%;
+  }
+}
+
 
 /* Collapsible Navbar Menu */
 
@@ -402,12 +430,6 @@ figure figcaption {
 
 
 /*
-@media screen and (max-width: 480px) {
-  .col-xxs-12 {
-    float: none;
-    width: 100%;
-  }
-}
 
 .row-bottom-padded-lg {
   padding-bottom: 7em;
@@ -435,23 +457,61 @@ figure figcaption {
 /********* LOGO *********/
 
 #logo img {
+
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin-top: 0;
+  padding: 0;
+
+  /*
   width     : 100px;
   height    : 60px;
   max-width : 100%;
   margin-top: 0;
-  padding   : 0;
+  padding   : 0;*/
 }
 
-@media (max-width: 768px) {
+
+/* Media query for screens 480px or less (small mobile devices) */
+@media screen and (max-width: 480px) {
   #logo img {
-    width     : 100px;
-    height    : 48px;
-    width       : 100%;
+    width: 60px; /* Adjust the width for small mobile screens */
+    height: auto; /* Maintain aspect ratio */
+
+    padding-left: 20px;
+    margin-right: 0;
+    padding-right: 0;
+  }
+}
+
+
+/* Media query for screens 768px or smaller (mobile devices) */
+@media screen and (max-width: 768px) {
+  #logo img {
+    width: 80px; 
+    height: auto; /* Maintain aspect ratio */
+
     padding-left: 25px;
     margin-right: 0;
     padding-right: 0;
   }
 }
+
+/* For tablets (e.g., between 769px and 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  #logo img {
+    width: 120px;
+    height: auto;
+
+    padding-left: 40px;
+    margin-right: 0;
+    padding-right: 0;
+  }
+}
+
+
+
 
 
 
@@ -746,8 +806,8 @@ figure figcaption {
 @media screen and (max-width: 768px) {
   #daviefolio-hero .flexslider .slider-text>.slider-text-inner {
     text-align: center;
-    padding-top: 6em !important;
-    line-height: 1.2 !important;
+    /*padding-top: 6em !important;*/
+    line-height: 1.1 !important;
   }
 }
 
