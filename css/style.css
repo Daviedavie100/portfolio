@@ -6,12 +6,10 @@
   font-style : normal;
 }
 
-/* =======================================================
-*
-* 	Template Style 
-*	Edit this section
-*
-* ======================================================= */
+/************************/
+/********* BODY *********/
+/************************/
+
 body {
   font-family: "Quicksand", Arial, sans-serif;
   font-weight: 400;
@@ -25,7 +23,13 @@ body {
     font-size: 16px;
   }
 }
-
+/* has been added
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+}
+*/
 a {
   color             : #2c98f0;
   -webkit-transition: 0.5s;
@@ -100,15 +104,24 @@ figure figcaption {
 
 #daviefolio-page {
   width                  : 100%;
-  overflow               : visible;
+  overflow               : hidden;/*was visible*/
   position               : relative;
   display                : flex;
   background-attachment  : fixed;
   background-size        : 100%;
-  /*background-size      : calc(100% - 300px);*/
   background-image       : url("../img/about/back5.jpg");
   padding-left           : 30px;
   padding-right          : 30px;
+}
+
+@media screen and (max-width: 768px) {
+  #daviefolio-page {
+    width: 100%;
+    padding: 0 1px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .daviefolio-container-wrap {
@@ -118,7 +131,6 @@ figure figcaption {
   display         : flex;
   flex-direction  : row;
   position        : relative;
-  /*background-color: #4cae4c;*/
   box-sizing: border-box;
 }
 
