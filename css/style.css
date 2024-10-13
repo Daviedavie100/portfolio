@@ -351,7 +351,7 @@ figure figcaption {
 
 .daviefolio-nav-toggle.active:hover i::before,
 .daviefolio-nav-toggle.active:hover i::after {
-  width     : 25px;
+  width     : 20px;
   height    : 2px;
   background: #eb3103;
   transition: background 0.3s ease;
@@ -444,6 +444,8 @@ figure figcaption {
 
 @media (max-width: 768px) {
   #logo img {
+    width     : 100px;
+    height    : 48px;
     width       : 100%;
     padding-left: 25px;
     margin-right: 0;
@@ -488,7 +490,7 @@ figure figcaption {
     position: fixed !important;
     width: 100%;
     left : 0;
-    font-size: 80%;
+    font-size: 0.8em;
   }
 }
 
@@ -744,6 +746,7 @@ figure figcaption {
 @media screen and (max-width: 768px) {
   #daviefolio-hero .flexslider .slider-text>.slider-text-inner {
     text-align: center;
+    padding-top: 6em !important;
   }
 }
 
