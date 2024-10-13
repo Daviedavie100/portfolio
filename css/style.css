@@ -572,17 +572,17 @@ padding-bottom: 1em;
 /* Responsive styles for smaller screens (tablets and below) */
 @media screen and (max-width: 768px) {
   #daviefolio-hero .slider-text-inner .desc {
-    padding-top: 40px; /* Adjust padding */
+    padding-top: 45px; /* Adjust padding */
   }
 }
 
-/* Extra small screens (mobile devices) */
+/* Extra small screens (mobile devices) 
 @media screen and (max-width: 480px) {
   #daviefolio-hero .slider-text-inner .desc {
     padding-top: 45px; 
   }
 }
-
+*/
 
 
 
@@ -693,6 +693,14 @@ padding-bottom: 1em;
   }
 }
 
+@media screen and (max-width: 768px) {
+  #daviefolio-hero .flexslider .slider-text>.slider-text-inner h3 {
+    font-size: 18px;
+    line-height: 1.4;
+    font-weight: 400;
+    font-family: "Verdana", Geneva, Tahoma, sans-serif;
+  }
+}
 /********* OFF CANVAS *********/
 
 /* Off-canvas menu styles:hides any content that overflows horizontally beyond the boundaries of the body element */
