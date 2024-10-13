@@ -118,8 +118,7 @@ figure figcaption {
   display         : flex;
   flex-direction  : row;
   position        : relative;
-  background-color: #4cae4c;
-
+  /*background-color: #4cae4c;*/
   box-sizing: border-box;
 }
 
@@ -141,7 +140,12 @@ figure figcaption {
 @media screen and (max-width: 768px) {
   #daviefolio-main {
     width  : 100%;
-    padding: 0 1em;
+    padding: 0 0.1em;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
   }
 }
 
