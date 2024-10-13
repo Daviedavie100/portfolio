@@ -567,6 +567,25 @@ padding-bottom: 1em;
 
 
 
+
+
+/* Responsive styles for smaller screens (tablets and below) */
+@media screen and (max-width: 768px) {
+  #daviefolio-hero .slider-text-inner .desc {
+    padding-top: 40px; /* Adjust padding */
+  }
+}
+
+/* Extra small screens (mobile devices) */
+@media screen and (max-width: 480px) {
+  #daviefolio-hero .slider-text-inner .desc {
+    padding-top: 45px; 
+  }
+}
+
+
+
+
 #daviefolio-hero .flexslider .slider-text>.slider-text-inner {
   display: table-cell;
   vertical-align: middle;
@@ -654,7 +673,7 @@ padding-bottom: 1em;
     width: 100%;
     display: inline;
     font-size: 0.9em;
-    margin-left: 10px;
+    /*margin-left: 10px;*/
   }
 }
 
