@@ -747,6 +747,7 @@ figure figcaption {
   #daviefolio-hero .flexslider .slider-text>.slider-text-inner {
     text-align: center;
     padding-top: 6em !important;
+    line-height: 1.2 !important;
   }
 }
 
