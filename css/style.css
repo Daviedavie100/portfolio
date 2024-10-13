@@ -266,24 +266,55 @@ justify-items: center;
   height: 52px;
   display: flex;
   align-items: center;
-  padding-left: 0;
-  padding-right: 0;
   justify-content: space-between;
+  padding: 0; /* Combined padding shorthand */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 /* Navigation Toggle (three lines) */
 .daviefolio-nav-toggle {
   position: fixed;
-  /*it was fixed before*/
+  left: 0; /* Adjusted to 0 for better positioning */
+  top: 0;  /* Adjusted to 0 for better positioning */
+  padding: 20px;
+  visibility: hidden; /* Make sure to toggle this in your code logic */
+  z-index: 1000; /* Lowered to a reasonable value */
+  cursor: pointer;
+  opacity: 1;
+  transition: 0.5s; /* Removed unnecessary vendor prefixes */
+  text-decoration: none;
+}
+
+
+/* Overall Section Styling 
+#top-daviefolio-section {
+  position: fixed;
+  top: 0;
+  left: 30px;
+  width: calc(100% - 305px - 60px);
+  z-index: 2000;
+  background-color: #393f4d;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+  padding-right: 0;
+  justify-content: space-between;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation Toggle (three lines) 
+.daviefolio-nav-toggle {
+  position: fixed;
+  /*it was fixed before
   left: -10px;
-  /* Adjust this to control the distance from the left edge */
+  /* Adjust this to control the distance from the left edge 
   top: -10px;
-  /* Adjust this to control the distance from the top edge */
+  /* Adjust this to control the distance from the top edge 
   padding: 20px;
   visibility: hidden;
   z-index: 9999;
-  /* Higher z-index for visibility */
+  /* Higher z-index for visibility 
   cursor: pointer;
   opacity: 1;
   -webkit-transition: 0.5s;
@@ -292,11 +323,50 @@ justify-items: center;
   text-decoration: none;
 }
 
+*/
+
+.daviefolio-nav-toggle i {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 2px;
+  background: #a04ef6;
+  transition: all 0.2s ease-out;
+}
+
+.daviefolio-nav-toggle i::after, 
+.daviefolio-nav-toggle i::before {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background: #a04ef6;
+  position: absolute;
+  left: 0;
+  transition: 0.2s;
+}
+
+.daviefolio-nav-toggle i::before {
+  top: -7px;
+}
+
+.daviefolio-nav-toggle i::after {
+  bottom: -7px;
+}
+
+.daviefolio-nav-toggle:hover i::before {
+  top: -10px;
+}
+
+.daviefolio-nav-toggle:hover i::after {
+  bottom: -10px;
+}
+/*
+
 .daviefolio-nav-toggle i {
   position: relative;
   display: inline-block;
   zoom: 1;
-  /* For IE6/7 support */
+  /* For IE6/7 support 
   width: 20px;
   height: 2px;
   color: #000;
@@ -322,11 +392,11 @@ justify-items: center;
 }
 
 .daviefolio-nav-toggle i::before {
-  top: -8px;
+  top: -7px;
 }
 
 .daviefolio-nav-toggle i::after {
-  bottom: -8px;
+  bottom: -7px;
 }
 
 .daviefolio-nav-toggle:hover i::before {
@@ -336,8 +406,34 @@ justify-items: center;
 .daviefolio-nav-toggle:hover i::after {
   bottom: -10px;
 }
-
+*/
 /* When Toggle is Active (cross) */
+.daviefolio-nav-toggle.active i {
+  background: transparent;
+  width: 20px;
+  height: 2px;
+  position: absolute; /* Ensures the element is positioned correctly */
+  top: -10px;
+  left: -300px; /* Adjust as necessary for your layout */
+}
+
+.daviefolio-nav-toggle.active i::after, 
+.daviefolio-nav-toggle.active i::before {
+  width: 20px;
+  height: 2px;
+  background: #add8e6;
+  content: ''; /* Ensures pseudo-elements are displayed */
+  position: absolute; /* Allows positioning relative to the parent */
+}
+
+.daviefolio-nav-toggle:active, 
+.daviefolio-nav-toggle:focus, 
+.daviefolio-nav-toggle:hover {
+  outline: none;
+  border-bottom: none !important;
+}
+/*
+
 .daviefolio-nav-toggle.active i {
   background: transparent;
   width: 20px;
@@ -356,14 +452,30 @@ justify-items: center;
   outline: none;
   border-bottom: none !important;
 }
-
+*/
+.daviefolio-nav-toggle.active:hover i::after, 
+.daviefolio-nav-toggle.active:hover i::before {
+  display: block; /* Ensures the pseudo-elements are displayed */
+  position: absolute; /* Makes it easier to control their placement */
+  width: 20px;
+  height: 2px;
+  background: #eb3103;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+}
+/*
 .daviefolio-nav-toggle.active:hover i::after, .daviefolio-nav-toggle.active:hover i::before {
   width: 20px;
   height: 2px;
   background: #eb3103;
   transition: background 0.3s ease;
 }
-
+*/
+.daviefolio-nav-toggle.active i::before { 
+  top: 0;
+  transform: rotate(45deg);
+}
+/*
 .daviefolio-nav-toggle.active i::before {
   top: 0;
   -webkit-transform: rotateZ(45deg);
@@ -372,7 +484,7 @@ justify-items: center;
   -o-transform: rotateZ(45deg);
   transform: rotateZ(45deg);
 }
-
+*/
 .daviefolio-nav-toggle.active i::after {
   bottom: 0;
   -webkit-transform: rotateZ(-45deg);
@@ -586,7 +698,7 @@ padding-bottom: 1em;
 
 
 
-#daviefolio-hero .flexslider .slider-text>.slider-text-inner {
+#daviefolio-hero .flexslider .slider-text > .slider-text-inner {
   display: table-cell;
   vertical-align: middle;
   min-height: 700px;
@@ -597,7 +709,7 @@ padding-bottom: 1em;
   transition: all 0.5s ease;
 }
 
-#daviefolio-hero .flexslider .slider-text>.slider-text-inner h1 {
+#daviefolio-hero .flexslider .slider-text > .slider-text-inner h1 {
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
@@ -609,7 +721,7 @@ padding-bottom: 1em;
   font-weight: bold;
 }
 
-#daviefolio-hero .flexslider .slider-text>.slider-text-inner h2 {
+#daviefolio-hero .flexslider .slider-text > .slider-text-inner h2 {
   margin-bottom: 0;
   font-size: 25px;
   line-height: 1.5;
@@ -620,7 +732,7 @@ padding-bottom: 1em;
   font-weight: bold;
 }
 
-#daviefolio-hero .flexslider .slider-text>.slider-text-inner h3 {
+#daviefolio-hero .flexslider .slider-text > .slider-text-inner h3 {
   font-size: 18px;
   line-height: 1.5;
   margin-bottom: 30px;
@@ -631,11 +743,11 @@ padding-bottom: 1em;
   font-family: "Verdana", Geneva, Tahoma, sans-serif;
 }
 
-#daviefolio-hero .flexslider .slider-text>.slider-text-inner p {
+#daviefolio-hero .flexslider .slider-text > .slider-text-inner p {
   margin-top: 20px;
 }
 
-#daviefolio-hero .flexslider .slider-text>.slider-text-inner .btn-folio {
+#daviefolio-hero .flexslider .slider-text > .slider-text-inner .btn-folio {
   background-color: #007bff;
   color: #fff;
   padding: 10px 20px !important;
@@ -647,7 +759,7 @@ padding-bottom: 1em;
   transition: background-color 0.3s ease;
 }
 
-#daviefolio-hero .flexslider .slider-text>.slider-text-inner .btn-folio:hover {
+#daviefolio-hero .flexslider .slider-text > .slider-text-inner .btn-folio:hover {
   color: #4169e1;
   background: transparent !important;
   border: 1px solid #000 !important;
@@ -655,7 +767,7 @@ padding-bottom: 1em;
 }
 
 @media screen and (max-width: 768px) {
-  #daviefolio-hero .flexslider .slider-text>.slider-text-inner {
+  #daviefolio-hero .flexslider .slider-text > .slider-text-inner {
     text-align: center;
     /*padding-top: 6em !important;*/
     line-height: 1.1 !important;
@@ -663,13 +775,13 @@ padding-bottom: 1em;
 }
 
 @media screen and (max-width: 768px) {
-  #daviefolio-hero .flexslider .slider-text>.slider-text-inner .btn {
+  #daviefolio-hero .flexslider .slider-text > .slider-text-inner .btn {
     width: 100%;
   }
 }
 
 @media screen and (max-width: 768px) {
-  #daviefolio-hero .flexslider .slider-text>.slider-text-inner .btn.btn-folio {
+  #daviefolio-hero .flexslider .slider-text > .slider-text-inner .btn.btn-folio {
     width: 100%;
     display: inline;
     font-size: 0.9em;
@@ -678,15 +790,15 @@ padding-bottom: 1em;
 }
 
 @media screen and (max-width: 768px) {
-  #daviefolio-hero .flexslider .slider-text>.slider-text-inner h1 {
-    line-height: 1.3;
-    font-weight: 700;
-    font-size: 28px;
+  #daviefolio-hero .flexslider .slider-text > .slider-text-inner h1 {
+    line-height: 1.3 !important;
+    font-weight: 700 !important;
+    font-size: 28px !important;
   }
 }
 
 @media screen and (max-width: 768px) {
-  #daviefolio-hero .flexslider .slider-text>.slider-text-inner h2 {
+  #daviefolio-hero .flexslider .slider-text > .slider-text-inner h2 {
     font-size: 18px;
     line-height: 1.5;
     font-weight: 300;
@@ -694,14 +806,15 @@ padding-bottom: 1em;
 }
 
 @media screen and (max-width: 768px) {
-  #daviefolio-hero .flexslider .slider-text>.slider-text-inner h3 {
+  #daviefolio-hero .flexslider .slider-text > .slider-text-inner h3 {
     font-size: 18px;
     line-height: 1.4;
     font-weight: 400;
     font-family: "Verdana", Geneva, Tahoma, sans-serif;
-    background-color: #04f538;
   }
 }
+
+
 /********* OFF CANVAS *********/
 
 /* Off-canvas menu styles:hides any content that overflows horizontally beyond the boundaries of the body element */
