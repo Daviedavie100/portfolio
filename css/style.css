@@ -271,21 +271,6 @@ justify-items: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* Navigation Toggle (three lines) */
-.daviefolio-nav-toggle {
-  position: fixed;
-  left: 0; /* Adjusted to 0 for better positioning */
-  top: 0;  /* Adjusted to 0 for better positioning */
-  padding: 20px;
-  visibility: hidden; /* Make sure to toggle this in your code logic */
-  z-index: 1000; /* Lowered to a reasonable value */
-  cursor: pointer;
-  opacity: 1;
-  transition: 0.5s; /* Removed unnecessary vendor prefixes */
-  text-decoration: none;
-}
-
-
 /* Overall Section Styling 
 #top-daviefolio-section {
   position: fixed;
@@ -302,15 +287,29 @@ justify-items: center;
   justify-content: space-between;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
+*/
+/* Navigation Toggle (three lines) */
+.daviefolio-nav-toggle {
+  position: fixed;
+  left: -10px; /* Adjusted to 0 for better positioning */
+  top: -10px;  /* Adjusted to 0 for better positioning */
+  padding: 20px;
+  visibility: hidden; /* Make sure to toggle this in your code logic */
+  z-index: 1000; /* Lowered to a reasonable value */
+  cursor: pointer;
+  opacity: 1;
+  transition: 0.5s; /* Removed unnecessary vendor prefixes */
+  text-decoration: none;
+}
 
 /* Navigation Toggle (three lines) 
 .daviefolio-nav-toggle {
   position: fixed;
-  /*it was fixed before
+ 
   left: -10px;
-  /* Adjust this to control the distance from the left edge 
+ 
   top: -10px;
-  /* Adjust this to control the distance from the top edge 
+
   padding: 20px;
   visibility: hidden;
   z-index: 9999;
