@@ -195,12 +195,11 @@ figure figcaption {
   #daviefolio-main {
     width      : 100%;
     position   : relative;
-    /* Full width */
     order      : 2;
     /* Move main content below aside */
     right      : 0;
     float      : right;
-    /*padding  : 0 1em;*/
+    padding  : 0 0.1em;
     margin-left: 0;
   }
 
@@ -210,7 +209,6 @@ figure figcaption {
     order            : 1;
     /* Move aside above main content */
     float            : left;
-    /* Float to the left */
     left             : 0;
     width            : 300px;
     -moz-transform   : translateX(-300px);
@@ -314,29 +312,7 @@ figure figcaption {
 
 
 
-/*
-.daviefolio-nav-toggle.dark i {
-  position          : relative;
-  color             : #000;
-  background        : #000;
-  -webkit-transition: all 0.2s ease-out;
-  -o-transition     : all 0.2s ease-out;
-  transition        : all 0.2s ease-out;
-}
 
-.daviefolio-nav-toggle.dark i::after,
-.daviefolio-nav-toggle.dark i::before {
-  background        : #000;
-  -webkit-transition: 0.2s;
-  -o-transition     : 0.2s;
-  transition        : 0.2s;
-}
-
-.daviefolio-nav-toggle.dark.active i::after,
-.daviefolio-nav-toggle.dark.active i::before {
-  background: #000;
-}
-*/
 
 /* When Toggle is Active (cross) */
 .daviefolio-nav-toggle.active i {
@@ -498,6 +474,7 @@ figure figcaption {
 
 @media (max-width: 768px) {
   #top-daviefolio-section {
+    position: fixed;
     width: 100%;
     left : 0;
   }
