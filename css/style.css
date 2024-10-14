@@ -683,7 +683,7 @@ padding-bottom: 1em;
 /* Responsive styles for smaller screens (tablets and below) */
 @media screen and (max-width: 768px) {
   #daviefolio-hero .slider-text-inner .desc {
-    padding-top: 45px; /* Adjust padding */
+    padding-top: 45px !important; /* Adjust padding */
   }
 }
 
@@ -700,8 +700,8 @@ padding-bottom: 1em;
 #daviefolio-hero .flexslider .slider-text > .slider-text-inner {
   display: table-cell;
   vertical-align: middle;
-  min-height: 700px;
-  padding: 2.5em;
+  min-height: 700px !important;
+  padding: 2.5em !important;
   /*3em 2em;*/
   position: relative;
   -webkit-transition: all 0.5s ease;
@@ -711,31 +711,31 @@ padding-bottom: 1em;
 #daviefolio-hero .flexslider .slider-text > .slider-text-inner h1 {
   margin: 0;
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 20px !important;
   color: #1a3d6d;
   font-family: "Playfair Display", Georgia, serif;
-  font-size: 60px;
-  line-height: 1.5;
-  font-weight: 700;
+  font-size: 60px !important;
+  line-height: 1.5 !important;
+  font-weight: 700 !important;
   font-weight: bold;
 }
 
 #daviefolio-hero .flexslider .slider-text > .slider-text-inner h2 {
   margin-bottom: 0;
-  font-size: 25px;
-  line-height: 1.5;
-  margin-bottom: 20px;
-  font-weight: 600;
+  font-size: 25px !important;
+  line-height: 1.5 !important;
+  margin-bottom: 20px !important;
+  font-weight: 600 !important;
   font-family: "Playfair Display", Georgia, serif;
   color: #034d57;
   font-weight: bold;
 }
 
 #daviefolio-hero .flexslider .slider-text > .slider-text-inner h3 {
-  font-size: 18px;
-  line-height: 1.5;
-  margin-bottom: 30px;
-  font-weight: 500;
+  font-size: 18px !important;
+  line-height: 1.5 !important;
+  margin-bottom: 30px !important;
+  font-weight: 500 !important;
   margin: 0;
   padding: 0;
   color: #122846;
@@ -750,7 +750,7 @@ padding-bottom: 1em;
   background-color: #007bff;
   color: #fff;
   padding: 10px 20px !important;
-  font-size: 1em;
+  font-size: 1em !important;
   border-radius: 30px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -783,7 +783,7 @@ padding-bottom: 1em;
   #daviefolio-hero .flexslider .slider-text > .slider-text-inner .btn.btn-folio {
     width: 100%;
     display: inline;
-    font-size: 0.9em;
+    font-size: 0.9em !important;
     /*margin-left: 10px;*/
   }
 }
@@ -798,17 +798,17 @@ padding-bottom: 1em;
 
 @media screen and (max-width: 768px) {
   #daviefolio-hero .flexslider .slider-text > .slider-text-inner h2 {
-    font-size: 18px;
-    line-height: 1.5;
-    font-weight: 300;
+    font-size: 18px !important;
+    line-height: 1.5 !important;
+    font-weight: 300 !important;
   }
 }
 
 @media screen and (max-width: 768px) {
   #daviefolio-hero .flexslider .slider-text > .slider-text-inner h3 {
-    font-size: 18px;
-    line-height: 1.4;
-    font-weight: 400;
+    font-size: 18px !important;
+    line-height: 1.4 !important;
+    font-weight: 400 !important;
     font-family: "Verdana", Geneva, Tahoma, sans-serif;
   }
 }
