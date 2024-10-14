@@ -697,7 +697,7 @@ padding-bottom: 1em;
 
 
 
-#daviefolio-hero .flexslider .slider-text > .slider-text-inner {
+#daviefolio-hero .flexslider .slider-text>.slider-text-inner {
   display: table-cell;
   vertical-align: middle;
   min-height: 700px !important;
@@ -708,7 +708,7 @@ padding-bottom: 1em;
   transition: all 0.5s ease;
 }
 
-#daviefolio-hero .flexslider .slider-text > .slider-text-inner h1 {
+#daviefolio-hero .flexslider .slider-text>.slider-text-inner h1 {
   margin: 0;
   padding: 0;
   margin-bottom: 20px !important;
@@ -720,7 +720,7 @@ padding-bottom: 1em;
   font-weight: bold;
 }
 
-#daviefolio-hero .flexslider .slider-text > .slider-text-inner h2 {
+#daviefolio-hero .flexslider .slider-text>.slider-text-inner h2 {
   margin-bottom: 0;
   font-size: 25px !important;
   line-height: 1.5 !important;
@@ -731,7 +731,7 @@ padding-bottom: 1em;
   font-weight: bold;
 }
 
-#daviefolio-hero .flexslider .slider-text > .slider-text-inner h3 {
+#daviefolio-hero .flexslider .slider-text>.slider-text-inner h3 {
   font-size: 18px !important;
   line-height: 1.5 !important;
   margin-bottom: 30px !important;
@@ -742,11 +742,11 @@ padding-bottom: 1em;
   font-family: "Verdana", Geneva, Tahoma, sans-serif;
 }
 
-#daviefolio-hero .flexslider .slider-text > .slider-text-inner p {
+#daviefolio-hero .flexslider .slider-text>.slider-text-inner p {
   margin-top: 20px;
 }
 
-#daviefolio-hero .flexslider .slider-text > .slider-text-inner .btn-folio {
+#daviefolio-hero .flexslider .slider-text>.slider-text-inner .btn-folio {
   background-color: #007bff;
   color: #fff;
   padding: 10px 20px !important;
@@ -758,7 +758,7 @@ padding-bottom: 1em;
   transition: background-color 0.3s ease;
 }
 
-#daviefolio-hero .flexslider .slider-text > .slider-text-inner .btn-folio:hover {
+#daviefolio-hero .flexslider .slider-text>.slider-text-inner .btn-folio:hover {
   color: #4169e1;
   background: transparent !important;
   border: 1px solid #000 !important;
@@ -766,7 +766,7 @@ padding-bottom: 1em;
 }
 
 @media screen and (max-width: 768px) {
-  #daviefolio-hero .flexslider .slider-text > .slider-text-inner {
+  #daviefolio-hero .flexslider .slider-text>.slider-text-inner {
     text-align: center;
     /*padding-top: 6em !important;*/
     line-height: 1.1 !important;
@@ -774,13 +774,13 @@ padding-bottom: 1em;
 }
 
 @media screen and (max-width: 768px) {
-  #daviefolio-hero .flexslider .slider-text > .slider-text-inner .btn {
+  #daviefolio-hero .flexslider .slider-text>.slider-text-inner .btn {
     width: 100%;
   }
 }
 
 @media screen and (max-width: 768px) {
-  #daviefolio-hero .flexslider .slider-text > .slider-text-inner .btn.btn-folio {
+  #daviefolio-hero .flexslider .slider-text>.slider-text-inner .btn.btn-folio {
     width: 100%;
     display: inline;
     font-size: 0.9em !important;
@@ -789,7 +789,7 @@ padding-bottom: 1em;
 }
 
 @media screen and (max-width: 768px) {
-  #daviefolio-hero .flexslider .slider-text > .slider-text-inner h1 {
+  #daviefolio-hero .flexslider .slider-text>.slider-text-inner h1 {
     line-height: 1.3 !important;
     font-weight: 700 !important;
     font-size: 28px !important;
@@ -797,7 +797,7 @@ padding-bottom: 1em;
 }
 
 @media screen and (max-width: 768px) {
-  #daviefolio-hero .flexslider .slider-text > .slider-text-inner h2 {
+  #daviefolio-hero .flexslider .slider-text>.slider-text-inner h2 {
     font-size: 18px !important;
     line-height: 1.5 !important;
     font-weight: 300 !important;
@@ -805,7 +805,7 @@ padding-bottom: 1em;
 }
 
 @media screen and (max-width: 768px) {
-  #daviefolio-hero .flexslider .slider-text > .slider-text-inner h3 {
+  #daviefolio-hero .flexslider .slider-text>.slider-text-inner h3 {
     font-size: 18px !important;
     line-height: 1.4 !important;
     font-weight: 400 !important;
