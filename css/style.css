@@ -38,9 +38,7 @@ a {
   transition: 0.5s;
 }
 
-a:active,
-a:focus,
-a:hover {
+a:active, a:focus, a:hover {
   color: #2c98f0;
   outline: none;
   text-decoration: none !important;
@@ -50,12 +48,7 @@ p {
   margin-bottom: 1.5em !important;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   color: #000;
   font-family: "Playfair Display", Georgia, serif;
   font-weight: 400 !important;
@@ -235,7 +228,7 @@ justify-items: center;
   #daviefolio-main {
     width: 100% !important;
     position: relative;
-    order: 2;
+    order: 2; 
     /* Move main content below aside */
     right: 0;
     float: right;
@@ -274,8 +267,7 @@ justify-items: center;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0;
-  /* Combined padding shorthand */
+  padding: 0; /* Combined padding shorthand */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -309,19 +301,14 @@ justify-items: center;
 /* Navigation Toggle (three lines) */
 .daviefolio-nav-toggle {
   position: fixed;
-  left: -10px !important;
-  /* Adjusted to 0 for better positioning */
-  top: -10px !important;
-  /* Adjusted to 0 for better positioning */
+  left: -10px !important; /* Adjusted to 0 for better positioning */
+  top: -10px !important;  /* Adjusted to 0 for better positioning */
   padding: 20px !important;
-  visibility: hidden;
-  /* Make sure to toggle this in your code logic */
-  z-index: 1000;
-  /* Lowered to a reasonable value */
+  visibility: hidden; /* Make sure to toggle this in your code logic */
+  z-index: 1000; /* Lowered to a reasonable value */
   cursor: pointer;
   opacity: 1;
-  transition: 0.5s;
-  /* Removed unnecessary vendor prefixes */
+  transition: 0.5s; /* Removed unnecessary vendor prefixes */
   text-decoration: none;
 }
 
@@ -333,7 +320,10 @@ justify-items: center;
  
   top: -10px;
 
-/* Higher z-index for visibility 
+  padding: 20px;
+  visibility: hidden;
+  z-index: 9999;
+  /* Higher z-index for visibility 
   cursor: pointer;
   opacity: 1;
   -webkit-transition: 0.5s;
@@ -342,48 +332,50 @@ justify-items: center;
   text-decoration: none;
 }
 
+*/
+
 .daviefolio-nav-toggle i {
-position: relative;
-display: inline-block;
-width: 20px!important;
-height: 2px!important;
-background: #a04ef6;
-transition: all 0.2s ease-out;
+  position: relative;
+  display: inline-block;
+  width: 20px !important;
+  height: 2px !important;
+  background: #a04ef6;
+  transition: all 0.2s ease-out;
 }
 
-.daviefolio-nav-toggle i::after,
+.daviefolio-nav-toggle i::after, 
 .daviefolio-nav-toggle i::before {
-content: "";
-width: 20px!important;
-height: 2px!important;
-background: #a04ef6;
-position: absolute;
-left: 0;
-transition: 0.2s;
+  content: "";
+  width: 20px !important;
+  height: 2px !important;
+  background: #a04ef6;
+  position: absolute;
+  left: 0;
+  transition: 0.2s;
 }
 
 .daviefolio-nav-toggle i::before {
-top: -7px!important;
+  top: -7px !important;
 }
 
 .daviefolio-nav-toggle i::after {
-bottom: -7px!important;
+  bottom: -7px !important;
 }
 
 .daviefolio-nav-toggle:hover i::before {
-top: -10px!important;
+  top: -10px !important;
 }
 
 .daviefolio-nav-toggle:hover i::after {
-bottom: -10px!important;
+  bottom: -10px !important;
 }
 /*
 
 .daviefolio-nav-toggle i {
-position: relative;
-display: inline-block;
-zoom: 1;
-/* For IE6/7 support 
+  position: relative;
+  display: inline-block;
+  zoom: 1;
+  /* For IE6/7 support 
   width: 20px;
   height: 2px;
   color: #000;
@@ -395,69 +387,91 @@ zoom: 1;
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
-*/
 
-/* When Toggle is Active (cross) */
-.daviefolio-nav-toggle i{
-width: 20px !important;
-height: 2px !important;
-position: absolute;
-top: -10px !important;
-left: -300px !important;
+.daviefolio-nav-toggle i::after, .daviefolio-nav-toggle i::before {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background: #a04ef6;
+  position: absolute;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  left: 0;
 }
 
-.daviefolio-nav-toggle.active i::after,
+.daviefolio-nav-toggle i::before {
+  top: -7px;
+}
+
+.daviefolio-nav-toggle i::after {
+  bottom: -7px;
+}
+
+.daviefolio-nav-toggle:hover i::before {
+  top: -10px;
+}
+
+.daviefolio-nav-toggle:hover i::after {
+  bottom: -10px;
+}
+*/
+/* When Toggle is Active (cross) */
+.daviefolio-nav-toggle.active i {
+  background: transparent;
+  width: 20px !important;
+  height: 2px !important;
+  position: absolute; /* Ensures the element is positioned correctly */
+  top: -10px !important;
+  left: -300px !important; /* Adjust as necessary for your layout */
+}
+
+.daviefolio-nav-toggle.active i::after, 
 .daviefolio-nav-toggle.active i::before {
   width: 20px !important;
   height: 2px !important;
   background: #add8e6;
-  content: '';
-  position: absolute;
+  content: ''; /* Ensures pseudo-elements are displayed */
+  position: absolute; /* Allows positioning relative to the parent */
 }
 
-.daviefolio-nav-toggle:active,
-.daviefolio-nav-toggle:focus,
+.daviefolio-nav-toggle:active, 
+.daviefolio-nav-toggle:focus, 
 .daviefolio-nav-toggle:hover {
   outline: none;
   border-bottom: none !important;
 }
-
 /*
+
 .daviefolio-nav-toggle.active i {
-background: transparent;
-width: 20px;
-height: 2px;
-top: -10px;
-left: -300px;
+  background: transparent;
+  width: 20px;
+  height: 2px;
+  top: -10px;
+  left: -300px;
 }
 
-.daviefolio-nav-toggle.active i::after,
-.daviefolio-nav-toggle.active i::before {
-width: 20px;
-height: 2px;
-background: #add8e6;
+.daviefolio-nav-toggle.active i::after, .daviefolio-nav-toggle.active i::before {
+  width: 20px;
+  height: 2px;
+  background: #add8e6;
 }
 
-.daviefolio-nav-toggle:active,
-.daviefolio-nav-toggle:focus,
-.daviefolio-nav-toggle:hover {
-outline: none;
-border-bottom: none!important;
+.daviefolio-nav-toggle:active, .daviefolio-nav-toggle:focus, .daviefolio-nav-toggle:hover {
+  outline: none;
+  border-bottom: none !important;
 }
 */
-
-
-.daviefolio-nav-toggle.active:hover i::after,
+.daviefolio-nav-toggle.active:hover i::after, 
 .daviefolio-nav-toggle.active:hover i::before {
-display: block;
-position: absolute;
-width: 20px !important;
-height: 2px !important;
-background: #eb3103;
--webkit-transition: background 0.3s ease;
-transition: background 0.3s ease;
+  display: block; /* Ensures the pseudo-elements are displayed */
+  position: absolute; /* Makes it easier to control their placement */
+  width: 20px !important;
+  height: 2px !important;
+  background: #eb3103;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
 }
-
 /*
 .daviefolio-nav-toggle.active:hover i::after, .daviefolio-nav-toggle.active:hover i::before {
   width: 20px;
@@ -466,11 +480,10 @@ transition: background 0.3s ease;
   transition: background 0.3s ease;
 }
 */
-.daviefolio-nav-toggle.active i::before {
+.daviefolio-nav-toggle.active i::before { 
   top: 0 !important;
   transform: rotate(45deg);
 }
-
 /*
 .daviefolio-nav-toggle.active i::before {
   top: 0;
@@ -505,6 +518,7 @@ transition: background 0.3s ease;
 }
 
 /* Collapsible Navbar Menu */
+
 /*
 
 .row-bottom-padded-lg {
@@ -528,6 +542,7 @@ padding-bottom: 1em;
 }
 
 /********* LOGO *********/
+
 #logo img {
   width: auto;
   max-width: 100%;
@@ -579,6 +594,7 @@ padding-bottom: 1em;
 }
 
 /********* MENU *********/
+
 #top-daviefolio-section .col-md-9 {
   /* padding-top: 10px;*/
   flex: 1;
@@ -608,7 +624,9 @@ padding-bottom: 1em;
   padding: 10px 4px !important;
 }
 
+
 /******** HERO ********/
+
 #daviefolio-hero {
   min-height: 500px !important;
   background: #fff url(../img/about/loader.gif) no-repeat center center;
@@ -652,6 +670,7 @@ padding-bottom: 1em;
 }
 
 /******** HERO TEXT ********/
+
 #daviefolio-hero .flexslider .slider-text {
   display: table;
   opacity: 0;
@@ -659,12 +678,14 @@ padding-bottom: 1em;
   z-index: 11;
 }
 
+
+
+
+
 /* Responsive styles for smaller screens (tablets and below) */
 @media screen and (max-width: 768px) {
   #daviefolio-hero .slider-text-inner .desc {
-    padding-top: 45px !important;
-    /* Adjust padding */
-
+    padding-top: 45px !important; /* Adjust padding */
   }
 }
 
@@ -675,7 +696,10 @@ padding-bottom: 1em;
   }
 }
 */
-#daviefolio-hero .flexslider .slider-text>.slider-text-inner {
+
+
+
+#daviefolio-hero .flexslider .slider-text >.slider-text-inner {
   display: table-cell;
   vertical-align: middle;
   min-height: 700px !important;
@@ -686,7 +710,7 @@ padding-bottom: 1em;
   transition: all 0.5s ease;
 }
 
-#daviefolio-hero .flexslider .slider-text>.slider-text-inner h1 {
+#daviefolio-hero .flexslider .slider-text >.slider-text-inner h1 {
   margin: 0;
   padding: 0;
   margin-bottom: 20px !important;
@@ -698,7 +722,7 @@ padding-bottom: 1em;
   font-weight: bold;
 }
 
-#daviefolio-hero .flexslider .slider-text>.slider-text-inner h2 {
+#daviefolio-hero .flexslider .slider-text >.slider-text-inner h2 {
   margin-bottom: 0;
   font-size: 25px !important;
   line-height: 1.5 !important;
@@ -709,7 +733,7 @@ padding-bottom: 1em;
   font-weight: bold;
 }
 
-#daviefolio-hero .flexslider .slider-text>.slider-text-inner h3 {
+#daviefolio-hero .flexslider .slider-text >.slider-text-inner h3 {
   font-size: 18px !important;
   line-height: 1.5 !important;
   margin-bottom: 30px !important;
@@ -720,11 +744,11 @@ padding-bottom: 1em;
   font-family: "Verdana", Geneva, Tahoma, sans-serif;
 }
 
-#daviefolio-hero .flexslider .slider-text>.slider-text-inner p {
+#daviefolio-hero .flexslider .slider-text >.slider-text-inner p {
   margin-top: 20px;
 }
 
-#daviefolio-hero .flexslider .slider-text>.slider-text-inner .btn-folio {
+#daviefolio-hero .flexslider .slider-text >.slider-text-inner .btn-folio {
   background-color: #007bff;
   color: #fff;
   padding: 10px 20px !important;
@@ -736,7 +760,7 @@ padding-bottom: 1em;
   transition: background-color 0.3s ease;
 }
 
-#daviefolio-hero .flexslider .slider-text>.slider-text-inner .btn-folio:hover {
+#daviefolio-hero .flexslider .slider-text >.slider-text-inner .btn-folio:hover {
   color: #4169e1;
   background: transparent !important;
   border: 1px solid #000 !important;
@@ -744,7 +768,7 @@ padding-bottom: 1em;
 }
 
 @media screen and (max-width: 768px) {
-  #daviefolio-hero .flexslider .slider-text>.slider-text-inner {
+  #daviefolio-hero .flexslider .slider-text >.slider-text-inner {
     text-align: center;
     /*padding-top: 6em !important;*/
     line-height: 1.1 !important;
@@ -752,23 +776,22 @@ padding-bottom: 1em;
 }
 
 @media screen and (max-width: 768px) {
-  #daviefolio-hero .flexslider .slider-text>.slider-text-inner .btn {
+  #daviefolio-hero .flexslider .slider-text >.slider-text-inner .btn {
     width: 100%;
   }
 }
 
 @media screen and (max-width: 768px) {
-  #daviefolio-hero .flexslider .slider-text>.slider-text-inner .btn.btn-folio {
+  #daviefolio-hero .flexslider .slider-text >.slider-text-inner .btn.btn-folio {
     width: 100%;
     display: inline;
     font-size: 0.9em !important;
     /*margin-left: 10px;*/
-
   }
 }
 
 @media screen and (max-width: 768px) {
-  #daviefolio-hero .flexslider .slider-text>.slider-text-inner h1 {
+  #daviefolio-hero .flexslider .slider-text >.slider-text-inner h1 {
     line-height: 1.3 !important;
     font-weight: 700 !important;
     font-size: 28px !important;
@@ -776,7 +799,7 @@ padding-bottom: 1em;
 }
 
 @media screen and (max-width: 768px) {
-  #daviefolio-hero .flexslider .slider-text>.slider-text-inner h2 {
+  #daviefolio-hero .flexslider .slider-text >.slider-text-inner h2 {
     font-size: 18px !important;
     line-height: 1.5 !important;
     font-weight: 300 !important;
@@ -784,7 +807,7 @@ padding-bottom: 1em;
 }
 
 @media screen and (max-width: 768px) {
-  #daviefolio-hero .flexslider .slider-text>.slider-text-inner h3 {
+  #daviefolio-hero .flexslider .slider-text >.slider-text-inner h3 {
     font-size: 18px !important;
     line-height: 1.4 !important;
     font-weight: 400 !important;
@@ -792,7 +815,9 @@ padding-bottom: 1em;
   }
 }
 
+
 /********* OFF CANVAS *********/
+
 /* Off-canvas menu styles:hides any content that overflows horizontally beyond the boundaries of the body element */
 body.offcanvas {
   overflow-x: hidden;
@@ -810,8 +835,7 @@ body.offcanvas #daviefolio-aside {
   position: fixed;
 }
 
-body.offcanvas #daviefolio-main,
-body.offcanvas .daviefolio-nav-toggle {
+body.offcanvas #daviefolio-main, body.offcanvas .daviefolio-nav-toggle {
   top: 0;
   -moz-transform: translateX(300px);
   -webkit-transform: translateX(300px);
@@ -821,6 +845,7 @@ body.offcanvas .daviefolio-nav-toggle {
 }
 
 /********* GUTTERS *********/
+
 /* removes all margin and padding from an element */
 /*margin: 0;: This removes all external spacing around the element.
 padding: 0;: This removes all internal spacing within the element.*/
@@ -832,13 +857,8 @@ padding: 0;: This removes all internal spacing within the element.*/
 /***************************/
 /******** SECTIONS *********/
 /***************************/
-.daviefolio-about,
-.daviefolio-blog,
-.daviefolio-contact,
-.daviefolio-education,
-.daviefolio-services,
-.daviefolio-skills,
-.daviefolio-work {
+
+.daviefolio-about, .daviefolio-blog, .daviefolio-contact, .daviefolio-education, .daviefolio-services, .daviefolio-skills, .daviefolio-work {
   clear: both;
   width: 100%;
   display: block;
@@ -892,19 +912,11 @@ padding: 0;: This removes all internal spacing within the element.*/
 }
 
 @media screen and (max-width: 768px) {
-
-  .daviefolio-about,
-  .daviefolio-blog,
-  .daviefolio-contact,
-  .daviefolio-education,
-  .daviefolio-services,
-  .daviefolio-skills,
-  .daviefolio-work {
+  .daviefolio-about, .daviefolio-blog, .daviefolio-contact, .daviefolio-education, .daviefolio-services, .daviefolio-skills, .daviefolio-work {
     padding-top: 3em !important;
     /*5em*/
     padding-bottom: 4em !important;
     /*8em*/
-
   }
 }
 
@@ -937,7 +949,7 @@ padding-bottom: 1em;
 .about-desc {
   margin: 0 1em 0 0.8em !important;
   /*padding    :0 1em 0 1em; 0 2em 0 2em*/
-  font-family: "ariel" sans-serif;
+  font-family: "ariel"sans-serif;
   font-size: 16px !important;
   padding: 1em !important;
   background: rgba(243, 242, 242, 0.5);
@@ -977,11 +989,13 @@ padding-bottom: 1em;
   display: block;
   margin-bottom: 20px !important;
   /*text from icon*/
+
 }
 
 .tools .icon2 i {
   font-size: 64px;
   /*color    : #2c98f0;*/
+
 }
 
 .tools h2 {
@@ -995,7 +1009,6 @@ padding-bottom: 1em;
   .tools {
     margin-bottom: 2em;
     /*4em-bottom margin*/
-
   }
 }
 
@@ -1056,6 +1069,7 @@ padding-bottom: 1em;
 .btn-hire:hover {
   background-color: #0056b3;
   /* Darker shade on hover */
+
 }
 
 /*******************************/
@@ -1093,8 +1107,7 @@ padding-bottom: 1em;
   background: #2c98f0;
 }
 
-.iservices .icon:after,
-.iservices .icon:before {
+.iservices .icon:after, .iservices .icon:before {
   position: absolute;
   left: 0;
   right: 0;
@@ -1425,8 +1438,7 @@ canvas {
   margin-bottom: 30px;
 }
 
-.timeline-centered:after,
-.timeline-centered:before {
+.timeline-centered:after, .timeline-centered:before {
   content: " ";
   display: table;
 }
@@ -1435,8 +1447,7 @@ canvas {
   clear: both;
 }
 
-.timeline-centered:after,
-.timeline-centered:before {
+.timeline-centered:after, .timeline-centered:before {
   content: " ";
   display: table;
 }
@@ -1529,8 +1540,7 @@ canvas {
   padding-top: 10px;
 }
 
-.mb-1,
-.mt-1 {
+.mb-1, .mt-1 {
   margin-bottom: 0.8rem !important;
 }
 
@@ -1625,6 +1635,7 @@ canvas {
   border-color: #2c98f0;
   box-shadow: none;
   /* Remove inner shadow for active */
+
 }
 
 #workfolio-filter li.active {
@@ -1645,6 +1656,7 @@ canvas {
 .workfolio-container {
   position: relative;
   /* Set position to relative to contain absolute elements */
+
   display: block !important;
   margin-bottom: 2rem;
 }
@@ -1665,6 +1677,7 @@ canvas {
   /* Fully visible when shown */
   transform: translateY(0);
   /* Reset position */
+
 }
 
 /* General styles for the workfolio items */
@@ -1684,6 +1697,7 @@ canvas {
   /* Allows absolute positioning for child elements 
   z-index : 1;*/
   /* Set a higher z-index to keep it on top */
+
 }
 
 /* Style for the image itself */
@@ -1694,6 +1708,7 @@ canvas {
   /* Maintain aspect ratio */
   display: block;
   /* Remove bottom margin/space */
+
   position: relative;
   padding: 1em;
   transition: all 1s;
@@ -1721,13 +1736,14 @@ canvas {
 .daviefolio-narrow-content .workfolio-item {
   display: none;
   /* Initially hide all items in this section */
+
 }
 
 /* Optional: Add some CSS to ensure the layout behaves correctly */
-.finsights-desc,
-.work-box {
+.finsights-desc, .work-box {
   transition: height 0.3s ease;
   /* Smooth height transition */
+
 }
 
 /* Hidden items won't take up space 
@@ -1736,12 +1752,10 @@ canvas {
 }
 */
 /* Show workfolio items based on filter */
-.filter-1,
-.filter-2,
-.filter-3,
-.filter-4 {
+.filter-1, .filter-2, .filter-3, .filter-4 {
   display: block;
   /* Visible when filter matches */
+
 }
 
 /***** CONTENT *****/
@@ -1764,6 +1778,7 @@ canvas {
   margin-right: 10px;
   /*margin-bottom       : 10px;*/
   /*padding-top         : 5px;*/
+
 }
 
 .w-title {
@@ -1786,6 +1801,7 @@ canvas {
 .butn {
   display: inline-block;
   /*5px;*/
+
   /*6px 12px 1px 4px;   padding         : 5px 15px;*/
   font-size: 14px;
   font-weight: bold;
@@ -1872,6 +1888,7 @@ canvas {
   /*width        : 100%;
   display        : block;
   margin-bottom  : 30px;*/
+
 }
 
 .project-folio img {
@@ -1929,6 +1946,7 @@ canvas {
   /* Ensure it spans the width */
   padding: 10px;
   /* Optional padding */
+
 }
 
 .pcon .icon {
@@ -1951,8 +1969,7 @@ canvas {
 }
 
 /* Show description and icons on hover */
-.project-folio:hover .pcon,
-.project-folio:hover .pdesc {
+.project-folio:hover .pcon, .project-folio:hover .pdesc {
   opacity: 1;
 }
 
@@ -1960,6 +1977,7 @@ canvas {
 .pcon .icon span a:hover {
   color: #ff9800;
   /* Custom hover color for the icons */
+
 }
 
 /* Hidden items (Initially hidden, revealed by Load More button)
@@ -1985,9 +2003,7 @@ canvas {
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
-
-  .col-md-4,
-  .col-md-8 {
+  .col-md-4, .col-md-8 {
     width: 100%;
   }
 }
@@ -2088,6 +2104,7 @@ canvas {
   display: block;
   background-color: #393f4d;
   /*#178582;*/
+
 }
 
 @media screen and (max-width: 768px) {
@@ -2184,8 +2201,7 @@ canvas {
   opacity: 1;
 }
 
-.contact-area .contact-form .form-control:-ms-input-placeholder,
-.contact-s-area .contact-form .form-control::-ms-input-placeholder {
+.contact-area .contact-form .form-control:-ms-input-placeholder, .contact-s-area .contact-form .form-control::-ms-input-placeholder {
   color: #fff;
 }
 
@@ -2278,6 +2294,7 @@ canvas {
   text-align: center;
   color: #000;
   /*padding-right: 0.3em;*/
+
 }
 
 #daviefolio-aside .position {
@@ -2417,9 +2434,7 @@ canvas {
   padding: 4px;
 }
 
-#daviefolio-aside .daviefolio-footer ul li a:active,
-#daviefolio-aside .daviefolio-footer ul li a:focus,
-#daviefolio-aside .daviefolio-footer ul li a:hover {
+#daviefolio-aside .daviefolio-footer ul li a:active, #daviefolio-aside .daviefolio-footer ul li a:focus, #daviefolio-aside .daviefolio-footer ul li a:hover {
   text-decoration: none;
   outline: none;
   color: #2c98f0;
@@ -2477,8 +2492,7 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   border-radius: 2px;
 }
 
-.pagination li a:focus,
-.pagination li a:hover {
+.pagination li a:focus, .pagination li a:hover {
   background: #2c98f0;
   color: #fff;
   border: 1px solid #2c98f0;
@@ -2495,8 +2509,7 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   border: 1px solid #2c98f0 !important;
 }
 
-.pagination li.active a:focus,
-.pagination li.active a:hover {
+.pagination li.active a:focus, .pagination li.active a:hover {
   background: #2c98f0;
   color: #fff;
   border: 1px solid #2c98f0 !important;
@@ -2536,9 +2549,7 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   padding: 18px 36px !important;
 }
 
-.btn:active,
-.btn:focus,
-.btn:hover {
+.btn:active, .btn:focus, .btn:hover {
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
   outline: none !important;
@@ -2550,9 +2561,7 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   border: 2px solid #2c98f0;
 }
 
-.btn-primary:active,
-.btn-primary:focus,
-.btn-primary:hover {
+.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
   background: #44a4f2 !important;
   border-color: #44a4f2 !important;
 }
@@ -2563,9 +2572,7 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   border: 2px solid #2c98f0;
 }
 
-.btn-primary.btn-outline:active,
-.btn-primary.btn-outline:focus,
-.btn-primary.btn-outline:hover {
+.btn-primary.btn-outline:active, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:hover {
   background: #2c98f0;
   color: #fff;
 }
@@ -2576,9 +2583,7 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   border: 2px solid #5cb85c;
 }
 
-.btn-success:active,
-.btn-success:focus,
-.btn-success:hover {
+.btn-success:active, .btn-success:focus, .btn-success:hover {
   background: #4cae4c !important;
   border-color: #4cae4c !important;
 }
@@ -2589,9 +2594,7 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   border: 2px solid #5cb85c;
 }
 
-.btn-success.btn-outline:active,
-.btn-success.btn-outline:focus,
-.btn-success.btn-outline:hover {
+.btn-success.btn-outline:active, .btn-success.btn-outline:focus, .btn-success.btn-outline:hover {
   background: #5cb85c;
   color: #fff;
 }
@@ -2602,9 +2605,7 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   border: 2px solid #5bc0de;
 }
 
-.btn-info:active,
-.btn-info:focus,
-.btn-info:hover {
+.btn-info:active, .btn-info:focus, .btn-info:hover {
   background: #46b8da !important;
   border-color: #46b8da !important;
 }
@@ -2615,9 +2616,7 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   border: 2px solid #5bc0de;
 }
 
-.btn-info.btn-outline:active,
-.btn-info.btn-outline:focus,
-.btn-info.btn-outline:hover {
+.btn-info.btn-outline:active, .btn-info.btn-outline:focus, .btn-info.btn-outline:hover {
   background: #5bc0de;
   color: #fff;
 }
@@ -2628,9 +2627,7 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   border: 2px solid #f0ad4e;
 }
 
-.btn-warning:active,
-.btn-warning:focus,
-.btn-warning:hover {
+.btn-warning:active, .btn-warning:focus, .btn-warning:hover {
   background: #eea236 !important;
   border-color: #eea236 !important;
 }
@@ -2641,9 +2638,7 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   border: 2px solid #f0ad4e;
 }
 
-.btn-warning.btn-outline:active,
-.btn-warning.btn-outline:focus,
-.btn-warning.btn-outline:hover {
+.btn-warning.btn-outline:active, .btn-warning.btn-outline:focus, .btn-warning.btn-outline:hover {
   background: #f0ad4e;
   color: #fff;
 }
@@ -2654,9 +2649,7 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   border: 2px solid #d9534f;
 }
 
-.btn-danger:active,
-.btn-danger:focus,
-.btn-danger:hover {
+.btn-danger:active, .btn-danger:focus, .btn-danger:hover {
   background: #d43f3a !important;
   border-color: #d43f3a !important;
 }
@@ -2667,9 +2660,7 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   border: 2px solid #d9534f;
 }
 
-.btn-danger.btn-outline:active,
-.btn-danger.btn-outline:focus,
-.btn-danger.btn-outline:hover {
+.btn-danger.btn-outline:active, .btn-danger.btn-outline:focus, .btn-danger.btn-outline:hover {
   background: #d9534f;
   color: #fff;
 }
@@ -2683,9 +2674,7 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   transition: 0.3s;
 }
 
-.btn-outline:active,
-.btn-outline:focus,
-.btn-outline:hover {
+.btn-outline:active, .btn-outline:focus, .btn-outline:hover {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
