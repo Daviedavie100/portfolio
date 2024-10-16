@@ -301,14 +301,14 @@ justify-items: center;
 /* Navigation Toggle (three lines) */
 .daviefolio-nav-toggle {
   position: fixed;
-  left: -10px !important; /* Adjusted to 0 for better positioning */
-  top: -10px !important;  /* Adjusted to 0 for better positioning */
+  left: -10px !important; 
+  top: -10px !important;  
   padding: 20px !important;
-  visibility: hidden; /* Make sure to toggle this in your code logic */
+  visibility: hidden;
   z-index: 1000; /* Lowered to a reasonable value */
   cursor: pointer;
   opacity: 1;
-  transition: 0.5s; /* Removed unnecessary vendor prefixes */
+  transition: 0.5s; 
   text-decoration: none;
 }
 
@@ -544,11 +544,11 @@ padding-bottom: 1em;
 /********* LOGO *********/
 
 #logo img {
-  width: auto;
-  max-width: 100%;
-  height: auto;
-  margin-top: 0;
-  padding: 0;
+  width: 90px !important;
+  max-width: 100% !important;
+  height: auto !important;
+  margin-top: 0 !important;
+  padding: 0 !important;
   /*
   width     : 100px;
   height    : 60px;
@@ -558,31 +558,31 @@ padding-bottom: 1em;
 }
 
 /* Media query for screens 480px or less (small mobile devices) */
+/*
 @media screen and (max-width: 480px) {
   #logo img {
     width: 60px !important;
-    /* Adjust the width for small mobile screens */
     height: auto;
-    /* Maintain aspect ratio */
-    padding-left: 20px !important;
-    margin-right: 0;
-    padding-right: 0;
-  }
-}
-
-/* Media query for screens 768px or smaller (mobile devices) */
-@media screen and (max-width: 768px) {
-  #logo img {
-    width: 80px !important;
-    height: auto;
-    /* Maintain aspect ratio */
     padding-left: 25px !important;
     margin-right: 0;
     padding-right: 0;
   }
 }
+*/
+/* Media query for screens 768px or smaller (mobile devices) */
+@media screen and (max-width: 768px) {
+  #logo img {
+    width: 100px !important;
+    height: auto !important;
+    /* Maintain aspect ratio */
+    padding-left: 30px !important;
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+  }
+}
 
 /* For tablets (e.g., between 769px and 1024px) */
+/*
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   #logo img {
     width: 120px !important;
@@ -592,7 +592,7 @@ padding-bottom: 1em;
     padding-right: 0;
   }
 }
-
+*/
 /********* MENU *********/
 
 #top-daviefolio-section .col-md-9 {
