@@ -667,7 +667,7 @@ padding-bottom: 1em;
 /* Responsive styles for smaller screens (tablets and below) */
 @media screen and (max-width: 768px) {
   #daviefolio-hero .slider-text-inner .desc {
-    padding-top: 45px !important; /* Adjust padding */
+    padding-top: 60px !important;
   }
 }
 
