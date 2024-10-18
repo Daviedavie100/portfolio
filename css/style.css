@@ -1278,9 +1278,9 @@ canvas {
   text-align: right;
   position: relative;
   overflow: visible;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
+  -webkit-border-radius: 0; /*8px*/
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
   border-radius: 0;
 }
 
