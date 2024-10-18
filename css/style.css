@@ -830,6 +830,9 @@ padding: 0;: This removes all internal spacing within the element.*/
 @media screen and (max-width: 768px) {
   .daviefolio-heading {
     margin-bottom: 3em !important;
+
+    
+    padding-left: 2px !important;
   }
 }
 
@@ -844,6 +847,8 @@ padding-bottom: 1em;
 padding-bottom: 1em;
 }
 }
+*/
+
 /*************************/
 /********* ABOUT *********/
 /*************************/
@@ -860,9 +865,9 @@ padding-bottom: 1em;
 }
 
 .about-tools {
-  padding: 1em 2em 2em 0 !important;
-  align-items: center;
-  justify-content: center;
+  padding-top: 1em !important;
+  align-items: center !important;
+  justify-content: center !important;
   text-align: center;
 }
 
