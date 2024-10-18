@@ -998,6 +998,7 @@ padding-bottom: 1em;
 @media screen and (max-width: 768px) {
   .iservices {
     margin-bottom: 4em;
+    height: fit-content;
   }
 }
 
@@ -1366,19 +1367,7 @@ canvas {
 .progress-bar.color-5 span {
   color: #2fa499;
 }
-/*
-.progress-bar.color-6 {
-  background: #4054b2;
-}
 
-.progress-bar.color-6:after {
-  background: #4054b2;
-}
-
-.progress-bar.color-6 span {
-  color: #4054b2;
-}
-*/
 /*****************************/
 /********* EDUCATION *********/
 /*****************************/
@@ -1541,6 +1530,7 @@ canvas {
 /*************************/
 /*********  WORK *********/
 /*************************/
+
 /*********  MENU *********/
 #workfolio {
   position: relative;
@@ -1652,12 +1642,8 @@ canvas {
 /* Style for the image itself */
 .work-image img {
   width: 100%;
-  /* Responsive images */
   height: auto;
-  /* Maintain aspect ratio */
   display: block;
-  /* Remove bottom margin/space */
-
   position: relative;
   padding: 1em;
   transition: all 1s;
@@ -1695,11 +1681,7 @@ canvas {
 
 }
 
-/* Hidden items won't take up space 
-.hidden {
-  display: none;
-}
-*/
+
 /* Show workfolio items based on filter */
 .filter-1, .filter-2, .filter-3, .filter-4 {
   display: block;
@@ -1727,7 +1709,6 @@ canvas {
   margin-right: 10px;
   /*margin-bottom       : 10px;*/
   /*padding-top         : 5px;*/
-
 }
 
 .w-title {
@@ -1957,9 +1938,10 @@ canvas {
   }
 }
 
-/*======================================
-  BLOG
-======================================*/
+/*******************************/
+/********* BLOG CSS *********/
+/*******************************/
+
 .blog-entry {
   width: 100%;
   float: left;
@@ -2243,7 +2225,6 @@ canvas {
   text-align: center;
   color: #000;
   /*padding-right: 0.3em;*/
-
 }
 
 #daviefolio-aside .position {
@@ -2345,20 +2326,15 @@ canvas {
 
 /*footer*/
 #daviefolio-aside .daviefolio-footer {
-  font-size: 15px;
-  text-align: center;
-  font-weight: 400;
+  font-size: 15px !important;
+  text-align: center !important;
+  font-weight: 400 !important;
   color: rgba(0, 0, 0, 0.5);
   /*padding    : 0 20px;*/
-  width: 100%;
+  width: 100% !important;
+  display: block !important; /*added*/
 }
 
-/*
-#daviefolio-aside .daviefolio-footer {
-  display: block;
-  padding: 1em 2em;
-}
-*/
 @media screen and (max-width: 768px) {
   #daviefolio-aside .daviefolio-footer {
     position: relative;
