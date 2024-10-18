@@ -146,13 +146,9 @@ figure figcaption {
 @media screen and (max-width: 768px) {
   #daviefolio-main {
     width: 100%;
-    /* Make it take the full width of the screen */
     float: none;
-    /* Remove float for better control */
     margin-left: 0;
-    /* Reset margin if necessary */
     order: 1;
-    /* Retain the order in case of flexbox usage */
   }
 }
 
@@ -160,11 +156,8 @@ figure figcaption {
 @media screen and (max-width: 480px) {
   #daviefolio-main {
     width: 100%;
-    /* Keep the full width */
     padding: 10px;
-    /* Optional: Add padding for better spacing */
     transition: 0.3s;
-    /* Adjust transition speed if needed for smaller devices */
   }
 }
 
@@ -191,7 +184,6 @@ justify-items: center;
   width: 300px !important;
   position: fixed;
   overflow-y: auto;
-  /*auto*/
   z-index: 2001;
   background: #2d545e;
   -webkit-transition: 0.5s;
@@ -221,14 +213,12 @@ justify-items: center;
 @media screen and (max-width: 768px) {
   #daviefolio-page {
     flex-direction: column;
-    /* Stack elements vertically */
   }
 
   #daviefolio-main {
     width: 100% !important;
     position: relative;
     order: 2; 
-    /* Move main content below aside */
     right: 0;
     float: right;
     padding: 0 0.1em !important;
@@ -283,12 +273,6 @@ justify-items: center;
     font-size: 0.8em !important;
   }
 }
-
-
-
-
-
-
 
 /* Navigation Toggle (three lines) */
 
@@ -377,14 +361,7 @@ justify-items: center;
 .daviefolio-nav-toggle.active i {
   background: transparent;
 }
-/*
-.daviefolio-nav-toggle.active i::after, 
-.daviefolio-nav-toggle.active i::before {
-  width: 20px;
-  height: 2px;
-  background: #add8e6;
-}
-*/
+
 .daviefolio-nav-toggle.active i::after, 
 .daviefolio-nav-toggle.active i::before {
   display: block; 
@@ -412,28 +389,6 @@ justify-items: center;
   outline: none;
   border-bottom: none !important;
 }
-
-
-
-
-
-
-
-
-
-/*
-.daviefolio-nav-toggle:active, 
-.daviefolio-nav-toggle:focus, 
-.daviefolio-nav-toggle:hover {
-  outline: none;
-  border-bottom: none !important;
-}
-
-*/
-
-
-
-
 
 @media screen and (max-width: 768px) {
   .daviefolio-nav-toggle {
@@ -805,9 +760,9 @@ padding: 0;: This removes all internal spacing within the element.*/
 /***************************/
 
 .daviefolio-about, .daviefolio-blog, .daviefolio-contact, .daviefolio-education, .daviefolio-services, .daviefolio-skills, .daviefolio-work {
-  clear: both;
-  width: 100%;
-  display: block;
+  clear: both !important;
+  width: 100% !important;
+  display: block !important;
 }
 
 .folio-title-box {
