@@ -852,6 +852,7 @@ padding-bottom: 1em;
 /*************************/
 /********* ABOUT *********/
 /*************************/
+
 .about-desc {
   margin: 0 1em 0 0.8em !important;
   /*padding    :0 1em 0 1em; 0 2em 0 2em*/
@@ -1191,6 +1192,13 @@ padding-bottom: 1em;
   height: 100% !important;
 }
 
+/* For tablets (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .hard-skills-chart-area {
+    padding-bottom: 2em !important;
+  }
+}
+
 .section-header-hard p {
   color: #2fa499;
   font-size: 15px !important;
@@ -1309,63 +1317,63 @@ canvas {
 }
 
 .progress-bar.color-1 {
-  background: #2c98f0;
+  background: #4CAF50;
 }
 
 .progress-bar.color-1:after {
-  background: #2c98f0;
+  background: #4CAF50;
 }
 
 .progress-bar.color-1 span {
-  color: #2c98f0;
+  color: #4CAF50;
 }
 
 .progress-bar.color-2 {
-  background: #ec5453;
+  background: #2196F3;
 }
 
 .progress-bar.color-2:after {
-  background: #ec5453;
+  background: #2196F3;
 }
 
 .progress-bar.color-2 span {
-  color: #ec5453;
+  color: #2196F3;
 }
 
 .progress-bar.color-3 {
-  background: #f9bf3f;
+  background: #9C27B0;
 }
 
 .progress-bar.color-3:after {
-  background: #f9bf3f;
+  background: #9C27B0;
 }
 
 .progress-bar.color-3 span {
-  color: #f9bf3f;
+  color: #9C27B0;
 }
 
 .progress-bar.color-4 {
-  background: #a84cb8;
+  background: #FFC107;
 }
 
 .progress-bar.color-4:after {
-  background: #a84cb8;
+  background: #FFC107;
 }
 
 .progress-bar.color-4 span {
-  color: #a84cb8;
+  color: #FFC107;
 }
 
 .progress-bar.color-5 {
-  background: #2fa499;
+  background: #FF5722;
 }
 
 .progress-bar.color-5:after {
-  background: #2fa499;
+  background: #FF5722;
 }
 
 .progress-bar.color-5 span {
-  color: #2fa499;
+  color: #FF5722;
 }
 
 /*****************************/
