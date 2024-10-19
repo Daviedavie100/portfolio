@@ -1883,7 +1883,7 @@ canvas {
 
   .project-folio:hover .pdesc,
   .project-folio:active .pdesc {
-    height: 200px !important; /* Adjust height if needed */
+    height: 290px !important; /* Adjust height if needed */
     background: #2fa499;
     opacity: 1;
   }
