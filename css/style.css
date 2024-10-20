@@ -2644,3 +2644,384 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
 /*======================================
                  END   
 ======================================*/
+
+
+
+
+/* General styling */
+.portfolio-mf {
+  padding: 60px 0;
+  background-color: #f8f9fa;
+}
+
+.title-box h3 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.title-line-mf {
+  width: 50px;
+  height: 3px;
+  background-color: #007bff;
+  margin: 0 auto 30px auto;
+}
+
+.work-box {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.work-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.work-img img:hover {
+  transform: scale(1.05);
+}
+
+.title-container {
+  margin-top: 15px;
+}
+
+.w-title {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 5px;
+  transition: color 0.3s;
+}
+
+.w-title:hover {
+  color: #007bff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .title-box h3 {
+      font-size: 2rem;
+  }
+
+  .w-title {
+      font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio-mf {
+      padding: 40px 0;
+  }
+
+  .title-box h3 {
+      font-size: 1.8rem;
+  }
+
+  .work-box {
+      margin-bottom: 20px;
+  }
+
+  .w-title {
+      font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .portfolio-mf {
+      padding: 30px 0;
+  }
+
+  .title-box h3 {
+      font-size: 1.5rem;
+  }
+
+  .work-img img {
+      border-radius: 4px;
+  }
+
+  .w-title {
+      font-size: 1.2rem;
+  }
+
+  p {
+      font-size: 0.9rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* General styling for the work-box */
+.work-box {
+  margin-bottom: 30px;
+  position: relative;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.work-box:hover {
+  transform: translateY(-5px);
+}
+
+.work-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+  transition: transform 0.3s ease;
+}
+
+.work-img img:hover {
+  transform: scale(1.05);
+}
+
+.work-content {
+  padding: 15px;
+}
+
+.w-title {
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.w-title a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.w-title a:hover {
+  color: #0056b3;
+}
+
+.w-title small {
+  margin-left: 8px;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .w-title {
+      font-size: 1.15rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .work-box {
+      margin-bottom: 20px;
+  }
+
+  .work-content {
+      padding: 10px;
+  }
+
+  .w-title {
+      font-size: 1rem;
+  }
+
+  .w-title small {
+      font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .work-box {
+      margin-bottom: 15px;
+  }
+
+  .work-img img {
+      border-radius: 4px 4px 0 0;
+  }
+
+  .w-title {
+      font-size: 0.9rem;
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .w-title small {
+      font-size: 0.75rem;
+      margin-left: 0;
+      margin-top: 3px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* General styling for the insights section */
+.insignts-desc {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  line-height: 1.6;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease;
+}
+
+.insignts-desc:hover {
+  transform: translateY(-5px);
+}
+
+.insights-heading-meta {
+  display: block;
+  font-size: 1.5rem;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.insights-heading-meta strong {
+  font-weight: bold;
+}
+
+.insignts-desc p {
+  font-size: 16px !important;
+  color:#fff;
+  margin-bottom: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .insights-heading-meta {
+      font-size: 1.4rem;
+  }
+
+  .insignts-desc p {
+      font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .insignts-desc {
+      padding: 15px;
+  }
+
+  .insights-heading-meta {
+      font-size: 1.3rem;
+  }
+
+  .insignts-desc p {
+      font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .insignts-desc {
+      padding: 10px;
+  }
+
+  .insights-heading-meta {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+  }
+
+  .insignts-desc p {
+      font-size: 0.85rem;
+      margin-bottom: 10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* General styling for the project description */
+.project-desc {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  transition: transform 0.3s ease;
+  text-align: center; /* Center align all text within the container */
+}
+
+.project-desc:hover {
+  transform: translateY(-5px);
+}
+
+.project-heading-meta {
+  display: block;
+  font-size: 1.5rem;
+  color: #007bff;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.project-heading-meta strong {
+  font-weight: bold;
+}
+
+.project-desc p {
+  font-size: 1rem;
+  color: #333;
+  margin: 10px 0;
+  text-align: center; /* Center align each paragraph */
+}
+
+.project-desc p:hover {
+  color: #007bff;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .project-heading-meta {
+      font-size: 1.4rem;
+  }
+
+  .project-desc p {
+      font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-desc {
+      padding: 15px;
+  }
+
+  .project-heading-meta {
+      font-size: 1.3rem;
+  }
+
+  .project-desc p {
+      font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .project-desc {
+      padding: 10px;
+  }
+
+  .project-heading-meta {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+  }
+
+  .project-desc p {
+      font-size: 0.85rem;
+      margin: 8px 0;
+  }
+}
