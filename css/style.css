@@ -2780,7 +2780,7 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
 }
 
 /* IMAGES: General styling for the insights section */
-#daviefolio-images {
+.daviefolio-images {
   background-color:#c45439;
 }
 
@@ -3001,152 +3001,125 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
 
 
 
-.image-folio-container {
-  background-color: #9C27B0;
-  padding: 0;
-}
-
-
-
-
-
-/* Styling for the main project section */
-.folio-project-narrow-content {
-  padding: 1em !important;
-  background-color: #04f538;
-}
-
-.folio-project-narrow-content {
-  width: 100% !important;
-  margin: 0 auto;
-  padding: 0 15px;
-
-}
-
-/* Styling for each project item */
-.pgproject {
-  position: relative;
-  margin-bottom: 30px;
-}
-
-.pgproject img {
+/* RESENT: Styling for the recent project section */
+.daviefolio-project-resent {
+  padding: 1em !important; 
   width: 100%;
+}
+
+.daviefolio-project-narrow-content {
+  display: block;
+  align-items: flex-start;
+  width: 100%; 
+  margin: 0 auto;
+}
+
+.row.animate-box {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; 
+  overflow: hidden; 
+}
+
+.resentproject {
+  padding: 0.5em !important;
+}
+
+.resentproject img {
+  width: 100%;
+  border-radius: 0;
   transition: transform 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.pgproject img:hover {
-  transform: scale(1.05);
+.resentproject img:hover {
+  transform: scale(1.01);
 }
 
 /* Styling for the project icons */
-.pcon {
+.rcon {
   position: absolute;
-  bottom: 10px;
-  left: 10px;
-  right: 10px;
-  background: rgba(0, 0, 0, 0.6);
-  padding: 5px;
-  border-radius: 5px;
+  bottom: 5px;
+  left: 20px;
+  right: 20px;
+  padding: 5px !important;
+  background-color: #04f538;
+  /*background: rgba(0, 0, 0, 0.6);*/
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: #fff;
 }
 
-.pcon p.icon {
+.rcon p.icon {
   margin: 0;
   display: flex;
   gap: 10px;
 }
 
-.pcon p.icon span a {
+.rcon p.icon span a {
   color: #fff;
   text-decoration: none;
 }
 
-.pcon p.icon span a:hover {
+.rcon p.icon span a:hover {
   color: #007bff;
 }
 
-/* Styling for the project description */
-.pdesc {
-  background-color: #ffffff;
-  border: 1px solid #ddd;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 30px;
-  font-size: 1rem;
-  color: #333;
-  line-height: 1.5;
+.rpdesc {
+  padding: 2px !important;
 }
 
-/* Styling for the "Load more" button */
-.bt-load-more {
-  display: inline-block;
+
+
+
+
+
+
+.but-load-more {
+  display: block;
+  margin: 20px auto 0;
+  text-align: center;
   padding: 10px 20px;
   background-color: #007bff;
-  color: #fff;
-  text-decoration: none;
+  color: white;
+  border: none;
   border-radius: 5px;
-  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
-.bt-load-more:hover {
+.but-load-more:hover {
   background-color: #0056b3;
-  color: #fff;
+}
+/*
+.img-fluid {
+  max-width: 100%;
+  height: auto;
 }
 
-/* Responsive adjustments */
-@media (max-width: 992px) {
-  .pdesc {
-      font-size: 0.95rem;
-  }
+.rcon {
+  margin-top: 10px;
 }
 
-@media (max-width: 768px) {
-  .daviefolio-project-narrow-content {
-      padding: 0 10px;
-  }
-
-  .pgproject, .pdesc {
-      margin-bottom: 20px;
-  }
-
-  .pcon {
-      flex-direction: column;
-      align-items: flex-start;
-  }
+.icon span {
+  margin-right: 10px;
 }
 
-@media (max-width: 576px) {
-  .bt-load-more {
-      padding: 8px 16px;
-      font-size: 0.9rem;
-  }
-
-  .pdesc {
-      font-size: 0.85rem;
-      padding: 10px;
-  }
-
-  .pgproject img {
-      border-radius: 5px;
-  }
+.icon a {
+  color: #333;
 }
 
+.icon i {
+  margin-right: 5px;
+}
+
+*/
 
 
 
 
-
-
-
-
-
-
-/* General styling for aside project*/
+/* ASIDE: General styling for aside project*/
 .project-desc {
   padding: 20px;
   border-radius: 8px;
