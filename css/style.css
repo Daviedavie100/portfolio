@@ -2645,7 +2645,13 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
                  END   
 ======================================*/
 
-/* General styling for the title and first image section*/
+/* PROJECTFOLIO: General styling for the title and first image section*/
+#daviefolio-project-folio {
+  background-color: #007bff;
+  margin: 1em !important;
+  padding-bottom: 0;
+}
+
 .portfolio-mf {
   padding: 60px 0;
   background-color: #f8f9fa;
@@ -2663,12 +2669,6 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   height: 3px;
   background-color: #007bff;
   margin: 0 auto 30px auto;
-}
-
-/* projectfolio */
-#daviefolio-project-folio {
-  margin: 1em !important;
-  padding-bottom: 0;
 }
 
 /* work-box styling */
@@ -2743,7 +2743,11 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   line-height: 1.6;
 }
 
-/* General styling for the insights section */
+/* INSIGHTS: General styling for the insights section */
+.daviefolio-insights {
+  background-color: #04f538;
+}
+
 .insignts-desc {
   padding: 20px !important;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -2775,7 +2779,11 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   margin-bottom: 15px;
 }
 
-/* General styling for the insights section */
+/* IMAGES: General styling for the insights section */
+#daviefolio-images {
+  background-color:#c45439;
+}
+
 .s-title {
   padding-top: 20px !important;
   color:#0056b3;
@@ -2852,8 +2860,6 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
 }
 
 
-
-
 @media (max-width: 576px) {
   .portfolio-mf {
       padding: 30px 0;
@@ -2875,7 +2881,6 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
       font-size: 0.9rem;
   }
 }
-
 
 
 @media (max-width: 768px) {
@@ -2903,18 +2908,6 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* Responsive adjustments */
 @media (max-width: 1200px) {
   .w-title {
@@ -2934,12 +2927,12 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   .w-title {
       font-size: 1rem;
   }
-
-  .w-title small {
-      font-size: 0.8rem;
-  }
 }
 
+
+
+
+/*
 @media (max-width: 576px) {
   .work-box {
       margin-bottom: 15px;
@@ -2961,17 +2954,7 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
       margin-top: 3px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
+*/
 
 /* Responsive adjustments */
 @media (max-width: 1200px) {
@@ -3018,11 +3001,152 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
 
 
 
+.image-folio-container {
+  background-color: #9C27B0;
+  padding: 0;
+}
 
 
 
 
-/* General styling for the project description */
+
+/* Styling for the main project section */
+.folio-project-narrow-content {
+  padding: 1em !important;
+  background-color: #04f538;
+}
+
+.folio-project-narrow-content {
+  width: 100% !important;
+  margin: 0 auto;
+  padding: 0 15px;
+
+}
+
+/* Styling for each project item */
+.pgproject {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.pgproject img {
+  width: 100%;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pgproject img:hover {
+  transform: scale(1.05);
+}
+
+/* Styling for the project icons */
+.pcon {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.pcon p.icon {
+  margin: 0;
+  display: flex;
+  gap: 10px;
+}
+
+.pcon p.icon span a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.pcon p.icon span a:hover {
+  color: #007bff;
+}
+
+/* Styling for the project description */
+.pdesc {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Styling for the "Load more" button */
+.bt-load-more {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.bt-load-more:hover {
+  background-color: #0056b3;
+  color: #fff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .pdesc {
+      font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .daviefolio-project-narrow-content {
+      padding: 0 10px;
+  }
+
+  .pgproject, .pdesc {
+      margin-bottom: 20px;
+  }
+
+  .pcon {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+}
+
+@media (max-width: 576px) {
+  .bt-load-more {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+  }
+
+  .pdesc {
+      font-size: 0.85rem;
+      padding: 10px;
+  }
+
+  .pgproject img {
+      border-radius: 5px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* General styling for aside project*/
 .project-desc {
   padding: 20px;
   border-radius: 8px;
@@ -3101,3 +3225,5 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
       margin: 8px 0;
   }
 }
+
+
