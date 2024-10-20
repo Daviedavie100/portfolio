@@ -22,12 +22,12 @@
 	<meta name="twitter:card" content />
 
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="favicon_do/favicon.ico">
+	<link rel="shortcut icon" href="lib/favicon_io/favicon.ico">
 
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-	<link rel="manifest" href="/site.webmanifest">
+	<link rel="apple-touch-icon" sizes="180x180" href="lib/favicon_io/apple-touch-icon.png ">
+	<link rel="icon" type="image/png" sizes="32x32" href="lib/favicon_io/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="lib/favicon_io/favicon-16x16.png">
+	<link rel="manifest" href="lib/favicon_io/site.webmanifest">
 
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
@@ -40,7 +40,6 @@
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/icomoon.css">
 	<link rel="stylesheet" href="css/flexslider.css">
-	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 	<link rel="stylesheet" href="lib/lightbox/css/lightbox.min.css">
@@ -52,54 +51,49 @@
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
+		<script src="js/respond.min.js"></script>
+		<![endif]-->
 
-	<!-- Chart Js-->
-	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+	<!-- Isotope CDN -->
+	<!--<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>-->
 </head>
 
 <body>
 
-	<div id="colorlib-page">
+	<div id="daviefolio-page">
 
 		<div id="container-wrap">
 
-			<!-- Navigation Toggle -->
-			<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar"
-				aria-expanded="false" aria-controls="navbar"><i></i></a>
-
-			<!-- top colorlib-main -->
-			<div id="top-colorlib-section">
-
+			<!-- daviefolio Top Menu -->
+			<div id="top-daviefolio-section">
+				<!-- Navigation Toggle -->
+				<a href="#" class="js-daviefolio-nav-toggle daviefolio-nav-toggle" data-toggle="collapse"
+					data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i>
+				</a>
 				<div id="logo">
-					<h4>
-						<a href="index.html">David Portfolio</a>
-					</h4>
+					<img src="lib/favicon_io/logo.png" alt="David Portfolio Logo" class="logo-img">
 				</div>
-
 				<div class="col-md-9">
-					<div class="top-colorlib-menu">
+					<div class="top-daviefolio-menu">
 						<nav>
 							<ul>
 								<li><a href="#python">Python</a></li>
 								<li><a href="#r">R</a></li>
 								<li><a href="#sql">SQL</a></li>
-								<li><a href="#" class="active">Excel</a></li>
-								<!--<span><a href="#" class="active">Excel Project</a></span>-->
+								<li><a href="exproject.html" target="_top">Excel</a></li>
 							</ul>
 						</nav>
 					</div>
 				</div>
 			</div>
+			<!-- End: daviefolio Top Menu -->
 
 
-			<!-- colorlib-main -->
-			<div id="colorlib-main">
+			<!-- daviefolio-main -->
+			<div id="daviefolio-main">
 
 				<!--Page title-->
-				<section id="colorlib-project-folio" class="portfolio-mf sect-pt4 route">
+				<section id="daviefolio-project-folio" class="portfolio-mf sect-pt4 route">
 					<div class="project-folio-container">
 
 						<div class="row">
@@ -111,13 +105,14 @@
 									<div class="title-line-mf"></div>
 								</div>
 							</div>
+
 							<!--Page first image-->
 							<div class="col-md-12">
 								<div class="work-box">
-									<a href="exproject/img/expro1-11.JPG" data-lightbox="gallery-mf">
+									<a href="img/bg1.jpg" data-lightbox="gallery-mf">
 										<div class="work-img">
-											<img src="exproject/img/expro1-11.JPG"
-												alt="Description of the Excel project image" class="img-fluid">
+											<img src="img/bg1.jpg" alt="Description of the Excel project image"
+												class="img-fluid">
 										</div>
 									</a>
 									<div class="work-content">
@@ -133,162 +128,27 @@
 											<!--Page description-->
 											<div class="col-sm-12">
 												<p>
-													Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
-													ipsum dolor sit amet,
-													consectetur adipisicing elit. Lorem ipsum dolor sit amet,
-													consectetur adipisicing elit.
-													Lorem ipsum dolor sit amet consectetur adipisicing elit.
+													Lorem ipsum dolor sit amet consectetur adipisicing elit. No Data is
+													Clean But Most is Useful
+													With decades in experience as a data scientist consultant and
+													instructor, Dean utilizes his expertise to navigate the intricacies
+													of imperfect data turning complexities into informative opportunity
+													and raw information into actionable insights.
 												</p>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-
-							<!--Page Other Images-->
-
-							<div class="col-md-6">
-								<div class="work-box">
-									<a href="exproject/img/expro1-2.JPG" data-lightbox="gallery-mf">
-										<div class="work-img">
-											<img src="exproject/img/expro1-2.JPG"
-												alt="Excel Project: Table of Performance" class="img-fluid">
-										</div>
-									</a>
-									<div class="work-content">
-										<div class="row">
-											<div class="col-sm-8">
-												<p class="w-title"><strong><a href="https://www.datacamp.com"
-															target="_blank">Excel
-															Project</a></strong> |
-													<small>Table of Performance</small>
-												</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!--end of image 2-->
-
-							<div class="col-md-6">
-								<div class="work-box">
-									<a href="exproject/img/expro1-3.JPG" data-lightbox="gallery-mf">
-										<div class="work-img">
-											<img src="exproject/img/expro1-3.JPG" alt="" class="img-fluid">
-										</div>
-									</a>
-									<div class="work-content">
-										<div class="row">
-											<div class="col-sm-8">
-												<p class="w-title"><strong><a href="https://www.datacamp.com"
-															target="_blank">Excel
-															Project</a></strong> |
-													<small>Table of Performance</small>
-												</p>
-											</div>
-										</div>
-									</div>
-
-								</div>
-							</div>
-							<!--end of image 3-->
-
-							<div class="col-md-6">
-								<div class="work-box">
-									<a href="exproject/img/expro1-4.JPG" data-lightbox="gallery-mf">
-										<div class="work-img">
-											<img src="exproject/img/expro1-4.JPG" alt="" class="img-fluid">
-										</div>
-									</a>
-									<div class="work-content">
-										<div class="row">
-											<div class="col-sm-8">
-												<p class="w-title"><strong><a href="https://www.datacamp.com"
-															target="_blank">Excel
-															Project</a></strong> |
-													<small>Table of Performance</small>
-												</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!--end of image 4-->
-
-							<div class="col-md-6">
-								<div class="work-box">
-									<a href="exproject/img/expro1-5.JPG" data-lightbox="gallery-mf">
-										<div class="work-img">
-											<img src="exproject/img/expro1-5.JPG" alt="" class="img-fluid">
-										</div>
-									</a>
-									<div class="work-content">
-										<div class="row">
-											<div class="col-sm-8">
-												<p class="w-title"><strong><a href="https://www.datacamp.com"
-															target="_blank">Excel
-															Project</a></strong> |
-													<small>Table of Performance</small>
-												</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!--end of image 5-->
-
-							<div class="col-md-6">
-								<div class="work-box">
-									<a href="exproject/img/expro1-6.JPG" data-lightbox="gallery-mf">
-										<div class="work-img">
-											<img src="exproject/img/expro1-6.JPG" alt="" class="img-fluid">
-										</div>
-									</a>
-									<div class="work-content">
-										<div class="row">
-											<div class="col-sm-8">
-												<p class="w-title"><strong><a href="https://www.datacamp.com"
-															target="_blank">Excel
-															Project</a></strong> |
-													<small>Table of Performance</small>
-												</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!--end of image 6-->
-
-							<div class="col-md-6">
-								<div class="work-box">
-									<a href="exproject/img/expro1-7.JPG" data-lightbox="gallery-mf">
-										<div class="work-img">
-											<img src="exproject/img/expro1-7.JPG" alt="" class="img-fluid">
-										</div>
-									</a>
-									<div class="work-content">
-										<div class="row">
-											<div class="col-sm-8">
-												<p class="w-title"><strong><a href="https://www.datacamp.com"
-															target="_blank">Excel
-															Project</a></strong> |
-													<small>Table of Performance</small>
-												</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!--end of image 7-->
 						</div>
 					</div>
 				</section>
-				<!--/ Section Portfolio End /-->
+
 
 
 				<!-- Start: Insights Section -->
-				<section class="colorlib-insights" data-section="insights">
-					<div class="colorlib-insights-narrow-content">
+				<section class="daviefolio-insights" data-section="insights">
+					<div class="daviefolio-insights-narrow-content">
 
 						<div class="row">
 							<div class="col-md-12">
@@ -298,21 +158,29 @@
 									<div class="col-md-12">
 										<div class="insignts-desc">
 											<span class="insights-heading-meta"><strong>Insights</strong></span>
-											<!--<h2 class="colorlib-about-heading"><strong>Who Am I?</strong> </h2>-->
+											<!--<h2 class="daviefolio-about-heading"><strong>Who Am I?</strong> </h2>-->
 											<p>I am a mathematics teacher transitioning into data analysis, bringing
-												extensive experience in analytical thinking and problem-solving. As head
-												of the academic department, I&#39;ve analyzed student test scores and
-												managed databases, which has sharpened my skills in identifying patterns
+												extensive experience in analytical thinking and problem-solving. As
+												head
+												of the academic department, I&#39;ve analyzed student test scores
+												and
+												managed databases, which has sharpened my skills in identifying
+												patterns
 												and effectively communicating findings.
-											<p>I&#39;ve completed real-world data projects, gaining experience in data
-												wrangling and cleaning with SQL and Python, and creating visualizations
+											<p>I&#39;ve completed real-world data projects, gaining experience in
+												data
+												wrangling and cleaning with SQL and Python, and creating
+												visualizations
 												using Power BI, Excel, and Google Looker Studio. My passion lies in
-												uncovering patterns in complex datasets and turning them into actionable
+												uncovering patterns in complex datasets and turning them into
+												actionable
 												insights that drive decision-making.
 											<p>Eager to fully transition into a data analyst role, I am committed to
-												applying my expertise in statistics, programming, and visualization to
+												applying my expertise in statistics, programming, and visualization
+												to
 												deliver impactful solutions. I am currently enhancing my skills in
-												Tableau and continuously advancing my knowledge as a data professional.
+												Tableau and continuously advancing my knowledge as a data
+												professional.
 											<p>To learn more about my experience and skills, please review the tools
 												I&#39;ve used and download my CV to see how I can add value to your
 												team!.
@@ -328,19 +196,81 @@
 
 
 
+				<section id="daviefolio-project-folio">
+					<div class="project-folio-container">
+
+						<!--Page Other Images-->
+
+						<div class="col-md-12">
+							<div class="work-box">
+								<a href="img/bg1.jpg" data-lightbox="gallery-mf">
+									<div class="work-img">
+										<img src="img/bg1.jpg" alt="Excel Project: Table of Performance"
+											class="img-fluid">
+									</div>
+								</a>
+								<div class="work-content">
+									<div class="row">
+										<div class="col-sm-8">
+											<p class="w-title"><strong><a href="https://www.datacamp.com"
+														target="_blank">Excel
+														Project</a></strong> |
+												<small>Table of Performance</small>
+											</p>
+											<p>
+												With decades in experience as a data scientist consultant and
+												instructor, Dean utilizes his expertise to navigate the intricacies
+												of imperfect data turning
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--end of image 2-->
+
+
+
+						<!--end of image 3-->
+
+
+
+						<!--end of image 4-->
+
+
+
+						<!--end of image 5-->
+
+
+
+						<!--end of image 6-->
+
+
+
+						<!--end of image 7-->
+					</div>
+
+				</section>
+				<!--/ Section Portfolio End /-->
+
+
+
+
+
+
 
 
 
 
 				<!-- Start: Project 2 Section -->
-				<section class="colorlib-project" data-section="project">
-					<div class="colorlib-project-narrow-content">
+				<section class="daviefolio-project" data-section="project">
+					<div class="daviefolio-project-narrow-content">
 
 						<div class="row">
 							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
 								data-animate-effect="fadeInLeft">
 								<!--<span class="heading-meta">My Work</span>-->
-								<h2 class="colorlib-project-heading animate-box">Recent Work</h2>
+								<h2 class="daviefolio-project-heading animate-box">Recent Work</h2>
 							</div>
 						</div>
 
@@ -542,13 +472,13 @@
 				<!-- End: Project 2 Section -->
 
 				<!-- Contact Start -->
-				<section class="colorlib-contact" data-section="contact">
-					<div class="colorlib-contact-narrow-content">
+				<section class="daviefolio-contact" data-section="contact">
+					<div class="daviefolio-contact-narrow-content">
 						<div class="row">
 							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
 								data-animate-effect="fadeInLeft">
 								<span class="contact-heading-meta">Get in Touch</span>
-								<h2 class="contact-colorlib-heading">Contact</h2>
+								<h2 class="contact-daviefolio-heading">Contact</h2>
 							</div>
 							<div class="col-md-12">
 								<div class="contact-area wow fadeInUp" data-wow-delay="0.1s" id="contact-section">
@@ -608,42 +538,39 @@
 					</div>
 				</section>
 				<!-- Contact End -->
-			</div><!-- end:colorlib-main -->
+			</div><!-- end:daviefolio-main -->
 
 			<!-- Sidebar -->
-			<aside id="colorlib-folio-aside" role="complementary" class="border js-fullheight">
+			<aside id="daviefolio-aside" role="complementary" class="border js-fullheight">
 				<div class="text-center">
 					<!-- Author Image -->
-					<div class="author-img" style="background-image: url(images/about.jpg);"></div>
-					<h1 id="colorlib-logo"><a href="index.html">David Owino</a></h1>
+					<div class="author-img" style="background-image: url(img/about/about.jpg);"></div>
+					<h1 id="daviefolio-logo"><a href="index.html">David Owino</a></h1>
 					<span class="position"><a href="#">Data Analyst</a></span>
 				</div>
 
 				<!-- Main Navigation Menu -->
-				<nav id="colorlib-main-menu" role="navigation" class="navbar">
-					<div id="navbar" class="collapse">
-						<ul>
-							<li class="active"><a href="#" data-nav-section="home">Home</a></li>
-							<li><a href="#" data-nav-section="about">About</a></li>
-							<li><a href="#" data-nav-section="services">Services</a></li>
-							<li><a href="#" data-nav-section="skills">Skills</a></li>
-							<li><a href="#" data-nav-section="education">Education</a></li>
-							<li><a href="#" data-nav-section="experience">Experience</a></li>
-							<li><a href="#" data-nav-section="work">Work</a></li>
-							<li><a href="#" data-nav-section="blog">Blog</a></li>
-							<li><a href="#" data-nav-section="contact">Contact</a></li>
-						</ul>
+				<div class="row">
+					<div class="project-desc">
+						<span class="project-heading-meta"><strong>RECENT PROJECTS</strong></span>
+						<!--<h2 class="daviefolio-about-heading"><strong>Who Am I?</strong> </h2>-->
+						<p><span class="project-heading-meta"><strong>project 1</strong></span></p>
+						<p><span class="project-heading-meta"><strong>project 2</strong></span></p>
+						<p><span class="project-heading-meta"><strong>project 3</strong></span></p>
+						<p><span class="project-heading-meta"><strong>project 4</strong></span></p>
+						<p><span class="project-heading-meta"><strong>project 5</strong></span></p>
 					</div>
-				</nav>
-
+				</div>
 				<!-- Footer Section -->
-				<div class="colorlib-footer">
+				<div class="daviefolio-footer">
 					<ul>
 						<li><a href="https://web.facebook.com/Daviedavie/" target="_blank"><i
-									class="icon-facebook2"></i></a></li>
+									class="icon-facebook2"></i></a>
+						</li>
 						<li><a href="https://x.com/da_owino" target="_blank"><i class="icon-twitter"></i></a></li>
 						<li><a href="https://www.instagram.com/owinodavid/" target="_blank"><i
-									class="icon-instagram1"></i></a></li>
+									class="icon-instagram1"></i></a>
+						</li>
 						<li><a href="https://github.com/Daviedavie100" target="_blank"><i class="icon-github"></i></a>
 						</li>
 						<li><a href="https://www.linkedin.com/in/profile-davidowino/" target="_blank"><i
@@ -655,11 +582,11 @@
 						</small></p>
 				</div>
 			</aside>
-			<!-- End: colorlib-aside-->
+			<!-- End: daviefolio-aside-->
 		</div>
 		<!-- container-wrap end-->
 	</div>
-	<!-- colorlib-page end-->
+	<!-- daviefolio-page end-->
 
 
 
