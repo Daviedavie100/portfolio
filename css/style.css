@@ -2645,19 +2645,17 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
                  END   
 ======================================*/
 
-
-
-
-/* General styling */
+/* General styling for the title and first image section*/
 .portfolio-mf {
   padding: 60px 0;
   background-color: #f8f9fa;
 }
 
 .title-box h3 {
-  font-size: 2.5rem;
+  font-size: 3.0rem;
   margin-bottom: 10px;
-  color: #333;
+  color:#080707;
+  text-transform: uppercase;
 }
 
 .title-line-mf {
@@ -2667,15 +2665,30 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   margin: 0 auto 30px auto;
 }
 
+/* projectfolio */
+#daviefolio-project-folio {
+  margin: 1em !important;
+  padding-bottom: 0;
+}
+
+/* work-box styling */
 .work-box {
   margin-bottom: 30px;
   position: relative;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.work-box:hover {
+  transform: translateY(-5px);
 }
 
 .work-img img {
   width: 100%;
   height: auto;
-  border-radius: 8px;
+  border-radius: 8px 8px 0 0;
   transition: transform 0.3s ease;
 }
 
@@ -2683,20 +2696,129 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   transform: scale(1.05);
 }
 
-.title-container {
-  margin-top: 15px;
+/* work-content styling */
+.work-content {
+  padding: 0 2em !important;
 }
 
+.title-container {
+  padding-top: 1em !important;
+  margin-top: 15px !important;
+}
+
+.content-line-mf {
+  width: 60px !important;
+  height: 4px !important;
+  background-color: #ff0000; 
+  margin: 15px auto; 
+  position: absolute;
+}
+
+/* w-title styling */
 .w-title {
   font-size: 1.5rem;
   color: #333;
   margin-bottom: 5px;
+  display: flex;
   transition: color 0.3s;
 }
 
 .w-title:hover {
   color: #007bff;
 }
+
+.w-title a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.w-title a:hover {
+  color: #0056b3;
+}
+
+.work-content p {
+  font-size: 15px !important;
+  color: #141414;
+  line-height: 1.6;
+}
+
+/* General styling for the insights section */
+.insignts-desc {
+  padding: 20px !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  line-height: 1.6;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease;
+}
+
+.insignts-desc:hover {
+  transform: translateY(-5px);
+}
+
+.insights-heading-meta {
+  display: block;
+  font-size: 1.5rem;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.insights-heading-meta strong {
+  font-weight: bold;
+  font-size: 700;
+  text-transform: uppercase;
+}
+
+.insignts-desc p {
+  font-size: 16px !important;
+  color:#fff;
+  margin-bottom: 15px;
+}
+
+/* General styling for the insights section */
+.s-title {
+  padding-top: 20px !important;
+  color:#0056b3;
+  margin-bottom: 5px;
+  font-weight: 600 !important;
+  font-size: 18px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Responsive adjustments */
 @media (max-width: 1200px) {
@@ -2708,6 +2830,8 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
       font-size: 1.4rem;
   }
 }
+
+
 
 @media (max-width: 768px) {
   .portfolio-mf {
@@ -2726,6 +2850,9 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
       font-size: 1.3rem;
   }
 }
+
+
+
 
 @media (max-width: 576px) {
   .portfolio-mf {
@@ -2751,64 +2878,42 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
 
 
 
+@media (max-width: 768px) {
+  /* Adjust paragraph styling for smaller screens */
+  .title-container p {
+      font-size: 0.9rem;
+      margin-top: 10px;
+      margin-bottom: 10px;
+  }
 
-
-
-
-
-
-/* General styling for the work-box */
-.work-box {
-  margin-bottom: 30px;
-  position: relative;
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  /* Adjust line width for smaller screens */
+  .content-line-mf {
+      width: 40px;
+  }
 }
 
-.work-box:hover {
-  transform: translateY(-5px);
+@media (max-width: 576px) {
+  /* Further adjustments for mobile devices */
+  .title-container p {
+      font-size: 0.85rem;
+  }
+
+  .content-line-mf {
+      width: 30px;
+  }
 }
 
-.work-img img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px 8px 0 0;
-  transition: transform 0.3s ease;
-}
 
-.work-img img:hover {
-  transform: scale(1.05);
-}
 
-.work-content {
-  padding: 15px;
-}
 
-.w-title {
-  font-size: 1.25rem;
-  color: #333;
-  margin-bottom: 5px;
-  display: flex;
-  align-items: center;
-}
 
-.w-title a {
-  color: #007bff;
-  text-decoration: none;
-  transition: color 0.3s;
-}
 
-.w-title a:hover {
-  color: #0056b3;
-}
 
-.w-title small {
-  margin-left: 8px;
-  font-size: 0.85rem;
-  color: #666;
-}
+
+
+
+
+
 
 /* Responsive adjustments */
 @media (max-width: 1200px) {
@@ -2866,36 +2971,7 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
 
 
 
-/* General styling for the insights section */
-.insignts-desc {
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  line-height: 1.6;
-  margin-bottom: 30px;
-  transition: transform 0.3s ease;
-}
 
-.insignts-desc:hover {
-  transform: translateY(-5px);
-}
-
-.insights-heading-meta {
-  display: block;
-  font-size: 1.5rem;
-  color: #007bff;
-  margin-bottom: 15px;
-}
-
-.insights-heading-meta strong {
-  font-weight: bold;
-}
-
-.insignts-desc p {
-  font-size: 16px !important;
-  color:#fff;
-  margin-bottom: 15px;
-}
 
 /* Responsive adjustments */
 @media (max-width: 1200px) {
