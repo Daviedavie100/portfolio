@@ -759,7 +759,13 @@ padding: 0;: This removes all internal spacing within the element.*/
 /******** SECTIONS *********/
 /***************************/
 
-.daviefolio-about, .daviefolio-blog, .daviefolio-contact, .daviefolio-education, .daviefolio-services, .daviefolio-skills, .daviefolio-work {
+.daviefolio-about, 
+.daviefolio-blog, 
+.daviefolio-contact, 
+.daviefolio-education, 
+.daviefolio-services, 
+.daviefolio-skills, 
+.daviefolio-work {
   clear: both !important;
   width: 100% !important;
   display: block !important;
@@ -809,14 +815,20 @@ padding: 0;: This removes all internal spacing within the element.*/
 }
 
 .daviefolio-narrow-content {
-  padding: 0 2em !important;
+  padding: 0 1em !important;
 }
 
 @media screen and (max-width: 768px) {
-  .daviefolio-about, .daviefolio-blog, .daviefolio-contact, .daviefolio-education, .daviefolio-services, .daviefolio-skills, .daviefolio-work {
-    padding-top: 3em !important;
+  .daviefolio-about, 
+  .daviefolio-blog, 
+  .daviefolio-contact, 
+  .daviefolio-education, 
+  .daviefolio-services, 
+  .daviefolio-skills, 
+  .daviefolio-work {
+    padding-top: 2em !important;
     /*5em*/
-    padding-bottom: 4em !important;
+    padding-bottom: 3em !important;
     /*8em*/
   }
 }
@@ -830,39 +842,35 @@ padding: 0;: This removes all internal spacing within the element.*/
 @media screen and (max-width: 768px) {
   .daviefolio-heading {
     margin-bottom: 3em !important;
-
-
     padding-left: 2px !important;
   }
 }
 
-/* About and work education 
-
-.row-bottom-padded-sm {
-padding-bottom: 1em;
-}
-
-@media screen and (max-width: 768px) {
-.row-bottom-padded-sm {
-padding-bottom: 1em;
-}
-}
-*/
 
 /*************************/
 /********* ABOUT *********/
 /*************************/
 
+.row-bottom-padded-sm {
+  margin: 0;
+  padding-bottom: 1em;
+  }
+  
+  @media screen and (max-width: 768px) {
+  .row-bottom-padded-sm {
+  padding-bottom: 1em;
+  }
+  }
+
 .about-desc {
-  /*margin: 0 1em 0 0.8em !important;*/
-  /*padding    :0 1em 0 1em; 0 2em 0 2em*/
   font-family: "ariel"sans-serif;
+  padding: 0.5em 1em !important;
   font-size: 16px !important;
-  padding: 1em !important;
+  /*padding: 1em !important;*/
   background: rgba(243, 242, 242, 0.5);
   opacity: 1;
   color: #000;
-  border-radius: 8px !important;
+  border-radius: 0 15px !important;
 }
 
 .about-tools {
@@ -878,31 +886,29 @@ padding-bottom: 1em;
 
 /*TOOLS*/
 .tools {
-  padding: 1.5em !important;
+  padding:1em 2em !important;
   -webkit-box-shadow: 0 0 56px -8px rgba(0, 0, 0, 0.17);
   -moz-box-shadow: 0 0 56px -8px rgba(0, 0, 0, 0.17);
   -ms-box-shadow: 0 0 56px -8px rgba(0, 0, 0, 0.17);
   -o-box-shadow: 0 0 56px -8px rgba(0, 0, 0, 0.17);
   box-shadow: 0 0 56px -8px rgba(0, 0, 0, 0.17);
   /*border-bottom     : 2px solid #2c98f0;*/
-  margin-bottom: 40px !important;
+  margin-bottom: 30px !important;
   /*separation of the tools column*/
   position: relative;
   z-index: 0;
-  height: 150px !important;
+  height: 140px !important;
 }
 
 .tools .icon2 {
   display: block;
   margin-bottom: 20px !important;
   /*text from icon*/
-
 }
 
 .tools .icon2 i {
   font-size: 64px;
   /*color    : #2c98f0;*/
-
 }
 
 .tools h2 {
@@ -914,6 +920,7 @@ padding-bottom: 1em;
 
 @media screen and (max-width: 768px) {
   .tools {
+    padding:1em 4em !important;
     margin-bottom: 2em;
     /*4em-bottom margin*/
   }
@@ -976,7 +983,6 @@ padding-bottom: 1em;
 .btn-hire:hover {
   background-color: #0056b3;
   /* Darker shade on hover */
-
 }
 
 /*******************************/
