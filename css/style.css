@@ -196,18 +196,19 @@ justify-items: center;
   order: 2;
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
 #daviefolio-aside {
-  -ms-overflow-style: none;
-  /* IE and Edge */
+  /* Hide scrollbar in Firefox */
   scrollbar-width: none;
-  /* Firefox */
+
+  /* Hide scrollbar in Internet Explorer and Edge */
+  -ms-overflow-style: none;
 }
 
-/* Hide scrollbar for Webkit browsers */
+/* Hide scrollbar for WebKit browsers (Chrome, Safari) */
 #daviefolio-aside::-webkit-scrollbar {
   display: none;
 }
+
 
 /* Media query for small screens */
 @media screen and (max-width: 768px) {
