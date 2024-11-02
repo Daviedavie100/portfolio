@@ -301,7 +301,7 @@
 
 	/* UPDATED*/
 
-	// Ensure the DOM is fully loaded
+	/*// Ensure the DOM is fully loaded
 	window.addEventListener('DOMContentLoaded', function () {
 		// Get all filter buttons and the "Load More" button
 		const filterButtons = document.querySelectorAll("#workfolio-filter li");
@@ -359,12 +359,12 @@
 		// Adjust heights when the page initially loads
 		adjustHeights();
 	});
+*/
 
 
 
 
-
-	/*// Ensure the DOM is fully loaded
+	// Ensure the DOM is fully loaded
 	window.addEventListener('DOMContentLoaded', function () {
 		// Get all filter buttons and the "Load More" button
 		const filterButtons = document.querySelectorAll("#workfolio-filter li");
@@ -413,7 +413,7 @@
 		// Adjust heights when the page initially loads
 		adjustHeights();
 	});
-*/
+
 	/*CAN REPLACE UP*/
 	/*
 	document.addEventListener("DOMContentLoaded", function () {
