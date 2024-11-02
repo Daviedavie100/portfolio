@@ -2662,7 +2662,26 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
 #daviefolio-project-folio {
   margin: 0 !important;
   padding-bottom: 0;
+  padding-left: 2em !important;
+  padding-right: 2em !important;
 }
+
+/* Media query for medium screens */
+@media (max-width: 768px) {
+  #daviefolio-project-folio {
+    padding-left: 1.5em !important;
+    padding-right: 1.5em !important;
+  }
+}
+
+/* Media query for small screens */
+@media (max-width: 480px) {
+  #daviefolio-project-folio {
+    padding-left: 1em !important;
+    padding-right: 1em !important;
+  }
+}
+
 
 .portfolio-mf {
   padding: 60px 0;
@@ -2684,8 +2703,9 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
 }
 
 /* work-box styling */
-.work-box {
+.project-work-box {
   margin-bottom: 30px;
+ 
   position: relative;
   background: #fff;
   border-radius: 8px;
@@ -2693,23 +2713,50 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   transition: transform 0.3s ease;
 }
 
-.work-box:hover {
+/* Media query for larger screens 
+@media (min-width: 768px) {
+  .project-work-box {
+    max-width: 100%; 
+    padding: 2em;
+  }
+}
+*/
+/* Media query for small screens 
+@media (max-width: 480px) {
+  .project-work-box {
+    max-width: 100%; 
+    border-radius: 5px; 
+    padding: 1em;
+  }
+}
+*/
+
+.project-work-box:hover {
   transform: translateY(-5px);
 }
 
-.work-img img {
+.project-work-img img {
   width: 100%;
   height: auto;
   border-radius: 8px 8px 0 0;
   transition: transform 0.3s ease;
 }
 
-.work-img img:hover {
+/* Additional media query for smaller screens */
+@media (max-width: 768px) {
+  .project-work-img img {
+    min-width: min-content !important;
+    border-radius: 5px 5px 0 0; 
+  }
+}
+
+
+.project-work-img img:hover {
   transform: scale(1.05);
 }
 
 /* work-content styling */
-.work-content {
+.project-work-content {
   padding: 0 2em !important;
 }
 
