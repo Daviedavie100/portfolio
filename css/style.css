@@ -2840,11 +2840,11 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   margin-bottom: 30px;
   transition: transform 0.3s ease;
 }
-
+/*
 .insignts-desc:hover {
   transform: translateY(-5px);
 }
-
+*/
 .insights-heading-meta {
   display: block;
   font-size: 1.5rem;
@@ -2865,6 +2865,50 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
 }
 
 /* IMAGES: General styling for the insights section */
+
+
+
+
+
+.i-work-box {
+  margin-bottom: 30px;
+  position: relative;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+
+.i-work-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  height: 100%; /* Ensures the image container has a defined height */
+}
+
+.i-work-img img {
+  padding: 2em;
+  max-width: 100%; /* Ensures the image scales within the container */
+  max-height: 100%; /* Prevents the image from overflowing */
+  display: block;
+  border-radius: 8px 8px 0 0;
+  transition: transform 0.3s ease;
+}
+
+.i-work-img img:hover {
+  transform: scale(1.05);
+}
+
+
+
+
+
+
+
 .s-title {
   font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
   padding-top: 20px !important;
