@@ -2718,7 +2718,7 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   transform: scale(1.05);
 }
 
-/* Responsive styling */
+/* Responsive styling 
 @media (max-width: 768px) {
   .project-work-box {
     margin-bottom: 20px;
@@ -2740,7 +2740,7 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
     width: 30%;
   }
 }
-
+*/
 
 /* Media query for larger screens 
 @media (min-width: 768px) {
@@ -2789,43 +2789,44 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   padding: 0 2em !important;
 }
 
-.title-container {
+.project-title-container {
   padding-top: 1em !important;
-  margin-top: 15px !important;
+  /*padding-bottom: 1em !important;*/
+  margin-top: 5px !important;
 }
 
-.content-line-mf {
-  width: 60px !important;
+.project-content-line-mf {
+  width: 120px !important;
   height: 4px !important;
   background-color: #ff0000; 
-  margin: 15px auto; 
+  margin: 25px auto; 
   position: absolute;
 }
 
 /* w-title styling */
-.w-title {
-  font-size: 1.5rem;
+.p-w-title {
+  font-size: 2rem;
   color: #333;
   margin-bottom: 5px;
   display: flex;
   transition: color 0.3s;
 }
 
-.w-title:hover {
+.p-w-title:hover {
   color: #007bff;
 }
 
-.w-title a {
+.p-w-title a {
   color: #007bff;
   text-decoration: none;
   transition: color 0.3s;
 }
 
-.w-title a:hover {
+.p-w-title a:hover {
   color: #0056b3;
 }
 
-.work-content p {
+.project-work-content p {
   font-size: 15px !important;
   color: #141414;
   line-height: 1.6;
