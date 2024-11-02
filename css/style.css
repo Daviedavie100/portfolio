@@ -2894,7 +2894,7 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
 }
 
 .i-work-img img:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 .i-work-content {
