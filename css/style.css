@@ -2865,11 +2865,6 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
 }
 
 /* IMAGES: General styling for the insights section */
-
-
-
-
-
 .i-work-box {
   margin-bottom: 30px;
   position: relative;
@@ -2879,7 +2874,6 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   transition: transform 0.3s ease;
   overflow: hidden;
 }
-
 
 .i-work-img {
   display: flex;
@@ -2903,14 +2897,12 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   transform: scale(1.05);
 }
 
-
-
-
-
-
+.i-work-content {
+  padding: 0 2em !important;
+}
 
 .s-title {
-  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
   padding-top: 20px !important;
   color:#0056b3;
   margin-bottom: 5px;
@@ -2918,6 +2910,10 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   font-size: 18px !important;
 }
 
+.i-work-content p {
+  font-family: "Verdana", sans-serif;
+  color: #333;
+}
 /* Responsive adjustments */
 /*
 @media (max-width: 1200px) {
