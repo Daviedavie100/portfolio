@@ -2666,23 +2666,6 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   padding-right: 2em !important;
 }
 
-/* Media query for medium screens */
-@media (max-width: 768px) {
-  #daviefolio-project-folio {
-    padding-left: 1.5em !important;
-    padding-right: 1.5em !important;
-  }
-}
-
-/* Media query for small screens */
-@media (max-width: 480px) {
-  #daviefolio-project-folio {
-    padding-left: 1em !important;
-    padding-right: 1em !important;
-  }
-}
-
-
 .portfolio-mf {
   padding: 60px 0;
   background-color: #f8f9fa;
@@ -2702,16 +2685,62 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   margin: 0 auto 30px auto;
 }
 
-/* work-box styling */
 .project-work-box {
   margin-bottom: 30px;
- 
   position: relative;
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  overflow: hidden;
 }
+
+
+.project-work-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  height: 100%; /* Ensures the image container has a defined height */
+}
+
+.project-work-img img {
+  padding: 2em;
+  max-width: 100%; /* Ensures the image scales within the container */
+  max-height: 100%; /* Prevents the image from overflowing */
+  display: block;
+  border-radius: 8px 8px 0 0;
+  transition: transform 0.3s ease;
+}
+
+.project-work-img img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .project-work-box {
+    margin-bottom: 20px;
+  }
+
+  .project-work-img img {
+    border-radius: 5px 5px 0 0;
+    width: 70%;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-work-box {
+    margin-bottom: 15px;
+  }
+
+  .project-work-img img {
+    border-radius: 3px 3px 0 0;
+    width: 30%;
+  }
+}
+
 
 /* Media query for larger screens 
 @media (min-width: 768px) {
@@ -2730,7 +2759,7 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   }
 }
 */
-
+/*
 .project-work-box:hover {
   transform: translateY(-5px);
 }
@@ -2741,12 +2770,12 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   border-radius: 8px 8px 0 0;
   transition: transform 0.3s ease;
 }
-
+*/
 /* Additional media query for smaller screens */
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
   .project-work-img img {
-    min-width: min-content !important;
-    border-radius: 5px 5px 0 0; 
+    width: 100% !important;
+    border-radius: 5px 5px 0 0;
   }
 }
 
@@ -2754,7 +2783,7 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
 .project-work-img img:hover {
   transform: scale(1.05);
 }
-
+*/
 /* work-content styling */
 .project-work-content {
   padding: 0 2em !important;
