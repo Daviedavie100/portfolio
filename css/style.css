@@ -864,14 +864,19 @@ padding: 0;: This removes all internal spacing within the element.*/
   }
 
 .about-desc {
-  font-family: "ariel"sans-serif;
   padding: 0.5em 1em !important;
-  font-size: 16px !important;
   /*padding: 1em !important;*/
   background: rgba(243, 242, 242, 0.5);
   opacity: 1;
-  color: #000;
   border-radius: 0 15px !important;
+}
+
+.about-desc p {
+  /*font-family: "ariel", sans-serif;*/
+  font-family: "Verdana", Geneva, Tahoma, sans-serif;
+  font-size: 16px !important;
+  color: #000;
+  text-align: left;
 }
 
 .about-tools {
@@ -989,6 +994,19 @@ padding: 0;: This removes all internal spacing within the element.*/
 /*******************************/
 /********* SERVICES ************/
 /*******************************/
+.daviefolio-skills .col-md-12 p {
+  text-align: left; /* Aligns the text to the left */
+  margin: 0; /* Optional: Removes default margin for a cleaner look */
+}
+
+@media screen and (max-width: 768px) {
+  .daviefolio-skills .col-md-12 p {
+    text-align: center;
+    margin: 0 1em;
+  }
+}
+
+
 .row-pt-md {
   padding: 2em 1em 0 0.8em;
 }
