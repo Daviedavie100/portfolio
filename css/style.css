@@ -3073,14 +3073,14 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
 .daviefolio-project-narrow-content .contact-daviefolio-heading {
   color: #2c98f0;
 }
-
+/*
 .row.animate-box {
   display: flex;
   justify-content: space-between;
   width: 100%; 
   overflow: hidden; 
 }
-
+*/
 .resentproject {
   padding: 0.5em !important;
 }
