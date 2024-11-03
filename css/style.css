@@ -2830,6 +2830,7 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   font-size: 15px !important;
   color: #141414;
   line-height: 1.6;
+  text-align: left;
 }
 
 /* INSIGHTS: General styling for the insights section */
@@ -2862,6 +2863,7 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   font-size: 16px !important;
   color:#fff;
   margin-bottom: 15px;
+  text-align: left;
 }
 
 /* IMAGES: General styling for the insights section */
@@ -2913,6 +2915,7 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
 .i-work-content p {
   font-family: "Verdana", sans-serif;
   color: #333;
+  text-align: left;
 }
 /* Responsive adjustments */
 /*
