@@ -68,18 +68,18 @@
 		<a href="#" class="js-daviefolio-nav-toggle daviefolio-nav-toggle" data-toggle="collapse" data-target="#navbar"
 			aria-expanded="false" aria-controls="navbar"><i></i>
 		</a>
-		<div class="collapse navbar-collapse justify-content-end" id="navbarDefault">
+		<div id="navbarDefault">
 			<ul class="navbar-nav">
-				<li class="nav-item">
+				<li>
 					<a class="nav-link js-scroll" href="index.html">Home</a>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link js-scroll" href="#work">Work</a>
+				<li>
+					<a class="nav-link js-scroll" href="#projects">Work</a>
 				</li>
-				<li class="nav-item">
+				<li>
 					<a class="nav-link js-scroll" href="#blog">Blog</a>
 				</li>
-				<li class="nav-item">
+				<li>
 					<a class="nav-link js-scroll" href="#contact">Contact</a>
 				</li>
 			</ul>
@@ -102,7 +102,6 @@
 			<div id="daviefolio-main">-->
 
 			<!--Page title-->
-
 			<section id="daviefolio-project-folio" class="portfolio-mf sect-pt4 route">
 				<div class="project-folio-container">
 					<div class="row">
@@ -251,7 +250,7 @@
 			<!-- End: Insights Section -->
 
 			<!--Page Other Images-->
-			<section class="daviefolio-images" data-section="images">
+			<section class="daviefolio-images" id="projects" data-section="images">
 				<div class="daviefolio-images-narrow-content">
 					<div class="col-md-12">
 						<div class="i-work-box">
@@ -408,13 +407,13 @@
 			<!--End: Section /-->
 
 			<!-- Start: Recent Project-->
-			<section class="daviefolio-project-resent" data-section="project">
+			<section class="daviefolio-project-resent" id="blog" data-section="project">
 				<div class="daviefolio-project-narrow-content">
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
 							data-animate-effect="fadeInLeft">
 							<!--<span class="contact-heading-meta">WORK</span>-->
-							<h2 class="contact-daviefolio-heading">RECENT WORK</h2>
+							<h2 class="contact-daviefolio-heading">BLOG</h2>
 						</div>
 					</div>
 
@@ -518,7 +517,7 @@
 
 
 			<!-- Start: Contact -->
-			<section class="daviefolio-contact" data-section="contact">
+			<section class="daviefolio-contact" id="contact" data-section="contact">
 				<div class="daviefolio-contact-narrow-content">
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
@@ -631,6 +630,7 @@
 
 	<script src="lib/lightbox/js/lightbox.min.js"></script>
 	<script src="lib/loadmore/lod-more.js"></script>
+	<script src="lib/smothscrolling.js"></script>
 
 	<!-- Contact Javascript File -->
 	<script src="mail/jqBootstrapValidation.min.js"></script>
