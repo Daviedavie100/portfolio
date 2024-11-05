@@ -3372,59 +3372,65 @@ p {
 
 
 
+
+
 /* Navbar Container */
-.navbar-collapse {
-  justify-content: end;
+#navbarDefault {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end; /* Align the list to the right */
+  padding: 10px 20px;
+  background-color: transparent; /* Transparent background */
+  right: 100px;
 }
 
-.navbar-nav {
+/* Navbar List */
+#navbarDefault .navbar-nav {
+  position: relative;
   display: flex;
-  align-items: center;
+  gap: 20px; /* Space between each menu item */
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.navbar-nav .nav-item {
-  margin-left: 20px; /* Space between each menu item */
-}
-
-.navbar-nav .nav-link {
-  color: #d60c0c; /* Default link color */
+/* Navbar Links */
+#navbarDefault .navbar-nav .nav-link {
+  color: #13e224; /* Default link color */
   font-weight: 500;
-  padding: 10px;
   text-decoration: none;
-  transition: color 0.3s;
+  padding: 10px 15px;
+  transition: color 0.3s, background-color 0.3s;
 }
 
-.navbar-nav .nav-link:hover,
-.navbar-nav .nav-link:focus {
+/* Hover and Focus States */
+#navbarDefault .navbar-nav .nav-link:hover,
+#navbarDefault .navbar-nav .nav-link:focus {
   color: #007bff; /* Hover color */
-  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.1); /* Light transparent background on hover */
+  border-radius: 5px;
 }
 
-/* Active Link */
-.navbar-nav .nav-link.active {
+/* Active Link Styling */
+#navbarDefault .navbar-nav .nav-link.active {
   color: #007bff;
-  border-bottom: 2px solid #007bff; /* Optional underline effect to indicate active link */
+  border-bottom: 2px solid #007bff;
 }
 
-/* Responsive Design */
+/* No Responsive Column Layout */
 @media (max-width: 768px) {
-  .navbar-collapse {
-      flex-direction: column;
-  }
-
-  .navbar-nav {
-      flex-direction: column;
-      text-align: center;
-  }
-
-  .navbar-nav .nav-item {
-      margin-left: 0;
-      margin-bottom: 10px;
+  #navbarDefault .navbar-nav {
+      flex-direction: row; /* Keep horizontal layout on small screens */
+      justify-content: flex-end; /* Align items to the right */
   }
 }
+
+
+
+
+
+
+
 
 
 
