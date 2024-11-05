@@ -1270,7 +1270,6 @@ canvas {
   border-color: #2c98f0;
   box-shadow: none;
   /* Remove inner shadow for active */
-
 }
 
 #workfolio-filter li.active {
@@ -1518,7 +1517,6 @@ canvas {
   /*width        : 100%;
   display        : block;
   margin-bottom  : 30px;*/
-
 }
 
 .project-folio img {
@@ -1544,7 +1542,6 @@ canvas {
   width: 100%;
 }
 
-
 .pdesc span {
   font-family: "Quicksand", Arial, sans-serif;
   color: #000;
@@ -1558,7 +1555,6 @@ canvas {
   -webkit-transform: translate3d(0, 15px, 0);
   transform: translate3d(0, 15px, 0);
 }
-
 
 .project-folio:hover .pdesc,
 .project-folio:active .pdesc {
