@@ -991,9 +991,10 @@ padding: 0;: This removes all internal spacing within the element.*/
   /* Darker shade on hover */
 }
 
-/*******************************/
-/********* SERVICES ************/
-/*******************************/
+/******************************/
+/********* SKILLS CSS *********/
+/******************************/
+
 .daviefolio-skills .col-md-12 p {
   text-align: left; /* Aligns the text to the left */
   margin: 0; /* Optional: Removes default margin for a cleaner look */
@@ -1006,185 +1007,6 @@ padding: 0;: This removes all internal spacing within the element.*/
   }
 }
 
-
-.row-pt-md {
-  padding: 2em 1em 0 0.8em;
-}
-
-.iservices {
-  padding-top: 1em;
-  margin-right: 1em;
-  margin-left: 0.8em;
-  margin-bottom: 60px;
-  position: relative;
-  z-index: 0;
-  height: 20em;
-}
-
-@media screen and (max-width: 768px) {
-  .iservices {
-    margin-bottom: 4em;
-    height: fit-content;
-  }
-}
-
-.iservices .icon {
-  position: absolute;
-  top: -20px;
-  left: 0;
-  right: 0;
-  width: 100px;
-  height: 50px;
-  display: table;
-  margin: 0 auto;
-  background: #2c98f0;
-}
-
-.iservices .icon:after, .iservices .icon:before {
-  position: absolute;
-  left: 0;
-  right: 0;
-  content: "";
-}
-
-.iservices .icon:before {
-  top: -30px;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 50px 30px 50px;
-  border-color: transparent transparent #2c98f0 transparent;
-}
-
-.iservices .icon:after {
-  bottom: -30px;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 30px 50px 0 50px;
-  border-color: #2c98f0 transparent transparent transparent;
-}
-
-.iservices .icon i {
-  font-family: "Quicksand", Arial, sans-serif;
-  font-size: 30px;
-  color: #fff;
-  z-index: 1;
-  display: table-cell;
-  vertical-align: middle;
-}
-
-.iservices .desc {
-  margin-top: 50px;
-}
-
-.iservices .desc h3 {
-  font-family: "Quicksand", Arial, sans-serif;
-  color: #2fa499;
-  font-size: 16px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.iservices.color-1 {
-  border-bottom: 2px solid #04f538;
-}
-
-.iservices.color-1 .icon {
-  background: #04f538;
-}
-
-.iservices.color-1 .icon:before {
-  border-color: transparent transparent #04f538 transparent;
-}
-
-.iservices.color-1 .icon:after {
-  border-color: #04f538 transparent transparent transparent;
-}
-
-.iservices.color-2 {
-  border-bottom: 2px solid #ec5453;
-}
-
-.iservices.color-2 .icon {
-  background: #ec5453;
-}
-
-.iservices.color-2 .icon:before {
-  border-color: transparent transparent #ec5453 transparent;
-}
-
-.iservices.color-2 .icon:after {
-  border-color: #ec5453 transparent transparent transparent;
-}
-
-.iservices.color-3 {
-  border-bottom: 2px solid #f9bf3f;
-}
-
-.iservices.color-3 .icon {
-  background: #f9bf3f;
-}
-
-.iservices.color-3 .icon:before {
-  border-color: transparent transparent #f9bf3f transparent;
-}
-
-.iservices.color-3 .icon:after {
-  border-color: #f9bf3f transparent transparent transparent;
-}
-
-.iservices.color-4 {
-  border-bottom: 2px solid #a84cb8;
-}
-
-.iservices.color-4 .icon {
-  background: #a84cb8;
-}
-
-.iservices.color-4 .icon:before {
-  border-color: transparent transparent #a84cb8 transparent;
-}
-
-.iservices.color-4 .icon:after {
-  border-color: #a84cb8 transparent transparent transparent;
-}
-
-.iservices.color-5 {
-  border-bottom: 2px solid #2fa499;
-}
-
-.iservices.color-5 .icon {
-  background: #2fa499;
-}
-
-.iservices.color-5 .icon:before {
-  border-color: transparent transparent #2fa499 transparent;
-}
-
-.iservices.color-5 .icon:after {
-  border-color: #2fa499 transparent transparent transparent;
-}
-
-.iservices.color-6 {
-  border-bottom: 2px solid #4054b2;
-}
-
-.iservices.color-6 .icon {
-  background: #4054b2;
-}
-
-.iservices.color-6 .icon:before {
-  border-color: transparent transparent #4054b2 transparent;
-}
-
-.iservices.color-6 .icon:after {
-  border-color: #4054b2 transparent transparent transparent;
-}
-
-/******************************/
-/********* SKILLS CSS *********/
-/******************************/
 .section-header-hard p::before {
   position: absolute;
   content: "";
@@ -1490,7 +1312,6 @@ canvas {
   /* Fully visible when shown */
   transform: translateY(0);
   /* Reset position */
-
 }
 
 /* General styles for the workfolio items */
@@ -1510,7 +1331,6 @@ canvas {
   /* Allows absolute positioning for child elements 
   z-index : 1;*/
   /* Set a higher z-index to keep it on top */
-
 }
 
 /* Style for the image itself */
@@ -1555,12 +1375,10 @@ canvas {
 
 }
 
-
 /* Show workfolio items based on filter */
 .filter-1, .filter-2, .filter-3, .filter-4 {
   display: block;
   /* Visible when filter matches */
-
 }
 
 /***** CONTENT *****/
@@ -1763,7 +1581,6 @@ canvas {
   }
 }
 
-
 .pcon {
   position: relative;
   bottom: 50px;
@@ -1776,7 +1593,6 @@ canvas {
   /* Ensure it spans the width */
   padding: 10px;
   /* Optional padding */
-
 }
 
 .pcon .icon {
@@ -1807,7 +1623,6 @@ canvas {
 .pcon .icon span a:hover {
   color: #ff9800;
   /* Custom hover color for the icons */
-
 }
 
 /* Hidden items (Initially hidden, revealed by Load More button)
@@ -2001,6 +1816,185 @@ canvas {
   -moz-opacity: 0.4;
   opacity: 0.4;
   font-size: 16px;
+}
+
+/*******************************/
+/********* SERVICES ************/
+/*******************************/
+
+.row-pt-md {
+  padding: 2em 1em 0 0.8em;
+}
+
+.iservices {
+  padding-top: 1em;
+  margin-right: 1em;
+  margin-left: 0.8em;
+  margin-bottom: 60px;
+  position: relative;
+  z-index: 0;
+  height: 20em;
+}
+
+@media screen and (max-width: 768px) {
+  .iservices {
+    margin-bottom: 4em;
+    height: fit-content;
+  }
+}
+
+.iservices .icon {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  right: 0;
+  width: 100px;
+  height: 50px;
+  display: table;
+  margin: 0 auto;
+  background: #2c98f0;
+}
+
+.iservices .icon:after, .iservices .icon:before {
+  position: absolute;
+  left: 0;
+  right: 0;
+  content: "";
+}
+
+.iservices .icon:before {
+  top: -30px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 50px 30px 50px;
+  border-color: transparent transparent #2c98f0 transparent;
+}
+
+.iservices .icon:after {
+  bottom: -30px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 30px 50px 0 50px;
+  border-color: #2c98f0 transparent transparent transparent;
+}
+
+.iservices .icon i {
+  font-family: "Quicksand", Arial, sans-serif;
+  font-size: 30px;
+  color: #fff;
+  z-index: 1;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.iservices .desc {
+  margin-top: 50px;
+}
+
+.iservices .desc h3 {
+  font-family: "Quicksand", Arial, sans-serif;
+  color: #2fa499;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.iservices.color-1 {
+  border-bottom: 2px solid #04f538;
+}
+
+.iservices.color-1 .icon {
+  background: #04f538;
+}
+
+.iservices.color-1 .icon:before {
+  border-color: transparent transparent #04f538 transparent;
+}
+
+.iservices.color-1 .icon:after {
+  border-color: #04f538 transparent transparent transparent;
+}
+
+.iservices.color-2 {
+  border-bottom: 2px solid #ec5453;
+}
+
+.iservices.color-2 .icon {
+  background: #ec5453;
+}
+
+.iservices.color-2 .icon:before {
+  border-color: transparent transparent #ec5453 transparent;
+}
+
+.iservices.color-2 .icon:after {
+  border-color: #ec5453 transparent transparent transparent;
+}
+
+.iservices.color-3 {
+  border-bottom: 2px solid #f9bf3f;
+}
+
+.iservices.color-3 .icon {
+  background: #f9bf3f;
+}
+
+.iservices.color-3 .icon:before {
+  border-color: transparent transparent #f9bf3f transparent;
+}
+
+.iservices.color-3 .icon:after {
+  border-color: #f9bf3f transparent transparent transparent;
+}
+
+.iservices.color-4 {
+  border-bottom: 2px solid #a84cb8;
+}
+
+.iservices.color-4 .icon {
+  background: #a84cb8;
+}
+
+.iservices.color-4 .icon:before {
+  border-color: transparent transparent #a84cb8 transparent;
+}
+
+.iservices.color-4 .icon:after {
+  border-color: #a84cb8 transparent transparent transparent;
+}
+
+.iservices.color-5 {
+  border-bottom: 2px solid #2fa499;
+}
+
+.iservices.color-5 .icon {
+  background: #2fa499;
+}
+
+.iservices.color-5 .icon:before {
+  border-color: transparent transparent #2fa499 transparent;
+}
+
+.iservices.color-5 .icon:after {
+  border-color: #2fa499 transparent transparent transparent;
+}
+
+.iservices.color-6 {
+  border-bottom: 2px solid #4054b2;
+}
+
+.iservices.color-6 .icon {
+  background: #4054b2;
+}
+
+.iservices.color-6 .icon:before {
+  border-color: transparent transparent #4054b2 transparent;
+}
+
+.iservices.color-6 .icon:after {
+  border-color: #4054b2 transparent transparent transparent;
 }
 
 /*******************************/
