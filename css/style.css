@@ -3388,7 +3388,7 @@ p {
 #navbarDefault .navbar-nav {
   position: relative;
   display: flex;
-  gap: 20px; /* Space between each menu item */
+  gap: 0; /* Space between each menu item */
   list-style: none;
   margin: 0;
   padding: 0;
@@ -3401,6 +3401,16 @@ p {
   text-decoration: none;
   padding: 10px 15px;
   transition: color 0.3s, background-color 0.3s;
+}
+
+/* Navbar List Items */
+#navbarDefault .navbar-nav li {
+  margin-left: 0; /* Adds space between each menu item */
+}
+
+/* Remove margin for the first item to avoid extra spacing on the far right */
+#navbarDefault .navbar-nav li:first-child {
+  margin-left: 0;
 }
 
 
@@ -3441,12 +3451,30 @@ p {
   border-bottom: 2px solid #007bff;
 }
 
+
 /* No Responsive Column Layout */
 @media (max-width: 768px) {
+  #navbarDefault {
+    position: absolute;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    right: 1px !important;
+    justify-content: flex-end; 
+    gap: -2px !important;
+    text-decoration: none;
+  }
+}
+
+
+/* No Responsive Column Layout */
+/*@media (max-width: 768px) {
   #navbarDefault .navbar-nav {
     position: relative;
-      flex-direction: row; /* Keep horizontal layout on small screens */
-      justify-content: flex-end; /* Align items to the right */
+      flex-direction: row; 
+      justify-content: flex-end; 
+      margin: 0;
+      padding: 0;
       gap: 10px;
       right: 50px !important;
   }
@@ -3455,15 +3483,13 @@ p {
 @media (max-width: 480px) {
   #navbarDefault .navbar-nav {
     position: relative;
-      flex-direction: row; /* Keep horizontal layout on small screens */
-      justify-content: flex-end; /* Align items to the right */
+      flex-direction: row; 
+      justify-content: flex-end; 
       gap: 5px;
       right: 5px !important;
   }
 }
-
-
-
+*/
 
 
 
