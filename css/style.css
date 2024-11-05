@@ -2691,14 +2691,14 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
 .title-box h3 {
   font-size: 3.0rem;
   margin-bottom: 10px;
-  color:#080707;
+  color:#4169E1;
   text-transform: uppercase;
 }
 
 .title-line-mf {
   width: 50px;
   height: 3px;
-  background-color: #007bff;
+  background-color: #FFD700;
   margin: 0 auto 30px auto;
 }
 
@@ -3461,29 +3461,7 @@ p {
 }
 
 
-/* No Responsive Column Layout */
-/*@media (max-width: 768px) {
-  #navbarDefault .navbar-nav {
-    position: relative;
-      flex-direction: row; 
-      justify-content: flex-end; 
-      margin: 0;
-      padding: 0;
-      gap: 10px;
-      right: 50px !important;
-  }
-}
 
-@media (max-width: 480px) {
-  #navbarDefault .navbar-nav {
-    position: relative;
-      flex-direction: row; 
-      justify-content: flex-end; 
-      gap: 5px;
-      right: 5px !important;
-  }
-}
-*/
 
 
 
