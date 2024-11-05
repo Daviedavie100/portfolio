@@ -1401,165 +1401,6 @@ canvas {
   color: #FF5722;
 }
 
-/*****************************/
-/********* EDUCATION *********/
-/*****************************/
-.timeline-centered {
-  position: relative;
-  margin-bottom: 30px;
-}
-
-.timeline-centered:after, .timeline-centered:before {
-  content: " ";
-  display: table;
-}
-
-.timeline-centered:after {
-  clear: both;
-}
-
-.timeline-centered:after, .timeline-centered:before {
-  content: " ";
-  display: table;
-}
-
-.timeline-centered:after {
-  clear: both;
-}
-
-/* line down*/
-.timeline-centered:before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 1px;
-  background: #fd0202;
-  /*#f2f3f7*/
-  top: 20px;
-  bottom: 20px;
-  margin-left: 20px;
-}
-
-/*controls the items of the line*/
-.timeline-centered .timeline-entry {
-  position: relative;
-  margin-top: 5px;
-  margin-left: 30px;
-  margin-bottom: 10px;
-  clear: both;
-}
-
-.timeline-centered .timeline-entry .timeline-entry-inner {
-  position: relative;
-  margin-left: -20px;
-}
-
-.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon {
-  display: block;
-  width: 20px;
-  height: 20px;
-  background: #2c98f0;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  border-radius: 50%;
-  text-align: center;
-  -moz-box-shadow: 0 0 0 5px #f2f3f7;
-  -webkit-box-shadow: 0 0 0 5px #f2f3f7;
-  box-shadow: 0 0 0 5px #f2f3f7;
-  line-height: 40px;
-  float: left;
-}
-
-.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon i {
-  color: #fff;
-}
-
-.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-2 {
-  background: #ec5453;
-}
-
-.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-3 {
-  background: #f9bf3f;
-}
-
-.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-4 {
-  background: #a84cb8;
-}
-
-.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-5 {
-  background: #2fa499;
-}
-
-.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-none {
-  background: #4054b2;
-  width: 20px;
-  height: 20px;
-  /*margin-left: 5px;*/
-  float: left;
-}
-
-.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label {
-  position: relative;
-  background: rgba(243, 242, 242, 0.5);
-  /*background             : #f2f3f7;*/
-  padding: 1.5em;
-  margin-left: 35px;
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding;
-  background-clip: padding-box;
-  padding-top: 10px;
-}
-
-.mb-1, .mt-1 {
-  margin-bottom: 0.8rem !important;
-}
-
-.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label:after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 9px 9px 9px 0;
-  border-color: transparent #f2f3f7 transparent transparent;
-  left: 0;
-  top: 10px;
-  margin-left: -9px;
-}
-
-.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label p+p {
-  margin-top: 15px;
-}
-
-.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 {
-  font-size: 20px;
-  font-family: "Quicksand", Arial, sans-serif;
-  font-weight: 500;
-}
-
-.timeline-label h2 {
-  color: #2fa499;
-}
-
-.timeline-label li {
-  color: #000;
-  font-family: "Arial", sans-serif;
-  font-size: 16px;
-}
-
-.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 a {
-  color: #000;
-}
-
-.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 span {
-  -webkit-opacity: 0.4;
-  -moz-opacity: 0.4;
-  opacity: 0.4;
-  font-size: 16px;
-}
-
 /*************************/
 /*********  WORK *********/
 /*************************/
@@ -1758,6 +1599,7 @@ canvas {
   color: #666;
   line-height: 1.6;
   margin-bottom: 1.5em;
+  text-align: left;
 }
 
 /***** BTN *****/
@@ -1819,6 +1661,7 @@ canvas {
   margin-bottom: 1rem;
   color: #000;
   line-height: 1.6;
+  text-align: left;
 }
 
 /* Icon container for sharing, views, likes */
@@ -1993,6 +1836,171 @@ canvas {
   .col-md-4, .col-md-8 {
     width: 100%;
   }
+}
+
+/*****************************/
+/********* EDUCATION *********/
+/*****************************/
+
+.daviefolio-education .col-md-12 p{
+  padding: 0 1em;
+  text-align: left;
+  font-size: 16px;
+}
+
+.timeline-centered {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.timeline-centered:after, .timeline-centered:before {
+  content: " ";
+  display: table;
+}
+
+.timeline-centered:after {
+  clear: both;
+}
+
+.timeline-centered:after, .timeline-centered:before {
+  content: " ";
+  display: table;
+}
+
+.timeline-centered:after {
+  clear: both;
+}
+
+/* line down*/
+.timeline-centered:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 1px;
+  background: #fd0202;
+  /*#f2f3f7*/
+  top: 20px;
+  bottom: 20px;
+  margin-left: 20px;
+}
+
+/*controls the items of the line*/
+.timeline-centered .timeline-entry {
+  position: relative;
+  margin-top: 5px;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  clear: both;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner {
+  position: relative;
+  margin-left: -20px;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: #2c98f0;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  -moz-box-shadow: 0 0 0 5px #f2f3f7;
+  -webkit-box-shadow: 0 0 0 5px #f2f3f7;
+  box-shadow: 0 0 0 5px #f2f3f7;
+  line-height: 40px;
+  float: left;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon i {
+  color: #fff;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-2 {
+  background: #ec5453;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-3 {
+  background: #f9bf3f;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-4 {
+  background: #a84cb8;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-5 {
+  background: #2fa499;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-none {
+  background: #4054b2;
+  width: 20px;
+  height: 20px;
+  /*margin-left: 5px;*/
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label {
+  position: relative;
+  background: rgba(243, 242, 242, 0.5);
+  /*background             : #f2f3f7;*/
+  padding: 1.5em;
+  margin-left: 35px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  padding-top: 10px;
+}
+
+.mb-1, .mt-1 {
+  margin-bottom: 0.8rem !important;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 9px 9px 9px 0;
+  border-color: transparent #f2f3f7 transparent transparent;
+  left: 0;
+  top: 10px;
+  margin-left: -9px;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label p+p {
+  margin-top: 15px;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 {
+  font-size: 20px;
+  font-family: "Quicksand", Arial, sans-serif;
+  font-weight: 500;
+}
+
+.timeline-label h2 {
+  color: #2fa499;
+}
+
+.timeline-label li {
+  color: #000;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 a {
+  color: #000;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 span {
+  -webkit-opacity: 0.4;
+  -moz-opacity: 0.4;
+  opacity: 0.4;
+  font-size: 16px;
 }
 
 /*******************************/
