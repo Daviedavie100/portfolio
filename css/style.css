@@ -3420,12 +3420,23 @@ p {
 /* No Responsive Column Layout */
 @media (max-width: 768px) {
   #navbarDefault .navbar-nav {
+    position: relative;
       flex-direction: row; /* Keep horizontal layout on small screens */
       justify-content: flex-end; /* Align items to the right */
+      gap: 10px;
+      right: 50px !important;
   }
 }
 
-
+@media (max-width: 480px) {
+  #navbarDefault .navbar-nav {
+    position: relative;
+      flex-direction: row; /* Keep horizontal layout on small screens */
+      justify-content: flex-end; /* Align items to the right */
+      gap: 5px;
+      right: 5px !important;
+  }
+}
 
 
 
