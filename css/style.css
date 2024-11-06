@@ -778,6 +778,12 @@ padding: 0;: This removes all internal spacing within the element.*/
   margin-bottom: 2rem !important;
 }
 
+/* Blog Page*/
+.daviefolio-blog-project .title-box {
+  padding-top: 5rem !important;
+  margin-bottom: 2rem !important;
+}
+
 .folio-title-line-mf {
   top: 0;
   float: left;
@@ -3076,9 +3082,13 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
 
 
 
-
-
+/* BLOG */
+  .daviefolio-blog-project {
+    padding: 1em !important; 
+    width: 100%;
+  }
 /* RECENT: Styling for the recent project section */
+
 .daviefolio-project-resent {
   padding: 1em !important; 
   width: 100%;
