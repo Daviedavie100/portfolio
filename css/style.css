@@ -3557,3 +3557,105 @@ p {
     transform: rotate(360deg);
   }
 }
+
+/* BLOG */
+/* Blog Description Container */
+.blogdesc {
+  padding: 20px;
+  line-height: 1.6;
+  background-color:rgba(0, 0, 0, 0.1) ;
+}
+
+/* Title Styling */
+.blogdesc .des-title {
+  font-size: 1.4em;
+  color: #add8e6;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Paragraph Styling */
+.blogdesc p {
+  font-size: 1.1em;
+  color:#b3b3b3; 
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+/* Blog Sidebar Styling */
+.blog-sidebar {
+  background-color: #f8f9fa; 
+  padding: 20px;
+  border-radius: 8px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+/* Sidebar Title Styling */
+.blog-sidebar .sidebar-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+/* Sidebar List Styling */
+.list-sidebar {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+/* Sidebar List Items */
+.list-sidebar li {
+  margin-bottom: 5px;
+}
+
+/* Sidebar Links */
+.list-sidebar li a {
+  color: #007bff; /* Primary blue color */
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.list-sidebar p {
+  color: #333; 
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  text-align: left;
+  font-size: 1.1em;
+}
+
+/* Hover Effect for Links */
+.list-sidebar li a:hover {
+  color: #0056b3; /* Darker blue for hover */
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+/* Emphasis for Conclusion */
+.blogdesc p strong {
+  color: #007bff; /* Accent color for emphasis */
+  font-weight: bold;
+}
+
+/* Link Styling */
+.blogdesc a {
+  color: #007bff; /* Accent color for links */
+  text-decoration: none;
+}
+
+.blogdesc a:hover {
+  text-decoration: underline;
+}
