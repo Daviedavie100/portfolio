@@ -838,8 +838,8 @@ padding: 0;: This removes all internal spacing within the element.*/
     /*5em*/
     padding-bottom: 3em !important;
     /*8em*/
-    padding-left: 2em;
-    padding-right: 2em;
+    padding-left: 0.5em !important;
+    padding-right: 0.5em !important;
   }
 }
 
