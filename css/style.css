@@ -3559,6 +3559,11 @@ p {
 }
 
 /* BLOG */
+.project-item {
+  padding-bottom: 2em;
+
+}
+
 /* Blog Description Container */
 .blogdesc {
   padding: 20px;
