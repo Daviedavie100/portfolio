@@ -3611,7 +3611,6 @@ p {
   margin: 0;
 }
 
-
 /* Sidebar List Items */
 .list-sidebar li {
   margin-bottom: 10px;
@@ -3653,22 +3652,22 @@ p {
 
 
 
-/* Emphasis for Conclusion */
+/* Emphasis for Conclusion 
 .blogdesc p strong {
-  color: #007bff; /* Accent color for emphasis */
+  color: #007bff; 
   font-weight: bold;
 }
 
-/* Link Styling */
+
 .blogdesc a {
-  color: #007bff; /* Accent color for links */
+  color: #007bff; 
   text-decoration: none;
 }
 
 .blogdesc a:hover {
   text-decoration: underline;
 }
-
+*/
 /* FOOTER */
 .daviefolio-footer {
   background-color: #393f4d;
