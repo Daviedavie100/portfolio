@@ -838,6 +838,8 @@ padding: 0;: This removes all internal spacing within the element.*/
     /*5em*/
     padding-bottom: 3em !important;
     /*8em*/
+    padding-left: 2em;
+    padding-right: 2em;
   }
 }
 
@@ -3379,12 +3381,6 @@ p {
   }
 }
 
-
-
-
-
-
-
 /* Navbar Container */
 #navbarDefault {
   position: absolute;
@@ -3558,6 +3554,11 @@ p {
   }
 }
 
+
+
+
+
+
 /* BLOG */
 .project-item {
   padding-bottom: 2em;
@@ -3645,29 +3646,6 @@ p {
 }
 
 
-
-
-
-
-
-
-
-/* Emphasis for Conclusion 
-.blogdesc p strong {
-  color: #007bff; 
-  font-weight: bold;
-}
-
-
-.blogdesc a {
-  color: #007bff; 
-  text-decoration: none;
-}
-
-.blogdesc a:hover {
-  text-decoration: underline;
-}
-*/
 /* FOOTER */
 .daviefolio-footer {
   background-color: #393f4d;
