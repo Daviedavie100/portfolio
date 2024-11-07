@@ -3561,7 +3561,6 @@ p {
 /* BLOG */
 .project-item {
   padding-bottom: 2em;
-
 }
 
 /* Blog Description Container */
@@ -3668,4 +3667,10 @@ p {
 
 .blogdesc a:hover {
   text-decoration: underline;
+}
+
+/* FOOTER */
+.daviefolio-footer {
+  background-color: #393f4d;
+  padding: 2em;
 }
