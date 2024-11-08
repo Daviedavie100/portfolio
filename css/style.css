@@ -2687,7 +2687,7 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
 
 @media (max-width: 768px) {
   #daviefolio-project-folio {
-    padding: 4em 1em 1em 0 !important;
+    padding: 4em auto !important;
     text-align: center;
     display: flex;
     flex-direction: column;
