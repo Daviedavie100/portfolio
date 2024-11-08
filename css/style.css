@@ -2819,7 +2819,7 @@ padding-top: 4em !important;
 
 @media (max-width: 768px) {
   .project-work-contento p {
-    padding: 0 0.2em !important; 
+    padding: 0 0.5em !important; 
   }
 }
 
