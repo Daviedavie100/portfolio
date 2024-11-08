@@ -2680,16 +2680,13 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
 ======================================*/
 
 /* PROJECTFOLIO: General styling for the title and first image section*/
-/*#daviefolio-project-folio {
+#daviefolio-project-folio {
   margin: 0 !important;
-  padding: 4em 2em 2em 0 !important;
 }
-
+/*
 @media (max-width: 768px) {
   #daviefolio-project-folio {
-    padding: 4em auto !important;
-    text-align: center;
-
+    padding-top: 2em!important;
   }
 }
 */
@@ -2729,7 +2726,7 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   }
 }
 .project-work-box {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   position: relative;
   background: #fff;
   border-radius: 8px;
@@ -2778,73 +2775,19 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
 padding-top: 4em !important;
 }
 
-/* Responsive styling 
+/* Responsive styling */
 @media (max-width: 768px) {
-  .project-work-box {
-    margin-bottom: 20px;
-  }
-
-  .project-work-img img {
-    border-radius: 5px 5px 0 0;
-    width: 70%;
+  .daviefolio-images {
+    padding-top: 2em !important;
   }
 }
 
-@media (max-width: 480px) {
-  .project-work-box {
-    margin-bottom: 15px;
-  }
-
-  .project-work-img img {
-    border-radius: 3px 3px 0 0;
-    width: 30%;
-  }
+.project-data-desc {
+  text-transform: uppercase;
+  font-size: large;
+  color: #2c98f0;
+  text-align: center;
 }
-*/
-
-/* Media query for larger screens 
-@media (min-width: 768px) {
-  .project-work-box {
-    max-width: 100%; 
-    padding: 2em;
-  }
-}
-*/
-/* Media query for small screens 
-@media (max-width: 480px) {
-  .project-work-box {
-    max-width: 100%; 
-    border-radius: 5px; 
-    padding: 1em;
-  }
-}
-*/
-/*
-.project-work-box:hover {
-  transform: translateY(-5px);
-}
-
-.project-work-img img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px 8px 0 0;
-  transition: transform 0.3s ease;
-}
-*/
-/* Additional media query for smaller screens */
-/*@media (max-width: 768px) {
-  .project-work-img img {
-    width: 100% !important;
-    border-radius: 5px 5px 0 0;
-  }
-}
-
-
-.project-work-img img:hover {
-  transform: scale(1.05);
-}
-*/
-
 
 /* work-content styling */
 .project-work-contento {
@@ -2931,17 +2874,20 @@ padding-top: 4em !important;
 }
 */
 .insights-heading-meta {
+  text-transform: uppercase;
+  font-size: large;
+  color: #2c98f0;
+  text-align: center;
+}
+/*
+.insights-heading-meta {
   display: block;
   font-size: 1.5rem;
   color: #007bff;
   margin-bottom: 15px;
+  text-align: center;
 }
-
-.insights-heading-meta strong {
-  font-weight: bold;
-  font-size: 700;
-  text-transform: uppercase;
-}
+*/
 
 .insignts-desc p {
   font-size: 16px !important;
@@ -3187,13 +3133,12 @@ padding-top: 4em !important;
   transform: scale(1.01);
 }
 
-/* Styling for the project icons */
+/* Styling for the project icons 
 .rcon {
   position: absolute;
   bottom: 5px;
   left: 25px;
   padding: 5px !important;
-  /*background: rgba(0, 0, 0, 0.6);*/
   display: flex;
   justify-content: space-between;
 }
@@ -3216,17 +3161,9 @@ padding-top: 4em !important;
 .rpdesc {
   padding: 2px !important;
 }
-
-
-
-
-
-
-/* Center the button in its parent container 
-p {
-  text-align: center;
-}
 */
+
+
 
 .but-load-more {
   display: inline-block;
