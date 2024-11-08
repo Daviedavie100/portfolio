@@ -2682,9 +2682,7 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
 /* PROJECTFOLIO: General styling for the title and first image section*/
 #daviefolio-project-folio {
   margin: 0 !important;
-  padding-bottom: 0;
-  padding-left: 2em !important;
-  padding-right: 2em !important;
+  padding: 4em 2em 2em 0 !important;
 }
 
 .portfolio-mf {
@@ -2737,6 +2735,13 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
 
 .project-work-img img:hover {
   transform: scale(1.05);
+}
+
+
+
+/* Project images */
+.daviefolio-images {
+padding-top: 4em !important;
 }
 
 /* Responsive styling 
@@ -2805,6 +2810,28 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   transform: scale(1.05);
 }
 */
+
+
+/* work-content styling */
+.project-work-contento {
+  padding: 2em 3em !important;
+}
+
+.project-content-line-mfo {
+  width: 15px !important;
+  height: 40px !important;
+  background-color: #ff0000; 
+  margin: 5px auto; 
+  position: absolute;
+}
+
+.project-work-contento p {
+  color: #333;
+  font-size: 15px !important;
+  line-height: 1.6;
+  font-family: "Verdana", Geneva, Tahoma, sans-serif;
+}
+
 /* work-content styling */
 .project-work-content {
   padding: 0 2em !important;
@@ -2815,6 +2842,8 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   /*padding-bottom: 1em !important;*/
   margin-top: 5px !important;
 }
+
+
 
 .project-content-line-mf {
   width: 120px !important;
@@ -2882,7 +2911,7 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
 
 .insignts-desc p {
   font-size: 16px !important;
-  color:#fff;
+  color:#333;
   margin-bottom: 15px;
   text-align: left;
 }
