@@ -834,12 +834,8 @@ padding: 0;: This removes all internal spacing within the element.*/
   .daviefolio-services, 
   .daviefolio-skills, 
   .daviefolio-work {
-    padding-top: 2em !important;
-    /*5em*/
-    padding-bottom: 3em !important;
-    /*8em*/
-    padding-left: 0.5em !important;
-    padding-right: 0.5em !important;
+    padding: 2em 0.5em 3em 0.5em !important;
+    /*top 5em bottom 8em*/
   }
 }
 
@@ -2115,7 +2111,7 @@ canvas {
 
 @media screen and (max-width: 768px) {
   .daviefolio-contact-narrow-content {
-    padding: 0;
+    padding: 0.5em !important;
   }
 }
 
