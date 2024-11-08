@@ -2791,22 +2791,37 @@ padding-top: 4em !important;
 
 /* work-content styling */
 .project-work-contento {
-  padding: 2em 3em !important;
+  padding: 2em 4em !important; 
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .project-work-contento {
+    padding: 1em 2em !important; 
+  }
 }
 
 .project-content-line-mfo {
-  width: 15px !important;
-  height: 40px !important;
+  width: 5px !important;
+  height: 50px !important;
   background-color: #ff0000; 
-  margin: 5px auto; 
+  margin: 5px auto;  
   position: absolute;
 }
 
 .project-work-contento p {
+  padding: 0 0.2em !important; 
   color: #333;
   font-size: 15px !important;
   line-height: 1.6;
   font-family: "Verdana", Geneva, Tahoma, sans-serif;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .project-work-contento p {
+    padding: 0 0.2em !important; 
+  }
 }
 
 /* work-content styling */
