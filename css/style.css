@@ -2817,7 +2817,6 @@ padding-top: 4em !important;
   font-family: "Verdana", Geneva, Tahoma, sans-serif;
 }
 
-/* Responsive styling */
 @media (max-width: 768px) {
   .project-work-contento p {
     padding: 0 0.2em !important; 
@@ -2831,7 +2830,6 @@ padding-top: 4em !important;
 
 .project-title-container {
   padding-top: 1em !important;
-  /*padding-bottom: 1em !important;*/
   margin-top: 5px !important;
 }
 
