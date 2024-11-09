@@ -2004,9 +2004,9 @@ canvas {
 
 .blog-entry {
   width: 100%;
-  float: left;
+  /* float: left; */
   background: #fff;
-  margin-bottom: 3em;
+  margin-bottom: 2em; /*3em*/
 }
 
 @media screen and (max-width: 768px) {
@@ -2038,26 +2038,27 @@ canvas {
 }
 
 .blog-entry:hover .blog-img img {
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  transform: scale(1.1);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
 }
+
+.blog-entry .blog-desc {
+  display: block;
+  margin-bottom: 10px;
+  padding: 2em 1em;
+}
+
 
 .blog-entry .blog-desc span {
-  display: block;
-  margin-bottom: 20px;
   font-size: 12px;
   color: rgba(0, 0, 0, 0.4) !important;
-  text-transform: uppercase;
   letter-spacing: 1px;
+  text-transform: uppercase;
   font-weight: 400;
-  padding: 1em;
-}
-
-.blog-entry .blog-desc span small i {
-  color: #999;
+  padding: 2em;
 }
 
 .blog-entry .blog-desc h3 {
@@ -2065,16 +2066,23 @@ canvas {
   font-size: 1.4rem;
   font-weight: bold;
   text-transform: uppercase;
-  padding: 0 1em;
+  padding: 0 1.5em;
   margin-bottom: 15px;
   line-height: auto;
 }
 
 .blog-entry .blog-desc h3 a {
-  color: #000;
+  color: #5706ee;
   text-decoration: none;
 }
 
+.blog-entry .blog-desc h3 a:hover {
+  color: #ee06a8;
+  text-decoration: none;
+}
+
+
+/*
 .blog-entry .blog-desc p {
   font-family: "Quicksand", Arial, sans-serif;
   color: #666;
@@ -2083,7 +2091,7 @@ canvas {
   margin-bottom: 15px;
   text-transform: none;
 }
-
+*/
 /*******************************/
 /********* CONTACT CSS *********/
 /*******************************/
