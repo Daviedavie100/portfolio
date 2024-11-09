@@ -2003,15 +2003,16 @@ canvas {
 /*******************************/
 
 .blog-entry {
+  /* display: flex; */
   width: 100%;
   /* float: left; */
   background: #fff;
-  margin-bottom: 2em; /*3em*/
+  /* margin-bottom: 2em; 3em */
 }
 
 @media screen and (max-width: 768px) {
   .blog-entry {
-    margin-bottom: 3em;
+    margin-bottom: 0.5em;
   }
 }
 
@@ -2021,7 +2022,7 @@ canvas {
   overflow: hidden;
   position: relative;
   z-index: 1;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 .blog-entry .blog-img img {
@@ -2035,7 +2036,7 @@ canvas {
 @media (max-width: 768px) {
   .blog-entry .blog-img {
     width: 100%; 
-    margin-bottom: 15px; 
+    /* margin-bottom: 15px;  */
   }
 
   /* Reduce hover scale effect for smaller screens */
@@ -2051,8 +2052,8 @@ canvas {
 
 .blog-entry .blog-desc {
   display: block;
-  margin-bottom: 10px;
-  padding: 2em 1em;
+  /* margin-bottom: 10px; */
+  padding: 1em;
 }
 
 
@@ -2063,6 +2064,7 @@ canvas {
   text-transform: uppercase;
   font-weight: 400;
   padding: 2em;
+  margin: 0;
 }
 
 .blog-entry .blog-desc h3 {
@@ -2073,6 +2075,7 @@ canvas {
   padding: 2em 1.5em;
   /* margin-bottom: 15px; */
   line-height: auto;
+  margin: 0;
 }
 
 .blog-entry .blog-desc h3 a {
