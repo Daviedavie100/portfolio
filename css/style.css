@@ -2008,6 +2008,8 @@ canvas {
   /* float: left; */
   background: #fff;
   /* margin-bottom: 2em; 3em */
+  margin-bottom: 2em;
+  padding: 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -2053,9 +2055,14 @@ canvas {
 .blog-entry .blog-desc {
   display: block;
   /* margin-bottom: 10px; */
-  padding: 1em;
+  padding: 0.5em 2em;
 }
 
+@media screen and (max-width: 768px) {
+  .blog-entry .blog-desc {
+    padding: 1em;
+  }
+}
 
 .blog-entry .blog-desc span {
   font-size: 12px;
@@ -2063,8 +2070,8 @@ canvas {
   letter-spacing: 1px;
   text-transform: uppercase;
   font-weight: 400;
-  padding: 2em;
-  margin: 0;
+  padding-bottom: 1em;
+  /* margin: 0; */
 }
 
 .blog-entry .blog-desc h3 {
@@ -2072,10 +2079,10 @@ canvas {
   font-size: 1.4rem;
   font-weight: bold;
   text-transform: uppercase;
-  padding: 2em 1.5em;
+  /* padding: 0 1.5em; */
   /* margin-bottom: 15px; */
-  line-height: auto;
-  margin: 0;
+  /* line-height: auto; */
+  /* margin: 0; */
 }
 
 .blog-entry .blog-desc h3 a {
@@ -2088,17 +2095,32 @@ canvas {
   text-decoration: none;
 }
 
+/* @media screen and (max-width: 768px) {
+  .blog-entry .blog-desc h3 {
+    padding: 0.5em 0.75em;
+  }
+} */
 
-/*
+
 .blog-entry .blog-desc p {
   font-family: "Quicksand", Arial, sans-serif;
   color: #666;
-  line-height: 1.6;
-  padding: 0 1em;
-  margin-bottom: 15px;
+  line-height: 1.4;
+  font-size: 16px;
+  /* padding: 0 1.5em; */
+  /* margin-bottom: 15px; */
   text-transform: none;
+  text-align: left;
+  /* margin: 0; */
 }
-*/
+
+@media screen and (max-width: 768px) {
+  blog-entry .blog-desc p {
+    text-align: center;
+    /* padding: 0.5em; */
+  }
+}
+
 /*******************************/
 /********* CONTACT CSS *********/
 /*******************************/
