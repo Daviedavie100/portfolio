@@ -3707,7 +3707,8 @@ padding-top: 4em !important;
 }
 
 /* TABLEAU */
-.project-tab-work-box {
+/*
+.project-work-box {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -3715,9 +3716,10 @@ padding-top: 4em !important;
   width: 100%; 
   height: 100%; 
 }
+*/
 
 #vizContainer {
-  width: 100%; /* Make the dashboard fill the width of the box */
-  height: 500px;  
-  max-height: 100%; /* Allow it to expand within the box's constraints */
+  width: 100%;
+  height: 600px;  
+  max-height: 100%; 
 }
