@@ -3718,7 +3718,7 @@ padding-top: 4em !important;
 
 @media (max-width: 768px) {
   #vizContainer {
-    height: 400px; /* Adjust height for smaller screens */
+    height: 600px; /* Adjust height for smaller screens */
     overflow-x: auto; /* Horizontal scrolling for smaller screens */
   }
 }
