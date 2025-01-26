@@ -3705,3 +3705,10 @@ padding-top: 4em !important;
   background-color: #393f4d;
   padding: 2em;
 }
+
+/* TABLEAU */
+#vizContainer {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
