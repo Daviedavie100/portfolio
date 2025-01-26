@@ -3719,16 +3719,16 @@ padding-top: 4em !important;
 */
 
 #vizContainer {
-  width: 100%; /* Fill the available width */
-  height: 600px; /* Default height for larger screens */
-  max-height: 80vh; /* Cap the height to 80% of the viewport */
-  overflow-y: auto; /* Add vertical scrolling for small screens */ 
+  width: 100%; 
+  height: 600px;
 }
 
 @media (max-width: 768px) {
   #vizContainer {
-    font-size: xx-small;
-    height: 90vh; 
+    width: 100%; 
+    height: 600px;
+    max-height: 80vh;
+    overflow-y: auto;
   }
 }
 
