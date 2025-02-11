@@ -3711,7 +3711,7 @@ padding-top: 4em !important;
 #vizContainer {
   width: 100%;
   /*max-width: 100%;*/
-  height: 600px;
+  height: 580px;
   overflow-x: auto; 
   overflow-y: hidden; 
 }
@@ -3719,7 +3719,7 @@ padding-top: 4em !important;
 @media (max-width: 768px) {
   #vizContainer {
     width: 100%;
-    height: 600px;
+    height: 540px;
     overflow-x: auto; 
   }
 }
