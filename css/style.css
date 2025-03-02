@@ -3159,6 +3159,32 @@ padding-top: 4em !important;
   width: 100%;
 }
 
+
+/*DOING IT NOW*/
+
+#python h3 {
+  padding-top: 20PX;
+}
+
+#excel h3 {
+  padding-top: 20PX;
+}
+
+#power\ BI h3 {
+  padding-top: 20PX;
+}
+
+#tableau h3 {
+  padding-top: 20PX;
+}
+
+#sql h3 {
+  padding-top: 20PX;
+}
+
+
+/*DOING IT NOW*/
+
 .daviefolio-project-narrow-content {
   /*display: block;
   align-items: flex-start;*/
