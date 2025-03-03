@@ -1231,6 +1231,29 @@ canvas {
   color: #FF5722;
 }
 
+/* CHANGES FOR SECTION ABOVE */
+/* filepath: /C:/Users/Davie/Documents/GitHub/portfolio/css/style.css */
+.progress-bar.color-1 {
+    width: 75%;
+}
+
+.progress-bar.color-2 {
+    width: 80%;
+}
+
+.progress-bar.color-3 {
+    width: 70%;
+}
+
+.progress-bar.color-4 {
+    width: 85%;
+}
+
+.progress-bar.color-5 {
+    width: 75%;
+}
+
+
 /*************************/
 /*********  WORK *********/
 /*************************/
