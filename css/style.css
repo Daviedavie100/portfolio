@@ -190,7 +190,6 @@ justify-items: center;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
-  -webkit-overflow-scrolling: touch;
   margin-right: 0;
   top: 0;
   max-height: 100vh !important;
@@ -199,10 +198,14 @@ justify-items: center;
 
 #daviefolio-aside {
   /* Hide scrollbar in Firefox */
-  scrollbar-width: none;
+  /*scrollbar-width: none;  For Firefox */
+  overflow: hidden; /* Fallback for other browsers */
 
   /* Hide scrollbar in Internet Explorer and Edge */
   -ms-overflow-style: none;
+
+  /* Hide scrollbar in WebKit browsers */
+  overflow: hidden;
 }
 
 /* Hide scrollbar for WebKit browsers (Chrome, Safari) */
