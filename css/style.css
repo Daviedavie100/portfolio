@@ -178,7 +178,7 @@ justify-items: center;
 /******** DAVIEFOLIO ASIDE ********/
 
 #daviefolio-aside {
-  padding-top: 3em !important;
+  padding-top: 2em !important;
   padding-bottom: 40px !important;
   float: right;
   right: 35px !important;
@@ -192,9 +192,20 @@ justify-items: center;
   transition: 0.5s;
   margin-right: 0;
   top: 0;
-  max-height: 100vh !important;
+  /*max-height: 100vh !important;*/
+
+
+  min-height: 100vh !important; /* Sidebar always fills full height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures footer stays at the bottom */
+
   order: 2;
 }
+
+
+
+
 /* CHANGED */
 /* filepath: /C:/Users/Davie/Documents/GitHub/portfolio/css/style.css */
 .author-img {
@@ -2469,7 +2480,14 @@ canvas {
   /*padding    : 0 20px;*/
   width: 100% !important;
   display: block !important; /*added*/
+
+
+/* added */
+  margin-top: auto; /* Pushes the footer to the bottom */
+  padding: 15px 0; /* Ensures spacing */
 }
+
+
 
 @media screen and (max-width: 768px) {
   #daviefolio-aside .daviefolio-footer {
@@ -2505,6 +2523,10 @@ canvas {
   display: block;
   padding: 1.5em 0 0.5em 0;
 }
+
+
+
+
 
 /*======================================
   MAP
