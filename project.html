@@ -72,7 +72,22 @@
 		<div id="navbarDefault">
 			<ul class="navbar-nav">
 				<li><a class="nav-link" href="index.html">Home</a></li>
-				<li><a class="nav-link js-scroll" href="#projects">Projects</a></li>
+
+				<li class="dropdown">
+					<!--<a class="nav-link js-scroll" href="#projects">Projects</a>-->
+					<!--<a class="nav-link dropdown-toggle" href="#projects">Projects</a>-->
+					<a class="nav-link dropdown-toggle" href="#projects">Projects <span class="arrow">&#9662;</span></a>
+					
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="#python">Python</a></li>
+						<li><a class="dropdown-item" href="#excel">Excel</a></li>
+						<li><a class="dropdown-item" href="#power BI">Power BI</a></li>
+						<li><a class="dropdown-item" href="#tableau">Tableau</a></li>
+						<li><a class="dropdown-item" href="#sql">SQL</a></li>
+					</ul>
+				</li>
+
+				<!--<li><a class="nav-link js-scroll" href="#projects">Projects</a></li>-->
 				<li><a class="nav-link" href="blog.html">Blog</a></li>
 				<li><a class="nav-link js-scroll" href="#contact">Contact</a></li>
 			</ul>
@@ -127,8 +142,6 @@
 				</div>
 			</section>
 			<!-- End: Project title image-->
-
-
 
 			<!-- Start: Python Project-->
 			<section class="daviefolio-project-resent" id="python" data-section="python">
@@ -424,13 +437,6 @@
 				</div>
 			</section>
 			<!-- End: Python Project-->
-
-
-
-
-
-
-
 
 			<!-- Start: Excel Project-->
 			<section class="daviefolio-project-resent" id="excel" data-section="excel">
@@ -1078,19 +1084,13 @@
 								<!-- Page first image -->
 								<div class="col-md-8 animate-box" data-animate-effect="fadeInLeft">
 									<div class="project-work-box">
-										<iframe class="responsive-iframe"
-											src="https://lookerstudio.google.com/embed/reporting/928d1984-f78f-41f5-8661-f4ffdc729f60/page/mp4tE"
-											frameborder="0" allowfullscreen
-											sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
-											title="SQL Project Report">
-										</iframe>
-										<!--<a href="img/work/Sql/stolen_vehicle.jpg" data-lightbox="gallery-mf">
+										<a href="img/work/Sql/g_studio_1.jpg" data-lightbox="gallery-mf">
 											<div class="project-work-img">
-												<img src="img/work/Sql/stolen_vehicle.jpg"
+												<img src="img/work/Sql/g_studio_1.jpg"
 													alt="SQL project image showcasing data insights" class="img-fluid"
 													loading="lazy">
 											</div>
-										</a>-->
+										</a>
 										<div class="project-work-content">
 											<div class="row">
 												<div class="col-sm-8">
@@ -1171,8 +1171,8 @@
 									<div class="row project-item animate-box" data-animate-effect="fadeInLeft">
 										<div class="col-md-8 col-12">
 											<div class="resentproject">
-												<a href="img/work/Excel/excel-2.JPG" data-lightbox="gallery-mf">
-													<img src="img/work/Excel/excel-2.JPG" alt="Work 01"
+												<a href="img/work/Sql/g_studio_2.jpg" data-lightbox="gallery-mf">
+													<img src="img/work/Sql/g_studio_2.jpg" alt="Work 01"
 														class="img-fluid">
 												</a>
 											</div>
@@ -1196,7 +1196,7 @@
 								</div>
 
 								<!-- Load More Button -->
-								<div class="row">
+								<!--<div class="row">
 									<div class="col-md-12">
 										<p>
 											<a href="javascript:void(0);" class="but-load-more lod-more-btn"
@@ -1205,7 +1205,7 @@
 											</a>
 										</p>
 									</div>
-								</div>
+								</div>-->
 							</div>
 						</div>
 					</div>
