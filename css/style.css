@@ -2809,7 +2809,6 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
 }
 
 
-
 /* Project images */
 .daviefolio-images {
 padding-top: 4em !important;
@@ -3551,8 +3550,48 @@ padding-top: 4em !important;
 
 
 
+/* PROJECT NAVBAR */
 
+/* Dropdown container */
+#navbarDefault .navbar-nav .dropdown {
+  position: relative;
+}
 
+/* Dropdown menu */
+#navbarDefault .navbar-nav .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 0; 
+  margin: 0;  
+  min-width: 150px;
+}
+
+/* Ensure all dropdown items align properly */
+#navbarDefault .navbar-nav .dropdown-menu li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* Style dropdown links */
+#navbarDefault .navbar-nav .dropdown-menu li a {
+  display: block;
+  text-decoration: none;
+  text-align: left; 
+  white-space: nowrap; 
+  color: #add8e6;
+  font-family: "Verdana";
+  font-weight: 500;
+  font-size: 18px;
+}
+
+/* Show dropdown on hover */
+#navbarDefault .navbar-nav .dropdown:hover .dropdown-menu {
+  display: block;
+}
 
 
 
