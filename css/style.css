@@ -561,6 +561,12 @@ padding-bottom: 1em;
   position: relative;
 }
 
+/* CHANGED */
+/* filepath: /C:/Users/Davie/Documents/GitHub/portfolio/css/style.css */
+.hero-slide {
+    background-image: url(img/about/hero.jpg);
+}
+/* CHANGED */
 .overlay {
   position: absolute;
   top: 0 !important;
