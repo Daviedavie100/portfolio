@@ -2304,47 +2304,11 @@ canvas {
 */
 
 
-#daviefolio-aside {
-  padding-top: 3em !important;
-  padding-bottom: 40px !important;
-  right: 35px !important;
-  /*right: 0 !important;  Aligns sidebar properly */
-  width: 300px !important;
-  position: fixed;
-  overflow-y: auto; /* Enables scrolling */
-  z-index: 2001;
-  background: #2d545e;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
-  margin-right: 0;
-  top: 0;
-  max-height: 100vh !important; /* Sidebar fills full height max-height*/
-  display: flex; /* Enables flexbox layout */
-  flex-direction: column; /* Ensures proper spacing */
-  justify-content: space-between; /* Footer stays at bottom */
-  overflow-x: hidden; /* Prevents horizontal scrolling */
-}
+
 
 #daviefolio-aside {
-  padding-top: 3em !important;
-  padding-bottom: 40px !important;
-  right: 35px !important;
-  width: 300px !important;
-  position: fixed;
-  overflow-y: auto; /* Enables scrolling */
-  z-index: 2001;
-  background: #2d545e;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
-  margin-right: 0;
-  top: 0;
-  max-height: 100vh !important; /* Sidebar fills full height */
-  display: flex; /* Enables flexbox layout */
-  flex-direction: column; /* Ensures elements are stacked */
-  align-items: stretch; /* Ensures elements take full width */
-  overflow-x: hidden; /* Prevents horizontal scrolling */
+  position: relative;
+  height: 100vh;
 }
 
 
@@ -2357,21 +2321,6 @@ canvas {
 
 /* Media query for small screens */
 @media screen and (max-width: 768px) {
-  /*
-  #daviefolio-page {
-    flex-direction: column;
-  }
-
-  #daviefolio-main {
-    width: 100% !important;
-    position: relative;
-    order: 2; 
-    right: 0;
-    float: right;
-    padding: 0 0.1em !important;
-    margin-left: 0;
-  }
-*/
   #daviefolio-aside {
     position: fixed;
     /*width          : 100%; /* Full width */
@@ -2494,14 +2443,7 @@ CHANGED */
 }
 
 
-/*
-#daviefolio-aside .position {
-  display: block;
-  margin-bottom: 1.2em;/*1.5em
-  font-size: 13px;
-  text-transform: uppercase;
-}
-*/
+
 
 
 #daviefolio-aside #daviefolio-main-menu {
@@ -2596,35 +2538,22 @@ CHANGED */
 }
 
 /*footer*/
-/*
-#daviefolio-aside .daviefolio-footer {
-  font-size: 15px !important;
-  text-align: center !important;
-  font-weight: 400 !important;
-  color: rgba(0, 0, 0, 0.5);
-  width: 100% !important;
-  display: block !important; 
 
-}
-*/
-/*
+
+
+
+
+
 #daviefolio-aside .daviefolio-footer {
-  font-size: 15px !important;
-  text-align: center !important;
-  font-weight: 400 !important;
-  color: rgba(0, 0, 0, 0.5);
-  width: 100% !important;
-  display: block !important; 
-  padding: 2px 0; 
-}
-*/
-#daviefolio-footer {
-  margin-top: auto; /* Pushes footer to the bottom */
-  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   text-align: center;
-  color: white;
-  background: #1b3a4b; /* Slightly different shade for clarity */
+  font-size: 15px;
 }
+
+
+
 
 #daviefolio-aside .daviefolio-footer ul {
   padding: 0;
