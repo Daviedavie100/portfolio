@@ -2407,9 +2407,9 @@ canvas {
    /* width: 100% !important;
      Sidebar takes full width */
 
-    height: auto !important;
-    /* Adjust height dynamically */
-    /*height: 100vh !important;*/
+    /*height: auto !important;
+     Adjust height dynamically */
+    height: 100vh !important;
 
     /*top: 0;*/
     bottom: 0;
@@ -2427,8 +2427,8 @@ canvas {
   }
 
   #daviefolio-aside .author-img {
-    width: 170px !important;
-    height: 170px !important;
+    width: 180px !important;
+    height: 180px !important;
     margin-bottom: 5px !important;
   }
 }
@@ -2718,14 +2718,7 @@ canvas {
   }
 }
 
-/*
-@media screen and (max-width: 768px) {
-  #daviefolio-aside .daviefolio-footer {
-    position: relative;
-    bottom: 0;
-  }
-}
-*/
+
 
 
 
