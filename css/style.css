@@ -143,62 +143,68 @@ figure figcaption {
 
 /******** DAVIEFOLIO MAIN ********/
 
+
 #daviefolio-main {
   position: relative;
-  width: calc(100% - 305px) !important;
+  width: calc(100% - 305px) !important; /* Adjusted for sidebar width */
   left: 0;
-  float: left;
+  display: block; /* Removes unnecessary float */
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
   margin-left: 0;
-  order: 1;
 }
 
 /* For tablets and smaller screens (768px or less) */
 @media screen and (max-width: 768px) {
   #daviefolio-main {
-    width: 100%;
-    float: none;
+    width: 100% !important; /* Full width on small screens */
+    position: relative;
     margin-left: 0;
+    padding: 0 0.5em !important; /* 0.1 Increased padding for better spacing */
+  }
+}
+
+/*
+#daviefolio-main {
+  float: left;
+  order: 1;
+}
+*/
+/* For tablets and smaller screens (768px or less) 
+@media screen and (max-width: 768px) {
+  #daviefolio-main {
+    float: none;
     order: 1;
   }
 }
+*/
 
 /*
-#daviefolio-main {
-  width: 100% !important;
-  position: relative;
-  order: 2; 
-  right: 0;
-  float: right;
-  padding: 0 0.1em !important;
-  margin-left: 0;
+@media screen and (max-width: 768px) {
+  #daviefolio-aside {
+    padding-top: 4em !important;
+    position: fixed;
+    float: left;
+    left: 0 !important;
+    height: auto !important;
+    bottom: 0;
+    z-index: 2001;
+    width: 300px !important;
+    -moz-transform: translateX(-300px);
+    -webkit-transform: translateX(-300px);
+    -ms-transform: translateX(-300px);
+    -o-transform: translateX(-300px);
+    transform: translateX(-300px);
+    overflow: hidden;
+  }
 }
 */
 
-/* For smaller mobile devices (480px or less) */
-@media screen and (max-width: 480px) {
-  #daviefolio-main {
-    width: 100%;
-    padding: 10px;
-    transition: 0.3s;
-  }
-}
 
-/*
 
-@media screen and (max-width: 768px) {
-#daviefolio-main {
-width: 100%;
-padding: 0 0.1em;
 
-justify-content: center;
-align-items: center;
-align-content: center;
-justify-items: center;
-}
-}
+
 
 
 
@@ -2404,11 +2410,11 @@ canvas {
     float: left;
     left: 0 !important;
 
-   /* width: 100% !important;
+    /* width: 100% !important;
      Sidebar takes full width */
 
     height: auto !important;
-     /*Adjust height dynamically */
+    /*Adjust height dynamically */
     /*height: 100vh !important;*/
 
     /*top: 0;*/
@@ -2510,16 +2516,18 @@ canvas {
 /* ADDED */
 @media screen and (max-width: 768px) {
   #daviefolio-logo {
-      display: block;
-      font-size: 25px !important; /* Slightly smaller for better fit */
-      letter-spacing: 1px !important;
-      width: 100%;
-      margin-bottom: 0.5em !important; /* Adds slightly more spacing */
+    display: block;
+    font-size: 25px !important;
+    /* Slightly smaller for better fit */
+    letter-spacing: 1px !important;
+    width: 100%;
+    margin-bottom: 0.5em !important;
+    /* Adds slightly more spacing */
   }
 
   #daviefolio-logo a {
-      font-weight: 700 !important;
-      transition: color 0.3s ease-in-out;
+    font-weight: 700 !important;
+    transition: color 0.3s ease-in-out;
   }
 
   #daviefolio-aside .position {
