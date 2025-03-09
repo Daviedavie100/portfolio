@@ -2707,8 +2707,14 @@ canvas {
 
 @media (max-width: 768px) {
   #daviefolio-aside .daviefolio-footer {
-    font-size: 13px !important;
-    padding: 5px 0;
+    font-size: 12px !important;
+    padding: 0 !important;
+  }
+
+  #daviefolio-aside .daviefolio-footer p {
+    font-size: 12px !important;
+    padding: 0 !important;
+    margin: 0 !important;
   }
 }
 
