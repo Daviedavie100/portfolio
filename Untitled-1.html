@@ -76,3 +76,36 @@ https://app.powerbi.com/links/2Xsm6Xwzam?ctid=b9ad19b8-8265-42be-847a-7b4a5d6a19
       /* background: #1b3a4b; Slightly different shade for clarity */
   
   }
+
+  #daviefolio-aside .daviefolio-footer {
+    margin-top: auto !important;
+    font-size: 15px !important;
+    text-align: center !important;
+    font-weight: 400 !important;
+    /*color: rgba(0, 0, 0, 0.5);*/
+    width: 100% !important;
+    display: block !important; 
+    /*padding: 2px 0; */
+    padding: 0;
+      /* background: #1b3a4b; Slightly different shade for clarity */
+    position: absolute;
+    bottom: 0;
+  }
+
+
+  @media (max-width: 768px) {
+    #daviefolio-aside .daviefolio-footer {
+      margin-top: auto !important;
+      font-size: 15px !important;
+      text-align: center !important;
+      font-weight: 400 !important;
+      width: 100% !important;
+      display: block !important; 
+      padding: 0;
+      position: absolute; /* Change from absolute to relative for better small-screen behavior */
+      bottom: 0 !important; /* Reset bottom positioning */
+  
+      font-size: 14px !important;
+      padding: 5px 0;
+    }
+  }
