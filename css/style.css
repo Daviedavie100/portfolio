@@ -2336,7 +2336,7 @@ canvas {
 
 
 #daviefolio-aside {
-  padding-top: 2em !important;
+  padding-top: 2.3em !important;
   padding-bottom: 30px !important;
   /*40px*/
   right: 35px !important;
@@ -2398,14 +2398,14 @@ canvas {
 
 @media screen and (max-width: 768px) {
   #daviefolio-aside {
-    padding-top: 2em 0 !important;
+    padding-top: 3.5em !important;
     position: fixed;
     /* Ensures it's fixed */
     float: left;
     left: 0 !important;
 
-    width: 100% !important;
-    /* Sidebar takes full width */
+   /* width: 100% !important;
+     Sidebar takes full width */
 
     height: auto !important;
     /* Adjust height dynamically */
@@ -2511,7 +2511,7 @@ canvas {
 @media screen and (max-width: 768px) {
   #daviefolio-logo {
       display: block;
-      font-size: 24px !important; /* Slightly smaller for better fit */
+      font-size: 25px !important; /* Slightly smaller for better fit */
       letter-spacing: 1px !important;
       width: 100%;
       margin-bottom: 0.5em !important; /* Adds slightly more spacing */
@@ -2524,7 +2524,7 @@ canvas {
 
   #daviefolio-aside .position {
     margin-bottom: 1.2em !important;
-    font-size: 12px !important;
+    font-size: 13px !important;
     text-transform: uppercase;
   }
 }
