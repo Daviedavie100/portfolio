@@ -2398,7 +2398,7 @@ canvas {
 
 @media screen and (max-width: 768px) {
   #daviefolio-aside {
-    padding-top: 3.5em !important;
+    padding-top: 4em !important;
     position: fixed;
     /* Ensures it's fixed */
     float: left;
@@ -2427,8 +2427,8 @@ canvas {
   }
 
   #daviefolio-aside .author-img {
-    width: 150px !important;
-    height: 150px !important;
+    width: 170px !important;
+    height: 170px !important;
     margin-bottom: 5px !important;
   }
 }
