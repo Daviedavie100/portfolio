@@ -2501,7 +2501,7 @@ canvas {
 #daviefolio-aside .position {
   display: block;
   margin-top: 0;
-  margin-bottom: 1.5em;
+  margin-bottom: 1.8em;
   /*2*/
   font-size: 13px;
   text-transform: uppercase;
@@ -2523,7 +2523,7 @@ canvas {
   }
 
   #daviefolio-aside .position {
-    margin-bottom: 1.2em !important;
+    margin-bottom: 1.5em !important;
     font-size: 13px !important;
     text-transform: uppercase;
   }
@@ -2707,12 +2707,12 @@ canvas {
 
 @media (max-width: 768px) {
   #daviefolio-aside .daviefolio-footer {
-    font-size: 12px !important;
+    font-size: 13px !important;
     padding: 0 !important;
   }
 
   #daviefolio-aside .daviefolio-footer p {
-    font-size: 12px !important;
+    font-size: 13px !important;
     padding: 0 !important;
     margin: 0 !important;
   }
