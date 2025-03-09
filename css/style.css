@@ -2407,9 +2407,9 @@ canvas {
    /* width: 100% !important;
      Sidebar takes full width */
 
-    /*height: auto !important;
-     Adjust height dynamically */
-    height: 100vh !important;
+    height: auto !important;
+     /*Adjust height dynamically */
+    /*height: 100vh !important;*/
 
     /*top: 0;*/
     bottom: 0;
