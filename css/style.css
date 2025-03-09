@@ -38,7 +38,9 @@ a {
   transition: 0.5s;
 }
 
-a:active, a:focus, a:hover {
+a:active,
+a:focus,
+a:hover {
   color: #2c98f0;
   outline: none;
   text-decoration: none !important;
@@ -49,7 +51,12 @@ p {
   text-align: center;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #000;
   font-family: "Playfair Display", Georgia, serif;
   font-weight: 400 !important;
@@ -211,7 +218,7 @@ justify-items: center;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0; 
+  padding: 0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -228,14 +235,14 @@ justify-items: center;
 
 .daviefolio-nav-toggle {
   position: fixed;
-  left: -10px !important; 
-  top: -10px !important;  
+  left: -10px !important;
+  top: -10px !important;
   padding: 20px !important;
   visibility: hidden;
-  z-index: 1000; 
+  z-index: 1000;
   cursor: pointer;
   opacity: 1;
-  transition: 0.5s; 
+  transition: 0.5s;
   text-decoration: none;
 }
 
@@ -248,8 +255,9 @@ justify-items: center;
   background: #a04ef6;
   transition: all 0.2s ease-out;
 }
+
 /* lines before and after */
-.daviefolio-nav-toggle i::after, 
+.daviefolio-nav-toggle i::after,
 .daviefolio-nav-toggle i::before {
   content: "";
   width: 20px !important;
@@ -267,6 +275,7 @@ justify-items: center;
 .daviefolio-nav-toggle i::after {
   bottom: -7px !important;
 }
+
 /* hover */
 .daviefolio-nav-toggle:hover i::before {
   top: -10px !important;
@@ -299,22 +308,24 @@ justify-items: center;
 */
 
 /* When Toggle is Active (cross) */
-.daviefolio-nav-toggle.active  {
+.daviefolio-nav-toggle.active {
   /*background: transparent;*/
   width: 20px !important;
   height: 2px !important;
-  position: absolute; 
-  top: -10px !important;/*-10px*/
-  left: -310px !important; /* -300 px Adjust as necessary for your layout */
+  position: absolute;
+  top: -10px !important;
+  /*-10px*/
+  left: -310px !important;
+  /* -300 px Adjust as necessary for your layout */
 }
 
 .daviefolio-nav-toggle.active i {
   background: transparent;
 }
 
-.daviefolio-nav-toggle.active i::after, 
+.daviefolio-nav-toggle.active i::after,
 .daviefolio-nav-toggle.active i::before {
-  display: block; 
+  display: block;
   position: absolute;
   width: 20px !important;
   height: 2px !important;
@@ -323,7 +334,7 @@ justify-items: center;
   transition: background 0.3s ease;
 }
 
-.daviefolio-nav-toggle.active i::before { 
+.daviefolio-nav-toggle.active i::before {
   top: 0 !important;
   transform: rotate(45deg);
 }
@@ -333,8 +344,8 @@ justify-items: center;
   transform: rotate(-45deg);
 }
 
-.daviefolio-nav-toggle:active, 
-.daviefolio-nav-toggle:focus, 
+.daviefolio-nav-toggle:active,
+.daviefolio-nav-toggle:focus,
 .daviefolio-nav-toggle:hover {
   outline: none;
   border-bottom: none !important;
@@ -509,9 +520,10 @@ padding-bottom: 1em;
 /* CHANGED */
 /* filepath: /C:/Users/Davie/Documents/GitHub/portfolio/css/style.css */
 #daviefolio-hero .flexslider .hero-slide {
-    /*background-image: url(img/about/hero.jpg);*/
-    background-image: url(../img/about/hero.jpg);
+  /*background-image: url(img/about/hero.jpg);*/
+  background-image: url(../img/about/hero.jpg);
 }
+
 /* CHANGED */
 .overlay {
   position: absolute;
@@ -693,7 +705,8 @@ body.offcanvas #daviefolio-aside {
   position: fixed;
 }
 
-body.offcanvas #daviefolio-main, body.offcanvas .daviefolio-nav-toggle {
+body.offcanvas #daviefolio-main,
+body.offcanvas .daviefolio-nav-toggle {
   top: 0;
   -moz-transform: translateX(300px);
   -webkit-transform: translateX(300px);
@@ -716,12 +729,12 @@ padding: 0;: This removes all internal spacing within the element.*/
 /******** SECTIONS *********/
 /***************************/
 
-.daviefolio-about, 
-.daviefolio-blog, 
-.daviefolio-contact, 
-.daviefolio-education, 
-.daviefolio-services, 
-.daviefolio-skills, 
+.daviefolio-about,
+.daviefolio-blog,
+.daviefolio-contact,
+.daviefolio-education,
+.daviefolio-services,
+.daviefolio-skills,
 .daviefolio-work {
   clear: both !important;
   width: 100% !important;
@@ -782,12 +795,13 @@ padding: 0;: This removes all internal spacing within the element.*/
 }
 
 @media screen and (max-width: 768px) {
-  .daviefolio-about, 
-  .daviefolio-blog, 
-  .daviefolio-contact, 
-  .daviefolio-education, 
-  .daviefolio-services, 
-  .daviefolio-skills, 
+
+  .daviefolio-about,
+  .daviefolio-blog,
+  .daviefolio-contact,
+  .daviefolio-education,
+  .daviefolio-services,
+  .daviefolio-skills,
   .daviefolio-work {
     padding: 2em 0.5em 3em 0.5em !important;
     /*top 5em bottom 8em*/
@@ -815,13 +829,13 @@ padding: 0;: This removes all internal spacing within the element.*/
 .row-bottom-padded-sm {
   margin: 0;
   padding-bottom: 1em;
-  }
-  
-  @media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 768px) {
   .row-bottom-padded-sm {
-  padding-bottom: 1em;
+    padding-bottom: 1em;
   }
-  }
+}
 
 .about-desc {
   padding: 0.5em 1em !important;
@@ -852,7 +866,7 @@ padding: 0;: This removes all internal spacing within the element.*/
 
 /*TOOLS*/
 .tools {
-  padding:1em 2em !important;
+  padding: 1em 2em !important;
   -webkit-box-shadow: 0 0 56px -8px rgba(0, 0, 0, 0.17);
   -moz-box-shadow: 0 0 56px -8px rgba(0, 0, 0, 0.17);
   -ms-box-shadow: 0 0 56px -8px rgba(0, 0, 0, 0.17);
@@ -886,7 +900,7 @@ padding: 0;: This removes all internal spacing within the element.*/
 
 @media screen and (max-width: 768px) {
   .tools {
-    padding:1em 4em !important;
+    padding: 1em 4em !important;
     margin-bottom: 2em;
     /*4em-bottom margin*/
   }
@@ -956,8 +970,10 @@ padding: 0;: This removes all internal spacing within the element.*/
 /******************************/
 
 .daviefolio-skills .col-md-12 p {
-  text-align: left; /* Aligns the text to the left */
-  margin: 0; /* Optional: Removes default margin for a cleaner look */
+  text-align: left;
+  /* Aligns the text to the left */
+  margin: 0;
+  /* Optional: Removes default margin for a cleaner look */
 }
 
 @media screen and (max-width: 768px) {
@@ -1026,8 +1042,8 @@ padding: 0;: This removes all internal spacing within the element.*/
 /* For mobile devices (max-width: 480px) */
 @media screen and (max-width: 480px) {
   .section-header-hard p {
-    font-size: 14px; 
-    line-height: 1.5; 
+    font-size: 14px;
+    line-height: 1.5;
     /*padding-bottom: 5px !important;*/
   }
 }
@@ -1064,8 +1080,8 @@ canvas {
 /* For mobile devices (max-width: 480px) */
 @media screen and (max-width: 480px) {
   .section-header-soft p {
-    font-size: 14px; 
-    line-height: 1.5; 
+    font-size: 14px;
+    line-height: 1.5;
     padding-bottom: 5px !important;
   }
 }
@@ -1097,7 +1113,8 @@ canvas {
   text-align: right;
   position: relative;
   overflow: visible;
-  -webkit-border-radius: 0; /*8px*/
+  -webkit-border-radius: 0;
+  /*8px*/
   -moz-border-radius: 0;
   -ms-border-radius: 0;
   border-radius: 0;
@@ -1111,7 +1128,8 @@ canvas {
   height: 14px !important;
   content: "";
   background: #2c98f0;
-  -webkit-border-radius: 0;/*50%*/
+  -webkit-border-radius: 0;
+  /*50%*/
   -moz-border-radius: 0;
   -ms-border-radius: 0;
   border-radius: 0;
@@ -1186,23 +1204,23 @@ canvas {
 /* CHANGES FOR SECTION ABOVE */
 /* filepath: /C:/Users/Davie/Documents/GitHub/portfolio/css/style.css */
 .progress-bar.color-1 {
-    width: 75%;
+  width: 75%;
 }
 
 .progress-bar.color-2 {
-    width: 80%;
+  width: 80%;
 }
 
 .progress-bar.color-3 {
-    width: 70%;
+  width: 70%;
 }
 
 .progress-bar.color-4 {
-    width: 85%;
+  width: 85%;
 }
 
 .progress-bar.color-5 {
-    width: 75%;
+  width: 75%;
 }
 
 
@@ -1351,14 +1369,18 @@ canvas {
 }
 
 /* Optional: Add some CSS to ensure the layout behaves correctly */
-.finsights-desc, .work-box {
+.finsights-desc,
+.work-box {
   transition: height 0.3s ease;
   /* Smooth height transition */
 
 }
 
 /* Show workfolio items based on filter */
-.filter-1, .filter-2, .filter-3, .filter-4 {
+.filter-1,
+.filter-2,
+.filter-3,
+.filter-4 {
   display: block;
   /* Visible when filter matches */
 }
@@ -1440,9 +1462,10 @@ canvas {
   border-radius: 8px;
   margin-bottom: 1.5rem;
 }
+
 /* Media query for small screens (e.g., tablets and mobile) */
 @media screen and (max-width: 768px) {
-  .finsights-desc{
+  .finsights-desc {
     height: fit-content !important;
   }
 }
@@ -1554,7 +1577,8 @@ canvas {
 
   .project-folio:hover .pdesc,
   .project-folio:active .pdesc {
-    height: 290px !important; /* Adjust height if needed */
+    height: 290px !important;
+    /* Adjust height if needed */
     background: #2fa499;
     opacity: 1;
   }
@@ -1627,7 +1651,9 @@ canvas {
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
-  .col-md-4, .col-md-8 {
+
+  .col-md-4,
+  .col-md-8 {
     width: 100%;
   }
 }
@@ -1636,7 +1662,7 @@ canvas {
 /********* EDUCATION *********/
 /*****************************/
 
-.daviefolio-education .col-md-12 p{
+.daviefolio-education .col-md-12 p {
   padding: 0 1em;
   text-align: left;
   font-size: 16px;
@@ -1647,7 +1673,8 @@ canvas {
   margin-bottom: 30px;
 }
 
-.timeline-centered:after, .timeline-centered:before {
+.timeline-centered:after,
+.timeline-centered:before {
   content: " ";
   display: table;
 }
@@ -1656,7 +1683,8 @@ canvas {
   clear: both;
 }
 
-.timeline-centered:after, .timeline-centered:before {
+.timeline-centered:after,
+.timeline-centered:before {
   content: " ";
   display: table;
 }
@@ -1748,7 +1776,8 @@ canvas {
   padding-top: 10px;
 }
 
-.mb-1, .mt-1 {
+.mb-1,
+.mt-1 {
   margin-bottom: 0.8rem !important;
 }
 
@@ -1834,7 +1863,8 @@ canvas {
   background: #2c98f0;
 }
 
-.iservices .icon:after, .iservices .icon:before {
+.iservices .icon:after,
+.iservices .icon:before {
   position: absolute;
   left: 0;
   right: 0;
@@ -2008,14 +2038,14 @@ canvas {
 .blog-entry .blog-img img {
   position: relative;
   max-width: 100%;
-  transform: scale(1);  
-  transition: transform 0.3s;  
+  transform: scale(1);
+  transition: transform 0.3s;
 }
 
- /* Responsive Adjustments */
+/* Responsive Adjustments */
 @media (max-width: 768px) {
   .blog-entry .blog-img {
-    width: 100%; 
+    width: 100%;
     /* margin-bottom: 15px;  */
   }
 
@@ -2026,7 +2056,7 @@ canvas {
 }
 
 .blog-entry:hover .blog-img img {
-  transform: scale(1.05);  
+  transform: scale(1.05);
 }
 
 
@@ -2207,7 +2237,8 @@ canvas {
   opacity: 1;
 }
 
-.contact-area .contact-form .form-control:-ms-input-placeholder, .contact-s-area .contact-form .form-control::-ms-input-placeholder {
+.contact-area .contact-form .form-control:-ms-input-placeholder,
+.contact-s-area .contact-form .form-control::-ms-input-placeholder {
   color: #fff;
 }
 
@@ -2306,26 +2337,34 @@ canvas {
 
 #daviefolio-aside {
   padding-top: 2em !important;
-  padding-bottom: 30px !important;/*40px*/
+  padding-bottom: 30px !important;
+  /*40px*/
   right: 35px !important;
   /*right: 0 !important;  Aligns sidebar properly */
   width: 300px !important;
   position: fixed;
-  overflow-y: auto; /* Enables scrolling */
+
+  /*overflow-y: auto;  Enables scrolling */
   z-index: 2001;
+
   background: #2d545e;
+
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
   margin-right: 0;
-  top: 0;
-  height: 100vh !important; /* Sidebar fills full height max-height*/
-  display:flex; /* Enables flexbox layout */
-  flex-direction: column; /* Ensures proper spacing */
-  justify-content: space-between; /* Footer stays at bottom */
-  overflow-x: hidden; /* Prevents horizontal scrolling */
-}
 
+  top: 0;
+  height: 100vh !important;
+  /* Sidebar fills full height max-height*/
+  /*display: flex;  Enables flexbox layout */
+
+  /* flex-direction: column;  Ensures proper spacing 
+  justify-content: space-between;  Footer stays at bottom */
+
+  overflow: hidden;
+  /* Prevents horizontal scrolling */
+}
 
 
 
@@ -2334,31 +2373,6 @@ canvas {
 /* Hide scrollbar for WebKit browsers (Chrome, Safari) */
 #daviefolio-aside::-webkit-scrollbar {
   display: none;
-}
-
-
-/* Media query for small screens */
-@media screen and (max-width: 768px) {
-  #daviefolio-aside {
-    position: fixed;
-    /*width          : 100%; /* Full width */
-    /*order: 1;*/
-    /* Move aside above main content */
-    float: left;
-
-
-    left: 0 !important;/*0*/
-
-
-    width: 300px !important;
-    -moz-transform: translateX(-300px);
-    -webkit-transform: translateX(-300px);
-    -ms-transform: translateX(-300px);
-    -o-transform: translateX(-300px);
-    transform: translateX(-300px);
-    padding-top: 2em !important;/*4em*/
-    max-height: 100vh !important;
-  }
 }
 
 
@@ -2381,17 +2395,49 @@ canvas {
   background-image: url(../img/about/about.jpg);
 }
 
-/* CHANGED 
-.author-img {
-  background-image: url(../img/about/about.jpg);
+
+@media screen and (max-width: 768px) {
+  #daviefolio-aside {
+    padding-top: 2em 0 !important;
+    position: fixed;
+    /* Ensures it's fixed */
+    float: left;
+    left: 0 !important;
+
+    width: 100% !important;
+    /* Sidebar takes full width */
+
+    height: auto !important;
+    /* Adjust height dynamically */
+    /*height: 100vh !important;*/
+
+    /*top: 0;*/
+    bottom: 0;
+    z-index: 2001;
+
+    width: 300px !important;
+    -moz-transform: translateX(-300px);
+    -webkit-transform: translateX(-300px);
+    -ms-transform: translateX(-300px);
+    -o-transform: translateX(-300px);
+    transform: translateX(-300px);
+
+
+    overflow: hidden;
+  }
+
+  #daviefolio-aside .author-img {
+    width: 150px !important;
+    height: 150px !important;
+    margin-bottom: 5px !important;
+  }
 }
-CHANGED */
+
+
+
 
 
 #daviefolio-aside .text-center {
-  /*display: flex;
-  flex-direction: column;
-  align-items: center;*/
   margin: 0 !important;
   padding: 0 !important;
 }
@@ -2428,9 +2474,9 @@ CHANGED */
 #daviefolio-logo {
   display: block;
   font-family: "Quicksand", Arial, sans-serif;
-  font-size: 26px;
+  font-size: 26px !important;
   text-align: center;
-  letter-spacing: 1px;
+  letter-spacing: 1px !important;
   width: 100%;
   margin-bottom: 0.2em !important;
 }
@@ -2440,14 +2486,14 @@ CHANGED */
 
 
 #daviefolio-logo a {
-  text-decoration: none; /* Removes underline */
+  text-decoration: none;
   color: #000;
   transition: color 0.3s ease-in-out;
   font-weight: 700 !important;
 }
 
 #daviefolio-logo a:hover {
-  color: #f0a500; 
+  color: #f0a500;
 }
 
 
@@ -2455,10 +2501,34 @@ CHANGED */
 #daviefolio-aside .position {
   display: block;
   margin-top: 0;
-  margin-bottom: 1.5em;/*2*/
+  margin-bottom: 1.5em;
+  /*2*/
   font-size: 13px;
   text-transform: uppercase;
 }
+
+/* ADDED */
+@media screen and (max-width: 768px) {
+  #daviefolio-logo {
+      display: block;
+      font-size: 24px !important; /* Slightly smaller for better fit */
+      letter-spacing: 1px !important;
+      width: 100%;
+      margin-bottom: 0.5em !important; /* Adds slightly more spacing */
+  }
+
+  #daviefolio-logo a {
+      font-weight: 700 !important;
+      transition: color 0.3s ease-in-out;
+  }
+
+  #daviefolio-aside .position {
+    margin-bottom: 1.2em !important;
+    font-size: 12px !important;
+    text-transform: uppercase;
+  }
+}
+
 
 
 
@@ -2480,11 +2550,7 @@ CHANGED */
   padding: 0;
 }
 
-@media screen and (max-width: 768px) {
-  #daviefolio-aside #daviefolio-main-menu ul {
-    margin: 0 0 2em 0;
-  }
-}
+
 
 #daviefolio-aside #daviefolio-main-menu ul li {
   margin: 0 0 10px 0;
@@ -2555,26 +2621,49 @@ CHANGED */
   transform: scaleX(1);
 }
 
+
+@media screen and (max-width: 768px) {
+  #daviefolio-aside #daviefolio-main-menu {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  #daviefolio-aside #daviefolio-main-menu ul {
+    margin: 0 0 2em 0;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  #daviefolio-aside #daviefolio-main-menu ul li {
+    margin: 0 0 8px 0;
+    padding: 0;
+    list-style: none;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+}
+
+
+
 /*footer*/
 
+
+
 #daviefolio-aside .daviefolio-footer {
-  margin-top: auto !important;
+  position: absolute !important;
+  bottom: 0 !important;
   font-size: 15px !important;
   text-align: center !important;
   font-weight: 400 !important;
-  /*color: rgba(0, 0, 0, 0.5);*/
   width: 100% !important;
-  display: block !important; 
-  /*padding: 2px 0; */
-
-    /*margin-top: 0 !important;  Pushes footer to the bottom */
-    padding: 0;
-    /*text-align: center;*/
-    /*color: white;*/
-    /* background: #1b3a4b; Slightly different shade for clarity */
-    position: absolute;
-    bottom: 0;
+  display: block !important;
+  padding: 0 !important;
 }
+
 
 
 
@@ -2600,7 +2689,9 @@ CHANGED */
   padding: 4px;
 }
 
-#daviefolio-aside .daviefolio-footer ul li a:active, #daviefolio-aside .daviefolio-footer ul li a:focus, #daviefolio-aside .daviefolio-footer ul li a:hover {
+#daviefolio-aside .daviefolio-footer ul li a:active,
+#daviefolio-aside .daviefolio-footer ul li a:focus,
+#daviefolio-aside .daviefolio-footer ul li a:hover {
   text-decoration: none;
   outline: none;
   color: #2c98f0;
@@ -2608,16 +2699,34 @@ CHANGED */
 
 #daviefolio-aside .daviefolio-footer p {
   display: block;
-  padding: 0 !important; /*0 0 0.5em 0;*/
+  padding: 0 !important;
+  /*0 0 0.5em 0;*/
   margin: 0 !important;
 }
 
+
+@media (max-width: 768px) {
+  #daviefolio-aside .daviefolio-footer {
+    font-size: 13px !important;
+    padding: 5px 0;
+  }
+}
+
+/*
 @media screen and (max-width: 768px) {
   #daviefolio-aside .daviefolio-footer {
     position: relative;
     bottom: 0;
   }
 }
+*/
+
+
+
+
+
+
+
 
 
 
@@ -2668,7 +2777,8 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   border-radius: 2px;
 }
 
-.pagination li a:focus, .pagination li a:hover {
+.pagination li a:focus,
+.pagination li a:hover {
   background: #2c98f0;
   color: #fff;
   border: 1px solid #2c98f0;
@@ -2685,7 +2795,8 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   border: 1px solid #2c98f0 !important;
 }
 
-.pagination li.active a:focus, .pagination li.active a:hover {
+.pagination li.active a:focus,
+.pagination li.active a:hover {
   background: #2c98f0;
   color: #fff;
   border: 1px solid #2c98f0 !important;
@@ -2725,7 +2836,9 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   padding: 18px 36px !important;
 }
 
-.btn:active, .btn:focus, .btn:hover {
+.btn:active,
+.btn:focus,
+.btn:hover {
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
   outline: none !important;
@@ -2737,7 +2850,9 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   border: 2px solid #2c98f0;
 }
 
-.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:hover {
   background: #44a4f2 !important;
   border-color: #44a4f2 !important;
 }
@@ -2748,7 +2863,9 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   border: 2px solid #2c98f0;
 }
 
-.btn-primary.btn-outline:active, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:hover {
+.btn-primary.btn-outline:active,
+.btn-primary.btn-outline:focus,
+.btn-primary.btn-outline:hover {
   background: #2c98f0;
   color: #fff;
 }
@@ -2759,7 +2876,9 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   border: 2px solid #5cb85c;
 }
 
-.btn-success:active, .btn-success:focus, .btn-success:hover {
+.btn-success:active,
+.btn-success:focus,
+.btn-success:hover {
   background: #4cae4c !important;
   border-color: #4cae4c !important;
 }
@@ -2770,7 +2889,9 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   border: 2px solid #5cb85c;
 }
 
-.btn-success.btn-outline:active, .btn-success.btn-outline:focus, .btn-success.btn-outline:hover {
+.btn-success.btn-outline:active,
+.btn-success.btn-outline:focus,
+.btn-success.btn-outline:hover {
   background: #5cb85c;
   color: #fff;
 }
@@ -2781,7 +2902,9 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   border: 2px solid #5bc0de;
 }
 
-.btn-info:active, .btn-info:focus, .btn-info:hover {
+.btn-info:active,
+.btn-info:focus,
+.btn-info:hover {
   background: #46b8da !important;
   border-color: #46b8da !important;
 }
@@ -2792,7 +2915,9 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   border: 2px solid #5bc0de;
 }
 
-.btn-info.btn-outline:active, .btn-info.btn-outline:focus, .btn-info.btn-outline:hover {
+.btn-info.btn-outline:active,
+.btn-info.btn-outline:focus,
+.btn-info.btn-outline:hover {
   background: #5bc0de;
   color: #fff;
 }
@@ -2803,7 +2928,9 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   border: 2px solid #f0ad4e;
 }
 
-.btn-warning:active, .btn-warning:focus, .btn-warning:hover {
+.btn-warning:active,
+.btn-warning:focus,
+.btn-warning:hover {
   background: #eea236 !important;
   border-color: #eea236 !important;
 }
@@ -2814,7 +2941,9 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   border: 2px solid #f0ad4e;
 }
 
-.btn-warning.btn-outline:active, .btn-warning.btn-outline:focus, .btn-warning.btn-outline:hover {
+.btn-warning.btn-outline:active,
+.btn-warning.btn-outline:focus,
+.btn-warning.btn-outline:hover {
   background: #f0ad4e;
   color: #fff;
 }
@@ -2825,7 +2954,9 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   border: 2px solid #d9534f;
 }
 
-.btn-danger:active, .btn-danger:focus, .btn-danger:hover {
+.btn-danger:active,
+.btn-danger:focus,
+.btn-danger:hover {
   background: #d43f3a !important;
   border-color: #d43f3a !important;
 }
@@ -2836,7 +2967,9 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   border: 2px solid #d9534f;
 }
 
-.btn-danger.btn-outline:active, .btn-danger.btn-outline:focus, .btn-danger.btn-outline:hover {
+.btn-danger.btn-outline:active,
+.btn-danger.btn-outline:focus,
+.btn-danger.btn-outline:hover {
   background: #d9534f;
   color: #fff;
 }
@@ -2850,7 +2983,9 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   transition: 0.3s;
 }
 
-.btn-outline:active, .btn-outline:focus, .btn-outline:hover {
+.btn-outline:active,
+.btn-outline:focus,
+.btn-outline:hover {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -2876,6 +3011,7 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
 #daviefolio-project-folio {
   margin: 0 !important;
 }
+
 /*
 @media (max-width: 768px) {
   #daviefolio-project-folio {
@@ -2892,7 +3028,7 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
 .title-box h3 {
   font-size: 3.0rem;
   margin-bottom: 10px;
-  color:#4169E1;
+  color: #4169E1;
   text-transform: uppercase;
 }
 
@@ -2911,6 +3047,7 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   padding: 1em !important;
 
 }
+
 @media (max-width: 768px) {
   .project-folio-container {
     padding: 0.5em !important;
@@ -2918,6 +3055,7 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
 
   }
 }
+
 .project-work-box {
   margin-bottom: 10px;
   position: relative;
@@ -2934,13 +3072,13 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   align-items: center;
   position: relative;
   overflow: hidden;
-  height: 100%; 
+  height: 100%;
 }
 
 .project-work-img img {
   padding: 2em;
-  max-width: 100%; 
-  max-height: 100%; 
+  max-width: 100%;
+  max-height: 100%;
   display: block;
   border-radius: 8px 8px 0 0;
   transition: transform 0.3s ease;
@@ -2964,7 +3102,7 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
 
 /* Project images */
 .daviefolio-images {
-padding-top: 4em !important;
+  padding-top: 4em !important;
 }
 
 /* Responsive styling */
@@ -2983,26 +3121,26 @@ padding-top: 4em !important;
 
 /* work-content styling */
 .project-work-contento {
-  padding: 2em 4em !important; 
+  padding: 2em 4em !important;
 }
 
 /* Responsive styling */
 @media (max-width: 768px) {
   .project-work-contento {
-    padding: 1em 2em !important; 
+    padding: 1em 2em !important;
   }
 }
 
 .project-content-line-mfo {
   width: 5px !important;
   height: 50px !important;
-  background-color: #ff0000; 
-  margin: 5px auto;  
+  background-color: #ff0000;
+  margin: 5px auto;
   position: absolute;
 }
 
 .project-work-contento p {
-  padding: 0 0.2em !important; 
+  padding: 0 0.2em !important;
   color: #333;
   font-size: 15px !important;
   line-height: 1.6;
@@ -3011,7 +3149,7 @@ padding-top: 4em !important;
 
 @media (max-width: 768px) {
   .project-work-contento p {
-    padding: 0 0.5em !important; 
+    padding: 0 0.5em !important;
   }
 }
 
@@ -3030,8 +3168,8 @@ padding-top: 4em !important;
 .project-content-line-mf {
   width: 120px !important;
   height: 4px !important;
-  background-color: #ff0000; 
-  margin: 25px auto; 
+  background-color: #ff0000;
+  margin: 25px auto;
   position: absolute;
 }
 
@@ -3073,6 +3211,7 @@ padding-top: 4em !important;
   margin-bottom: 30px;
   transition: transform 0.3s ease;
 }
+
 /*
 .insignts-desc:hover {
   transform: translateY(-5px);
@@ -3084,6 +3223,7 @@ padding-top: 4em !important;
   color: #2c98f0;
   text-align: center;
 }
+
 /*
 .insights-heading-meta {
   display: block;
@@ -3096,19 +3236,20 @@ padding-top: 4em !important;
 
 .insignts-desc p {
   font-size: 16px !important;
-  color:#333;
+  color: #333;
   margin-bottom: 15px;
   text-align: left;
 }
 
 .insignts-desc ul {
   font-size: 15px !important;
-  color:#333;
+  color: #333;
   margin-bottom: 15px;
   text-align: left;
   margin: 0;
   padding: 0 1em;
 }
+
 /* IMAGES: General styling for the insights section */
 .i-work-box {
   margin-bottom: 30px;
@@ -3126,13 +3267,16 @@ padding-top: 4em !important;
   align-items: center;
   position: relative;
   overflow: hidden;
-  height: 100%; /* Ensures the image container has a defined height */
+  height: 100%;
+  /* Ensures the image container has a defined height */
 }
 
 .i-work-img img {
   padding: 2em;
-  max-width: 100%; /* Ensures the image scales within the container */
-  max-height: 100%; /* Prevents the image from overflowing */
+  max-width: 100%;
+  /* Ensures the image scales within the container */
+  max-height: 100%;
+  /* Prevents the image from overflowing */
   display: block;
   border-radius: 8px 8px 0 0;
   transition: transform 0.3s ease;
@@ -3149,7 +3293,7 @@ padding-top: 4em !important;
 .s-title {
   font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
   padding-top: 20px !important;
-  color:#0056b3;
+  color: #0056b3;
   margin-bottom: 5px;
   font-weight: 600 !important;
   font-size: 18px !important;
@@ -3160,6 +3304,7 @@ padding-top: 4em !important;
   color: #333;
   text-align: left;
 }
+
 /* Responsive adjustments */
 /*
 @media (max-width: 1200px) {
@@ -3303,14 +3448,15 @@ padding-top: 4em !important;
 
 
 /* BLOG */
-  .daviefolio-blog-project {
-    padding: 1em !important; 
-    width: 100%;
-  }
+.daviefolio-blog-project {
+  padding: 1em !important;
+  width: 100%;
+}
+
 /* RECENT: Styling for the recent project section */
 
 .daviefolio-project-resent {
-  padding: 1em !important; 
+  padding: 1em !important;
   width: 100%;
 }
 
@@ -3343,12 +3489,14 @@ padding-top: 4em !important;
 .daviefolio-project-narrow-content {
   /*display: block;
   align-items: flex-start;*/
-  width: 100%; 
+  width: 100%;
   margin: 0 auto;
 }
+
 .daviefolio-project-narrow-content .contact-daviefolio-heading {
   color: #2c98f0;
 }
+
 /*
 .row.animate-box {
   display: flex;
@@ -3411,7 +3559,8 @@ padding-top: 4em !important;
   margin: 20px auto;
   font-size: 16px;
   color: #ffffff;
-  background-color: #007bff; /* Primary button color */
+  background-color: #007bff;
+  /* Primary button color */
   border: none;
   border-radius: 5px;
   text-align: center;
@@ -3426,13 +3575,15 @@ padding-top: 4em !important;
 }
 
 .but-load-more:hover {
-  background-color: #0056b3; /* Darker shade for hover effect */
+  background-color: #0056b3;
+  /* Darker shade for hover effect */
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .but-load-more:focus {
   outline: none;
-  background-color: #004085; /* Even darker shade for focus */
+  background-color: #004085;
+  /* Even darker shade for focus */
   box-shadow: 0 0 0 3px rgba(38, 143, 255, 0.5);
 }
 
@@ -3467,7 +3618,8 @@ padding-top: 4em !important;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 30px;
   transition: transform 0.3s ease;
-  text-align: center; /* Center align all text within the container */
+  text-align: center;
+  /* Center align all text within the container */
 }
 
 .project-desc:hover {
@@ -3490,7 +3642,8 @@ padding-top: 4em !important;
   font-size: 1rem;
   color: #333;
   margin: 10px 0;
-  text-align: center; /* Center align each paragraph */
+  text-align: center;
+  /* Center align each paragraph */
 }
 
 .project-desc p:hover {
@@ -3502,41 +3655,41 @@ padding-top: 4em !important;
 /* Responsive adjustments */
 @media (max-width: 1200px) {
   .project-heading-meta {
-      font-size: 1.4rem;
+    font-size: 1.4rem;
   }
 
   .project-desc p {
-      font-size: 0.95rem;
+    font-size: 0.95rem;
   }
 }
 
 @media (max-width: 768px) {
   .project-desc {
-      padding: 15px;
+    padding: 15px;
   }
 
   .project-heading-meta {
-      font-size: 1.3rem;
+    font-size: 1.3rem;
   }
 
   .project-desc p {
-      font-size: 0.9rem;
+    font-size: 0.9rem;
   }
 }
 
 @media (max-width: 576px) {
   .project-desc {
-      padding: 10px;
+    padding: 10px;
   }
 
   .project-heading-meta {
-      font-size: 1.2rem;
-      margin-bottom: 10px;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
   }
 
   .project-desc p {
-      font-size: 0.85rem;
-      margin: 8px 0;
+    font-size: 0.85rem;
+    margin: 8px 0;
   }
 }
 
@@ -3620,9 +3773,9 @@ padding-top: 4em !important;
 #navbarDefault {
   position: absolute;
   display: flex;
-  justify-content: flex-end; 
+  justify-content: flex-end;
   padding: 10px 20px;
-  background-color: transparent; 
+  background-color: transparent;
   right: 100px;
 }
 
@@ -3636,7 +3789,7 @@ padding-top: 4em !important;
 
 /* Navbar List Items */
 #navbarDefault .navbar-nav li {
-  margin-left: 20px; 
+  margin-left: 20px;
 }
 
 /* Remove margin for the first item to avoid extra spacing on the far right */
@@ -3657,8 +3810,8 @@ padding-top: 4em !important;
 /* Hover and Focus States */
 #navbarDefault .navbar-nav a:hover,
 #navbarDefault .navbar-nav a:focus {
-  color: #007bff; 
-  background-color: rgba(0, 0, 0, 0.1); 
+  color: #007bff;
+  background-color: rgba(0, 0, 0, 0.1);
   border-radius: 5px;
 }
 
@@ -3684,20 +3837,20 @@ padding-top: 4em !important;
   #navbarDefault .navbar-nav a {
     font-weight: 500;
     font-size: 15px;
-    padding: 10px 8px; 
+    padding: 10px 8px;
   }
 }
 
 /* No Responsive Column Layout */
 @media (max-width: 768px) {
   #navbarDefault .navbar-nav li {
-    margin-left: 1px; 
+    margin-left: 1px;
   }
 }
 
 @media (max-width: 768px) {
   #navbarDefault .navbar-nav li:first-child {
-    margin-left: 0; 
+    margin-left: 0;
   }
 }
 
@@ -3717,8 +3870,8 @@ padding-top: 4em !important;
   left: 0;
   background: white;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  padding: 0; 
-  margin: 0;  
+  padding: 0;
+  margin: 0;
   min-width: 150px;
 }
 
@@ -3733,8 +3886,8 @@ padding-top: 4em !important;
 #navbarDefault .navbar-nav .dropdown-menu li a {
   display: block;
   text-decoration: none;
-  text-align: left; 
-  white-space: nowrap; 
+  text-align: left;
+  white-space: nowrap;
   color: #add8e6;
   font-family: "Verdana";
   font-weight: 500;
@@ -3843,7 +3996,7 @@ padding-top: 4em !important;
 .blogdesc {
   padding: 20px;
   line-height: 1.6;
-  background-color:rgba(0, 0, 0, 0.1) ;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 /* Title Styling */
@@ -3858,17 +4011,17 @@ padding-top: 4em !important;
 /* Paragraph Styling */
 .blogdesc p {
   font-size: 1.1em;
-  color:#b3b3b3; 
+  color: #b3b3b3;
   margin-bottom: 15px;
   text-align: left;
 }
 
 /* Blog Sidebar Styling */
 .blog-sidebar {
-  background-color: #f8f9fa; 
+  background-color: #f8f9fa;
   padding: 20px;
-  border-radius: 8px; 
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Sidebar Title Styling */
@@ -3892,12 +4045,12 @@ padding-top: 4em !important;
   margin-bottom: 10px;
   font-weight: 500;
   text-align: left;
-  color: #333; 
+  color: #333;
 }
 
 /* Sidebar Links */
 .list-sidebar li a {
-  color: #007bff; 
+  color: #007bff;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
@@ -3906,7 +4059,7 @@ padding-top: 4em !important;
 }
 
 .list-sidebar p {
-  color: #333; 
+  color: #333;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
@@ -3916,7 +4069,7 @@ padding-top: 4em !important;
 
 /* Hover Effect for Links */
 .list-sidebar li a:hover {
-  color: #0056b3; 
+  color: #0056b3;
   text-decoration: underline;
 }
 
@@ -3933,17 +4086,14 @@ padding-top: 4em !important;
   width: 100%;
   /*max-width: 100%;*/
   height: 580px;
-  overflow-x: auto; 
-  overflow-y: hidden; 
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 
 @media (max-width: 768px) {
   #vizContainer {
     width: 100%;
     height: 540px;
-    overflow-x: auto; 
+    overflow-x: auto;
   }
 }
-
-
-
