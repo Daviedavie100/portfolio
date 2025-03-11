@@ -1570,7 +1570,7 @@ canvas {
 
 .project-folio:hover .pdesc,
 .project-folio:active .pdesc {
-  height: 290px !important;
+  height: 250px !important; /*290px*/
   background: #2fa499;
   opacity: 1;
 }
