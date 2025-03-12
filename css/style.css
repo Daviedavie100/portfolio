@@ -1579,11 +1579,12 @@ canvas {
 @media screen and (max-width: 768px) {
   .project-folio .pdesc {
     transition: background 0.3s ease, opacity 0.3s ease;
+    font-size: 13px !important;
   }
 
   .project-folio:hover .pdesc,
   .project-folio:active .pdesc {
-    height: 320px !important;
+    height: 290px !important;
     /* Adjust height if needed */
     background: #2fa499;
     opacity: 1;
