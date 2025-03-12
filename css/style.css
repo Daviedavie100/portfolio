@@ -1493,7 +1493,7 @@ canvas {
   text-align: left;
 }
 
-/* Icon container for sharing, views, likes */
+/* Icon container for sharing, views, likes 
 .fcon {
   padding: 19px;
   display: flex;
@@ -1520,6 +1520,9 @@ canvas {
 .fcon .icon i {
   font-size: 1.2rem;
 }
+*/
+
+
 
 /***** PROJECTS OTHER *****/
 /* Container styles */
@@ -1529,6 +1532,14 @@ canvas {
   /*width        : 100%;
   display        : block;
   margin-bottom  : 30px;*/
+}
+
+@media screen and (max-width: 768px) {
+  .project-folio {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .project-folio img {
@@ -1603,6 +1614,12 @@ canvas {
   /* Ensure it spans the width */
   padding: 10px;
   /* Optional padding */
+}
+
+@media screen and (max-width: 768px) {
+  .pcon {
+    bottom: 45px;
+  }
 }
 
 .pcon .icon {
