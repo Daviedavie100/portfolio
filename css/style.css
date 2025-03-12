@@ -1534,13 +1534,27 @@ canvas {
   margin-bottom  : 30px;*/
 }
 
+
+
 @media screen and (max-width: 768px) {
-  .project-folio {
+  .workfolio-item,
+  .project-folio,
+  .workfolio-item.filter-2 {
     width: 100%;
     margin: 0;
     padding: 0;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .workfolio-item .project-folio img img {
+      margin: 0;
+      padding: 0;
+      display: block; /* Ensures no extra spacing */
+      width: 100%; /* Optional: Makes the image responsive */
+  }
+}
+
 
 .project-folio img {
   width: 100%;
