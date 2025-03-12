@@ -1539,7 +1539,7 @@ canvas {
 @media screen and (max-width: 768px) {
   .workfolio-item,
   .project-folio,
-  .workfolio-item.filter-2 {
+  .workfolio-item.filter-2 img {
     width: 100%;
     margin: 0;
     padding: 0;
@@ -1547,13 +1547,13 @@ canvas {
 }
 
 @media screen and (max-width: 768px) {
-  .workfolio-item .project-folio img img {
-      margin: 0;
-      padding: 0;
-      display: block; /* Ensures no extra spacing */
-      width: 100%; /* Optional: Makes the image responsive */
+  .workfolio-item .project-folio a img {
+      width: 100%;
+      height: auto; /* Maintains aspect ratio */
+      display: block; /* Removes any extra spacing */
   }
 }
+
 
 
 .project-folio img {
