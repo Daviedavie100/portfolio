@@ -1558,14 +1558,6 @@ canvas {
   }
 }
 
-@media screen and (max-width: 768px) {
-  .workfolio-item .project-folio a img {
-      width: 100%;
-      height: auto; /* Maintains aspect ratio */
-      display: block; /* Removes any extra spacing */
-  }
-}
-
 
 
 .project-folio img {
@@ -1575,6 +1567,30 @@ canvas {
   height: auto;
   border-radius: 5px;
 }
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  .workfolio-item {
+      width: 100% !important;  /* Ensures the item takes full width */
+  }
+  
+  .project-folio {
+      width: 100%;  /* Makes sure the container spans the full width */
+      display: block; 
+  }
+
+  .project-folio a img {
+      width: 100% !important;  /* Forces the image to take full width */
+      height: auto;  /* Keeps the aspect ratio */
+      display: block;
+  }
+}
+
+
+
 
 /* Description styling (centered and hidden by default) */
 .pdesc {
