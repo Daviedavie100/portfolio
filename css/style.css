@@ -2298,6 +2298,24 @@ canvas {
   border-bottom: 1px solid rgba(256, 256, 256, 0.5);
 }
 
+/* Default input style */
+.form-control {
+  background-color: white;
+  color: black;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Change background to white and text to white on focus or hover */
+.form-control:focus, 
+.form-control:hover {
+    background-color: white;
+    color: white;
+    border-color: #007bff; /* Optional: Highlight border on focus */
+}
+
 .contact-area .contact-form .form-control::placeholder {
   color: #fff;
   opacity: 1;
