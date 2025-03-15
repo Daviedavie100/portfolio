@@ -284,7 +284,10 @@ th {
      widows: 3; 
   }
   */
-
+  p {
+    break-inside: avoid;
+ }
+ 
   h2,
   h3 {
     page-break-after: avoid;
