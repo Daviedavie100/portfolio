@@ -71,7 +71,8 @@
 .owl-carousel .owl-stage-outer {
     position         : relative;
     overflow         : hidden;
-    -webkit-transform: translate3d(0px, 0, 0)
+    -webkit-transform: translate3d(0px, 0, 0);
+    transform: translate3d(0px, 0, 0)
 }
 
 .owl-carousel .owl-controls .owl-dot,
@@ -108,6 +109,7 @@
     min-height                 : 1px;
     float                      : left;
     -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout      : none;
     -webkit-user-select        : none;
@@ -119,7 +121,8 @@
 .owl-carousel .owl-item img {
     display                : block;
     width                  : 100%;
-    -webkit-transform-style: preserve-3d
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d
 }
 
 .owl-carousel.owl-text-select-on .owl-item {
@@ -180,6 +183,7 @@
     cursor                     : pointer;
     z-index                    : 1;
     -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     -webkit-transition         : scale 100ms ease;
     -moz-transition            : scale 100ms ease;
     -ms-transition             : scale 100ms ease;
