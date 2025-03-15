@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+/*document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("contactForm");
 
     form.addEventListener("submit", async function (event) {
@@ -26,9 +26,9 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+*/
 
-
-/*$(function () {
+$(function () {
     $("#contactForm input, #contactForm textarea").jqBootstrapValidation({
         preventSubmit: true,
         submitSuccess: function ($form, event) {
@@ -75,7 +75,9 @@ document.addEventListener("DOMContentLoaded", function () {
         $('#success').html(''); // Clear success message when name field is focused
     });
 });
-*/
+
+
+
 /*$(function () {
     $("#contactForm input, #contactForm textarea").jqBootstrapValidation({
         preventSubmit: true,
