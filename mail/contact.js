@@ -51,4 +51,4 @@ $(function () {
 
 $('#name').focus(function () {
     $('#success').html(''); // Clear the success message when the name field is focused
-});
+})
