@@ -1,4 +1,34 @@
-$(function () {
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("contactForm");
+
+    form.addEventListener("submit", async function (event) {
+        event.preventDefault();
+
+        const formData = new FormData(form);
+
+        try {
+            const response = await fetch(form.action, {
+                method: form.method,
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+
+            if (response.ok) {
+                alert("Message sent successfully!");
+                form.reset(); // Clear form after successful submission
+            } else {
+                alert("Error sending message. Please try again.");
+            }
+        } catch (error) {
+            alert("An error occurred. Please try again later.");
+        }
+    });
+});
+
+
+/*$(function () {
     $("#contactForm input, #contactForm textarea").jqBootstrapValidation({
         preventSubmit: true,
         submitSuccess: function ($form, event) {
@@ -45,7 +75,7 @@ $(function () {
         $('#success').html(''); // Clear success message when name field is focused
     });
 });
-
+*/
 /*$(function () {
     $("#contactForm input, #contactForm textarea").jqBootstrapValidation({
         preventSubmit: true,
