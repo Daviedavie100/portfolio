@@ -8,8 +8,10 @@
 
 html {
   font-family: sans-serif;
-  -webkit-text-size-adjust: 100%;
-  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; /* Safari, Chrome, iOS */
+  -moz-text-size-adjust: 100%;    /* Firefox */
+  -ms-text-size-adjust: 100%;     /* Internet Explorer */
+  text-size-adjust: 100%;         /* Standard */
 }
 
 body {
@@ -155,6 +157,7 @@ html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
+  appearance: button;
   cursor: pointer;
 }
 
@@ -186,12 +189,14 @@ input[type="number"]::-webkit-outer-spin-button {
 
 input[type="search"] {
   -webkit-appearance: textfield;
+  appearance: textfield;
   box-sizing: content-box;
 }
 
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
+  appearance: none;
 }
 
 fieldset {
@@ -271,12 +276,14 @@ th {
     max-width: 100% !important;
   }
 
+  /*
   p,
   h2,
   h3 {
-    orphans: 3;
-    widows: 3;
+     orphans: 3; 
+     widows: 3; 
   }
+  */
 
   h2,
   h3 {
@@ -2113,10 +2120,10 @@ textarea.form-control {
   height: auto;
 }
 
-input[type="search"] {
+/*input[type="search"] {
   -webkit-appearance: none;
 }
-
+*/
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   input[type="date"].form-control,
   input[type="time"].form-control,
@@ -3618,7 +3625,6 @@ tbody.collapse.in {
   padding-left: 15px;
   border-top: 1px solid transparent;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
-  -webkit-overflow-scrolling: touch;
 }
 .navbar-collapse:before, .navbar-collapse:after {
   content: " ";
@@ -5322,12 +5328,13 @@ button.close {
   background: transparent;
   border: 0;
   -webkit-appearance: none;
+  appearance: none;
 }
 
 .modal-open {
   overflow: hidden;
 }
-
+/*
 .modal {
   display: none;
   overflow: hidden;
@@ -5338,8 +5345,23 @@ button.close {
   left: 0;
   z-index: 1050;
   -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth; 
   outline: 0;
 }
+*/
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  overflow: hidden;
+  outline: 0;
+}
+
+
 .modal.fade .modal-dialog {
   -webkit-transform: translate(0, -25%);
   -ms-transform: translate(0, -25%);
