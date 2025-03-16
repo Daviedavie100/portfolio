@@ -2298,28 +2298,26 @@ canvas {
   border-bottom: 1px solid rgba(256, 256, 256, 0.5);
 }
 
-/* Default input style */
-.form-control {
+input, textarea {
   background-color: white;
   color: black;
-  border: 1px solid #ccc;
-  padding: 10px;
-  font-size: 16px;
-  transition: background-color 0.3s, color 0.3s;
 }
 
-/* Change background to white and text to white on focus or hover */
-.form-control:focus, 
-.form-control:hover {
-    background-color: white;
-    color: white;
-    border-color: #007bff; /* Optional: Highlight border on focus */
+input:focus, textarea:focus {
+  background-color: white;
+  color: white;
 }
+
 
 .contact-area .contact-form .form-control::placeholder {
   color: #fff;
   opacity: 1;
 }
+/*
+input:focus::placeholder, textarea:focus::placeholder {
+  color: white;
+}
+*/
 
 .contact-area .contact-form .form-control:-ms-input-placeholder,
 .contact-s-area .contact-form .form-control::-ms-input-placeholder {
@@ -2381,43 +2379,17 @@ canvas {
   border-radius: 0;
 }
 
+.success-message {
+  display: none;
+  color: green;
+}
+
+
 /**************************************/
 /********* SIDEBAR COLUMN CSS *********/
 /**************************************/
 
-
-
 /******** DAVIEFOLIO ASIDE ********/
-/*
-#daviefolio-aside {
-  padding-top: 2em !important;
-  padding-bottom: 40px !important;
-  float: right;
-  right: 35px !important;
-  width: 300px !important;
-  position: fixed;
-  overflow-y: auto;
-  z-index: 2001;
-  background: #2d545e;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
-  margin-right: 0;
-  top: 0;
- 
-  max-height: 100vh !important; 
- 
-  flex-direction: column;
-  justify-content: space-between; 
-
-  order: 2;
-
-  overflow: hidden; 
-  -ms-overflow-style: none;
-  overflow: hidden;
-}
-*/
-
 
 #daviefolio-aside {
   padding-top: 2.3em !important;
