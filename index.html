@@ -11,7 +11,7 @@
 	<meta name="keywords" content="David Owino, data analysis, data visualization, portfolio, projects">
 	<meta name="author" content="David Owino">
 
-	<!-- Facebook and Twitter integration -->
+	<!-- Facebook and Twitter integration 
 	<meta property="og:title" content />
 	<meta property="og:image" content />
 	<meta property="og:url" content />
@@ -20,12 +20,43 @@
 	<meta name="twitter:title" content />
 	<meta name="twitter:image" content />
 	<meta name="twitter:url" content />
-	<meta name="twitter:card" content />
+	<meta name="twitter:card" content />-->
 
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<!-- Facebook, Twitter, and LinkedIn Integration -->
+	<meta property="og:title" content="David Owino | Data Analyst Portfolio" />
+	<meta property="og:image" content="https://daviedavie100.github.io/portfolio/assets/images/preview-image.jpg" />
+	<meta property="og:url" content="https://daviedavie100.github.io/portfolio/" />
+	<meta property="og:site_name" content="David Owino Portfolio" />
+	<meta property="og:description"
+		content="Explore the portfolio of David Owino, showcasing projects in data analysis and visualization." />
+	<meta property="og:type" content="website" />
+
+	<!-- Twitter Card -->
+	<meta name="twitter:title" content="David Owino | Data Analyst Portfolio" />
+	<meta name="twitter:image" content="https://daviedavie100.github.io/portfolio/assets/images/preview-image.jpg" />
+	<meta name="twitter:url" content="https://daviedavie100.github.io/portfolio/" />
+	<meta name="twitter:card" content="summary_large_image" />
+
+	<!-- LinkedIn -->
+	<meta property="og:image:secure_url"
+		content="https://daviedavie100.github.io/portfolio/assets/images/preview-image.jpg" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory 
 	<link rel="shortcut icon" href="lib/favicon_io/favicon.ico">
 
 	<link rel="apple-touch-icon" sizes="180x180" href="lib/favicon_io/apple-touch-icon.png ">
+	<link rel="icon" type="image/png" sizes="32x32" href="lib/favicon_io/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="lib/favicon_io/favicon-16x16.png">
+	<link rel="manifest" href="lib/favicon_io/site.webmanifest">-->
+
+
+	<!-- Favicon and Apple Touch Icons -->
+	<link rel="shortcut icon" href="lib/favicon_io/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="lib/favicon_io/favicon.ico"> <!-- Extra fallback -->
+	<link rel="apple-touch-icon" sizes="180x180" href="lib/favicon_io/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="lib/favicon_io/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="lib/favicon_io/favicon-16x16.png">
 	<link rel="manifest" href="lib/favicon_io/site.webmanifest">
@@ -41,7 +72,6 @@
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/icomoon.css">
 	<link rel="stylesheet" href="css/flexslider.css">
-	<!--<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">-->
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 	<link rel="stylesheet" href="lib/lightbox/css/lightbox.min.css">
@@ -1620,47 +1650,44 @@
 														action="https://formspree.io/f/mwppwqkr" novalidate="novalidate"
 														method="POST">
 
-															<div class="control-group">
-																<input type="text" class="form-control" id="name"
-																	name="name" placeholder="Your Name"
-																	required="required"
-																	data-validation-required-message="Please enter your name" />
-																<p class="help-block"></p>
-															</div>
+														<div class="control-group">
+															<input type="text" class="form-control" id="name"
+																name="name" placeholder="Your Name" required="required"
+																data-validation-required-message="Please enter your name" />
+															<p class="help-block"></p>
+														</div>
 
-															<div class="control-group">
-																<input type="email" class="form-control" id="email"
-																	name="email" placeholder="Your Email"
-																	required="required"
-																	data-validation-required-message="Please enter your email" />
-																<p class="help-block"></p>
-															</div>
+														<div class="control-group">
+															<input type="email" class="form-control" id="email"
+																name="email" placeholder="Your Email"
+																required="required"
+																data-validation-required-message="Please enter your email" />
+															<p class="help-block"></p>
+														</div>
 
-															<div class="control-group">
-																<input type="text" class="form-control" id="subject"
-																	name="subject" placeholder="Subject"
-																	required="required"
-																	data-validation-required-message="Please enter a subject" />
-																<p class="help-block"></p>
-															</div>
+														<div class="control-group">
+															<input type="text" class="form-control" id="subject"
+																name="subject" placeholder="Subject" required="required"
+																data-validation-required-message="Please enter a subject" />
+															<p class="help-block"></p>
+														</div>
 
-															<div class="control-group">
-																<textarea class="form-control" id="message"
-																	name="message" placeholder="Message"
-																	required="required"
-																	data-validation-required-message="Please enter your message"></textarea>
-																<p class="help-block"></p>
-															</div>
+														<div class="control-group">
+															<textarea class="form-control" id="message" name="message"
+																placeholder="Message" required="required"
+																data-validation-required-message="Please enter your message"></textarea>
+															<p class="help-block"></p>
+														</div>
 
-															<!-- Hidden input to customize email subject -->
-															<input type="hidden" name="_subject"
-																value="New Contact Form Submission">
+														<!-- Hidden input to customize email subject -->
+														<input type="hidden" name="_subject"
+															value="New Contact Form Submission">
 
-															<div>
-																<button class="btn" type="submit"
-																	id="sendMessageButton">Send Message</button>
-															</div>
-														</form>
+														<div>
+															<button class="btn" type="submit"
+																id="sendMessageButton">Send Message</button>
+														</div>
+													</form>
 
 												</div>
 											</div>
@@ -1758,6 +1785,7 @@
 	<script src="lib/isotope/isotope.js"></script>
 
 	<!-- Contact Javascript File -->
+	<script src="mail/jqBootstrapValidation.min.js"></script>
 	<script src="mail/contact.js"></script>
 
 	<!-- Template Javascript -->
