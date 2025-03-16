@@ -2128,7 +2128,6 @@ canvas {
 
 .blog-entry .blog-desc {
   display: block;
-  /* margin-bottom: 10px; */
   padding: 0.5em 2em;
 }
 
@@ -2145,7 +2144,6 @@ canvas {
   text-transform: uppercase;
   font-weight: 400;
   padding-bottom: 1em;
-  /* margin: 0; */
 }
 
 .blog-entry .blog-desc h3 {
@@ -2153,10 +2151,6 @@ canvas {
   font-size: 1.4rem;
   font-weight: bold;
   text-transform: uppercase;
-  /* padding: 0 1.5em; */
-  /* margin-bottom: 15px; */
-  /* line-height: auto; */
-  /* margin: 0; */
 }
 
 .blog-entry .blog-desc h3 a {
@@ -2168,13 +2162,6 @@ canvas {
   color: #5706ee;
   text-decoration: none;
 }
-
-/* @media screen and (max-width: 768px) {
-  .blog-entry .blog-desc h3 {
-    padding: 0.5em 0.75em;
-  }
-} */
-
 
 .blog-entry .blog-desc p {
   font-family: "Quicksand", Arial, sans-serif;
@@ -2264,8 +2251,6 @@ canvas {
 }
 
 .contact-area .container-fluid {
-  /* padding-right : 10px;
-  padding-left: 10px;*/
   margin: 0;
   background: url(../img/about/contact-2.jpg) left center no-repeat;
   background-size: contain;
@@ -2341,7 +2326,6 @@ canvas {
   }
 }
 
-/*Form control*/
 .form-control {
   -webkit-appearance: none;
   -moz-appearance: none;
