@@ -1433,9 +1433,6 @@ canvas {
 /***** BTN *****/
 .butn {
   display: inline-block;
-  /*5px;*/
-
-  /*6px 12px 1px 4px;   padding         : 5px 15px;*/
   font-size: 14px;
   font-weight: bold;
   color: #fff;
@@ -1443,9 +1440,18 @@ canvas {
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s ease;
-  /* Add margin-left to push buttons 2em from the left */
   padding: 10px 30px;
   margin: 0 5px 1em 0;
+}
+
+@media screen and (max-width: 768px) {
+  .butn {
+    font-size: 12px; 
+    padding: 8px 20px; 
+    width: 100%; 
+    text-align: center;
+    margin: 5px 0; 
+  }
 }
 
 .repo-btn {
