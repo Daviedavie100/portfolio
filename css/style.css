@@ -1431,6 +1431,14 @@ canvas {
 }
 
 /***** BTN *****/
+.button-container {
+  display: flex;
+  justify-content: center;  
+  align-items: center;      
+  flex-wrap: wrap;          
+  gap: 10px;               
+}
+
 .butn {
   display: inline-block;
   font-size: 14px;
@@ -1441,14 +1449,14 @@ canvas {
   border-radius: 5px;
   transition: background-color 0.3s ease;
   padding: 10px 30px;
-  margin: 0 5px 1em 0;
+  margin: 0 5px;/* 1em 0;*/
 }
 
 @media screen and (max-width: 768px) {
   .butn {
-    font-size: 12px; 
+    font-size: 13px; 
     padding: 8px 20px; 
-    width: 100%; 
+    /*width: 100%; */
     text-align: center;
     margin: 5px 0; 
   }
@@ -1456,10 +1464,14 @@ canvas {
 
 .repo-btn {
   background-color: #28a745;
+  padding-left: 15px; 
+  padding-right: 15px;
 }
 
 .blog-btn {
   background-color: #007bff;
+  padding-left: 35px; 
+  padding-right: 35px;
 }
 
 .butn:hover {
