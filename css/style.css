@@ -2298,26 +2298,10 @@ canvas {
   border-bottom: 1px solid rgba(256, 256, 256, 0.5);
 }
 
-input, textarea {
-  background-color: white;
-  color: black;
-}
-
-input:focus, textarea:focus {
-  background-color: white;
-  color: white;
-}
-
-
 .contact-area .contact-form .form-control::placeholder {
   color: #fff;
   opacity: 1;
 }
-/*
-input:focus::placeholder, textarea:focus::placeholder {
-  color: white;
-}
-*/
 
 .contact-area .contact-form .form-control:-ms-input-placeholder,
 .contact-s-area .contact-form .form-control::-ms-input-placeholder {
