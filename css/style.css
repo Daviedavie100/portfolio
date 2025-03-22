@@ -3084,6 +3084,7 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
 
 @media (max-width: 768px) { 
   .title-box {
+    /*margin-top: 0 !important;*/
     background-color: aqua;
     width: 100%;
     text-align: center; /* Ensures text is centered */
@@ -3094,7 +3095,7 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
 
   .title-box h3 {
     margin-top: 5px !important;
-    position: relative;
+    position: absolute;
   }
 
   .title-box .title-line-mf { 
