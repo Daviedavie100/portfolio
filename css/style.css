@@ -3092,19 +3092,18 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
     align-items: center;
   }
 
+  .title-box h3 {
+    margin-top: 5px !important;
+    position: relative;
+  }
+
   .title-box .title-line-mf { 
-    margin-bottom: 2px; /* Moves it closer to h3 */
+    margin-top: 2px; /* Moves it closer to h3 */
     width: 30px;
     height: 2px;
     background-color: black; /* Make it visible */
   }
-
-  .title-box h3 {
-    margin-top: 0; /* Removes extra space above h3 */
-    position: relative;
-  }
 }
-
 
 .project-folio-container {
   display: flex;
