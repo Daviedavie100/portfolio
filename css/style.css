@@ -3055,11 +3055,10 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
 .daviefolio-project-folio {
   margin: 0 !important;
 }
-
 /*
 @media (max-width: 768px) {
-  #daviefolio-project-folio {
-    padding-top: 2em!important;
+  .daviefolio-project-folio {
+    padding-top: 4em!important;
   }
 }
 */
@@ -3083,14 +3082,29 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   margin: 0 auto 20px auto;
 }
 
-@media (max-width: 768px) {
-  .title-box h3,
-  .title-line-mf {
-    display: block;
-    padding: 0;
-    margin: 0;
+@media (max-width: 768px) { 
+  .title-box {
+    background-color: aqua;
+    width: 100%;
+    text-align: center; /* Ensures text is centered */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title-box .title-line-mf { 
+    margin-bottom: 2px; /* Moves it closer to h3 */
+    width: 30px;
+    height: 2px;
+    background-color: black; /* Make it visible */
+  }
+
+  .title-box h3 {
+    margin-top: 0; /* Removes extra space above h3 */
+    position: relative;
   }
 }
+
 
 .project-folio-container {
   display: flex;
@@ -3144,7 +3158,9 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
 /* Responsive styling */
 @media (max-width: 768px) {
   .project-work-box {
-    margin-bottom: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom:0 !important;
   }
 
   .project-work-img img {
@@ -3311,15 +3327,12 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   position: relative;
   overflow: hidden;
   height: 100%;
-  /* Ensures the image container has a defined height */
 }
 
 .i-work-img img {
   padding: 2em;
   max-width: 100%;
-  /* Ensures the image scales within the container */
   max-height: 100%;
-  /* Prevents the image from overflowing */
   display: block;
   border-radius: 8px 8px 0 0;
   transition: transform 0.3s ease;
@@ -3348,147 +3361,6 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   text-align: left;
 }
 
-/* Responsive adjustments */
-/*
-@media (max-width: 1200px) {
-  .title-box h3 {
-      font-size: 2rem;
-  }
-
-  .w-title {
-      font-size: 1.4rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .portfolio-mf {
-      padding: 40px 0;
-  }
-
-  .title-box h3 {
-      font-size: 1.8rem;
-  }
-
-  .work-box {
-      margin-bottom: 20px;
-  }
-
-  .w-title {
-      font-size: 1.3rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .portfolio-mf {
-      padding: 30px 0;
-  }
-
-  .title-box h3 {
-      font-size: 1.5rem;
-  }
-
-  .work-img img {
-      border-radius: 4px;
-  }
-
-  .w-title {
-      font-size: 1.2rem;
-  }
-
-  p {
-      font-size: 0.9rem;
-  }
-}
-
-
-@media (max-width: 768px) {
-  .title-container p {
-      font-size: 0.9rem;
-      margin-top: 10px;
-      margin-bottom: 10px;
-  }
-
-  .content-line-mf {
-      width: 40px;
-  }
-}
-
-@media (max-width: 576px) {
-  .title-container p {
-      font-size: 0.85rem;
-  }
-
-  .content-line-mf {
-      width: 30px;
-  }
-}
-*/
-/* Responsive adjustments */
-/*
-@media (max-width: 1200px) {
-  .w-title {
-      font-size: 1.15rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .work-box {
-      margin-bottom: 20px;
-  }
-
-  .work-content {
-      padding: 10px;
-  }
-
-  .w-title {
-      font-size: 1rem;
-  }
-}
-*/
-/* Responsive adjustments */
-/*
-@media (max-width: 1200px) {
-  .insights-heading-meta {
-      font-size: 1.4rem;
-  }
-
-  .insignts-desc p {
-      font-size: 0.95rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .insignts-desc {
-      padding: 15px;
-  }
-
-  .insights-heading-meta {
-      font-size: 1.3rem;
-  }
-
-  .insignts-desc p {
-      font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .insignts-desc {
-      padding: 10px;
-  }
-
-  .insights-heading-meta {
-      font-size: 1.2rem;
-      margin-bottom: 10px;
-  }
-
-  .insignts-desc p {
-      font-size: 0.85rem;
-      margin-bottom: 10px;
-  }
-}
-  */
-
-
 
 /* BLOG */
 .daviefolio-blog-project {
@@ -3503,6 +3375,12 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   width: 100%;
 }
 
+@media (max-width: 576px) {
+  .daviefolio-project-resent {
+    padding: 0.5em !important;
+    width: 100%;
+  }
+}
 
 /*DOING IT NOW*/
 
@@ -3530,8 +3408,6 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
 /*DOING IT NOW*/
 
 .daviefolio-project-narrow-content {
-  /*display: block;
-  align-items: flex-start;*/
   width: 100%;
   margin: 0 auto;
 }
@@ -3540,14 +3416,6 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   color: #2c98f0;
 }
 
-/*
-.row.animate-box {
-  display: flex;
-  justify-content: space-between;
-  width: 100%; 
-  overflow: hidden; 
-}
-*/
 .resentproject {
   padding: 0.5em !important;
 }
@@ -3563,38 +3431,6 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   transform: scale(1.01);
 }
 
-/* Styling for the project icons 
-.rcon {
-  position: absolute;
-  bottom: 5px;
-  left: 25px;
-  padding: 5px !important;
-  display: flex;
-  justify-content: space-between;
-}
-
-.rcon p.icon {
-  margin: 0;
-  display: flex;
-  gap: 10px;
-}
-
-.rcon p.icon span a {
-  color:#2196F3;
-  text-decoration: none;
-}
-
-.rcon p.icon span a:hover {
-  color:#f9bf3f;
-}
-
-.rpdesc {
-  padding: 2px !important;
-}
-*/
-
-
-
 .but-load-more {
   display: inline-block;
   width: 100%;
@@ -3603,7 +3439,6 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   font-size: 16px;
   color: #ffffff;
   background-color: #007bff;
-  /* Primary button color */
   border: none;
   border-radius: 5px;
   text-align: center;
@@ -3619,14 +3454,12 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
 
 .but-load-more:hover {
   background-color: #0056b3;
-  /* Darker shade for hover effect */
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .but-load-more:focus {
   outline: none;
   background-color: #004085;
-  /* Even darker shade for focus */
   box-shadow: 0 0 0 3px rgba(38, 143, 255, 0.5);
 }
 
