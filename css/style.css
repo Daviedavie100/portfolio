@@ -3088,39 +3088,29 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   position: absolute;
 }
 
-/*
 .title-line-mf {
   width: 15%;
   height: 5px;
-
   background-color: #FFD700;
-  margin: 0 auto 10px auto !important;
-}
-*/
-.title-line-mf {
-  width: 15%;
-  height: 5px;
-  background-color: #FFD700; /* Gold */
   margin: 5px auto; 
   display: block; 
-  border-radius: 3px; /* Optional: softens the edges */
 }
 
 
 @media (max-width: 768px) { 
   .title-box {
     margin-top: 3em !important;
-    width: 100%;
+   /* width: 100%;
     text-align: center; 
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;*/
   }
 
   .title-box h3 {
     margin-top: 5px !important;
-    position: absolute;
-    letter-spacing: 2px;
+    /*position: absolute;*/
+    /*letter-spacing: 4px;*/
   }
 
   .title-box .title-line-mf { 
