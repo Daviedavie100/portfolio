@@ -3244,7 +3244,7 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
 }
 
 .project-title-container {
-  padding-top: 1em !important;
+  padding-top: 0.5em !important;
   margin-top: 5px !important;
 }
 
