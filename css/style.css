@@ -3384,8 +3384,6 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   width: 100%;
 }
 
-/* RECENT: Styling for the recent project section */
-
 .daviefolio-project-resent {
   padding: 1em !important;
   width: 100%;
@@ -3397,6 +3395,59 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
     width: 100%;
   }
 }
+
+
+
+.blog_title-box {
+  width: 100%;
+  text-align: center; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2.5em !important;
+}
+
+.blog_title-box h3 {
+  font-size: 3rem; 
+  letter-spacing: 4px; 
+  margin-top: 10px !important; 
+  color: #4169E1; 
+  text-transform: uppercase;
+  font-weight: bold; 
+  text-align: center; 
+  position: absolute;
+}
+
+.blog_title-line-mf {
+  margin-top: 2.5em !important;
+  width: 15%;
+  height: 5px;
+  background-color: #ff0000;
+  margin: 5px auto; 
+  display: block; 
+}
+
+
+@media (max-width: 768px) { 
+  .blog_title-box {
+    margin-top: 3em !important;
+  }
+
+  .blog_title-box h3 {
+    margin-top: 5px !important;
+  }
+
+  .blog_title-box .blog_title-line-mf { 
+    width: 40%;
+    height: 5px;
+    margin-top: 10px !important; 
+    background-color: #222;
+    position: absolute;
+  }
+}
+
+
+
 
 /*DOING IT NOW*/
 
