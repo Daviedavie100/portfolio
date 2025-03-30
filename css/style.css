@@ -3377,8 +3377,10 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   text-align: left;
 }
 
+/*======================================
+                 BLOG  
+======================================*/
 
-/* BLOG */
 .daviefolio-blog-project {
   padding: 1em !important;
   width: 100%;
@@ -3395,8 +3397,6 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
     width: 100%;
   }
 }
-
-
 
 .blog_title-box {
   width: 100%;
@@ -3419,32 +3419,33 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
 }
 
 .blog_title-line-mf {
-  margin-top: 2.5em !important;
-  width: 15%;
+  margin-top: 3em !important;
+  width: 8%;
   height: 5px;
   background-color: #ff0000;
   margin: 5px auto; 
   display: block; 
 }
 
-
 @media (max-width: 768px) { 
-  .blog_title-box {
-    margin-top: 3em !important;
-  }
+  /*.blog_title-box {
+    margin-top: 2.5em !important;
+  }*/
 
-  .blog_title-box h3 {
+  /*.blog_title-box h3 {
     margin-top: 5px !important;
-  }
+    padding-bottom: 2em;
+  }*/
 
   .blog_title-box .blog_title-line-mf { 
-    width: 40%;
-    height: 5px;
-    margin-top: 10px !important; 
-    background-color: #222;
-    position: absolute;
+    width: 25%;
+    /*height: 5px;*/
+    /*margin-top: 3em !important;*/
+    /*background-color: #ff0000;*/
+    /*position: absolute;*/
   }
 }
+
 
 
 
