@@ -3062,6 +3062,15 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   }
 }
 */
+.daviefolio-project-folio h2 {
+  font-size: 3rem;
+  letter-spacing: 4px;
+  margin-top: 5px !important;
+  color: #4169E1;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
 
 .portfolio-mf {
   padding: 60px 0;
