@@ -2302,7 +2302,6 @@ canvas {
   bottom: -12px;
 }
 
-
 /* Contact Info Section */
 .more-info {
   padding-top: 10px;
@@ -2310,7 +2309,7 @@ canvas {
 
 .more-info p {
   font-size: 16px;
-  color: #555;
+  color: #e2dfdf;
   line-height: 1.6;
   text-align: left;
 }
@@ -2377,6 +2376,13 @@ canvas {
   border-color: #fff;
 }
 
+@media (max-width: 768px) {
+  .contact-area .contact-form .btn {
+    margin-bottom: 20px;
+  }
+}
+
+
 /*.contact-area .help-block ul {
   margin: 0;
   padding: 0;
@@ -2386,7 +2392,7 @@ canvas {
   color: #fff;
 }
 */
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
   .contact-area .container-fluid {
     background: none;
   }
