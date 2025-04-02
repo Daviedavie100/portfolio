@@ -2285,7 +2285,6 @@ canvas {
 
 
 .title-box-2 {
-  margin-top: 0 !important;
   margin-bottom: 3rem;
 }
 
@@ -2304,58 +2303,35 @@ canvas {
 }
 
 
-/*------/ Socials /------*/
-
-.socials {
-  padding: 1.5rem 0;
+/* Contact Info Section */
+.more-info {
+  padding-top: 10px;
 }
 
-.socials ul li {
-  display: inline-block;
-}
-
-.socials .ico-circle {
-  height: 40px;
-  width: 40px;
-  font-size: 1.7rem;
-  border-radius: 50%;
-  line-height: 1.4;
-  margin: 0 15px 0 0;
-  box-shadow: 0 0 0 3px #0078ff;
-  transition: all 500ms ease;
-}
-
-.socials .ico-circle:hover {
-  background-color: #0078ff;
-  color: #fff;
-  box-shadow: 0 0 0 3px #cde1f8;
-  transition: all 500ms ease;
-}
-
-/*------/ Ul resect /------*/
-
-.ul-resect,
-.socials ul,
-.list-ico,
-.blog-wrapper .post-meta ul,
-.box-comments .list-comments,
-.widget-sidebar .list-sidebar,
-.widget-tags ul {
-  list-style: none;
-  padding-left: 0;
-  margin-bottom: 0;
+.more-info p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  text-align: left;
 }
 
 .list-ico {
-  line-height: 2;
+  list-style: none;
+  padding: 0;
 }
 
-.list-ico span {
-  color: #0078ff;
+.list-ico li {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.list-ico i {
+  color: #007bff;
   margin-right: 10px;
 }
-
-
 
 
 .contact-area .contact-form input {
@@ -2378,13 +2354,13 @@ canvas {
 }
 
 .contact-area .contact-form .form-control::placeholder {
-  color: #fff;
-  opacity: 1;
+  color: #000;
+  opacity: 0.1;
 }
 
 .contact-area .contact-form .form-control:-ms-input-placeholder,
 .contact-s-area .contact-form .form-control::-ms-input-placeholder {
-  color: #fff;
+  color:  #000;
 }
 
 .contact-area .contact-form .btn {
@@ -2401,7 +2377,7 @@ canvas {
   border-color: #fff;
 }
 
-.contact-area .help-block ul {
+/*.contact-area .help-block ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -2409,7 +2385,7 @@ canvas {
   font-style: italic;
   color: #fff;
 }
-
+*/
 @media (max-width: 767.98px) {
   .contact-area .container-fluid {
     background: none;
