@@ -2282,6 +2282,29 @@ canvas {
   box-sizing: border-box;
 }
 
+
+
+.title-box-2 {
+  margin-bottom: 3rem;
+}
+
+.title-left {
+  font-size: 2rem;
+  position: relative;
+}
+
+.title-left:before {
+  content: '';
+  position: absolute;
+  height: 3px;
+  background-color: #0078ff;
+  width: 100px;
+  bottom: -12px;
+}
+
+
+
+
 .contact-area .contact-form input {
   color: #fff;
   padding: 15px 0;
