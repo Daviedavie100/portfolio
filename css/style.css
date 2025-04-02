@@ -2284,10 +2284,11 @@ canvas {
 
 
 
-/*.title-box-2 {
+.title-box-2 {
+  margin-top: 0 !important;
   margin-bottom: 3rem;
 }
-*/
+
 .title-left {
   font-size: 2rem;
   position: relative;
