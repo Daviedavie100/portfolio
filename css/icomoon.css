@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?eb2uad');
-  src:  url('fonts/icomoon.eot?eb2uad#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?eb2uad') format('truetype'),
-    url('fonts/icomoon.woff?eb2uad') format('woff'),
-    url('fonts/icomoon.svg?eb2uad#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?yo798w');
+  src:  url('fonts/icomoon.eot?yo798w#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?yo798w') format('truetype'),
+    url('fonts/icomoon.woff?yo798w') format('woff'),
+    url('fonts/icomoon.svg?yo798w#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -13,7 +13,7 @@
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
-  /*speak: never;*/
+  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -25,6 +25,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-call:before {
+  content: "\e951";
+}
+.icon-mail:before {
+  content: "\e952";
+}
+.icon-phone-call:before {
+  content: "\e94e";
+}
+.icon-phone1:before {
+  content: "\e94f";
+}
+.icon-filter1:before {
+  content: "\e90a";
+}
 .icon-statistics .path1:before {
   content: "\e929";
   color: rgb(75, 132, 162);
@@ -265,6 +280,9 @@
 .icon-eye2:before {
   content: "\e064";
 }
+.icon-mail5:before {
+  content: "\e066";
+}
 .icon-heart3:before {
   content: "\e07c";
 }
@@ -295,6 +313,9 @@
 .icon-bulb:before {
   content: "\e922";
 }
+.icon-location4:before {
+  content: "\e953";
+}
 .icon-eye3:before {
   content: "\e923";
 }
@@ -304,8 +325,14 @@
 .icon-phone3:before {
   content: "\e925";
 }
+.icon-mail6:before {
+  content: "\e954";
+}
 .icon-data:before {
   content: "\e926";
+}
+.icon-location:before {
+  content: "\e955";
 }
 .icon-heart:before {
   content: "\e950";
@@ -330,6 +357,12 @@
 }
 .icon-social-linkedin:before {
   content: "\e99c";
+}
+.icon-location-outline:before {
+  content: "\e9ba";
+}
+.icon-mail1:before {
+  content: "\e9c2";
 }
 .icon-heart-outline:before {
   content: "\e9c3";
@@ -421,6 +454,12 @@
 .icon-tools1:before {
   content: "\e905";
 }
+.icon-envelope-o:before {
+  content: "\e956";
+}
+.icon-envelope:before {
+  content: "\e957";
+}
 .icon-line-chart:before {
   content: "\e92c";
 }
@@ -442,8 +481,14 @@
 .icon-filter:before {
   content: "\e909";
 }
-.icon-filter1:before {
-  content: "\e90a";
+.icon-location1:before {
+  content: "\e959";
+}
+.icon-envelop:before {
+  content: "\e958";
+}
+.icon-phone:before {
+  content: "\e94d";
 }
 .icon-search:before {
   content: "\e930";
