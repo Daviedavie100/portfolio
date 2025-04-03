@@ -635,7 +635,7 @@ padding-bottom: 1em;
 }
 
 /* Responsive adjustment for very small screens */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .desc p {
       flex-direction: column; /* Stack buttons vertically */
       align-items: center; /* Center buttons */
