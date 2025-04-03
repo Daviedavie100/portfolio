@@ -622,6 +622,19 @@ padding-bottom: 1em;
   font-family: "Verdana", Geneva, Tahoma, sans-serif;
 }
 
+.desc p {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Adjust spacing between buttons */
+}
+
+.desc p a {
+  flex: 1;
+  max-width: 200px; /* Adjust width as needed */
+  text-align: center;
+}
+
+
 #daviefolio-hero .flexslider .slider-text>.slider-text-inner p {
   margin-top: 20px;
 }
