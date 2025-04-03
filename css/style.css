@@ -543,6 +543,7 @@ padding-bottom: 1em;
   opacity: 0;
   min-height: 100vh !important;
   z-index: 11;
+  margin-top: 8em !important;
 }
 
 /*#daviefolio-hero .flexslider .slider-text {
