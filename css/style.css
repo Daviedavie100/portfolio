@@ -565,12 +565,6 @@ padding-bottom: 1em;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-/*
-@media screen and (max-width: 768px) {
-  #daviefolio-hero .flexslider .slider-text>.slider-text-inner {
-    padding: 2em !important;
-  }
-}*/
 
 @media screen and (max-width: 768px) {
   #daviefolio-hero .flexslider .slider-text>.slider-text-inner {
@@ -578,6 +572,10 @@ padding-bottom: 1em;
     padding-bottom: 2.5em !important;
     padding-left: 2.5em !important;
     padding-right: 2.5em !important;
+
+    text-align: center;
+    /*padding-top: 6em !important;*/
+    line-height: 1.1 !important;
   }
 }
 
@@ -644,13 +642,6 @@ padding-bottom: 1em;
   font-weight: bold;
 }
 
-@media screen and (max-width: 768px) {
-  #daviefolio-hero .flexslider .slider-text>.slider-text-inner {
-    text-align: center;
-    /*padding-top: 6em !important;*/
-    line-height: 1.1 !important;
-  }
-}
 
 @media screen and (max-width: 768px) {
   #daviefolio-hero .flexslider .slider-text>.slider-text-inner .btn {
