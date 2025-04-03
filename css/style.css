@@ -523,8 +523,47 @@ padding-bottom: 1em;
   position: relative;
 }
 
+#daviefolio-hero .flexslider .flex-control-nav {
+  bottom : 20px;
+  z-index: 1000;
+  left   : 20px;
+  float  : left;
+  width  : auto;
+}
+
+@media screen and (max-width: 768px) {
+  #daviefolio-hero .flexslider .flex-control-nav {
+    right: 20px;
+    top  : 100px;
+  }
+}
+
+#daviefolio-hero .flexslider .flex-control-nav li {
+  display      : block;
+  margin-bottom: 10px;
+}
+
+#daviefolio-hero .flexslider .flex-control-nav li a {
+  background        : rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: none;
+  box-shadow        : none;
+  width             : 12px;
+  height            : 12px;
+  cursor            : pointer;
+}
+
+#daviefolio-hero .flexslider .flex-control-nav li a.flex-active {
+  cursor    : pointer;
+  background: transparent;
+  border    : 2px solid #2c98f0;
+}
+
+#daviefolio-hero .flexslider .flex-direction-nav {
+  display: none;
+}
+
 /* CHANGED */
-/* filepath: /C:/Users/Davie/Documents/GitHub/portfolio/css/style.css */
+
 #daviefolio-hero .flexslider .hero-slide {
   /*background-image: url(img/about/hero.jpg);*/
   background-image: url(../img/about/hero.jpg);
@@ -951,7 +990,7 @@ padding: 0;: This removes all internal spacing within the element.*/
   color: #a84cb8;
 }
 
-/*HIRE ABOUT*/
+/*HIRE ABOUT
 .btn-hire {
   font-family: "Quicksand", Arial, sans-serif;
   display: inline-block;
@@ -968,7 +1007,7 @@ padding: 0;: This removes all internal spacing within the element.*/
 
 .btn-hire:hover {
   background-color: #0056b3;
-  /* Darker shade on hover */
+
 }
 
 @keyframes slideInLeft {
@@ -984,16 +1023,16 @@ padding: 0;: This removes all internal spacing within the element.*/
 
 .btn-folio {
   animation: slideInLeft 0.8s ease-in-out forwards;
-  animation-delay: 0.5s; /* Delay for first button */
+  animation-delay: 0.5s; 
   opacity: 0;
 }
 
 .cv .btn-hire {
   animation: slideInLeft 0.8s ease-in-out forwards;
-  animation-delay: 1s; /* Delay for second button */
+  animation-delay: 1s; /* Delay for second button 
   opacity: 0;
 }
-
+*/
 
 /******************************/
 /********* SKILLS CSS *********/
