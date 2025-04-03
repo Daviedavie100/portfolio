@@ -634,6 +634,18 @@ padding-bottom: 1em;
   text-align: center;
 }
 
+/* Responsive adjustment for very small screens */
+@media screen and (max-width: 480px) {
+  .desc p {
+      flex-direction: column; /* Stack buttons vertically */
+      align-items: center; /* Center buttons */
+      gap: 10px; /* Reduce space between buttons */
+  }
+
+  .desc p a {
+      max-width: 100%; /* Full width buttons */
+  }
+}
 
 #daviefolio-hero .flexslider .slider-text>.slider-text-inner p {
   margin-top: 20px;
