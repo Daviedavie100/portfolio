@@ -495,7 +495,7 @@ padding-bottom: 1em;
 /******** HERO ********/
 
 #daviefolio-hero {
-  min-height: 500px !important;
+  min-height: 100vh !important; /* Full viewport height */
   background: #fff url(../img/about/loader.gif) no-repeat center center;
   width: 100%;
   float: left;
@@ -522,45 +522,6 @@ padding-bottom: 1em;
   position: relative;
 }
 
-#daviefolio-hero .flexslider .flex-control-nav {
-  bottom: 20px;
-  z-index: 1000;
-  left: 20px;
-  float: left;
-  width: auto;
-}
-
-@media screen and (max-width: 768px) {
-  #daviefolio-hero .flexslider .flex-control-nav {
-    right: 20px;
-    bottom: 10px;
-  }
-}
-
-#daviefolio-hero .flexslider .flex-control-nav li {
-  display: block;
-  margin-bottom: 10px;
-}
-
-#daviefolio-hero .flexslider .flex-control-nav li a {
-  background: rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  width: 12px;
-  height: 12px;
-  cursor: pointer;
-}
-
-#daviefolio-hero .flexslider .flex-control-nav li a.flex-active {
-  cursor: pointer;
-  background: transparent;
-  border: 2px solid #2c98f0;
-}
-
-#daviefolio-hero .flexslider .flex-direction-nav {
-  display: none;
-}
-
 #daviefolio-hero .flexslider .hero-slide {
   background-image: url(../img/about/hero.jpg);
 }
@@ -576,19 +537,20 @@ padding-bottom: 1em;
 }
 
 #daviefolio-hero .flexslider .slider-text {
-  display: table;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   opacity: 0;
-  min-height: 500px !important;
+  min-height: 100vh !important;
   z-index: 11;
 }
 
 #daviefolio-hero .flexslider .slider-text>.slider-text-inner {
-  display: table-cell;
+  text-align: center;
   vertical-align: middle;
-  min-height: 700px !important;
+  min-height: 100vh !important;
   padding: 2.5em !important;
   position: relative;
-  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
@@ -618,25 +580,24 @@ padding-bottom: 1em;
   border-radius: 30px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 }
 
 #daviefolio-hero .flexslider .slider-text>.slider-text-inner .btn-folio:hover {
-  color: #4169e1;
-  background: transparent !important;
+  color: #fff;
+  background: #4169e1 !important;
   border: 1px solid #000 !important;
   font-weight: bold;
 }
 
 @media screen and (max-width: 768px) {
-  #daviefolio-hero .flexslider .slider-text>.slider-text-inner .btn.btn-folio {
+  #daviefolio-hero .flexslider .slider-text>.slider-text-inner .btn-folio {
     width: 100%;
-    display: inline;
+    display: inline-block;
     font-size: 0.9em !important;
+    margin-bottom: 10px;  /* Add spacing between buttons */
   }
 }
-
 
 
 /********* OFF CANVAS *********/
