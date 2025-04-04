@@ -582,6 +582,24 @@ padding-bottom: 1em;
   }
 }
 
+#daviefolio-hero .slider-text-inner .desc {
+  padding-top: 100px !important;
+  text-align: center;
+  font-size: 16px !important;
+  line-height: 1.5 !important;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  #daviefolio-hero .slider-text-inner .desc {
+    padding-top: 20px !important;
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+    color: #fff;
+  }
+}
+
+
 @media screen and (max-width: 768px) {
   #daviefolio-hero .slider-text-inner .desc {
     padding-top: 45px !important;
@@ -649,6 +667,8 @@ padding-bottom: 1em;
 
 #daviefolio-hero .flexslider .slider-text>.slider-text-inner p {
   margin-top: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (max-width: 768px) {
