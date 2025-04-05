@@ -648,11 +648,14 @@ padding-bottom: 1em;
 */
 #daviefolio-hero .slider-text-inner .desc p {
   display: flex;
-  margin-top: 20px;
+  margin-top: 20px !important;
   justify-content: center;
   gap: 20px; 
 }
 
+
+
+/*
 @media screen and (max-width: 768px) {
 #daviefolio-hero .slider-text-inner .desc p {
   flex-direction: column; 
@@ -661,6 +664,13 @@ padding-bottom: 1em;
   }
 }
 
+.desc p a {
+  flex: 1;
+  max-width: 200px; 
+  text-align: center;
+}
+
+*/
 #daviefolio-hero .flexslider .slider-text>.slider-text-inner .btn-folio {
   background-color: #007bff;
   color: #e2dfdf;
@@ -672,6 +682,15 @@ padding-bottom: 1em;
   letter-spacing: 1px;
   -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
+  
+   white-space: normal;
+   word-wrap: break-word;
+   overflow-wrap: break-word;
+ 
+   display: inline-block;
+   width: auto; 
+   max-width: 100%; 
+   text-align: center;
 }
 
 #daviefolio-hero .flexslider .slider-text>.slider-text-inner .btn-folio:hover {
@@ -725,11 +744,6 @@ padding-bottom: 1em;
 /*
 
 
-.desc p a {
-  flex: 1;
-  max-width: 200px; 
-  text-align: center;
-}
 
 @media screen and (max-width: 768px) {
   .desc p {
