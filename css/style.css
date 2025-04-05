@@ -540,7 +540,7 @@ padding-bottom: 1em;
 }
 
 #daviefolio-hero .flexslider .slider-text {
-  display: table;
+  display: block;/*display: table;*/
   opacity: 0;
   /*min-height: 500px !important;*/
   min-height: 100vh !important;
@@ -633,10 +633,11 @@ padding-bottom: 1em;
   padding: 0;
   color: #140c01; /*#122846;*/
   font-family: "Verdana", Geneva, Tahoma, sans-serif;
-
-  white-space: normal; /* Allows the text to wrap */
-  word-wrap: break-word; /* Breaks the word at the container's edge if necessary */
+  white-space: normal;
+  word-wrap: break-word;
   overflow-wrap: break-word;
+  width: 100% !important;
+  max-width: 100% !important;
 }
 /*
 #daviefolio-hero .flexslider .slider-text>.slider-text-inner p {
