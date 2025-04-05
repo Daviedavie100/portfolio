@@ -634,10 +634,23 @@ padding-bottom: 1em;
   color: #140c01; /*#122846;*/
   font-family: "Verdana", Geneva, Tahoma, sans-serif;
 }
+/*
+#daviefolio-hero .flexslider .slider-text>.slider-text-inner p {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+*/
+#daviefolio-hero .slider-text-inner .desc p {
+  display: flex;
+  justify-content: center;
+  gap: 20px; 
+}
 
 #daviefolio-hero .flexslider .slider-text>.slider-text-inner .btn-folio {
   background-color: #007bff;
-  color: #fff;
+  color: #e2dfdf;
+  border: 1px solid #007bff !important;
   padding: 10px 20px !important;
   font-size: 1em !important;
   border-radius: 30px;
@@ -653,41 +666,6 @@ padding-bottom: 1em;
   border: 1px solid #000 !important;
   font-weight: bold;
 }
-/*
-#daviefolio-hero .flexslider .slider-text>.slider-text-inner p {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-}
-
-.desc p {
-  display: flex;
-  justify-content: center;
-  gap: 20px; 
-}
-
-/*
-
-
-.desc p a {
-  flex: 1;
-  max-width: 200px; 
-  text-align: center;
-}
-
-@media screen and (max-width: 768px) {
-  .desc p {
-      flex-direction: column; 
-      align-items: center; 
-      gap: 10px; 
-  }
-
-  .desc p a {
-      max-width: 100%; 
-  }
-}
-
-
 
 @media screen and (max-width: 768px) {
   #daviefolio-hero .flexslider .slider-text>.slider-text-inner h1 {
@@ -714,9 +692,6 @@ padding-bottom: 1em;
   }
 }
 
-
-
-
 @media screen and (max-width: 768px) {
   #daviefolio-hero .flexslider .slider-text>.slider-text-inner .btn {
     width: 100%;
@@ -728,9 +703,42 @@ padding-bottom: 1em;
     width: 100%;
     display: inline;
     font-size: 0.9em !important;
-    /*margin-left: 10px;
+    /*margin-left: 10px;*/
   }
 }
+
+
+/*
+
+
+.desc p a {
+  flex: 1;
+  max-width: 200px; 
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .desc p {
+      flex-direction: column; 
+      align-items: center; 
+      gap: 10px; 
+  }
+
+  .desc p a {
+      max-width: 100%; 
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
 */
 /*
 #daviefolio-hero .flexslider .slider-text>.slider-text-inner h1 {
