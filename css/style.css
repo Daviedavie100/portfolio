@@ -540,9 +540,10 @@ padding-bottom: 1em;
 }
 
 #daviefolio-hero .flexslider .slider-text {
-  display: block;/*display: table;*/
+  display: table;/*display: table;*/
   opacity: 0;
   min-height: 500px !important;
+
   z-index: 11;
 }
 
