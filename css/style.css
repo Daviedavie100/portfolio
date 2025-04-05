@@ -603,9 +603,18 @@ padding-bottom: 1em;
   word-wrap: break-word;
   width: 100% !important;
 }
-
+/*
 #daviefolio-hero .flexslider .slider-text .slider-text-inner p {
   margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+*/
+#daviefolio-hero .slider-text-inner p {
+  margin-top: 20px;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
