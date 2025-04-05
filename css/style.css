@@ -612,7 +612,7 @@ padding-bottom: 1em;
   font-weight: 700 !important;
   font-weight: bold;
 }
-/*
+
 #daviefolio-hero .flexslider .slider-text>.slider-text-inner h2 {
   margin-bottom: 0;
   font-size: 25px !important;
@@ -631,8 +631,33 @@ padding-bottom: 1em;
   font-weight: 500 !important;
   margin: 0;
   padding: 0;
-  color: #122846;
+  color: #140c01; /*#122846;*/
   font-family: "Verdana", Geneva, Tahoma, sans-serif;
+}
+
+#daviefolio-hero .flexslider .slider-text>.slider-text-inner .btn-folio {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px !important;
+  font-size: 1em !important;
+  border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+#daviefolio-hero .flexslider .slider-text>.slider-text-inner .btn-folio:hover {
+  color: #4169e1;
+  background: transparent !important;
+  border: 1px solid #000 !important;
+  font-weight: bold;
+}
+/*
+#daviefolio-hero .flexslider .slider-text>.slider-text-inner p {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .desc p {
@@ -640,6 +665,9 @@ padding-bottom: 1em;
   justify-content: center;
   gap: 20px; 
 }
+
+/*
+
 
 .desc p a {
   flex: 1;
@@ -659,11 +687,7 @@ padding-bottom: 1em;
   }
 }
 
-#daviefolio-hero .flexslider .slider-text>.slider-text-inner p {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-}
+
 
 @media screen and (max-width: 768px) {
   #daviefolio-hero .flexslider .slider-text>.slider-text-inner h1 {
@@ -690,24 +714,7 @@ padding-bottom: 1em;
   }
 }
 
-#daviefolio-hero .flexslider .slider-text>.slider-text-inner .btn-folio {
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px 20px !important;
-  font-size: 1em !important;
-  border-radius: 30px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  -webkit-transition: background-color 0.3s ease;
-  transition: background-color 0.3s ease;
-}
 
-#daviefolio-hero .flexslider .slider-text>.slider-text-inner .btn-folio:hover {
-  color: #4169e1;
-  background: transparent !important;
-  border: 1px solid #000 !important;
-  font-weight: bold;
-}
 
 
 @media screen and (max-width: 768px) {
