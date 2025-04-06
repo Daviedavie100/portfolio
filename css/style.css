@@ -371,43 +371,6 @@ figure figcaption {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Collapsible Navbar Menu */
-
-/*
-
-.row-bottom-padded-lg {
-padding-bottom: 7em;
-}
-
-@media screen and (max-width: 768px) {
-.row-bottom-padded-lg {
-padding-bottom: 1em;
-}
-}
-
-.row-bottom-padded-md {
-padding-bottom: 3em;
-}
-
-@media screen and (max-width: 768px) {
-.row-bottom-padded-md {
-padding-bottom: 1em;
-}
-}
-
 /********* LOGO *********/
 
 #logo img {
@@ -495,7 +458,7 @@ padding-bottom: 1em;
 /******** HERO ********/
 
 #daviefolio-hero {
-  min-height: 100vh !important;
+  min-height: 500px !important;
   background: #fff url(../img/about/loader.gif) no-repeat center center;
   width: 100%;
   float: left;
