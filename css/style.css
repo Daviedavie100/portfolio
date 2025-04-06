@@ -376,8 +376,7 @@ figure figcaption {
 /******** HERO ********/
 
 #daviefolio-hero {
-  /*min-height   : 500px !important;*/
-  min-height: 100vh !important;
+  min-height   : 620px !important;
   background   : #fff url(../img/about/loader.gif) no-repeat center center;
   width        : 100%;
   float        : left;
@@ -398,6 +397,7 @@ figure figcaption {
   background-position: bottom center;
   min-height         : 400px;
   position           : relative;
+  list-style: none;
 }
 
 #daviefolio-hero .flexslider .hero-slide {
