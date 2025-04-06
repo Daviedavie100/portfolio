@@ -220,7 +220,7 @@ figure figcaption {
   width: calc(100% - 305px - 60px) !important;
   z-index: 2000;
   background-color: #393f4d;
-  height: 52px !important;
+  height: 22px !important;/*52*/
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -496,7 +496,7 @@ padding-bottom: 1em;
 
 #daviefolio-hero {
   min-height: 100vh !important;
-  background: #fff url(../img/about/loader.gif) no-repeat center center;
+  /*background: #fff url(../img/about/loader.gif) no-repeat center center;*/
   width: 100%;
   float: left;
   margin-bottom: 4em !important;
@@ -517,7 +517,7 @@ padding-bottom: 1em;
 }
 
 #daviefolio-hero .flexslider .hero-slide {
-  background-image: url(../img/about/hero.jpg);
+  /*background-image: url(../img/about/hero.jpg);*/
 }
 
 .overlay {
