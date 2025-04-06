@@ -196,6 +196,28 @@
       }
     );
   };
+  /*
+    var sliderMain = function () {
+      $("#daviefolio-hero .flexslider").flexslider({
+        animation: "fade",
+        slideshowSpeed: 5000,
+        directionNav: false, // ❌ Removes navigation arrows
+        start: function () {
+          setTimeout(function () {
+            $(".slider-text").css("opacity", "1"); // ✅ Ensure text is visible
+            $(".slider-text").removeClass("animated fadeInUp");
+            $(".flex-active-slide").find(".slider-text").addClass("animated fadeInUp");
+          }, 500);
+        },
+        before: function () {
+          setTimeout(function () {
+            $(".slider-text").css("opacity", "1"); // ✅ Ensure text is visible
+            $(".slider-text").removeClass("animated fadeInUp");
+            $(".flex-active-slide").find(".slider-text").addClass("animated fadeInUp");
+          }, 500);
+        }
+      });
+    };*/
 
   var sliderMain = function () {
     $("#daviefolio-hero .flexslider").flexslider({
