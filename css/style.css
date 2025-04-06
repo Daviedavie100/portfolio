@@ -463,7 +463,7 @@ figure figcaption {
   display       : table-cell;
   vertical-align: middle;
   /*min-height    : 700px;*/
-  min-height: 100vh !important;
+  min-height: 620PX !important;
   padding       : 2.5em;
   position      : relative;
 }
