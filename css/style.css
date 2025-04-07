@@ -462,7 +462,6 @@ figure figcaption {
 #daviefolio-hero .flexslider .slider-text>.slider-text-inner {
   display       : table-cell;
   vertical-align: middle;
-  /*min-height    : 700px;*/
   min-height: 620PX !important;
   padding       : 2.5em;
   position      : relative;
