@@ -2965,7 +2965,7 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   }
 }
 */
-.daviefolio-project-folio h2 {
+.daviefolio-project-folio h1 {
   font-size     : 3rem;
   letter-spacing: 4px;
   margin-top    : 5px !important;
@@ -3166,7 +3166,7 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
 
 /* w-title styling */
 .p-w-title {
-  font-size    : 2rem;
+  font-size    : 4rem;
   color        : #333;
   margin-bottom: 5px;
   display      : flex;
