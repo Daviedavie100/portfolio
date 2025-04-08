@@ -426,8 +426,34 @@ figure figcaption {
   z-index   : 9;
 }
 
+
+/*
+#daviefolio-hero .container-fluid {
+  display: flex;
+  justify-content: center;  
+  align-items: center; 
+  height: 100vh; 
+  text-align: center;
+  flex-direction: column; 
+}
+*/
+#daviefolio-hero .row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+/*
+#daviefolio-hero .slider-text-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+*/
+
+
+
 #daviefolio-hero .flexslider .slider-text {
-  display     : table;
+  display     : block;
   opacity     : 1;
   min-height  : 620px !important;
   z-index     : 11;
@@ -454,7 +480,8 @@ figure figcaption {
 }
 
 #daviefolio-hero .slider-text-inner .desc {
-  text-align: left !important;
+  text-align: center !important;
+  margin-left: -25px !important;
 }
 
 @media screen and (max-width: 768px) {
