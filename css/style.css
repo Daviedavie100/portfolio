@@ -1782,6 +1782,16 @@ canvas {
   margin-bottom: 0.8rem !important;
 }
 
+.timeline-label > strong {
+  display: block;
+  font-size: 1.5rem;
+  color: #f2f3f7;
+  margin-top: 15px;
+  font-weight: bold;
+  margin-left : 16px;
+}
+
+
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label:after {
   content     : "";
   display     : block;
