@@ -1319,80 +1319,99 @@
 				</section>
 				<!-- End: SQL Project-->
 
-				<!-- Start: Contact -->
-				<section class="daviefolio-contact" id="contact" data-section="contact">
-					<div class="daviefolio-contact-narrow-content">
+				<!-- Start: Contact Section -->
+				<section class="daviefolio-contact" data-section="contact">
+					<div class="daviefolio-narrow-content">
 						<div class="row">
 							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
 								data-animate-effect="fadeInLeft">
-								<span class="contact-heading-meta">Get in Touch</span>
-								<h2 class="contact-daviefolio-heading">Contact</h2>
+								<div class="folio-title-box">
+									<div class="folio-title-line-mf"></div>
+									<span class="daviefolio-heading-meta">Get in Touch</span>
+								</div>
+								<h2 class="daviefolio-heading animate-box">Contact</h2>
 							</div>
+
 							<div class="col-md-12">
 								<div class="contact-area wow fadeInUp" data-wow-delay="0.1s"
 									id="contact-section">
 									<div class="container-fluid">
 										<div class="row align-items-center">
-											<div class="col-md-4"></div>
-											<div class="col-md-8">
+											<div class="col-md-3"></div>
+
+											<div class="col-md-9">
 												<div class="contact-form">
-													<div id="success"></div>
-													<!-- Added success div for displaying messages -->
+													<div class="row">
+														<div class="col-md-8">
+															<div class="title-box-2">
+																<h5 class="title-left">Message Us</h5>
+															</div>
+															<form name="sentMessage" id="contactForm"
+																action="https://formspree.io/f/mwppwqkr"
+																method="POST" novalidate="novalidate">
 
-													<form name="sentMessage" id="contactForm"
-														action="https://formspree.io/f/mwppwqkr" novalidate="novalidate"
-														method="POST">
+																<div class="control-group">
+																	<label for="name">Your Name</label>
+																	<input type="text" class="form-control" id="name"
+																		name="name" placeholder="Please enter your name" required>
+																</div>
 
-														<div class="control-group">
-															<input type="text" class="form-control" id="name" name="name"
-																placeholder="Your Name" required="required"
-																data-validation-required-message="Please enter your name">
-															<p class="help-block"></p>
+																<div class="control-group">
+																	<label for="email">Your Email</label>
+																	<input type="email" class="form-control" id="email"
+																		name="email" placeholder="Please enter your email" required>
+																</div>
+
+																<div class="control-group">
+																	<label for="subject">Subject</label>
+																	<input type="text" class="form-control" id="subject"
+																		name="subject" placeholder="Please enter a subject" required>
+																</div>
+
+																<div class="control-group">
+																	<label for="message">Message</label>
+																	<textarea class="form-control" id="message" name="message"
+																		placeholder="Please enter your message" required></textarea>
+																</div>
+
+																<!-- Success Message -->
+																<p id="successMessage" class="success-message"></p>
+																<div>
+																	<button class="btn" type="submit" id="sendMessageButton">Send
+																		Message</button>
+																</div>
+															</form>
 														</div>
 
-														<div class="control-group">
-															<input type="email" class="form-control" id="email" name="email"
-																placeholder="Your Email" required="required"
-																data-validation-required-message="Please enter your email">
-															<p class="help-block"></p>
+														<div class="col-md-4">
+															<div class="title-box-2">
+																<h5 class="title-left">Get in Touch</h5>
+															</div>
+															<div class="more-info">
+																<p class="lead">
+																	Thank you for visiting my portfolio! I am always open to new
+																	opportunities and collaborations. If you have any questions or
+																	would like to discuss a project, feel free to get in touch.
+																</p>
+																<ul class="list-ico">
+																	<li><i class="icon-location1"></i> Mombasa, Shika
+																		Adabu, KE 80110</li>
+																	<li><i class="icon-phone-call"></i> +254 724438296</li>
+																	<li><i class="icon-mail6"></i> dave.owino@yahoo.com</li>
+																</ul>
+															</div>
 														</div>
-
-														<div class="control-group">
-															<input type="text" class="form-control" id="subject"
-																name="subject" placeholder="Subject" required="required"
-																data-validation-required-message="Please enter a subject">
-															<p class="help-block"></p>
-														</div>
-
-														<div class="control-group">
-															<textarea class="form-control" id="message" name="message"
-																placeholder="Message" required="required"
-																data-validation-required-message="Please enter your message"></textarea>
-															<p class="help-block"></p>
-														</div>
-
-														<!-- Hidden input to customize email subject 
-													<input type="hidden" name="_mail"
-														value="New mail">-->
-
-														<!-- Success Message -->
-														<p id="successMessage" class="success-message"></p>
-
-														<div>
-															<button class="btn" type="submit" id="sendMessageButton">Send
-																Message</button>
-														</div>
-													</form>
-												</div>
+													</div> <!-- End row -->
+												</div> <!-- End contact-form -->
 											</div>
-										</div>
-									</div>
-								</div>
+										</div> <!-- End row -->
+									</div> <!-- End container-fluid -->
+								</div> <!-- End contact-area -->
 							</div>
 						</div>
 					</div>
 				</section>
-				<!-- Contact End -->
+				<!-- End: Contact Section -->
 
 				<!-- Start: Footer -->
 				<div class="daviefolio-footer">
