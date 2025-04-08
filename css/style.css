@@ -452,6 +452,31 @@ figure figcaption {
 
 
 
+#daviefolio-hero .desc h2 {
+  display: inline-block;
+  margin: 0;
+  height: 35px;
+  color: #ffffff;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+#daviefolio-hero .desc .typed-text {
+  display: none;
+}
+
+#daviefolio-hero .desc .typed-cursor {
+  font-size: 35px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+
+
+
+
+
+
 #daviefolio-hero .flexslider .slider-text {
   display     : block;
   opacity     : 1;
