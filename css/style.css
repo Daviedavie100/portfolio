@@ -1782,11 +1782,14 @@ canvas {
   margin-bottom: 0.8rem !important;
 }
 
+/* Education at Datacamp */
 .timeline-label > strong {
   display: block;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: #f2f3f7;
   margin-top: 15px;
+  margin-bottom: 10px;
+  font-family: "Quicksand", Arial, sans-serif;
   font-weight: bold;
   margin-left : 16px;
 }
