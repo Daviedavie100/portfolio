@@ -437,10 +437,18 @@ figure figcaption {
   flex-direction: column; 
 }
 */
+
 #daviefolio-hero .row {
   width          : 100%;
   display        : flex;
   justify-content: center;
+}
+
+@media (max-width: 768px) {
+  #daviefolio-hero .row {
+    padding: 0 !important;
+    margin: 0 !important; 
+  }
 }
 
 /*
