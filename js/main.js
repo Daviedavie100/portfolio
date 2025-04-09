@@ -240,19 +240,18 @@
 
   // Typed Initiate
   if ($('#daviefolio-hero .typed-output').length) {
-    var typed_strings = $('#daviefolio-hero .typed-text').text().trim().split('|'); // Trim and split correctly
+    var typed_strings = $('#daviefolio-hero .typed-text').text().trim().split('|');
+
+    // Remove "Loading..." properly before Typed.js starts
+    $('.typed-output').text('');
 
     var typed = new Typed('#daviefolio-hero .typed-output', {
       strings: typed_strings,
       typeSpeed: 100,
       backSpeed: 30,
-      backDelay: 2000,  // Adds a small delay before looping
-      startDelay: 500,  // Small delay to replace "Loading..."
+      backDelay: 2000,
       smartBackspace: false,
       loop: true,
-      preStringTyped: function () {
-        $('.typed-output').text(''); // Clear "Loading..." before typing starts
-      }
     });
   }
 
