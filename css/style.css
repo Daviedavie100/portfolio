@@ -102,7 +102,7 @@ figure figcaption {
   position: relative;
   /*display: flex;*/
   background-attachment: fixed;
-  background-size: cover; /* 100%;✅ Prevents stretching */
+  background-size: 100%; 
   background-position: center;
   background-image: url("../img/about/back5.webp");
   padding-left: 30px !important;
@@ -112,15 +112,15 @@ figure figcaption {
 /* Prevents issues with background-attachment on mobile */
 @supports not (-webkit-touch-callout: none) {
   #daviefolio-page {
-    background-attachment: scroll; /* ✅ Fix for mobile where 'fixed' might not work */
+    background-attachment: scroll;
   }
 }
 
 @media screen and (max-width: 768px) {
   #daviefolio-page {
     width: 100%;
-    padding: 10px; /* ✅ More balanced padding */
-    /*padding: 0 1px !important;*/
+    /*padding: 10px;  ✅ More balanced padding */
+    padding: 0 1px !important;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -174,7 +174,7 @@ figure figcaption {
   justify-content: space-between;
   padding: 0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  box-sizing: border-box; /* ✅ Added */
+  /*box-sizing: border-box;  ✅ Added */
 }
 
 @media (max-width: 768px) {
