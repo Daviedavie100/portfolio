@@ -222,15 +222,15 @@
   };
 
   // Typed Initiate
-  if ($('#daviefolio-hero .typed-text').length) {
+  if ($('#daviefolio-hero .typed-output').length) {
     var typed_strings = $('#daviefolio-hero .typed-text')
       .text()
-      .split(', ');
+      .split(' | ');
 
-    var typed = new Typed('#daviefolio-hero h2', {  // Target the empty <h2>
+    var typed = new Typed('#daviefolio-hero .typed-output', {  // Target the empty <h2>
       strings: typed_strings,
       typeSpeed: 100,
-      backSpeed: 20,
+      backSpeed: 30,
       smartBackspace: false,
       loop: true
     });
