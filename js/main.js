@@ -221,6 +221,7 @@
     });
   };
 
+  /*
   // Typed Initiate
   if ($('#daviefolio-hero .typed-output').length) {
     var typed_strings = $('#daviefolio-hero .typed-text')
@@ -235,6 +236,25 @@
       loop: true
     });
   };
+  */
+
+  // Typed Initiate
+  if ($('#daviefolio-hero .typed-output').length) {
+    var typed_strings = $('#daviefolio-hero .typed-text').text().trim().split('|'); // Trim and split correctly
+
+    var typed = new Typed('#daviefolio-hero .typed-output', {
+      strings: typed_strings,
+      typeSpeed: 100,
+      backSpeed: 30,
+      backDelay: 2000,  // Adds a small delay before looping
+      startDelay: 500,  // Small delay to replace "Loading..."
+      smartBackspace: false,
+      loop: true,
+      preStringTyped: function () {
+        $('.typed-output').text(''); // Clear "Loading..." before typing starts
+      }
+    });
+  }
 
   var stickyFunction = function () {
     var h = $(".image-content").outerHeight(); // Get height of the content
