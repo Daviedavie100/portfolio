@@ -452,14 +452,21 @@ figure figcaption {
 }
 
 /*
-#daviefolio-hero .slider-text-inner {
+#daviefolio-hero .flexslider .slider-text .slider-text-inner {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  padding: 0 !important;
+  margin: 0 !important; 
+}
+
+@media (max-width: 768px) {
+  #daviefolio-hero .flexslider .slider-text .slider-text-inner {
+    padding: 0 !important;
+    margin: 0 !important; 
+  }
 }
 */
-
-
 
 
 
