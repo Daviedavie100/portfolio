@@ -451,8 +451,10 @@ figure figcaption {
 */
 
 
-/*
-#daviefolio-hero .desc h2 {
+
+
+
+#daviefolio-hero .flexslider .slider-text .slider-text-inner h2 {
   display: inline-block;
   margin: 0;
   height: 35px;
@@ -461,24 +463,11 @@ figure figcaption {
   font-weight: 600;
 }
 
-#daviefolio-hero .desc .typed-text {
+#daviefolio-hero .flexslider .slider-text .slider-text-inner .desc .typed-text {
   display: none;
 }
 
-#daviefolio-hero .desc .typed-cursor {
-  font-size: 35px;
-  font-weight: 300;
-  color: #ffffff;
-}
-*/
-
-
-
-.typed-text {
-  display: none; /* Hide original text container */
-}
-
-.typed-cursor {
+#daviefolio-hero .flexslider .slider-text .slider-text-inner .desc .typed-cursor {
   margin-bottom: 20px !important;
   font-size    : 30px !important;
   line-height  : 1.5 !important;
@@ -491,34 +480,6 @@ figure figcaption {
 
 
 
-/* Styling for the typed text 
-.typed-text {
-  font-size: 28px; 
-  font-weight: bold; 
-  color: #ffffff; 
-  text-transform: uppercase; 
-  letter-spacing: 1px; 
-  display: inline-block;
-}
-
-.slider-text .typed-text {
-  display: block; 
-  text-align: center; 
-  margin: 10px auto; 
-}
-
-.typed-text::after {
-  content: "|"; 
-  display: inline-block;
-  animation: blink 0.7s infinite;
-}
-
-@keyframes blink {
-  50% {
-    opacity: 0;
-  }
-}
-*/
 
 
 
@@ -571,7 +532,7 @@ figure figcaption {
   line-height  : 1.5 !important;
   font-weight  : 700 !important;
 }
-
+/*
 #daviefolio-hero .flexslider .slider-text .slider-text-inner h2 {
   margin-bottom: 20px !important;
   font-size    : 30px !important;
@@ -580,7 +541,7 @@ figure figcaption {
   font-family  : "Playfair Display", Georgia, serif;
   color        : #034d57;
 }
-
+*/
 #daviefolio-hero .flexslider .slider-text .slider-text-inner h3 {
   font-size    : 20px !important;
   line-height  : 1.5 !important;
