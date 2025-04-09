@@ -322,15 +322,7 @@ figure figcaption {
   height    : auto !important;
   margin-top: 0 !important;
   padding   : 0 !important;
-  /*
-  width     : 100px;
-  height    : 60px;
-  max-width : 100%;
-  margin-top: 0;
-  padding   : 0;*/
 }
-
-/* Media query for screens 480px or less (small mobile devices) */
 
 @media screen and (max-width: 480px) {
   #logo img {
@@ -342,12 +334,10 @@ figure figcaption {
   }
 }
 
-/* Media query for screens 768px or smaller (mobile devices) */
 @media screen and (max-width: 768px) {
   #logo img {
     width        : 120px !important;
     height       : auto !important;
-    /* Maintain aspect ratio */
     padding-left : 30px !important;
     margin-right : 0 !important;
     padding-right: 0 !important;
@@ -357,7 +347,6 @@ figure figcaption {
 /********* MENU *********/
 
 #top-daviefolio-section .col-md-9 {
-  /* padding-top: 10px;*/
   flex: 1;
 }
 
@@ -426,18 +415,6 @@ figure figcaption {
   z-index   : 9;
 }
 
-
-/*
-#daviefolio-hero .container-fluid {
-  display: flex;
-  justify-content: center;  
-  align-items: center; 
-  height: 100vh; 
-  text-align: center;
-  flex-direction: column; 
-}
-*/
-
 #daviefolio-hero .row {
   width          : 100%;
   display        : flex;
@@ -498,12 +475,6 @@ figure figcaption {
   }
 }
 
-
-
-
-
-
-
 #daviefolio-hero .flexslider .slider-text {
   display   : block;
   opacity   : 1;
@@ -555,16 +526,6 @@ figure figcaption {
   font-weight  : 700 !important;
 }
 
-/*
-#daviefolio-hero .flexslider .slider-text .slider-text-inner h2 {
-  margin-bottom: 20px !important;
-  font-size    : 30px !important;
-  line-height  : 1.5 !important;
-  font-weight  : 600 !important;
-  font-family  : "Playfair Display", Georgia, serif;
-  color        : #034d57;
-}
-*/
 #daviefolio-hero .flexslider .slider-text .slider-text-inner h3 {
   font-size    : 20px !important;
   line-height  : 1.5 !important;
@@ -614,32 +575,12 @@ figure figcaption {
   #daviefolio-hero .flexslider .slider-text .slider-text-inner h1 {
     font-size    : 35px !important;
     line-height  : 1.3 !important;
-    /*font-weight: 600 !important;
-    margin-bottom: 20px !important;*/
   }
 
-  /*
-  #daviefolio-hero .flexslider .slider-text .slider-text-inner h2 {
-    display: inline-block;
-    width      : 100% !important;
-    margin-bottom: 20px !important;
-    font-size    : 20px !important;
-    line-height  : 1.5 !important;
-    font-weight  : 600 !important;
-  }
-
-  #daviefolio-hero .flexslider .slider-text .slider-text-inner .desc .typed-cursor {
-    margin-bottom: 20px !important;
-    font-size    : 20px !important;
-    line-height  : 1.5 !important;
-    font-weight  : 600 !important;
-  }
-*/
   #daviefolio-hero .flexslider .slider-text .slider-text-inner h3 {
     font-size      : 20px !important;
     line-height    : 1.4 !important;
     font-weight    : 450 !important;
-    /*margin-bottom: 35px !important;*/
     word-wrap      : break-word;
     width          : 100% !important;
   }
