@@ -543,6 +543,8 @@ figure figcaption {
 @media screen and (max-width: 768px) {
   #daviefolio-hero .flexslider .slider-text>.slider-text-inner {
     text-align: center;
+    padding: 0;
+    margin: 0;
   }
 }
 
