@@ -456,11 +456,12 @@ figure figcaption {
 
 #daviefolio-hero .flexslider .slider-text .slider-text-inner h2 {
   display: inline-block;
-  margin: 0;
-  height: 35px;
-  color: #ffffff;
-  font-size: 35px;
-  font-weight: 600;
+  margin-bottom: 20px !important;
+  font-size    : 35px !important;
+  line-height  : 1.5 !important;
+  font-weight  : 600 !important;
+  font-family  : "Playfair Display", Georgia, serif;
+  color        : #034d57;
 }
 
 #daviefolio-hero .flexslider .slider-text .slider-text-inner .desc .typed-text {
@@ -469,11 +470,11 @@ figure figcaption {
 
 #daviefolio-hero .flexslider .slider-text .slider-text-inner .desc .typed-cursor {
   margin-bottom: 20px !important;
-  font-size    : 30px !important;
+  font-size    : 35px !important;
   line-height  : 1.5 !important;
   font-weight  : 600 !important;
   font-family  : "Playfair Display", Georgia, serif;
-  color        : #034d57;
+  color        : #f8f9fa;
 }
 
 
