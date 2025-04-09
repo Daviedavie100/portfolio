@@ -197,74 +197,6 @@
     );
   };
 
-
-
-
-
-  // Typed Initiate
-  // Typed.js Initialization
-  if ($('#daviefolio-hero .typed-text').length) {
-    var typed_strings = $('#daviefolio-hero .typed-text')
-      .text()
-      .split(', ');
-
-    var typed = new Typed('#daviefolio-hero h2', {  // Target the empty <h2>
-      strings: typed_strings,
-      typeSpeed: 100,
-      backSpeed: 20,
-      smartBackspace: false,
-      loop: true
-    });
-  }
-  /*
-    if ($('#daviefolio-hero .flexslider .slider-text .slider-text-inner .typed-text').length) {
-      var typed_strings = $('#daviefolio-hero .flexslider .slider-text .slider-text-inner .typed-text')
-        .text()
-        .split(', ');
-  
-      var typed = new Typed('#daviefolio-hero .flexslider .slider-text .slider-text-inner h2', {
-        strings: typed_strings,
-        typeSpeed: 100,
-        backSpeed: 20,
-        smartBackspace: false,
-        loop: true
-      });
-    }*/
-  /*
-    if ($('#daviefolio-hero .flexslider .slider-text .slider-text-inner h2').length == 1) {
-      var typed_strings = $('#daviefolio-hero .flexslider .slider-text .slider-text-inner .typed-text').text();
-      var typed = new Typed('#daviefolio-hero .flexslider .slider-text .slider-text-inner h2', {
-        strings: typed_strings.split(', '),
-        typeSpeed: 100,
-        backSpeed: 20,
-        smartBackspace: false,
-        loop: true
-      });
-    }
-  */
-  /*
-    var sliderMain = function () {
-      $("#daviefolio-hero .flexslider").flexslider({
-        animation: "fade",
-        slideshowSpeed: 5000,
-        directionNav: false, // ❌ Removes navigation arrows
-        start: function () {
-          setTimeout(function () {
-            $(".slider-text").css("opacity", "1"); // ✅ Ensure text is visible
-            $(".slider-text").removeClass("animated fadeInUp");
-            $(".flex-active-slide").find(".slider-text").addClass("animated fadeInUp");
-          }, 500);
-        },
-        before: function () {
-          setTimeout(function () {
-            $(".slider-text").css("opacity", "1"); // ✅ Ensure text is visible
-            $(".slider-text").removeClass("animated fadeInUp");
-            $(".flex-active-slide").find(".slider-text").addClass("animated fadeInUp");
-          }, 500);
-        }
-      });
-    };*/
-
   var sliderMain = function () {
     $("#daviefolio-hero .flexslider").flexslider({
       animation: "fade",
@@ -286,6 +218,21 @@
             .addClass("animated fadeInUp");
         }, 500);
       },
+    });
+  };
+
+  // Typed Initiate
+  if ($('#daviefolio-hero .typed-text').length) {
+    var typed_strings = $('#daviefolio-hero .typed-text')
+      .text()
+      .split(', ');
+
+    var typed = new Typed('#daviefolio-hero h2', {  // Target the empty <h2>
+      strings: typed_strings,
+      typeSpeed: 100,
+      backSpeed: 20,
+      smartBackspace: false,
+      loop: true
     });
   };
 
