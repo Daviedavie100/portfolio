@@ -102,7 +102,7 @@ figure figcaption {
   position: relative;
   /*display: flex;*/
   background-attachment: fixed;
-  background-size: 100%; 
+  background-size: 100%;
   background-position: center;
   background-image: url("../img/about/back5.webp");
   padding-left: 30px !important;
@@ -221,6 +221,7 @@ figure figcaption {
   left: 0;
   transition: 0.2s;
 }
+
 /* Lines before and after */
 .daviefolio-nav-toggle i::before {
   top: -7px !important;
@@ -450,7 +451,8 @@ figure figcaption {
   }
 }
 
-#daviefolio-hero .slider-text-inner h1 {/*#daviefolio-hero .flexslider .slider-text .slider-text-inner h1*/
+#daviefolio-hero .slider-text-inner h1 {
+  /*#daviefolio-hero .flexslider .slider-text .slider-text-inner h1*/
   margin-bottom: 20px !important;
   color: #1a3d6d;
   font-family: "Playfair Display", Georgia, serif;
@@ -459,8 +461,10 @@ figure figcaption {
   font-weight: 700 !important;
 }
 
-#daviefolio-hero .slider-text-inner h2, /*#daviefolio-hero .flexslider .slider-text .slider-text-inner h2*/
-#daviefolio-hero .slider-text-inner .desc .typed-cursor {/*#daviefolio-hero .flexslider .slider-text .slider-text-inner .desc .typed-cursor*/
+#daviefolio-hero .slider-text-inner h2,
+/*#daviefolio-hero .flexslider .slider-text .slider-text-inner h2*/
+#daviefolio-hero .slider-text-inner .desc .typed-cursor {
+  /*#daviefolio-hero .flexslider .slider-text .slider-text-inner .desc .typed-cursor*/
   font-size: 35px !important;
   font-weight: 600 !important;
   font-family: "Playfair Display", Georgia, serif;
@@ -482,6 +486,7 @@ figure figcaption {
 }
 
 @media (max-width: 992px) {
+
   #daviefolio-hero .slider-text-inner h2,
   #daviefolio-hero .slider-text-inner .desc .typed-cursor {
     font-size: 30px !important;
@@ -493,13 +498,15 @@ figure figcaption {
     font-size: 30px !important;
     line-height: 1.3 !important;
   }
+
   #daviefolio-hero .slider-text-inner h2,
   #daviefolio-hero .slider-text-inner .desc .typed-cursor {
     font-size: 21px !important;
   }
 }
 
-#daviefolio-hero .slider-text-inner h3 {/*#daviefolio-hero .flexslider .slider-text .slider-text-inner h3*/
+#daviefolio-hero .slider-text-inner h3 {
+  /*#daviefolio-hero .flexslider .slider-text .slider-text-inner h3*/
   font-size: 20px !important;
   line-height: 1.5 !important;
   margin-bottom: 35px !important;
@@ -517,7 +524,8 @@ figure figcaption {
   }
 }
 
-#daviefolio-hero .slider-text-inner p {/*#daviefolio-hero .flexslider .slider-text .slider-text-inner p*/
+#daviefolio-hero .slider-text-inner p {
+  /*#daviefolio-hero .flexslider .slider-text .slider-text-inner p*/
   margin-top: 20px;
   display: flex;
   justify-content: center;
@@ -526,13 +534,15 @@ figure figcaption {
 }
 
 @media (max-width: 768px) {
-  #daviefolio-hero .slider-text-inner p {/*#daviefolio-hero .slider-text-inner .desc p */
+  #daviefolio-hero .slider-text-inner p {
+    /*#daviefolio-hero .slider-text-inner .desc p */
     flex-direction: column;
     gap: 10px;
   }
 }
 
-#daviefolio-hero .btn-folio {/*#daviefolio-hero .flexslider .slider-text .slider-text-inner .btn-folio*/
+#daviefolio-hero .btn-folio {
+  /*#daviefolio-hero .flexslider .slider-text .slider-text-inner .btn-folio*/
   background-color: #007bff;
   color: #e2dfdf;
   border: 1px solid #007bff !important;
@@ -544,7 +554,8 @@ figure figcaption {
   transition: background-color 0.3s ease;
 }
 
-#daviefolio-hero .btn-folio:hover {/*#daviefolio-hero .flexslider .slider-text .slider-text-inner .btn-folio:hover*/
+#daviefolio-hero .btn-folio:hover {
+  /*#daviefolio-hero .flexslider .slider-text .slider-text-inner .btn-folio:hover*/
   color: #4169e1;
   background: transparent !important;
   border: 1px solid #000 !important;
@@ -552,7 +563,8 @@ figure figcaption {
 }
 
 @media (max-width: 768px) {
-  #daviefolio-hero .btn-folio {/*#daviefolio-hero .flexslider .slider-text .slider-text-inner btn.btn-folio*/
+  #daviefolio-hero .btn-folio {
+    /*#daviefolio-hero .flexslider .slider-text .slider-text-inner btn.btn-folio*/
     width: 100%;
     font-size: 0.9em !important;
   }
@@ -739,7 +751,7 @@ padding: 0;: This removes all internal spacing within the element.*/
   position: relative;
   z-index: 0;
   height: 140px !important;
-  
+
   /* Box Shadow */
   -webkit-box-shadow: 0 0 56px -8px rgba(0, 0, 0, 0.17);
   -moz-box-shadow: 0 0 56px -8px rgba(0, 0, 0, 0.17);
@@ -819,100 +831,48 @@ padding: 0;: This removes all internal spacing within the element.*/
 /******************************/
 
 .daviefolio-skills .col-md-12 p {
-  padding: 0.5em 1em;
+  padding: 0.5em 1em !important;
   background: rgba(243, 242, 242, 0.5);
   opacity: 1;
-  border-radius: 0 15px;
+  border-radius: 0 15px !important;
   text-align: left;
   margin: 0;
   font-family: "Verdana", Geneva, Tahoma, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 16px !important;
+  line-height: 1.5 !important;
   color: #000;
 }
 
 @media screen and (max-width: 768px) {
   .daviefolio-skills .col-md-12 p {
+    text-align: left;
     margin: 0 1em;
   }
 }
 
-/* HIGHLIGHTED CHANGE: Ensure section headers have relative positioning */
-.section-header-hard,
-.section-header-soft {
-  position: relative; /* HIGHLIGHTED CHANGE */
+.section-header-hard p::before {
+  position: absolute;
+  content: "";
+  height: 5px !important;
+  top: 23px !important;
+  right: 30px !important;
+  left: 15px !important;
+  background: #ef233c;
+  z-index: 1;
+  margin-top: 5px !important;
 }
 
-.section-header-hard p::before,
 .section-header-soft p::before {
   position: absolute;
   content: "";
-  height: 5px;
-  top: 23px;
-  left: 15px;
-  right: 30px;
-  background: #ef233c;
-  z-index: 1;
-  margin-top: 5px;
-}
-
-/*
-.section-header-hard p::before {
-  top: 23px !important;
-  right: 30px !important;
-}
-
-.section-header-soft p::before {
+  height: 5px !important;
   top: 22px !important;
   right: 25px !important;
+  left: 15px !important;
+  background: #ef233c;
+  z-index: 1;
+  margin-top: 5px !important;
 }
-*/
-
-/* HIGHLIGHTED CHANGE: Removed duplicate styles */
-.section-header-hard p,
-.section-header-soft p {
-  color: #2fa499;
-  font-size: 15px;
-  font-family: "Quicksand", Arial, sans-serif;
-  text-transform: uppercase;
-  padding-bottom: 10px;
-}
-
-/* Adjust font size for smaller screens */
-@media screen and (max-width: 768px) {
-  .section-header-hard p,
-  .section-header-soft p {
-    font-size: 15px;
-    padding-left: 5px;
-  }
-}
-
-/* 
-@media screen and (max-width: 768px) {
-  .section-header-soft p {
-    padding-bottom: 10px !important;
-  }
-}
-*/
-
-@media screen and (max-width: 480px) {
-  .section-header-hard p,
-  .section-header-soft p {
-    font-size: 14px;
-    line-height: 1.5;
-  }
-}
-
-/* 
-@media screen and (max-width: 480px) {
-  .section-header-soft p {
-    padding-bottom: 5px !important;
-  }
-}
-*/
-
-
-
 
 .hard-skills-chart-area {
   padding: 5px !important;
@@ -922,14 +882,33 @@ padding: 0;: This removes all internal spacing within the element.*/
   height: 100% !important;
 }
 
-/* For tablets (max-width: 768px) */
 @media screen and (max-width: 768px) {
   .hard-skills-chart-area {
     padding-bottom: 2em !important;
   }
 }
 
+.section-header-hard p {
+  color: #2fa499;
+  font-size: 15px !important;
+  font-family: "Quicksand", Arial, sans-serif;
+  text-transform: uppercase;
+  padding-bottom: 10px !important;
+}
 
+@media screen and (max-width: 768px) {
+  .section-header-hard p {
+    font-size: 15px !important;
+    padding-left: 5px !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section-header-hard p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
 
 canvas {
   width: 100% !important;
@@ -943,6 +922,29 @@ canvas {
   height: 100% !important;
 }
 
+.section-header-soft p {
+  color: #2fa499;
+  font-size: 15px !important;
+  font-family: "Quicksand", Arial, sans-serif;
+  text-transform: uppercase;
+  padding-bottom: 10px !important;
+}
+
+@media screen and (max-width: 768px) {
+  .section-header-soft p {
+    font-size: 15px;
+    padding-left: 5px !important;
+    padding-bottom: 10px !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section-header-soft p {
+    font-size: 14px;
+    line-height: 1.5;
+    padding-bottom: 5px !important;
+  }
+}
 
 .progress-wrap h3 {
   font-size: 14px !important;
@@ -972,7 +974,6 @@ canvas {
   position: relative;
   overflow: visible;
   -webkit-border-radius: 0;
-  /*8px*/
   -moz-border-radius: 0;
   -ms-border-radius: 0;
   border-radius: 0;
@@ -987,7 +988,6 @@ canvas {
   content: "";
   background: #2c98f0;
   -webkit-border-radius: 0;
-  /*50%*/
   -moz-border-radius: 0;
   -ms-border-radius: 0;
   border-radius: 0;
@@ -1001,6 +1001,7 @@ canvas {
 
 .progress-bar.color-1 {
   background: #4caf50;
+  width: 75%;
 }
 
 .progress-bar.color-1:after {
@@ -1013,6 +1014,7 @@ canvas {
 
 .progress-bar.color-2 {
   background: #2196f3;
+  width: 80%;
 }
 
 .progress-bar.color-2:after {
@@ -1025,6 +1027,7 @@ canvas {
 
 .progress-bar.color-3 {
   background: #9c27b0;
+  width: 70%;
 }
 
 .progress-bar.color-3:after {
@@ -1037,6 +1040,7 @@ canvas {
 
 .progress-bar.color-4 {
   background: #ffc107;
+  width: 85%;
 }
 
 .progress-bar.color-4:after {
@@ -1049,6 +1053,7 @@ canvas {
 
 .progress-bar.color-5 {
   background: #ff5722;
+  width: 75%;
 }
 
 .progress-bar.color-5:after {
@@ -1057,27 +1062,6 @@ canvas {
 
 .progress-bar.color-5 span {
   color: #ff5722;
-}
-
-/* CHANGES FOR SECTION ABOVE */
-.progress-bar.color-1 {
-  width: 75%;
-}
-
-.progress-bar.color-2 {
-  width: 80%;
-}
-
-.progress-bar.color-3 {
-  width: 70%;
-}
-
-.progress-bar.color-4 {
-  width: 85%;
-}
-
-.progress-bar.color-5 {
-  width: 75%;
 }
 
 /*************************/
