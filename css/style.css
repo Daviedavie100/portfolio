@@ -583,7 +583,6 @@ body.offcanvas #daviefolio-aside {
   -o-transform: translateX(0);
   transform: translateX(0);
   width: 300px !important;
-  /*background       : #f2f3f7;*/
   z-index: 999;
   position: fixed;
 }
@@ -2230,12 +2229,10 @@ canvas {
 #daviefolio-aside {
   padding-top: 2.3em !important;
   padding-bottom: 30px !important;
-  /*40px*/
   right: 35px !important;
   /*right       : 0 !important;  Aligns sidebar properly */
   width: 300px !important;
   position: fixed;
-  /*overflow-y: auto;  Enables scrolling */
   z-index: 2001;
   background: #2d545e;
   -webkit-transition: 0.5s;
@@ -2244,12 +2241,11 @@ canvas {
   margin-right: 0;
   top: 0;
   height: 100vh !important;
-  /* Sidebar fills full height max-height*/
+  
   /*display: flex;  Enables flexbox layout */
   /* flex-direction: column;  Ensures proper spacing 
   justify-content: space-between;  Footer stays at bottom */
   overflow: hidden;
-  /* Prevents horizontal scrolling */
 }
 
 /* Hide scrollbar for WebKit browsers (Chrome, Safari) */
@@ -2309,28 +2305,6 @@ canvas {
   padding: 0 !important;
 }
 
-/*
-#daviefolio-aside #daviefolio-logo {
-  font-family: "Quicksand", Arial, sans-serif;
-  text-align: right;
-  font-weight: 900;
-  font-size: 30px;
-  color: #04f538;
-  padding: 0;
-  margin: 0;
-}
-*/
-/*
-#daviefolio-aside #daviefolio-logo {
-  font-family: "Quicksand", Arial, sans-serif;
-  text-align: right;
-  font-weight: 700;
-  font-size: 26px;
-  
-  display: block;
-  width: 100%;
-  letter-spacing: 1px;
-
 #daviefolio-logo {
 display: block;
 font-family: "Quicksand",Arial,sans-serif;
@@ -2338,7 +2312,7 @@ font-size: 26px!important;
 text-align: center;
 letter-spacing: 1px!important;
 width: 100%;
-margin-bottom: 0.2em!important;
+margin-bottom: 0.5em!important;
 }
 
 #daviefolio-logo a {
@@ -2355,11 +2329,11 @@ color: #f0a500;
 #daviefolio-aside .position {
 display: block;
 margin-top: 0;
-margin-bottom: 1.8em 2;
+margin-bottom: 1.7em;
 font-size: 13px;
 text-transform: uppercase;
 }
-*/
+
 /* ADDED */
 @media screen and (max-width: 768px) {
   #daviefolio-logo {
