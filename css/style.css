@@ -245,8 +245,8 @@ figure figcaption {
   height: 2px !important;
   position: absolute;
   top: -10px !important;
-  left: 0 !important; /* ✅ Adjusted */
-  /*left: -310px !important;*/
+  /*left: 0 !important;  ✅ Adjusted */
+  left: -310px !important;
 }
 
 .daviefolio-nav-toggle.active i {
@@ -697,6 +697,7 @@ padding: 0;: This removes all internal spacing within the element.*/
 /********* ABOUT *********/
 /*************************/
 
+/* Row Styling */
 .row-bottom-padded-sm {
   margin: 0;
   padding-bottom: 1em;
@@ -708,6 +709,7 @@ padding: 0;: This removes all internal spacing within the element.*/
   }
 }
 
+/* About Section */
 .about-desc {
   padding: 0.5em 1em !important;
   background: rgba(243, 242, 242, 0.5);
@@ -722,6 +724,7 @@ padding: 0;: This removes all internal spacing within the element.*/
   text-align: left;
 }
 
+/* About Tools */
 .about-tools {
   padding-top: 1em !important;
   align-items: center !important;
@@ -729,37 +732,40 @@ padding: 0;: This removes all internal spacing within the element.*/
   text-align: center;
 }
 
-.cv {
-  padding: 0.8em 0.8em 3em 0.8em !important;
-}
-
-/*TOOLS*/
+/* Tools Section */
 .tools {
   padding: 1em 2em !important;
+  margin-bottom: 30px !important;
+  position: relative;
+  z-index: 0;
+  height: 140px !important;
+  
+  /* Box Shadow */
   -webkit-box-shadow: 0 0 56px -8px rgba(0, 0, 0, 0.17);
   -moz-box-shadow: 0 0 56px -8px rgba(0, 0, 0, 0.17);
   -ms-box-shadow: 0 0 56px -8px rgba(0, 0, 0, 0.17);
   -o-box-shadow: 0 0 56px -8px rgba(0, 0, 0, 0.17);
   box-shadow: 0 0 56px -8px rgba(0, 0, 0, 0.17);
-  /*border-bottom     : 2px solid #2c98f0;*/
-  margin-bottom: 30px !important;
-  /*separation of the tools column*/
-  position: relative;
-  z-index: 0;
-  height: 140px !important;
 }
 
+@media screen and (max-width: 768px) {
+  .tools {
+    padding: 1em 4em !important;
+    margin-bottom: 2em;
+  }
+}
+
+/* Tool Icon */
 .tools .icon2 {
   display: block;
   margin-bottom: 20px !important;
-  /*text from icon*/
 }
 
 .tools .icon2 i {
   font-size: 64px;
-  /*color    : #2c98f0;*/
 }
 
+/* Tool Title */
 .tools h2 {
   font-family: "Quicksand", Arial, sans-serif;
   font-size: 16px;
@@ -767,14 +773,7 @@ padding: 0;: This removes all internal spacing within the element.*/
   color: #2fa499;
 }
 
-@media screen and (max-width: 768px) {
-  .tools {
-    padding: 1em 4em !important;
-    margin-bottom: 2em;
-    /*4em-bottom margin*/
-  }
-}
-
+/* Tool Image */
 .tools-image {
   width: 64px;
   height: 64px;
@@ -782,6 +781,7 @@ padding: 0;: This removes all internal spacing within the element.*/
   display: inline-block;
 }
 
+/* Tool Colors */
 .tools.color-1 {
   border-bottom: 2px solid #ec5453;
 }
