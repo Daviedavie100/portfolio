@@ -249,7 +249,7 @@
       strings: typed_strings,
       typeSpeed: 100,
       backSpeed: 30,
-      backDelay: 2000,
+      backDelay: 500,
       smartBackspace: false,
       loop: true,
     });
