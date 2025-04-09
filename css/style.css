@@ -99,24 +99,31 @@ figure figcaption {
 #daviefolio-page {
   width: 100%;
   overflow: hidden;
-  /*was visible*/
   position: relative;
-  display: flex;
+  /*display: flex;*/
   background-attachment: fixed;
-  background-size: 100%;
+  background-size: cover; /* 100%;✅ Prevents stretching */
+  background-position: center;
   background-image: url("../img/about/back5.webp");
   padding-left: 30px !important;
   padding-right: 30px !important;
 }
 
+/* Prevents issues with background-attachment on mobile */
+@supports not (-webkit-touch-callout: none) {
+  #daviefolio-page {
+    background-attachment: scroll; /* ✅ Fix for mobile where 'fixed' might not work */
+  }
+}
+
 @media screen and (max-width: 768px) {
   #daviefolio-page {
     width: 100%;
-    padding: 0 1px !important;
+    padding: 10px; /* ✅ More balanced padding */
+    /*padding: 0 1px !important;*/
     display: flex;
     justify-content: center;
     align-items: center;
-    /* added */
     flex-direction: column;
   }
 }
@@ -136,36 +143,29 @@ figure figcaption {
 #daviefolio-main {
   position: relative;
   width: calc(100% - 305px) !important;
-  /* Adjusted for sidebar width */
   left: 0;
   display: block;
-  /* Removes unnecessary float */
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
   margin-left: 0;
 }
 
-/* For tablets and smaller screens (768px or less) */
 @media screen and (max-width: 768px) {
   #daviefolio-main {
     width: 100% !important;
-    /* Full width on small screens */
     position: relative;
     margin-left: 0;
     padding: 0 0.5em !important;
-    /* 0.1 Increased padding for better spacing */
   }
 }
 
 /********* TOP SECTION *********/
 
-/* Overall Section Styling */
 #top-daviefolio-section {
   position: fixed !important;
   top: 0;
-  /*left          : 30px !important;*/
-  width: calc(100% - 305px - 60px) !important;
+  width: calc(100% - 365px) !important;
   z-index: 2000;
   background-color: #393f4d;
   height: 52px !important;
@@ -174,6 +174,7 @@ figure figcaption {
   justify-content: space-between;
   padding: 0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box; /* ✅ Added */
 }
 
 @media (max-width: 768px) {
@@ -185,8 +186,7 @@ figure figcaption {
   }
 }
 
-/* Navigation Toggle (three lines) */
-
+/* Navigation Toggle -three lines*/
 .daviefolio-nav-toggle {
   position: fixed;
   left: -10px !important;
@@ -200,7 +200,7 @@ figure figcaption {
   text-decoration: none;
 }
 
-/* horizontal line-centre */
+/* Horizontal line -centre*/
 .daviefolio-nav-toggle i {
   position: relative;
   display: inline-block;
@@ -210,7 +210,7 @@ figure figcaption {
   transition: all 0.2s ease-out;
 }
 
-/* lines before and after */
+/* Lines before and after */
 .daviefolio-nav-toggle i::after,
 .daviefolio-nav-toggle i::before {
   content: "";
@@ -221,7 +221,7 @@ figure figcaption {
   left: 0;
   transition: 0.2s;
 }
-
+/* Lines before and after */
 .daviefolio-nav-toggle i::before {
   top: -7px !important;
 }
@@ -230,7 +230,7 @@ figure figcaption {
   bottom: -7px !important;
 }
 
-/* hover */
+/* Hover */
 .daviefolio-nav-toggle:hover i::before {
   top: -10px !important;
 }
@@ -239,16 +239,14 @@ figure figcaption {
   bottom: -10px !important;
 }
 
-/* When Toggle is Active (cross) */
+/* Active state */
 .daviefolio-nav-toggle.active {
-  /*background: transparent;*/
   width: 20px !important;
   height: 2px !important;
   position: absolute;
   top: -10px !important;
-  /*-10px*/
-  left: -310px !important;
-  /* -300 px Adjust as necessary for your layout */
+  left: 0 !important; /* ✅ Adjusted */
+  /*left: -310px !important;*/
 }
 
 .daviefolio-nav-toggle.active i {
@@ -262,7 +260,6 @@ figure figcaption {
   width: 20px !important;
   height: 2px !important;
   background: #eb3103;
-  -webkit-transition: background 0.3s ease;
   transition: background 0.3s ease;
 }
 
@@ -280,9 +277,10 @@ figure figcaption {
 .daviefolio-nav-toggle:focus,
 .daviefolio-nav-toggle:hover {
   outline: none;
-  border-bottom: none !important;
+  /*border-bottom: none !important;*/
 }
 
+/* Mobile Visibility */
 @media screen and (max-width: 768px) {
   .daviefolio-nav-toggle {
     opacity: 1;
@@ -490,10 +488,9 @@ figure figcaption {
   }
 }
 
-
 @media (max-width: 768px) {
   #daviefolio-hero .slider-text-inner h1 {
-    font-size: 35px !important;
+    font-size: 30px !important;
     line-height: 1.3 !important;
   }
   #daviefolio-hero .slider-text-inner h2,
