@@ -452,7 +452,7 @@ figure figcaption {
   }
 }
 
-#daviefolio-hero .flexslider .slider-text .slider-text-inner h1 {
+#daviefolio-hero .slider-text-inner h1 {/*#daviefolio-hero .flexslider .slider-text .slider-text-inner h1*/
   margin-bottom: 20px !important;
   color: #1a3d6d;
   font-family: "Playfair Display", Georgia, serif;
@@ -461,8 +461,8 @@ figure figcaption {
   font-weight: 700 !important;
 }
 
-#daviefolio-hero .slider-text-inner h2,
-#daviefolio-hero .slider-text-inner .desc .typed-cursor {
+#daviefolio-hero .slider-text-inner h2, /*#daviefolio-hero .flexslider .slider-text .slider-text-inner h2*/
+#daviefolio-hero .slider-text-inner .desc .typed-cursor {/*#daviefolio-hero .flexslider .slider-text .slider-text-inner .desc .typed-cursor*/
   font-size: 35px !important;
   font-weight: 600 !important;
   font-family: "Playfair Display", Georgia, serif;
@@ -470,16 +470,16 @@ figure figcaption {
   line-height: 1.5 !important;
 }
 
-#daviefolio-hero .flexslider .slider-text .slider-text-inner h2 {
+#daviefolio-hero .slider-text-inner h2 {
   display: inline-block;
   color: #034d57;
 }
 
-#daviefolio-hero .flexslider .slider-text .slider-text-inner .desc .typed-text {
+#daviefolio-hero .slider-text-inner .desc .typed-text {
   display: none;
 }
 
-#daviefolio-hero .flexslider .slider-text .slider-text-inner .desc .typed-cursor {
+#daviefolio-hero .slider-text-inner .desc .typed-cursor {
   color: #e2dfdf;
 }
 
@@ -492,17 +492,17 @@ figure figcaption {
 
 
 @media (max-width: 768px) {
-  #daviefolio-hero .slider-text-inner h1 {/*#daviefolio-hero .flexslider .slider-text .slider-text-inner h1*/
+  #daviefolio-hero .slider-text-inner h1 {
     font-size: 35px !important;
     line-height: 1.3 !important;
   }
   #daviefolio-hero .slider-text-inner h2,
-  #daviefolio-hero .slider-text-inner .desc .typed-cursor {/*#daviefolio-hero .flexslider .slider-text .slider-text-inner .desc .typed-cursor*/
+  #daviefolio-hero .slider-text-inner .desc .typed-cursor {
     font-size: 21px !important;
   }
 }
 
-#daviefolio-hero .flexslider .slider-text .slider-text-inner h3 {/*#daviefolio-hero .slider-text-inner h3*/
+#daviefolio-hero .slider-text-inner h3 {/*#daviefolio-hero .flexslider .slider-text .slider-text-inner h3*/
   font-size: 20px !important;
   line-height: 1.5 !important;
   margin-bottom: 35px !important;
@@ -515,20 +515,10 @@ figure figcaption {
 
 @media (max-width: 768px) {
   #daviefolio-hero .slider-text-inner h3 {
-    /*font-size: 20px !important;*/
     line-height: 1.4 !important;
     font-weight: 450 !important;
   }
 }
-/*
-#daviefolio-hero .flexslider .slider-text .slider-text-inner h3 {
-  font-size: 20px !important;
-  line-height: 1.4 !important;
-  font-weight: 450 !important;
-  word-wrap: break-word;
-  width: 100% !important;
-}
-*/
 
 #daviefolio-hero .slider-text-inner p {/*#daviefolio-hero .flexslider .slider-text .slider-text-inner p*/
   margin-top: 20px;
@@ -538,8 +528,8 @@ figure figcaption {
   gap: 20px;
 }
 
-@media (max-width: 768px) {/*#daviefolio-hero .slider-text-inner .desc p */
-  #daviefolio-hero .slider-text-inner p {
+@media (max-width: 768px) {
+  #daviefolio-hero .slider-text-inner p {/*#daviefolio-hero .slider-text-inner .desc p */
     flex-direction: column;
     gap: 10px;
   }
