@@ -2397,12 +2397,11 @@ color: #f0a500;
 #daviefolio-aside .position {
 display: block;
 margin-top: 0;
-margin-bottom: 1.8em;
-/*2*/
+margin-bottom: 1.8em 2;
 font-size: 13px;
 text-transform: uppercase;
 }
-
+*/
 /* ADDED */
 @media screen and (max-width: 768px) {
   #daviefolio-logo {
