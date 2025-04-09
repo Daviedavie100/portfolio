@@ -530,7 +530,7 @@ figure figcaption {
 }
 */
 
-#daviefolio-hero .flexslider .slider-text .slider-text-inner p {
+#daviefolio-hero .slider-text-inner p {/*#daviefolio-hero .flexslider .slider-text .slider-text-inner p*/
   margin-top: 20px;
   display: flex;
   justify-content: center;
@@ -538,14 +538,14 @@ figure figcaption {
   gap: 20px;
 }
 
-@media screen and (max-width: 768px) {
-  #daviefolio-hero .slider-text-inner .desc p {
+@media (max-width: 768px) {/*#daviefolio-hero .slider-text-inner .desc p */
+  #daviefolio-hero .slider-text-inner p {
     flex-direction: column;
     gap: 10px;
   }
 }
 
-#daviefolio-hero .flexslider .slider-text .slider-text-inner .btn-folio {
+#daviefolio-hero .btn-folio {/*#daviefolio-hero .flexslider .slider-text .slider-text-inner .btn-folio*/
   background-color: #007bff;
   color: #e2dfdf;
   border: 1px solid #007bff !important;
@@ -557,17 +557,15 @@ figure figcaption {
   transition: background-color 0.3s ease;
 }
 
-#daviefolio-hero .flexslider .slider-text .slider-text-inner .btn-folio:hover {
+#daviefolio-hero .btn-folio:hover {/*#daviefolio-hero .flexslider .slider-text .slider-text-inner .btn-folio:hover*/
   color: #4169e1;
   background: transparent !important;
   border: 1px solid #000 !important;
   font-weight: bold;
 }
 
-@media screen and (max-width: 768px) {
-  
-  
-  #daviefolio-hero .flexslider .slider-text .slider-text-inner .btn.btn-folio {
+@media (max-width: 768px) {
+  #daviefolio-hero .btn-folio {/*#daviefolio-hero .flexslider .slider-text .slider-text-inner btn.btn-folio*/
     width: 100%;
     font-size: 0.9em !important;
   }
