@@ -100,13 +100,13 @@ figure figcaption {
   width: 100%;
   overflow: hidden;
   position: relative;
-  display: flex;
-  background-attachment: fixed;
-  background-size: auto;
-  background-position: center;
   background-image: url("../img/about/back5.webp");
+  background-repeat: repeat-y;
+  background-position: center center;
+  background-attachment: fixed;
   padding-left: 30px !important;
   padding-right: 30px !important;
+  background-size: 100% auto;
 }
 
 /* Prevents issues with background-attachment on mobile */
