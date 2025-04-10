@@ -2168,7 +2168,6 @@ canvas {
   padding-top: 2.3em !important;
   padding-bottom: 30px !important;
   right: 35px !important;
-  /*right       : 0 !important;  Aligns sidebar properly */
   width: 300px !important;
   position: fixed;
   z-index: 2001;
@@ -2179,10 +2178,6 @@ canvas {
   margin-right: 0;
   top: 0;
   height: 100vh !important;
-  
-  /*display: flex;  Enables flexbox layout */
-  /* flex-direction: column;  Ensures proper spacing 
-  justify-content: space-between;  Footer stays at bottom */
   overflow: hidden;
 }
 
@@ -2211,15 +2206,9 @@ canvas {
   #daviefolio-aside {
     padding-top: 4em !important;
     position: fixed;
-    /* Ensures it's fixed */
     float: left;
     left: 0 !important;
-    /* width: 100% !important;
-     Sidebar takes full width */
     height: auto !important;
-    /*Adjust height dynamically */
-    /*height: 100vh !important;*/
-    /*top: 0;*/
     bottom: 0;
     z-index: 2001;
     width: 300px !important;
@@ -2272,16 +2261,13 @@ font-size: 13px;
 text-transform: uppercase;
 }
 
-/* ADDED */
 @media screen and (max-width: 768px) {
   #daviefolio-logo {
     display: block;
     font-size: 25px !important;
-    /* Slightly smaller for better fit */
     letter-spacing: 1px !important;
     width: 100%;
     margin-bottom: 0.5em !important;
-    /* Adds slightly more spacing */
   }
 
   #daviefolio-logo a {
@@ -2445,7 +2431,6 @@ text-transform: uppercase;
 #daviefolio-aside .daviefolio-footer p {
   display: block;
   padding: 0 !important;
-  /*0 0 0.5em 0;*/
   margin: 0 !important;
 }
 
@@ -2465,9 +2450,14 @@ text-transform: uppercase;
 /*======================================
   MAP
 ======================================*/
-/* This is useful for ensuring that your map (or any other element with the ID map) is fully responsive in width, adapting to the size of its parent container, while maintaining a fixed height of 700 pixels. */
-/*width: 100%;: This makes the element take up the full width of its parent container.
-height: 700px;: This sets the height of the element to 700 pixels.*/
+/* 
+This is useful for ensuring that your map (or any other element with the ID map) is 
+fully responsive in width, adapting to the size of its parent container, 
+while maintaining a fixed height of 700 pixels.
+width: 100%;: This makes the element take up the full width of its parent container.
+height: 700px;: This sets the height of the element to 700 pixels.
+*/
+
 #map {
   width: 100%;
   height: 700px;
@@ -2479,7 +2469,7 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   }
 }
 
-/*======================================
+/*====================================
   PAGITATION
 ======================================*/
 /*This removes any internal spacing within the .pagination elements.*/
@@ -2534,10 +2524,10 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   border: 1px solid #2c98f0 !important;
 }
 
-/*======================================
+/*====================================
   BUTTON
 ======================================*/
-/*btn.*/
+/*
 .btn {
   margin-right: 4px;
   margin-bottom: 4px;
@@ -2721,8 +2711,8 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-
-/*======================================
+*/
+/*====================================
                  JS   
 ======================================*/
 .js .animate-box {
@@ -2733,21 +2723,15 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   padding: 10px !important;
 }
 
-/*======================================
+/*====================================
                  END   
 ======================================*/
-/* PROJECTFOLIO: General styling for the title and first image section*/
+
+/* PROJECTFOLIO: */
 .daviefolio-project-folio {
   margin: 0 !important;
 }
 
-/*
-@media (max-width: 768px) {
-  .daviefolio-project-folio {
-    padding-top: 4em!important;
-  }
-}
-*/
 .daviefolio-project-folio h1 {
   font-size: 3rem;
   letter-spacing: 4px;
@@ -2794,17 +2778,10 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
 @media (max-width: 768px) {
   .title-box {
     margin-top: 3em !important;
-    /* width      : 100%;
-    text-align    : center; 
-    display       : flex;
-    flex-direction: column;
-    align-items   : center;*/
   }
 
   .title-box h3 {
     margin-top: 5px !important;
-    /*position      : absolute;*/
-    /*letter-spacing: 4px;*/
   }
 
   .title-box .title-line-mf {
@@ -2863,7 +2840,6 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   transform: scale(1.05);
 }
 
-/* Responsive styling */
 @media (max-width: 768px) {
   .project-work-box {
     border-radius: 4px;
@@ -2881,7 +2857,6 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   padding-top: 4em !important;
 }
 
-/* Responsive styling */
 @media (max-width: 768px) {
   .daviefolio-images {
     padding-top: 2em !important;
@@ -2900,7 +2875,6 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   padding: 2em 4em !important;
 }
 
-/* Responsive styling */
 @media (max-width: 768px) {
   .project-work-contento {
     padding: 1em 2em !important;
@@ -2977,7 +2951,7 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   text-align: left;
 }
 
-/* INSIGHTS: General styling for the insights section */
+/* INSIGHTS */
 .insignts-desc {
   padding: 20px !important;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -2986,11 +2960,6 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   transition: transform 0.3s ease;
 }
 
-/*
-.insignts-desc:hover {
-  transform: translateY(-5px);
-}
-*/
 .insights-heading-meta {
   text-transform: uppercase;
   font-size: large;
@@ -3014,7 +2983,7 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   padding: 0 1em;
 }
 
-/* IMAGES: General styling for the insights section */
+/* IMAGES */
 .i-work-box {
   margin-bottom: 30px;
   position: relative;
@@ -3066,7 +3035,7 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   text-align: left;
 }
 
-/*======================================
+/*====================================
                  BLOG  
 ======================================*/
 .daviefolio-blog-project {
@@ -3116,25 +3085,11 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
 }
 
 @media (max-width: 768px) {
-  /*.blog_title-box {
-    margin-top: 2.5em !important;
-  }*/
-
-  /*.blog_title-box h3 {
-    margin-top: 5px !important;
-    padding-bottom: 2em;
-  }*/
-
   .blog_title-box .blog_title-line-mf {
     width: 25%;
-    /*height          : 5px;*/
-    /*margin-top      : 3em !important;*/
-    /*background-color: #ff0000;*/
-    /*position        : absolute;*/
   }
 }
 
-/*DOING IT NOW*/
 #python h3 {
   padding-top: 20px;
 }
@@ -3155,7 +3110,6 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   padding-top: 20px;
 }
 
-/*DOING IT NOW*/
 .daviefolio-project-narrow-content {
   width: 100%;
   margin: 0 auto;
@@ -3217,7 +3171,6 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   cursor: not-allowed;
 }
 
-/* Responsive design for smaller screens */
 @media (max-width: 576px) {
   .but-load-more {
     font-size: 14px;
@@ -3225,7 +3178,7 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   }
 }
 
-/* ASIDE: General styling for aside project*/
+/* ASIDE */
 .project-desc {
   padding: 20px;
   border-radius: 8px;
@@ -3233,8 +3186,6 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   margin-bottom: 30px;
   transition: transform 0.3s ease;
   text-align: center;
-  /* Center align all text within the container */
-
 }
 
 .project-desc:hover {
@@ -3258,8 +3209,6 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   color: #333;
   margin: 10px 0;
   text-align: center;
-  /* Center align each paragraph */
-
 }
 
 .project-desc p:hover {
@@ -3268,7 +3217,6 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   transition: color 0.3s ease;
 }
 
-/* Responsive adjustments */
 @media (max-width: 1200px) {
   .project-heading-meta {
     font-size: 1.4rem;
@@ -3355,7 +3303,6 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   padding: 0 !important;
 }
 
-/* Media query for screens 480px or less (small mobile devices) */
 @media screen and (max-width: 480px) {
   #logo2 img {
     width: 80px !important;
@@ -3366,7 +3313,6 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   }
 }
 
-/* Media query for screens 768px or smaller (mobile devices) */
 @media screen and (max-width: 768px) {
   #logo2 img {
     width: 120px !important;
@@ -3429,7 +3375,6 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   border-bottom: 2px solid #007bff;
 }
 
-/* No Responsive Column Layout */
 @media (max-width: 768px) {
   #navbarDefault {
     position: absolute;
@@ -3440,7 +3385,6 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   }
 }
 
-/* No Responsive Column Layout */
 @media (max-width: 768px) {
   #navbarDefault .navbar-nav a {
     font-weight: 500;
@@ -3449,7 +3393,6 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   }
 }
 
-/* No Responsive Column Layout */
 @media (max-width: 768px) {
   #navbarDefault .navbar-nav li {
     margin-left: 1px;
@@ -3463,6 +3406,7 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
 }
 
 /* PROJECT NAVBAR */
+
 /* Dropdown container */
 #navbarDefault .navbar-nav .dropdown {
   position: relative;
@@ -3504,7 +3448,7 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   display: block;
 }
 
-/* Back to top button */
+/* Back to top button 
 .back-to-top {
   position: fixed;
   display: none;
@@ -3526,8 +3470,9 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
   padding-top: 12px;
   color: #fff;
 }
+*/
 
-/* Prelaoder */
+/* Prelaoder 
 #preloader {
   position: fixed;
   top: 0;
@@ -3576,7 +3521,7 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
     transform: rotate(360deg);
   }
 }
-
+*/
 /* BLOG */
 .project-item {
   padding-bottom: 2em;
@@ -3670,10 +3615,9 @@ height: 700px;: This sets the height of the element to 700 pixels.*/
 }
 
 /* TABLEAU */
-/* Add these styles for responsiveness */
+
 #vizContainer {
   width: 100%;
-  /*max-width: 100%;*/
   height: 580px;
   overflow-x: auto;
   overflow-y: hidden;
