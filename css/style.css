@@ -730,7 +730,8 @@ padding: 0;: This removes all internal spacing within the element.*/
 
 .about-desc p {
   font-family: "Verdana", Geneva, Tahoma, sans-serif;
-  font-size: 16px !important;
+  font-size: 15px !important;
+  line-height: 1.6 !important;
   color: #000;
   text-align: left;
 }
@@ -836,7 +837,7 @@ padding: 0;: This removes all internal spacing within the element.*/
   border-radius: 0 15px !important;
   text-align: left;
   font-family: "Verdana", Geneva, Tahoma, sans-serif;
-  font-size: 16px !important;
+  font-size: 15px !important;
   line-height: 1.6 !important; 
   color: #000;
   word-wrap: break-word;
